@@ -49,39 +49,53 @@ class _QuizSessionViewState extends State<QuizSessionView> {
   }
 
   void _showResults() {
+    final pct = ((_correct / _total) * 100).round();
+    final passed = _correct / _total >= 0.7;
+
     showDialog(
       context: context,
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text('Quiz Complete!'),
+        backgroundColor: AppTheme.surfaceElevated,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Text(
+          'Quiz Complete!',
+          style: TextStyle(color: AppTheme.textPrimary, fontWeight: FontWeight.w800),
+          textAlign: TextAlign.center,
+        ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
               '$_correct / $_total',
-              style: const TextStyle(fontSize: 48, fontWeight: FontWeight.w900),
+              style: const TextStyle(
+                fontSize: 48,
+                fontWeight: FontWeight.w900,
+                color: AppTheme.accent,
+              ),
             ),
             const SizedBox(height: 8),
             Text(
-              '${((_correct / _total) * 100).round()}% correct',
+              '$pct% correct',
               style: TextStyle(
                 fontSize: 18,
-                color: _correct / _total >= 0.7
-                    ? AppTheme.successGreen
-                    : AppTheme.dangerRed,
+                color: passed ? AppTheme.successGreen : AppTheme.dangerRed,
                 fontWeight: FontWeight.w600,
               ),
             ),
           ],
         ),
         actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.of(ctx).pop();
-              Navigator.of(context).pop();
-            },
-            child: const Text('Done'),
+          SizedBox(
+            width: double.infinity,
+            child: TextButton(
+              onPressed: () {
+                Navigator.of(ctx).pop();
+                Navigator.of(context).pop();
+              },
+              style: TextButton.styleFrom(foregroundColor: AppTheme.accent),
+              child: const Text('Done', style: TextStyle(fontWeight: FontWeight.w700)),
+            ),
           ),
         ],
       ),
@@ -89,27 +103,31 @@ class _QuizSessionViewState extends State<QuizSessionView> {
   }
 
   Color _getOptionColor(int index) {
-    if (!_answered) return Colors.white;
-    if (index == _currentQuestion.correctIndex) return const Color(0xFFDCFCE7);
-    if (index == _selectedIndex) return const Color(0xFFFEE2E2);
-    return Colors.white;
+    if (!_answered) return AppTheme.surface;
+    if (index == _currentQuestion.correctIndex) {
+      return AppTheme.successGreen.withValues(alpha: 0.12);
+    }
+    if (index == _selectedIndex) {
+      return AppTheme.dangerRed.withValues(alpha: 0.12);
+    }
+    return AppTheme.surface;
   }
 
   Color _getOptionBorderColor(int index) {
     if (!_answered) {
-      return index == _selectedIndex
-          ? AppTheme.accentTeal
-          : Colors.grey.shade300;
+      return index == _selectedIndex ? AppTheme.accent : AppTheme.border;
     }
     if (index == _currentQuestion.correctIndex) return AppTheme.successGreen;
     if (index == _selectedIndex) return AppTheme.dangerRed;
-    return Colors.grey.shade200;
+    return AppTheme.border;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppTheme.background,
       appBar: AppBar(
+        backgroundColor: AppTheme.background,
         title: Text(widget.title),
         actions: [
           Center(
@@ -120,6 +138,7 @@ class _QuizSessionViewState extends State<QuizSessionView> {
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
+                  color: AppTheme.textSecondary,
                 ),
               ),
             ),
@@ -136,9 +155,9 @@ class _QuizSessionViewState extends State<QuizSessionView> {
               borderRadius: BorderRadius.circular(4),
               child: LinearProgressIndicator(
                 value: (_currentIndex + 1) / widget.questions.length,
-                backgroundColor: Colors.grey.shade200,
-                valueColor: const AlwaysStoppedAnimation(AppTheme.accentTeal),
-                minHeight: 6,
+                backgroundColor: AppTheme.border,
+                valueColor: const AlwaysStoppedAnimation(AppTheme.accent),
+                minHeight: 4,
               ),
             ),
             const SizedBox(height: 24),
@@ -159,7 +178,8 @@ class _QuizSessionViewState extends State<QuizSessionView> {
             ...List.generate(_currentQuestion.options.length, (i) {
               return GestureDetector(
                 onTap: () => _selectAnswer(i),
-                child: Container(
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
                   width: double.infinity,
                   margin: const EdgeInsets.only(bottom: 10),
                   padding: const EdgeInsets.all(14),
@@ -170,6 +190,23 @@ class _QuizSessionViewState extends State<QuizSessionView> {
                       color: _getOptionBorderColor(i),
                       width: 1.5,
                     ),
+                    boxShadow: !_answered && i == _selectedIndex
+                        ? [
+                            BoxShadow(
+                              color: AppTheme.accent.withValues(alpha: 0.2),
+                              blurRadius: 12,
+                              spreadRadius: 0,
+                            )
+                          ]
+                        : _answered && i == _currentQuestion.correctIndex
+                            ? [
+                                BoxShadow(
+                                  color: AppTheme.successGreen.withValues(alpha: 0.15),
+                                  blurRadius: 12,
+                                  spreadRadius: 0,
+                                )
+                              ]
+                            : null,
                   ),
                   child: Row(
                     children: [
@@ -179,12 +216,12 @@ class _QuizSessionViewState extends State<QuizSessionView> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: !_answered
-                              ? Colors.grey.shade100
+                              ? AppTheme.surfaceElevated
                               : i == _currentQuestion.correctIndex
-                                  ? AppTheme.successGreen.withValues(alpha: 0.15)
+                                  ? AppTheme.successGreen.withValues(alpha: 0.2)
                                   : i == _selectedIndex
-                                      ? AppTheme.dangerRed.withValues(alpha: 0.15)
-                                      : Colors.grey.shade100,
+                                      ? AppTheme.dangerRed.withValues(alpha: 0.2)
+                                      : AppTheme.surfaceElevated,
                         ),
                         alignment: Alignment.center,
                         child: Text(
@@ -209,6 +246,7 @@ class _QuizSessionViewState extends State<QuizSessionView> {
                           style: const TextStyle(
                             fontSize: 14,
                             height: 1.4,
+                            color: AppTheme.textPrimary,
                           ),
                         ),
                       ),
@@ -245,7 +283,7 @@ class _QuizSessionViewState extends State<QuizSessionView> {
                           'Explanation',
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFF92400E),
+                            color: AppTheme.accentAmber,
                             fontSize: 14,
                           ),
                         ),
@@ -254,10 +292,10 @@ class _QuizSessionViewState extends State<QuizSessionView> {
                     const SizedBox(height: 8),
                     Text(
                       _currentQuestion.explanation,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 13,
                         height: 1.5,
-                        color: Color(0xFF78350F),
+                        color: AppTheme.accentAmber.withValues(alpha: 0.85),
                       ),
                     ),
                   ],
@@ -266,21 +304,37 @@ class _QuizSessionViewState extends State<QuizSessionView> {
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: _nextQuestion,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.accentTeal,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    gradient: const LinearGradient(
+                      colors: [AppTheme.accent, Color(0xFF06B6D4)],
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppTheme.accent.withValues(alpha: 0.3),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
                   ),
-                  child: Text(
-                    _isLastQuestion ? 'See Results' : 'Next Question',
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
+                  child: ElevatedButton(
+                    onPressed: _nextQuestion,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.transparent,
+                      shadowColor: Colors.transparent,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    child: Text(
+                      _isLastQuestion ? 'See Results' : 'Next Question',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
                 ),

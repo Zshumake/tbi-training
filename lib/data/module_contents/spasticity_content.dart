@@ -102,6 +102,93 @@ final TopicData spasticityContent = TopicData(
           'Board Pearl: Equinovarus Deformity',
           'Equinovarus (foot drop with inversion) is the most common lower extremity spasticity pattern after TBI and stroke. The gastrocnemius-soleus complex causes equinus (plantarflexion) while the tibialis posterior causes varus (inversion). This deformity impairs gait and increases fall risk. Treatment includes AFO, botulinum toxin to gastrocnemius/soleus and tibialis posterior, serial casting, and possible surgical lengthening.',
         ),
+        HeaderBlock('Penn Spasm Frequency Scale (PSFS)'),
+        TextBlock(
+          'The Penn Spasm Frequency Scale is a patient-reported outcome measure originally developed to evaluate intrathecal baclofen therapy. It quantifies spasm frequency and severity as a complement to clinician-assessed scales like the MAS and Tardieu.',
+        ),
+        ScaleBlock(
+          scaleName: 'Penn Spasm Frequency Scale',
+          description:
+              'A two-component self-report measure. Part 1 measures spasm FREQUENCY on a 0-4 scale. Part 2 measures spasm SEVERITY on a 1-3 scale (only completed if spasms are present).',
+          columns: ['Score', 'Part 1: Spasm Frequency', 'Part 2: Spasm Severity'],
+          rows: [
+            ['0', 'No spasms', 'N/A (not scored)'],
+            ['1', 'Mild spasms induced by stimulation', 'Mild'],
+            ['2', 'Infrequent full spasms occurring less than once per hour', 'Moderate'],
+            ['3', 'Spasms occurring more than once per hour', 'Severe'],
+            ['4', 'More than 10 spontaneous spasms per hour', 'N/A'],
+          ],
+          boardPearl:
+              'The Penn Spasm Frequency Scale was created specifically to measure ITB therapy effectiveness. It is a PATIENT self-report measure (unlike the MAS which is clinician-assessed). Part 1 grades frequency 0-4, Part 2 grades severity 1-3. It captures spasm frequency that may be missed during a brief clinical exam. Commonly used as an outcome measure in ITB pump trials.',
+        ),
+        HeaderBlock('Modified Tardieu vs Modified Ashworth: When to Use Each'),
+        TextBlock(
+          'Both the Modified Ashworth Scale (MAS) and Modified Tardieu Scale are used to assess spasticity, but they measure different things and have different clinical applications. Research increasingly supports the Tardieu as the superior instrument for distinguishing neural (spastic) from structural (contracture) components.',
+        ),
+        TableBlock(
+          title: 'Modified Ashworth vs Modified Tardieu: Head-to-Head Comparison',
+          columns: ['Feature', 'Modified Ashworth Scale (MAS)', 'Modified Tardieu Scale'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'What it measures',
+              'Resistance to passive stretch at ONE velocity',
+              'Muscle reaction at MULTIPLE velocities (V1, V2, V3)',
+            ],
+            [
+              'Velocity tested',
+              'Single speed (approximately 1 second through full ROM)',
+              'Slow (V1), gravity (V2), and fast (V3)',
+            ],
+            [
+              'Key output',
+              'Ordinal grade 0-4 (with 1+ grade)',
+              'R1 (catch angle at fast stretch), R2 (passive ROM at slow stretch), and R2-R1 difference',
+            ],
+            [
+              'Distinguishes spasticity from contracture',
+              'NO -- cannot differentiate neural from structural',
+              'YES -- R2-R1 difference estimates dynamic (spastic) component',
+            ],
+            [
+              'Clinical utility',
+              'Quick screening; widely used; familiar to most clinicians',
+              'More specific; better for treatment planning; guides intervention choice',
+            ],
+            [
+              'Reliability',
+              'Moderate inter-rater reliability; 1+ grade causes confusion',
+              'Better inter-rater reliability for angle measurements; more objective',
+            ],
+            [
+              'Best use',
+              'Quick screening, serial monitoring, research comparisons',
+              'Treatment planning, distinguishing spasticity vs contracture, pre-surgical evaluation',
+            ],
+            [
+              'Limitation',
+              'Ordinal scale, not interval; ceiling effect; cannot guide treatment selection',
+              'More time-consuming; requires goniometer; less familiar to some clinicians',
+            ],
+          ],
+        ),
+        BulletCardBlock(
+          title: 'Research Supporting Tardieu Superiority',
+          themeColor: const Color(0xFF8B5CF6),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'The MAS measures resistance at one speed and CANNOT distinguish between neural (spasticity) and non-neural (contracture, fibrosis) components of increased tone',
+            'The Tardieu\'s R2-R1 difference is the KEY clinical measurement: LARGE R2-R1 = mostly spasticity (responds to botox, medications); SMALL R2-R1 = mostly contracture (may need casting or surgery)',
+            'Studies show the MAS has poor inter-rater reliability, particularly for grades 1 and 1+ (clinicians disagree on which grade to assign)',
+            'The Tardieu provides an ANGLE measurement (degrees) rather than an ordinal grade, making it more sensitive to change and more useful for tracking treatment response',
+            'Current evidence supports using the Tardieu when the clinical question is: "Is this increased tone due to spasticity or contracture?" -- which directly determines treatment',
+            'Practical recommendation: Use MAS for quick screening; use Tardieu when making treatment decisions (botox vs casting vs surgery)',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Tardieu vs Ashworth',
+          'The Tardieu Scale is SUPERIOR to the Ashworth for distinguishing spasticity from contracture. The key measurement is R2-R1: R2 = passive ROM at slow stretch, R1 = catch angle at fast stretch. A LARGE R2-R1 means the limitation is mostly spasticity (dynamic, velocity-dependent, treatable with botox/medications). A SMALL R2-R1 means the limitation is mostly contracture (fixed, structural, may need casting or surgery). The MAS cannot make this distinction because it tests at only ONE velocity. This is a classic and commonly tested board concept.',
+        ),
       ],
     ),
     TopicTab(
@@ -268,6 +355,206 @@ final TopicData spasticityContent = TopicData(
         MnemonicBlock(
           'Spasticity Management Ladder: "SOFIS"',
           'Stretching/Splinting → Oral medications → Focal injections (botox/phenol) → Intrathecal baclofen → Surgery. Remember: always start with the least invasive intervention and escalate as needed. "SOFIS" = Start gently, Oral meds, Focal injections, Intrathecal pump, Surgery.',
+        ),
+        HeaderBlock('Botulinum Toxin Updates: Formulations and Guidance'),
+        TextBlock(
+          'Three botulinum toxin type A formulations are commercially available. Understanding their differences, conversion considerations, and injection guidance techniques is essential for clinical practice.',
+        ),
+        TableBlock(
+          title: 'Botulinum Toxin Type A Formulations',
+          columns: ['Feature', 'OnabotulinumtoxinA (Botox)', 'AbobotulinumtoxinA (Dysport)', 'IncobotulinumtoxinA (Xeomin)'],
+          headerColor: const Color(0xFF8B5CF6),
+          rows: [
+            [
+              'FDA-approved for adult spasticity',
+              'Yes: upper AND lower limb',
+              'Yes: upper AND lower limb',
+              'Yes: upper limb',
+            ],
+            [
+              'Complexing proteins',
+              'Yes (900 kDa complex)',
+              'Yes (500-900 kDa complex)',
+              'NO (150 kDa pure neurotoxin)',
+            ],
+            [
+              'Approximate conversion to Botox',
+              '1:1 (reference)',
+              '2.5-3:1 (2.5-3 units Dysport per 1 unit Botox)',
+              '1:1',
+            ],
+            [
+              'Storage',
+              'Refrigerated before reconstitution',
+              'Refrigerated before reconstitution',
+              'Room temperature (no complexing proteins to denature)',
+            ],
+            [
+              'Immunogenicity',
+              'Low (complexing proteins may trigger antibodies)',
+              'Low (similar to Botox)',
+              'Theoretically LOWEST (no complexing proteins)',
+            ],
+            [
+              'Onset',
+              '3-5 days',
+              '2-5 days (may be slightly faster)',
+              '3-5 days',
+            ],
+            [
+              'Duration',
+              'Approximately 3 months',
+              'Approximately 3 months',
+              'Approximately 3 months',
+            ],
+            [
+              'Max per session (spasticity)',
+              '400 units (some experts use up to 600)',
+              '1000-1500 units',
+              '400 units',
+            ],
+          ],
+        ),
+        BulletCardBlock(
+          title: 'Injection Guidance Techniques',
+          themeColor: const Color(0xFF8B5CF6),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Anatomic landmarks alone: Least accurate; acceptable only for large, superficial muscles (e.g., biceps, gastrocnemius)',
+            'EMG guidance: Motor unit activity confirms needle is in the TARGET muscle; patient asked to activate muscle; most useful for deep or small muscles',
+            'Electrical stimulation (E-stim): Low-amplitude current through injection needle causes visible muscle contraction; confirms needle tip is in correct muscle; does not require patient cooperation (useful in TBI/DOC)',
+            'Ultrasound guidance: Real-time visualization of needle tip, muscle, and surrounding structures; best for avoiding nerves and vessels; increasingly preferred method',
+            'Evidence: Guided injections (any method) are MORE EFFECTIVE than landmark-only for reducing spasticity; ultrasound and E-stim guidance improve outcomes particularly for deep muscles',
+            'Practical consideration in TBI: E-stim and ultrasound are preferred because they do NOT require patient cooperation (many TBI patients cannot voluntarily activate muscles on command)',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Botulinum Toxin Formulations',
+          'Doses are NOT interchangeable between formulations. Approximate conversion: Botox:Dysport:Xeomin = 1:2.5-3:1. However, official labeling states units should NOT be converted. Xeomin (incobotulinumtoxinA) has NO complexing proteins (150 kDa pure neurotoxin), theoretically reducing antibody formation -- consider switching to Xeomin when treatment failure suggests antibody development. All three formulations have approximately 3-month duration. Guided injection (EMG, E-stim, or ultrasound) improves accuracy and outcomes over landmarks alone.',
+        ),
+        HeaderBlock('Serial Casting Protocol: Detailed Approach'),
+        TextBlock(
+          'Serial casting is a key intervention for dynamic contractures with a significant spastic component. Understanding the detailed protocol, timing with botulinum toxin, and monitoring requirements is essential.',
+        ),
+        BulletCardBlock(
+          title: 'Serial Casting Protocol and Monitoring',
+          themeColor: const Color(0xFF0D9488),
+          backgroundColor: const Color(0xFFF0FDFA),
+          points: [
+            'Cast change interval: Every 5-7 days (some protocols use 7-10 days); each new cast is set at progressively increased stretch angle',
+            'Typical course: 3-6 cast changes (3-6 weeks total) depending on contracture severity and response',
+            'Combined with botulinum toxin ("inject and cast"): Inject botox FIRST, then apply cast 3-7 days later when toxin is taking effect; this is MORE EFFECTIVE than either intervention alone',
+            'Timing rationale: Botox reduces active muscle resistance, allowing the cast to maintain a longer stretch on the passive (structural) component',
+            'Target joints: Most effective for ankle equinus; also used for elbow flexion and knee flexion contractures',
+            'Cast material: Typically fiberglass; well-padded (especially over bony prominences); bivalved cast may be used if edema is expected',
+            'Monitoring: Check skin integrity, neurovascular status (pulses, capillary refill, sensation), and edema at each cast change',
+            'Skin breakdown prevention: Pad bony prominences generously; instruct patient/family to report pain, numbness, color changes, or odor',
+            'Contraindications: Peripheral vascular disease, severe edema, open wounds, HO with joint ankylosis, DVT in affected limb',
+            'Endpoint: Casting is discontinued when desired ROM is achieved or when no further gains are made between cast changes (plateau)',
+            'Post-casting maintenance: Immediately transition to a resting splint or orthosis to maintain gains; without maintenance, contracture will recur',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Inject and Cast',
+          'The combination of botulinum toxin injection followed by serial casting is MORE EFFECTIVE than either alone for dynamic contractures (especially ankle equinus). Inject botox first, then begin casting 3-7 days later when the toxin is taking effect. The botox reduces the active spastic component while the cast addresses the passive structural shortening. Casts are changed every 5-7 days with progressive stretch. Always monitor for skin breakdown and compartment syndrome under the cast. Immediately transition to a splint/orthosis after casting to maintain gains.',
+        ),
+        HeaderBlock('ITB Pump Complications: Comprehensive Review'),
+        TextBlock(
+          'Intrathecal baclofen pump complications are among the most tested topics in PM&R board exams. Understanding the full spectrum of catheter-related, pump-related, and dose-related complications is critical.',
+        ),
+        TableBlock(
+          title: 'ITB Pump Complication Categories',
+          columns: ['Category', 'Specific Complications', 'Presentation', 'Management'],
+          headerColor: const Color(0xFFDC2626),
+          rows: [
+            [
+              'Catheter-related',
+              'Kink, fracture, migration, disconnection, occlusion',
+              'Acute or gradual loss of efficacy; withdrawal symptoms; return of spasticity',
+              'Imaging (CT myelogram, catheter access study with contrast); surgical revision of catheter',
+            ],
+            [
+              'Pump pocket',
+              'Infection, seroma, CSF leak, skin erosion, pump migration/flip',
+              'Erythema, swelling, warmth, purulent drainage, CSF collection around pump, pump palpably rotated',
+              'Antibiotics (may attempt salvage); wound care; surgical revision; pump replacement if infected',
+            ],
+            [
+              'ITB OVERDOSE',
+              'Programming error, refill error, catheter malposition',
+              'Flaccidity, drowsiness, respiratory depression, coma, bradycardia, hypotension',
+              'Stop pump delivery (max 48 hours); supportive care (airway, ventilation); CSF withdrawal via LP (30-40 cc) to reduce baclofen load; physostigmine reported but not standard',
+            ],
+            [
+              'ITB WITHDRAWAL',
+              'Catheter failure, missed refill, pump malfunction, battery depletion',
+              'Severe rebound spasticity, hyperthermia > 40C, altered mental status, rhabdomyolysis, seizures, DIC, multi-organ failure -- CAN BE FATAL',
+              'EMERGENCY: Restore IT delivery ASAP; high-dose oral baclofen (40-120 mg/day); IV benzodiazepines; IV dantrolene for hyperthermia; cyproheptadine; ICU admission',
+            ],
+          ],
+        ),
+        BulletCardBlock(
+          title: 'ITB Withdrawal Emergency: Critical Details',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'ITB withdrawal is a MEDICAL EMERGENCY that can be FATAL -- mortality rate up to 22% in reported cases',
+            'Onset: Symptoms begin within hours to 1-2 days of baclofen interruption',
+            'Mimics: Presentation resembles malignant hyperthermia, NMS, and serotonin syndrome -- consider ITB withdrawal in any patient with a baclofen pump who develops fever and spasticity',
+            'Rhabdomyolysis mechanism: Severe rebound spasticity causes massive muscle breakdown; monitor CK, renal function, urine myoglobin',
+            'DIC mechanism: Hyperthermia and systemic inflammation trigger disseminated intravascular coagulation; monitor coagulation studies',
+            'Emergency treatment priority: (1) Restore intrathecal baclofen delivery (catheter revision, pump interrogation), (2) High-dose oral/enteral baclofen 40-120 mg/day, (3) IV benzodiazepines (diazepam, lorazepam), (4) IV dantrolene for hyperthermia, (5) Cyproheptadine as adjunct, (6) ICU monitoring',
+            'Prevention: Strict pump refill schedule; educate patients and caregivers about warning signs; never abruptly discontinue baclofen (oral or intrathecal)',
+            'BOARD PEARL: The most common cause of ITB withdrawal is catheter failure (kink, fracture, migration) -- NOT pump malfunction',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: ITB Overdose vs Withdrawal',
+          'ITB OVERDOSE: Flaccidity, drowsiness, respiratory depression, coma, bradycardia. Treatment: Stop pump, supportive care, CSF removal via LP. ITB WITHDRAWAL: Rebound spasticity, hyperthermia > 40C, rhabdomyolysis, DIC, seizures, multi-organ failure -- CAN BE FATAL. Treatment: Restore IT delivery, high-dose oral baclofen, IV benzos, IV dantrolene, ICU. Key distinction: Overdose = floppy and sleepy (supportive care); Withdrawal = rigid, hot, and dying (medical emergency requiring aggressive intervention). The most common cause of withdrawal is catheter failure.',
+        ),
+        HeaderBlock('Contracture Management Algorithm'),
+        TextBlock(
+          'Contracture management follows a systematic progression from prevention through conservative treatment to surgical intervention. Understanding when to escalate and which interventions to combine is key for clinical practice.',
+        ),
+        NumberedListBlock([
+          MapEntry('Prevention (ongoing from day 1)', 'Daily ROM exercises, proper positioning, splinting/orthoses, weight-bearing/standing programs; the MOST IMPORTANT step -- once contracture develops, treatment is much harder'),
+          MapEntry('Aggressive stretching program', 'When early ROM limitation is detected: prolonged stretching (20-30 min per session), multiple sessions daily, positioning programs 24/7, dynamic splinting for low-load prolonged stretch'),
+          MapEntry('Address noxious stimuli', 'Before escalating treatment: rule out UTI, pressure injury, DVT, HO, pain, constipation -- treating the underlying irritant may reduce spasticity and slow contracture progression'),
+          MapEntry('Oral anti-spasticity medications', 'Baclofen, tizanidine, or dantrolene to reduce dynamic (spastic) component contributing to contracture; may slow progression but will not reverse established contracture'),
+          MapEntry('Botulinum toxin injection', 'For focal spasticity contributing to contracture; reduces active muscle pull to allow more effective stretching and casting; best when significant R2-R1 difference (dynamic component) remains'),
+          MapEntry('Serial casting (with or without botox)', '"Inject and cast" protocol for dynamic contractures; 3-6 weeks of progressive casting; most effective when combined with botulinum toxin; follow with orthosis to maintain gains'),
+          MapEntry('Sustained surgical options evaluation', 'When R2-R1 difference is SMALL (fixed contracture predominates): tendon lengthening (Z-plasty, fractional lengthening), tendon transfer (SPLATT for equinovarus), joint release; timing: typically 6-12 months post-injury after neurological plateau'),
+        ]),
+        TableBlock(
+          title: 'Contracture Management: Decision Guide',
+          columns: ['Tardieu Finding', 'Interpretation', 'Primary Intervention'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'Large R2-R1 difference',
+              'Mostly DYNAMIC (spastic) component',
+              'Botulinum toxin + stretching; oral medications; serial casting if persistent',
+            ],
+            [
+              'Moderate R2-R1 difference',
+              'Mixed dynamic and structural',
+              'Botox + serial casting ("inject and cast"); aggressive stretching; consider ITB if generalized',
+            ],
+            [
+              'Small R2-R1 difference',
+              'Mostly FIXED (structural) contracture',
+              'Serial casting trial; if no improvement, surgical release (tendon lengthening/transfer); stretching for maintenance',
+            ],
+            [
+              'R2-R1 = 0 (R2 = R1)',
+              'Completely fixed contracture',
+              'Surgical release or accept limitation; splinting to prevent further progression; no benefit from botox or antispasticity medications',
+            ],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Contracture Management',
+          'The Tardieu R2-R1 difference GUIDES contracture treatment: LARGE R2-R1 = spasticity (botox, medications); SMALL R2-R1 = fixed contracture (casting, surgery). Prevention is ALWAYS the most important step -- once contracture is established, it is very difficult to reverse. The "inject and cast" protocol (botox + serial casting) is the most effective non-surgical intervention for dynamic contractures. Surgical release is reserved for fixed contractures that impair function or hygiene, typically delayed 6-12 months post-injury to allow neurological plateau. Always maintain gains with orthoses/splints after any intervention.',
         ),
       ],
     ),

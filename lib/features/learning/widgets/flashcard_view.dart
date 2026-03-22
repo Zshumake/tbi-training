@@ -46,8 +46,13 @@ class _FlashcardViewState extends State<FlashcardView> {
       context: context,
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text('Session Complete!'),
+        backgroundColor: AppTheme.surfaceElevated,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Text(
+          'Session Complete!',
+          style: TextStyle(color: AppTheme.textPrimary, fontWeight: FontWeight.w800),
+          textAlign: TextAlign.center,
+        ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -56,14 +61,20 @@ class _FlashcardViewState extends State<FlashcardView> {
               children: [
                 Column(
                   children: [
-                    Text('$_knewIt', style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w900, color: AppTheme.successGreen)),
-                    const Text('Knew It', style: TextStyle(fontSize: 13, color: AppTheme.textSecondary)),
+                    Text('$_knewIt',
+                        style: const TextStyle(
+                            fontSize: 36, fontWeight: FontWeight.w900, color: AppTheme.successGreen)),
+                    const Text('Knew It',
+                        style: TextStyle(fontSize: 13, color: AppTheme.textSecondary)),
                   ],
                 ),
                 Column(
                   children: [
-                    Text('$_needsWork', style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w900, color: AppTheme.dangerRed)),
-                    const Text('Needs Work', style: TextStyle(fontSize: 13, color: AppTheme.textSecondary)),
+                    Text('$_needsWork',
+                        style: const TextStyle(
+                            fontSize: 36, fontWeight: FontWeight.w900, color: AppTheme.dangerRed)),
+                    const Text('Needs Work',
+                        style: TextStyle(fontSize: 13, color: AppTheme.textSecondary)),
                   ],
                 ),
               ],
@@ -71,9 +82,16 @@ class _FlashcardViewState extends State<FlashcardView> {
           ],
         ),
         actions: [
-          TextButton(
-            onPressed: () { Navigator.of(ctx).pop(); Navigator.of(context).pop(); },
-            child: const Text('Done'),
+          SizedBox(
+            width: double.infinity,
+            child: TextButton(
+              onPressed: () {
+                Navigator.of(ctx).pop();
+                Navigator.of(context).pop();
+              },
+              style: TextButton.styleFrom(foregroundColor: AppTheme.accent),
+              child: const Text('Done', style: TextStyle(fontWeight: FontWeight.w700)),
+            ),
           ),
         ],
       ),
@@ -83,7 +101,9 @@ class _FlashcardViewState extends State<FlashcardView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppTheme.background,
       appBar: AppBar(
+        backgroundColor: AppTheme.background,
         title: Text(widget.title),
         actions: [
           Center(
@@ -91,7 +111,11 @@ class _FlashcardViewState extends State<FlashcardView> {
               padding: const EdgeInsets.only(right: 16),
               child: Text(
                 '${_currentIndex + 1}/${widget.cards.length}',
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: AppTheme.textSecondary,
+                ),
               ),
             ),
           ),
@@ -106,9 +130,9 @@ class _FlashcardViewState extends State<FlashcardView> {
               borderRadius: BorderRadius.circular(4),
               child: LinearProgressIndicator(
                 value: (_currentIndex + 1) / widget.cards.length,
-                backgroundColor: Colors.grey.shade200,
-                valueColor: const AlwaysStoppedAnimation(AppTheme.accentTeal),
-                minHeight: 6,
+                backgroundColor: AppTheme.border,
+                valueColor: const AlwaysStoppedAnimation(AppTheme.accent),
+                minHeight: 4,
               ),
             ),
             const SizedBox(height: 24),
@@ -123,17 +147,22 @@ class _FlashcardViewState extends State<FlashcardView> {
                     width: double.infinity,
                     padding: const EdgeInsets.all(28),
                     decoration: BoxDecoration(
-                      color: _showBack ? const Color(0xFFF0FDFA) : Colors.white,
+                      color: _showBack ? AppTheme.surfaceElevated : AppTheme.surface,
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        color: _showBack ? AppTheme.accentTeal.withValues(alpha: 0.4) : Colors.grey.shade200,
-                        width: 2,
+                        color: _showBack
+                            ? AppTheme.accentAmber.withValues(alpha: 0.4)
+                            : AppTheme.border,
+                        width: 1.5,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.06),
-                          blurRadius: 16,
-                          offset: const Offset(0, 6),
+                          color: (_showBack
+                                  ? AppTheme.accentAmber
+                                  : AppTheme.accent)
+                              .withValues(alpha: 0.08),
+                          blurRadius: 20,
+                          offset: const Offset(0, 8),
                         ),
                       ],
                     ),
@@ -146,7 +175,7 @@ class _FlashcardViewState extends State<FlashcardView> {
                             fontSize: 11,
                             fontWeight: FontWeight.w700,
                             letterSpacing: 1.5,
-                            color: _showBack ? AppTheme.accentTeal : AppTheme.textSecondary,
+                            color: _showBack ? AppTheme.accentAmber : AppTheme.accent,
                           ),
                         ),
                         const SizedBox(height: 20),
@@ -162,9 +191,9 @@ class _FlashcardViewState extends State<FlashcardView> {
                         ),
                         if (!_showBack) ...[
                           const SizedBox(height: 24),
-                          Text(
+                          const Text(
                             'Tap to reveal answer',
-                            style: TextStyle(fontSize: 13, color: Colors.grey.shade400),
+                            style: TextStyle(fontSize: 13, color: AppTheme.textSecondary),
                           ),
                         ],
                       ],

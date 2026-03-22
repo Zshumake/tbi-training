@@ -13,7 +13,9 @@ class TBITrainingApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'TBI Training',
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.darkTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       home: const HomeScreen(),
     );

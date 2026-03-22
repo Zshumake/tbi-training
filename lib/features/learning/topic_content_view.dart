@@ -13,13 +13,25 @@ class TopicContentView extends StatelessWidget {
       length: topicData.tabs.length,
       child: Column(
         children: [
-          TabBar(
-            isScrollable: topicData.tabs.length > 3,
-            labelColor: AppTheme.primaryNavy,
-            unselectedLabelColor: AppTheme.textSecondary,
-            indicatorColor: AppTheme.accentTeal,
-            indicatorWeight: 3,
-            tabs: topicData.tabs.map((t) => Tab(text: t.title)).toList(),
+          Container(
+            color: AppTheme.surface,
+            child: TabBar(
+              isScrollable: topicData.tabs.length > 3,
+              labelColor: AppTheme.accent,
+              unselectedLabelColor: AppTheme.textSecondary,
+              indicatorColor: AppTheme.accent,
+              indicatorWeight: 3,
+              dividerColor: AppTheme.border,
+              labelStyle: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+              ),
+              unselectedLabelStyle: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+              ),
+              tabs: topicData.tabs.map((t) => Tab(text: t.title)).toList(),
+            ),
           ),
           Expanded(
             child: TabBarView(
@@ -56,14 +68,28 @@ class TopicContentView extends StatelessWidget {
   Widget _buildHeader(HeaderBlock block) {
     return Padding(
       padding: const EdgeInsets.only(top: 24, bottom: 12),
-      child: Text(
-        block.title,
-        style: const TextStyle(
-          fontSize: 22,
-          fontWeight: FontWeight.w800,
-          color: AppTheme.primaryNavy,
-          letterSpacing: -0.5,
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            block.title,
+            style: const TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textPrimary,
+              letterSpacing: -0.5,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Container(
+            width: 40,
+            height: 2,
+            decoration: BoxDecoration(
+              color: AppTheme.accent,
+              borderRadius: BorderRadius.circular(1),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -105,7 +131,7 @@ class TopicContentView extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
-                    color: Color(0xFF92400E),
+                    color: AppTheme.accentAmber,
                   ),
                 ),
               ),
@@ -114,10 +140,10 @@ class TopicContentView extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             block.text,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 13,
               height: 1.5,
-              color: Color(0xFF78350F),
+              color: AppTheme.accentAmber.withValues(alpha: 0.85),
             ),
           ),
         ],
@@ -130,9 +156,9 @@ class TopicContentView extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: block.backgroundColor,
+        color: AppTheme.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: block.themeColor.withValues(alpha: 0.3)),
+        border: Border.all(color: block.themeColor.withValues(alpha: 0.4)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,7 +190,11 @@ class TopicContentView extends StatelessWidget {
                     Expanded(
                       child: Text(
                         point,
-                        style: const TextStyle(fontSize: 13, height: 1.5),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          height: 1.5,
+                          color: AppTheme.textPrimary,
+                        ),
                       ),
                     ),
                   ],
@@ -180,7 +210,7 @@ class TopicContentView extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.grey.shade300),
+        border: Border.all(color: AppTheme.border),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -190,7 +220,7 @@ class TopicContentView extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: block.headerColor ?? AppTheme.primaryNavy,
+                color: block.headerColor ?? AppTheme.accent,
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(11),
                   topRight: Radius.circular(11),
@@ -213,7 +243,7 @@ class TopicContentView extends StatelessWidget {
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: DataTable(
-                headingRowColor: WidgetStateProperty.all(Colors.grey.shade100),
+                headingRowColor: WidgetStateProperty.all(AppTheme.surfaceElevated),
                 columnSpacing: 16,
                 horizontalMargin: 12,
                 headingTextStyle: const TextStyle(
@@ -227,16 +257,19 @@ class TopicContentView extends StatelessWidget {
                   height: 1.3,
                 ),
                 columns: block.columns.map((c) => DataColumn(label: Text(c))).toList(),
-                rows: block.rows.map((row) {
+                rows: List.generate(block.rows.length, (rowIndex) {
                   return DataRow(
-                    cells: row.map((cell) => DataCell(
+                    color: WidgetStateProperty.all(
+                      rowIndex.isEven ? AppTheme.surface : AppTheme.surfaceElevated,
+                    ),
+                    cells: block.rows[rowIndex].map((cell) => DataCell(
                       ConstrainedBox(
                         constraints: const BoxConstraints(maxWidth: 180),
                         child: Text(cell),
                       ),
                     )).toList(),
                   );
-                }).toList(),
+                }),
               ),
             ),
           ),
@@ -266,7 +299,7 @@ class TopicContentView extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w700,
-                  color: Color(0xFF5B21B6),
+                  color: AppTheme.mnemonicBorder,
                 ),
               ),
             ],
@@ -274,19 +307,19 @@ class TopicContentView extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             block.mnemonic,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.w800,
-              color: Color(0xFF4C1D95),
+              color: AppTheme.mnemonicBorder.withValues(alpha: 0.9),
             ),
           ),
           const SizedBox(height: 6),
           Text(
             block.explanation,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 13,
               height: 1.4,
-              color: Color(0xFF6D28D9),
+              color: AppTheme.mnemonicBorder.withValues(alpha: 0.75),
             ),
           ),
         ],
@@ -308,7 +341,7 @@ class TopicContentView extends StatelessWidget {
                   width: 28,
                   height: 28,
                   decoration: BoxDecoration(
-                    color: AppTheme.accentTeal.withValues(alpha: 0.12),
+                    color: AppTheme.accent.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   alignment: Alignment.center,
@@ -317,7 +350,7 @@ class TopicContentView extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
-                      color: AppTheme.accentTeal,
+                      color: AppTheme.accent,
                     ),
                   ),
                 ),
@@ -325,7 +358,11 @@ class TopicContentView extends StatelessWidget {
                 Expanded(
                   child: Text(
                     item.value,
-                    style: const TextStyle(fontSize: 13, height: 1.5),
+                    style: const TextStyle(
+                      fontSize: 13,
+                      height: 1.5,
+                      color: AppTheme.textPrimary,
+                    ),
                   ),
                 ),
               ],
@@ -337,8 +374,12 @@ class TopicContentView extends StatelessWidget {
   }
 
   Widget _buildMedicationCard(MedicationCardBlock block) {
-    final borderColor = block.isAvoid ? AppTheme.avoidBorder : AppTheme.accentTeal;
-    final bgColor = block.isAvoid ? AppTheme.avoidBackground : const Color(0xFFF0FDFA);
+    final isAvoid = block.isAvoid;
+    final borderColor = isAvoid ? AppTheme.avoidBorder : AppTheme.accent;
+    final bgColor = isAvoid ? AppTheme.avoidBackground : const Color(0xFF182A2A);
+    final tintColor = isAvoid
+        ? AppTheme.avoidBorder.withValues(alpha: 0.85)
+        : AppTheme.accent.withValues(alpha: 0.85);
 
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 6),
@@ -354,7 +395,7 @@ class TopicContentView extends StatelessWidget {
           Row(
             children: [
               Icon(
-                block.isAvoid ? Icons.do_not_disturb_rounded : Icons.check_circle_rounded,
+                isAvoid ? Icons.do_not_disturb_rounded : Icons.check_circle_rounded,
                 color: borderColor,
                 size: 18,
               ),
@@ -365,19 +406,23 @@ class TopicContentView extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
-                    color: borderColor,
+                    color: tintColor,
                   ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 6),
-          Text('Mechanism: ${block.mechanism}', style: const TextStyle(fontSize: 12, height: 1.4)),
-          Text('Indication: ${block.indication}', style: const TextStyle(fontSize: 12, height: 1.4)),
+          Text('Mechanism: ${block.mechanism}',
+              style: const TextStyle(fontSize: 12, height: 1.4, color: AppTheme.textSecondary)),
+          Text('Indication: ${block.indication}',
+              style: const TextStyle(fontSize: 12, height: 1.4, color: AppTheme.textSecondary)),
           if (block.dosing.isNotEmpty)
-            Text('Dosing: ${block.dosing}', style: const TextStyle(fontSize: 12, height: 1.4)),
+            Text('Dosing: ${block.dosing}',
+                style: const TextStyle(fontSize: 12, height: 1.4, color: AppTheme.textSecondary)),
           if (block.sideEffects.isNotEmpty)
-            Text('Side Effects: ${block.sideEffects}', style: const TextStyle(fontSize: 12, height: 1.4)),
+            Text('Side Effects: ${block.sideEffects}',
+                style: const TextStyle(fontSize: 12, height: 1.4, color: AppTheme.textSecondary)),
           if (block.boardPearl.isNotEmpty) ...[
             const SizedBox(height: 6),
             Text(
@@ -386,7 +431,7 @@ class TopicContentView extends StatelessWidget {
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
                 fontStyle: FontStyle.italic,
-                color: borderColor,
+                color: tintColor,
               ),
             ),
           ],
@@ -400,9 +445,9 @@ class TopicContentView extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: block.backgroundColor,
+        color: AppTheme.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: block.themeColor.withValues(alpha: 0.3)),
+        border: Border.all(color: block.themeColor.withValues(alpha: 0.4)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -422,15 +467,20 @@ class TopicContentView extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 8),
-          Text(block.description, style: const TextStyle(fontSize: 13, height: 1.4)),
+          Text(block.description,
+              style: const TextStyle(fontSize: 13, height: 1.4, color: AppTheme.textPrimary)),
           const SizedBox(height: 8),
           ...block.keyPoints.map((p) => Padding(
                 padding: const EdgeInsets.only(bottom: 4),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('• ', style: TextStyle(color: block.themeColor, fontWeight: FontWeight.bold)),
-                    Expanded(child: Text(p, style: const TextStyle(fontSize: 12, height: 1.4))),
+                    Text('- ', style: TextStyle(color: block.themeColor, fontWeight: FontWeight.bold)),
+                    Expanded(
+                      child: Text(p,
+                          style: const TextStyle(
+                              fontSize: 12, height: 1.4, color: AppTheme.textSecondary)),
+                    ),
                   ],
                 ),
               )),
@@ -443,8 +493,9 @@ class TopicContentView extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 8),
       decoration: BoxDecoration(
+        color: AppTheme.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.accentTeal.withValues(alpha: 0.3)),
+        border: Border.all(color: AppTheme.border),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -453,7 +504,7 @@ class TopicContentView extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: AppTheme.accentTeal.withValues(alpha: 0.1),
+              color: AppTheme.accent.withValues(alpha: 0.15),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(11),
                 topRight: Radius.circular(11),
@@ -467,7 +518,7 @@ class TopicContentView extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w700,
-                    color: AppTheme.accentTeal,
+                    color: AppTheme.accent,
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -483,28 +534,40 @@ class TopicContentView extends StatelessWidget {
             child: DataTable(
               columnSpacing: 16,
               horizontalMargin: 12,
-              headingTextStyle: const TextStyle(fontWeight: FontWeight.w700, fontSize: 11),
-              dataTextStyle: const TextStyle(fontSize: 11, height: 1.3),
+              headingRowColor: WidgetStateProperty.all(AppTheme.surfaceElevated),
+              headingTextStyle: const TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 11,
+                color: AppTheme.textPrimary,
+              ),
+              dataTextStyle: const TextStyle(
+                fontSize: 11,
+                height: 1.3,
+                color: AppTheme.textPrimary,
+              ),
               columns: block.columns.map((c) => DataColumn(label: Text(c))).toList(),
-              rows: block.rows.map((row) {
+              rows: List.generate(block.rows.length, (rowIndex) {
                 return DataRow(
-                  cells: row.map((cell) => DataCell(
+                  color: WidgetStateProperty.all(
+                    rowIndex.isEven ? AppTheme.surface : AppTheme.surfaceElevated,
+                  ),
+                  cells: block.rows[rowIndex].map((cell) => DataCell(
                     ConstrainedBox(
                       constraints: const BoxConstraints(maxWidth: 160),
                       child: Text(cell),
                     ),
                   )).toList(),
                 );
-              }).toList(),
+              }),
             ),
           ),
           if (block.boardPearl != null)
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppTheme.pearlBackground,
-                borderRadius: const BorderRadius.only(
+                borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(11),
                   bottomRight: Radius.circular(11),
                 ),
@@ -515,7 +578,7 @@ class TopicContentView extends StatelessWidget {
                   fontSize: 11,
                   fontWeight: FontWeight.w600,
                   fontStyle: FontStyle.italic,
-                  color: Color(0xFF92400E),
+                  color: AppTheme.accentAmber,
                 ),
               ),
             ),

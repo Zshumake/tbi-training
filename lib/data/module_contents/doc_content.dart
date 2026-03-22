@@ -143,6 +143,104 @@ final TopicData docContent = TopicData(
             'Must be excluded before diagnosing VS -- failure to recognize LIS is a devastating diagnostic error',
           ],
         ),
+        HeaderBlock('Cognitive Motor Dissociation (CMD): Covert Consciousness'),
+        TextBlock(
+          'Cognitive motor dissociation (CMD) describes patients who demonstrate brain activation on task-based fMRI or EEG (indicating awareness and command comprehension) WITHOUT any behavioral evidence of command-following at the bedside. These patients appear unresponsive but are covertly conscious. CMD has transformed the understanding of DOC and has major prognostic and ethical implications.',
+          isIntro: true,
+        ),
+        BulletCardBlock(
+          title: 'Claassen et al. NEJM 2019 — Detection in Acute Brain Injury',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Study: 104 patients with acute brain injury assessed with EEG-based motor imagery paradigms in the ICU',
+            '15% of clinically unresponsive patients showed EEG evidence of brain activation to spoken motor commands',
+            'EEG paradigm: Patients asked to "keep opening and closing your right hand" — brain activation detected by machine learning algorithms analyzing EEG patterns',
+            'Patients with CMD had BETTER functional outcomes at 12 months than those without CMD',
+            'Key implication: CMD assessment in the ICU may influence decisions about withdrawal of life-sustaining treatment',
+          ],
+        ),
+        BulletCardBlock(
+          title: 'Claassen et al. NEJM 2024 — Landmark Multicenter Study',
+          themeColor: const Color(0xFF2563EB),
+          backgroundColor: const Color(0xFFEFF6FF),
+          points: [
+            'Largest CMD study to date: 241 patients with DOC assessed with task-based fMRI and/or EEG across 6 international centers',
+            '25% of behaviorally unresponsive patients demonstrated CMD (covert awareness)',
+            'Detection methods: 11 detected by fMRI only, 13 by EEG only, 36 by BOTH modalities',
+            'CMD was more common in: younger patients, traumatic (vs anoxic) etiology, longer time since injury',
+            '38% of patients WITH behavioral command-following also showed task-based brain activation (confirmatory)',
+            'Implication: 1 in 4 apparently unresponsive brain-injured patients may be covertly conscious',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: CMD and Clinical Decision-Making',
+          'CMD occurs in approximately 15-25% of patients who appear behaviorally unresponsive. Detection requires task-based fMRI ("imagine playing tennis" or "imagine walking through your house") or EEG motor imagery paradigms. CMD patients have BETTER prognosis than non-CMD patients at the same behavioral level. This has profound implications for withdrawal-of-care decisions: a patient diagnosed as VS on behavioral exam may actually be covertly aware. The AAN/ACRM 2018 guidelines recommend considering advanced neuroimaging/electrophysiology when available.',
+        ),
+        HeaderBlock('AAN/ACRM/NIDILRR Practice Guidelines (2018)'),
+        TextBlock(
+          'The 2018 joint guidelines from AAN, ACRM, and NIDILRR updated the 1995 Multi-Society Task Force report. They provide evidence-based recommendations for diagnosis, prognosis, and treatment of prolonged DOC. These are the current standard-of-care guidelines tested on board exams.',
+        ),
+        BulletCardBlock(
+          title: 'Key Guideline Recommendations',
+          themeColor: const Color(0xFF059669),
+          backgroundColor: const Color(0xFFF0FDF4),
+          points: [
+            'Level B: Use standardized neurobehavioral assessment tools (CRS-R recommended) to improve diagnostic accuracy over clinical impression alone',
+            'Level B: Perform SERIAL standardized assessments, especially in the first 3 months post-injury, to account for fluctuating consciousness',
+            'Minimum 5 evaluations recommended (Wannez et al. 2017) — single assessments miss up to 40% of MCS patients',
+            'Level B: Identify and treat confounders that may suppress behavioral responses (sedating medications, pain, infection, metabolic derangements, subclinical seizures)',
+            'Level B: Amantadine 100-200 mg BID for patients in VS or MCS 4-16 weeks post-TBI (Giacino 2012 trial)',
+            'Assess across multiple times of day to capture peak arousal',
+            'Consider advanced neuroimaging (fMRI, PET) when behavioral assessments are inconclusive and when results may affect treatment decisions',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: The "5 Assessment" Rule',
+          'Wannez et al. (2017) demonstrated that at least 5 CRS-R assessments are needed to achieve optimal diagnostic sensitivity. A single CRS-R assessment misses approximately 36% of patients who are actually in MCS. The false-negative rate drops to <5% with 5 or more assessments across different times of day. This finding underlies the AAN/ACRM recommendation for serial assessments and is board-testable.',
+        ),
+        HeaderBlock('Prognostic Biomarkers in DOC'),
+        TableBlock(
+          title: 'Electrophysiologic and Neuroimaging Prognostic Markers',
+          columns: ['Modality', 'Finding', 'Prognostic Significance'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'SSEP (N20)',
+              'Bilateral ABSENCE of cortical N20 response',
+              'Most reliable predictor of non-recovery in ANOXIC injury (near 0% false positive rate). Less reliable in traumatic DOC where recovery despite absent N20 has been reported.',
+            ],
+            [
+              'EEG Reactivity',
+              'Presence of EEG background reactivity to external stimuli',
+              'EEG reactivity present = favorable sign for recovery. Absent reactivity with suppressed/flat background = poor prognosis. Sleep spindles on EEG associated with better outcomes.',
+            ],
+            [
+              'MRI (Structural)',
+              'Extent of corpus callosum/brainstem/thalamic injury',
+              'Diffuse axonal injury severity on MRI correlates with DOC duration. Brainstem and bilateral thalamic lesions = worst prognosis.',
+            ],
+            [
+              'DTI (Diffusion Tensor Imaging)',
+              'Fractional anisotropy (FA) in white matter tracts',
+              'Reduced FA in corpus callosum, thalamocortical tracts, and ascending reticular activating system correlates with poorer consciousness recovery.',
+            ],
+            [
+              'FDG-PET',
+              'Global cortical metabolic rate',
+              'Cortical metabolism >42% of normal associated with MCS; <42% associated with VS. Best single neuroimaging predictor of consciousness level.',
+            ],
+            [
+              'fMRI (Task-based)',
+              'Brain activation to motor imagery or spatial navigation commands',
+              'Detects CMD (covert awareness) in 15-25% of behaviorally unresponsive patients. Presence predicts better functional outcome.',
+            ],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: N20 SSEP — Etiology Matters',
+          'Bilateral absence of cortical N20 SSEP has near-100% specificity for poor outcome (death or VS) in post-ANOXIC injury. However, in TRAUMATIC DOC, absent N20 is less reliable — recovery of consciousness has been reported despite bilaterally absent N20. This is because traumatic DOC involves focal white matter injury rather than global cortical necrosis. Always specify the etiology when interpreting SSEP prognostic data.',
+        ),
       ],
     ),
     TopicTab(
@@ -357,6 +455,113 @@ final TopicData docContent = TopicData(
         PearlBlock(
           'Board Pearl: The Zolpidem Paradox',
           'The zolpidem paradox is frequently tested. A GABA-A modulator (normally a sedative) paradoxically improves consciousness in a small subset (6-7%) of DOC patients. The proposed mechanism involves GABAergic inhibition of overactive inhibitory globus pallidus neurons, leading to disinhibition of the thalamus and restoration of thalamocortical signaling. The effect is transient (1-4 hours per dose) and not all patients respond. A zolpidem challenge is sometimes performed as a diagnostic/therapeutic trial.',
+        ),
+        HeaderBlock('Emerging Neuromodulation Therapies: Evidence Summary'),
+        TableBlock(
+          title: 'Neuromodulation for DOC — Key Studies and Evidence',
+          columns: ['Therapy', 'Investigators', 'Target', 'Evidence Level', 'Key Findings'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'tDCS (Transcranial Direct Current Stimulation)',
+              'Thibaut et al. (2014, 2017)',
+              'Left DLPFC (dorsolateral prefrontal cortex)',
+              'Class II (sham-controlled crossover)',
+              'Significant CRS-R improvement in MCS patients but NOT VS patients. Effect did not persist at 1-year follow-up. 2 mA for 20 min, 5 consecutive days. Safe and non-invasive.',
+            ],
+            [
+              'LIFU (Low-Intensity Focused Ultrasound)',
+              'Monti et al. (UCLA, 2016+)',
+              'Thalamus (central lateral nucleus)',
+              'Case series/Pilot studies',
+              'Non-invasive deep brain stimulation via acoustic energy. Monti (2016): dramatic recovery in single chronic DOC patient after thalamic LIFU. Can penetrate skull to reach deep targets. Larger trials underway.',
+            ],
+            [
+              'DBS (Deep Brain Stimulation)',
+              'Schiff et al. (2007)',
+              'Central thalamus (intralaminar nuclei)',
+              'Single case study (NEJM)',
+              'Bilateral thalamic DBS in MCS patient 6 years post-injury produced reproducible improvements in arousal, communication, and limb movement. Highly invasive, requires surgical implantation. Remains experimental.',
+            ],
+            [
+              'Vagus Nerve Stimulation (VNS)',
+              'Corazzol et al. (2017)',
+              'Left vagus nerve',
+              'Single case study (Current Biology)',
+              'VS patient 15 years post-injury showed improvement to MCS after VNS. Enhanced EEG theta power and increased metabolic activity on PET. Less invasive than DBS.',
+            ],
+            [
+              'Median Nerve Stimulation',
+              'Various investigators',
+              'Median nerve at wrist (peripheral)',
+              'Small RCTs',
+              'May accelerate emergence from coma via ascending reticular activating system. Non-invasive and low-cost. Evidence limited but supportive of early arousal facilitation.',
+            ],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: tDCS in DOC',
+          'Thibaut et al. demonstrated that tDCS applied to the LEFT DLPFC improves CRS-R scores in MCS patients but NOT in VS patients. This differential response supports the concept that MCS patients have preserved but dysfunctional thalamocortical networks that can be augmented, while VS patients lack the neural substrate to respond. The left DLPFC target and MCS-specific efficacy are testable details.',
+        ),
+        PearlBlock(
+          'Board Pearl: LIFU vs DBS for DOC',
+          'LIFU (Monti, UCLA) offers NON-INVASIVE deep brain stimulation with high spatial precision targeting the thalamus. DBS (Schiff, 2007) achieves the same thalamic target but requires INVASIVE surgical electrode implantation. Both target central thalamic structures to restore thalamocortical connectivity. LIFU is the more promising emerging technology because it combines deep targeting with non-invasiveness. DBS remains the proof-of-concept that thalamic stimulation can improve consciousness in DOC.',
+        ),
+        HeaderBlock('Legal and Ethical Framework in DOC'),
+        TextBlock(
+          'Disorders of consciousness raise unique medicolegal challenges. The intersection of clinical uncertainty (30-40% misdiagnosis rate), prognostic limitations, and life-sustaining treatment decisions makes this a high-stakes ethical domain tested on board exams.',
+        ),
+        BulletCardBlock(
+          title: 'Key Legal Precedents',
+          themeColor: const Color(0xFF1B2A4A),
+          backgroundColor: const Color(0xFFF1F5F9),
+          points: [
+            'Quinlan (1976, NJ): First case establishing right to withdraw ventilator in VS. Court ruled that the right to privacy extends to decisions about life-sustaining treatment for incapacitated patients.',
+            'Cruzan (1990, US Supreme Court): Established the requirement for CLEAR AND CONVINCING evidence of patient wishes before withdrawing nutrition/hydration. States may impose this evidentiary standard.',
+            'Schiavo (1998-2005, FL): 15-year VS after anoxic injury. Prolonged legal battle between husband (substitute judgment — she would not want to live this way) and parents (best interest — continued care). Highlighted importance of written advance directives.',
+            'Key legal lesson: Written advance directives are extremely difficult to overturn. Oral statements require clear and convincing evidence. The Schiavo case would likely not have occurred if Terri had a written living will.',
+          ],
+        ),
+        TableBlock(
+          title: 'Surrogate Decision-Making Standards',
+          columns: ['Standard', 'Definition', 'When Applied', 'Strength'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'Expressed Wishes',
+              'Patient\'s own written advance directive or clear oral statements',
+              'Patient previously documented or clearly stated preferences',
+              'STRONGEST -- most legally protected; very difficult to override',
+            ],
+            [
+              'Substituted Judgment',
+              'What would THIS patient have wanted based on their known values, beliefs, and prior statements?',
+              'Patient did not leave explicit directive but there is knowledge of their values',
+              'Moderate -- requires evidence of patient\'s values; subject to dispute',
+            ],
+            [
+              'Best Interest',
+              'What would a reasonable person want in this situation? Weighing burdens vs benefits of treatment.',
+              'No knowledge of patient\'s wishes or values is available',
+              'WEAKEST -- most subjective; used as default when no other information exists',
+            ],
+          ],
+        ),
+        BulletCardBlock(
+          title: 'POLST vs Advance Directive in DOC',
+          themeColor: const Color(0xFF059669),
+          backgroundColor: const Color(0xFFF0FDF4),
+          points: [
+            'Advance Directive (Living Will): Completed by patient when competent; describes general wishes about life-sustaining treatment; does NOT require physician signature; may be vague or not applicable to specific clinical scenarios',
+            'POLST (Physician Orders for Life-Sustaining Treatment): Completed WITH physician; generates ACTIONABLE medical orders (DNR, comfort care, antibiotics, feeding); brightly colored form that travels with the patient; more specific than advance directive',
+            'Healthcare Proxy/Durable Power of Attorney for Health Care: Designates a SPECIFIC PERSON to make decisions; the surrogate uses substituted judgment or best interest standard',
+            'In DOC specifically: The distinction between VS and MCS has legal significance — some state statutes (e.g., Florida) specify "persistent vegetative state" for withdrawal of nutrition/hydration but do NOT address MCS',
+            'CMD raises new ethical dilemmas: If a patient is covertly aware (CMD), withdrawal of life-sustaining treatment raises different ethical considerations than if the patient is truly unaware',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Legal Implications of CMD',
+          'The discovery of cognitive motor dissociation (CMD) has disrupted established ethical frameworks for DOC. If 25% of behaviorally unresponsive patients are covertly aware, decisions to withdraw life-sustaining treatment based on behavioral assessment alone may be ethically insufficient. The AAN/ACRM 2018 guidelines recommend considering advanced neuroimaging when results may affect treatment decisions. Expect board questions that test the intersection of CMD, prognostication, and withdrawal-of-care ethics.',
         ),
       ],
     ),

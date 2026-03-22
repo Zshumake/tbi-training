@@ -16,6 +16,7 @@ import '../../data/module_contents/pediatric_geriatric_content.dart';
 import '../../data/module_contents/rehab_continuum_content.dart';
 import 'topic_content_view.dart';
 import '../../data/models/topic_content_model.dart';
+import '../../core/theme/app_theme.dart';
 
 class ModuleContentScreen extends StatelessWidget {
   final ModuleModel module;
@@ -57,21 +58,74 @@ class ModuleContentScreen extends StatelessWidget {
     }
   }
 
+  Color _getModuleColor() {
+    switch (module.id) {
+      case 'tbi-fundamentals':
+        return AppTheme.fundamentalsColor;
+      case 'pathophysiology':
+        return AppTheme.pathophysColor;
+      case 'classification-severity':
+        return AppTheme.classificationColor;
+      case 'neuroimaging':
+        return AppTheme.imagingColor;
+      case 'acute-management':
+        return AppTheme.acuteColor;
+      case 'disorders-of-consciousness':
+        return AppTheme.docColor;
+      case 'medical-complications':
+        return AppTheme.complicationsColor;
+      case 'pharmacology':
+        return AppTheme.pharmacologyColor;
+      case 'agitation-behavioral':
+        return AppTheme.agitationColor;
+      case 'spasticity-motor':
+        return AppTheme.spasticityColor;
+      case 'neuroendocrine':
+        return AppTheme.neuroendocrineColor;
+      case 'concussion-mtbi':
+        return AppTheme.concussionColor;
+      case 'pediatric-geriatric':
+        return AppTheme.pediatricColor;
+      case 'rehab-continuum':
+        return AppTheme.rehabColor;
+      default:
+        return AppTheme.accent;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final topicData = _getTopicData();
+    final moduleColor = _getModuleColor();
 
     return Scaffold(
+      backgroundColor: AppTheme.background,
       appBar: AppBar(
+        backgroundColor: AppTheme.background,
         title: Text(module.title),
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(3),
+          child: Container(
+            height: 3,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  moduleColor.withValues(alpha: 0.0),
+                  moduleColor,
+                  moduleColor.withValues(alpha: 0.0),
+                ],
+              ),
+            ),
+          ),
+        ),
       ),
       body: topicData != null
           ? TopicContentView(topicData: topicData)
-          : _buildComingSoon(),
+          : _buildComingSoon(moduleColor),
     );
   }
 
-  Widget _buildComingSoon() {
+  Widget _buildComingSoon(Color moduleColor) {
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -81,7 +135,7 @@ class ModuleContentScreen extends StatelessWidget {
             Icon(
               Icons.construction_rounded,
               size: 64,
-              color: Colors.grey.shade400,
+              color: moduleColor.withValues(alpha: 0.5),
             ),
             const SizedBox(height: 16),
             Text(
@@ -89,23 +143,24 @@ class ModuleContentScreen extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w700,
+                color: AppTheme.textPrimary,
               ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
-            Text(
+            const Text(
               'Content coming soon!',
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.grey.shade600,
+                color: AppTheme.textSecondary,
               ),
             ),
             const SizedBox(height: 4),
             Text(
               module.description,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 14,
-                color: Colors.grey.shade500,
+                color: AppTheme.textSecondary,
               ),
               textAlign: TextAlign.center,
             ),
