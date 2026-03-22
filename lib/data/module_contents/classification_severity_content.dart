@@ -1,0 +1,453 @@
+import 'package:flutter/material.dart';
+import '../models/topic_content_model.dart';
+
+final TopicData classificationSeverityContent = TopicData(
+  id: 'classification-severity',
+  title: 'Classification & Severity Scales',
+  tabs: [
+    TopicTab(
+      title: 'Acute Scales',
+      blocks: [
+        HeaderBlock('Glasgow Coma Scale (GCS)'),
+        TextBlock(
+          'The GCS is the most widely used acute severity classification tool for TBI. It assesses three domains: Eye opening (1-4), Verbal response (1-5), and Motor response (1-6), yielding a total score of 3-15. The motor component is the single best prognostic predictor within the GCS.',
+          isIntro: true,
+        ),
+        TableBlock(
+          title: 'GCS: Eye Opening (E)',
+          columns: ['Score', 'Response'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['4', 'Spontaneous eye opening'],
+            ['3', 'Eye opening to voice (command)'],
+            ['2', 'Eye opening to pain (pressure)'],
+            ['1', 'No eye opening'],
+          ],
+        ),
+        TableBlock(
+          title: 'GCS: Verbal Response (V)',
+          columns: ['Score', 'Response'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['5', 'Oriented (knows who, where, when)'],
+            ['4', 'Confused (speaks in sentences but disoriented)'],
+            ['3', 'Inappropriate words (random/exclamatory words, no sustained conversation)'],
+            ['2', 'Incomprehensible sounds (moaning, groaning, no words)'],
+            ['1', 'None'],
+          ],
+        ),
+        TableBlock(
+          title: 'GCS: Motor Response (M)',
+          columns: ['Score', 'Response', 'Clinical Significance'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['6', 'Obeys commands', 'Best response; intact cortical function'],
+            ['5', 'Localizes pain (reaches toward stimulus, crosses midline)', 'Purposeful response; cortical involvement'],
+            ['4', 'Withdrawal (flexion) -- normal flexion away from pain', 'Spinal reflex level response'],
+            ['3', 'Abnormal flexion (decorticate) -- stereotypical arm flexion, wrist flexion, adduction', 'Lesion above red nucleus (cortical/subcortical); BETTER prognosis than decerebrate'],
+            ['2', 'Extension (decerebrate) -- arm extension, internal rotation, wrist pronation', 'Lesion below red nucleus (brainstem); WORSE prognosis'],
+            ['1', 'None', 'No motor response to any stimulus'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: GCS Severity Classification',
+          'Mild TBI: GCS 13-15. Moderate TBI: GCS 9-12. Severe TBI: GCS 3-8 (defines coma). The BEST MOTOR response at 2 weeks post-injury is the strongest single prognostic indicator on GCS. Remember: GCS should be assessed AFTER resuscitation, not during acute hemodynamic instability.',
+        ),
+        MnemonicBlock(
+          'Decorticate vs Decerebrate: "COR = Core = Heart"',
+          'DeCORticate = COR = arms flex toward the CORe (heart). This is a higher-level lesion (above red nucleus) with BETTER prognosis. DeceREBRate = arms Extend (Rigidly). This is a lower-level lesion (brainstem) with WORSE prognosis.',
+        ),
+        PearlBlock(
+          'Board Pearl: GCS Limitations',
+          'The GCS cannot assess verbal response in intubated patients (report as "VT" or use the motor score alone). It does not assess brainstem reflexes. It has significant inter-rater variability, especially for motor scoring. Sedation, paralysis, and alcohol/drugs confound the score. These limitations led to development of the FOUR Score.',
+        ),
+        PearlBlock(
+          'Board Pearl: GCS-Pupils Score (GCS-P)',
+          'GCS-P = GCS minus Pupil Reactivity Score (PRS). PRS: 0 = both reactive, 1 = one nonreactive, 2 = both nonreactive. GCS-P range: 1-15. In the IMPACT database, GCS-P predicted 74% of deaths vs 51% with GCS alone. The GCS-P provides stronger prognostic discrimination than GCS total score, particularly at the severe end of the spectrum.',
+        ),
+        BulletCardBlock(
+          title: 'GCS Confounders',
+          themeColor: const Color(0xFFEA580C),
+          backgroundColor: const Color(0xFFFFF7ED),
+          points: [
+            'Intubation: Verbal component cannot be assessed; reported with "T" suffix (e.g., "3T+5"); reduces to a 2-component scale (Eye + Motor)',
+            'Sedation: Average 1.7-point depression of GCS score; must document timing relative to sedation administration',
+            'Alcohol intoxication: Confounds all three GCS components; artificially lowers scores; reassess after metabolism',
+            'Polysubstance use: Opioids, benzodiazepines, and stimulants each affect GCS differently; toxicology screen essential for interpretation',
+          ],
+        ),
+        HeaderBlock('Blood Biomarkers in Acute TBI'),
+        TextBlock(
+          'Blood-based biomarkers are emerging as objective tools for acute TBI triage, with the potential to reduce unnecessary CT scans and improve diagnostic accuracy.',
+        ),
+        BulletCardBlock(
+          title: 'FDA-Cleared and Emerging Biomarkers',
+          themeColor: const Color(0xFF3B82F6),
+          backgroundColor: const Color(0xFFEFF6FF),
+          points: [
+            'GFAP (Glial Fibrillary Acidic Protein): Astrocyte marker; cutoff <30 pg/mL; elevated within 1 hour of injury',
+            'UCH-L1 (Ubiquitin C-terminal Hydrolase L1): Neuronal marker; cutoff <360 pg/mL; peaks at 8 hours',
+            'GFAP + UCH-L1 combined: FDA-cleared (2018, Banyan BTI); AUC 0.94 for detecting intracranial lesions on CT; NPV 99.3%',
+            'Projected 40% reduction in unnecessary CT scans when used as triage tool in GCS 13-15 patients',
+            'MAP-2 (Microtubule-Associated Protein 2): Emerging dendritic injury marker; may improve specificity when combined with GFAP/UCH-L1',
+          ],
+        ),
+        HeaderBlock('FOUR Score (Full Outline of UnResponsiveness)'),
+        TextBlock(
+          'The FOUR Score was developed to address GCS limitations. It has 4 components, each scored 0-4, for a total range of 0-16. It can assess intubated patients, includes brainstem reflexes, and can detect brain death (score = 0).',
+        ),
+        TableBlock(
+          title: 'FOUR Score: Eye Response (E)',
+          columns: ['Score', 'Response'],
+          headerColor: const Color(0xFF6366F1),
+          rows: [
+            ['4', 'Eyelids open, tracking OR blinking to command'],
+            ['3', 'Eyelids open but NOT tracking'],
+            ['2', 'Eyelids closed, open to LOUD VOICE'],
+            ['1', 'Eyelids closed, open to PAIN'],
+            ['0', 'Eyelids remain closed with pain'],
+          ],
+        ),
+        TableBlock(
+          title: 'FOUR Score: Motor Response (M)',
+          columns: ['Score', 'Response'],
+          headerColor: const Color(0xFF6366F1),
+          rows: [
+            ['4', 'Thumbs up, fist, or peace sign (to command)'],
+            ['3', 'Localizing to pain'],
+            ['2', 'Flexion response to pain'],
+            ['1', 'Extension response to pain'],
+            ['0', 'No response OR generalized myoclonus status'],
+          ],
+        ),
+        TableBlock(
+          title: 'FOUR Score: Brainstem Reflexes (B)',
+          columns: ['Score', 'Response'],
+          headerColor: const Color(0xFF6366F1),
+          rows: [
+            ['4', 'Pupil AND corneal reflexes present'],
+            ['3', 'ONE pupil wide and fixed'],
+            ['2', 'Pupil OR corneal reflexes absent'],
+            ['1', 'Pupil AND corneal reflexes absent'],
+            ['0', 'Absent pupil, corneal, AND cough reflex'],
+          ],
+        ),
+        TableBlock(
+          title: 'FOUR Score: Respiration (R)',
+          columns: ['Score', 'Response'],
+          headerColor: const Color(0xFF6366F1),
+          rows: [
+            ['4', 'Not intubated, regular breathing pattern'],
+            ['3', 'Not intubated, Cheyne-Stokes breathing'],
+            ['2', 'Not intubated, irregular breathing'],
+            ['1', 'Intubated, breathes ABOVE ventilator rate'],
+            ['0', 'Intubated, breathes AT ventilator rate or apnea'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: FOUR Score Advantages',
+          'The FOUR Score is superior to GCS for ICU patients because: (1) It can assess intubated patients (no verbal component needed). (2) It includes brainstem reflexes (pupil, corneal, cough). (3) It distinguishes vegetative state from locked-in syndrome (locked-in patients can blink to command = Eye score 4). (4) A score of 0 suggests brain death. (5) Each component has the same range (0-4) making it easier to remember.',
+        ),
+        MnemonicBlock(
+          'FOUR Score Components: "FOUR = 4 components, each scored 0-4"',
+          'Eye, Motor, Brainstem, Respiration. Total range: 0-16. Think "E-M-B-R" or "Every Measure Before Resuscitation." A total score of 0 = possible brain death. Unlike GCS, the minimum score is 0 (not 3).',
+        ),
+      ],
+    ),
+    TopicTab(
+      title: 'Outcome Scales',
+      blocks: [
+        HeaderBlock('Glasgow Outcome Scale (GOS) and GOS-Extended'),
+        TextBlock(
+          'The GOS and its extended version (GOS-E) are the most widely used global outcome measures for TBI research and clinical trials. The GOS-E is considered the gold standard outcome measure for TBI clinical trials.',
+          isIntro: true,
+        ),
+        TableBlock(
+          title: 'Glasgow Outcome Scale (GOS)',
+          columns: ['Score', 'Category', 'Description'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['1', 'Dead', '--'],
+            ['2', 'Vegetative State', 'No awareness of environment; sleep-wake cycles present'],
+            ['3', 'Severe Disability', 'Conscious but dependent; needs daily support for ADLs'],
+            ['4', 'Moderate Disability', 'Independent but disabled; can work in sheltered setting'],
+            ['5', 'Good Recovery', 'Resumption of normal life; may have minor residual deficits'],
+          ],
+        ),
+        TableBlock(
+          title: 'Glasgow Outcome Scale - Extended (GOS-E)',
+          columns: ['Score', 'Category'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['1', 'Dead'],
+            ['2', 'Vegetative State'],
+            ['3', 'Lower Severe Disability'],
+            ['4', 'Upper Severe Disability'],
+            ['5', 'Lower Moderate Disability'],
+            ['6', 'Upper Moderate Disability'],
+            ['7', 'Lower Good Recovery'],
+            ['8', 'Upper Good Recovery'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: GOS vs GOS-E',
+          'GOS-E splits each GOS category (except Death and VS) into Upper and Lower, providing 8 total categories instead of 5. This gives better sensitivity to detect clinically meaningful change. GOS-E is the gold standard for TBI clinical trials (used in DECRA, RESCUEicp, and most major TBI RCTs). Higher score = better outcome.',
+        ),
+        HeaderBlock('Disability Rating Scale (DRS)'),
+        TableBlock(
+          title: 'DRS Domains',
+          columns: ['Domain', 'Items', 'Based On'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Arousal/Awareness', 'Eye opening, communication ability, motor response', 'Modified GCS components'],
+            ['Cognitive Ability for Self-Care', 'Feeding, toileting, grooming', 'Awareness of how and when to perform these activities'],
+            ['Dependence on Others', 'Level of functioning', 'Degree of independence vs. dependence'],
+            ['Psychosocial Adaptability', 'Employability', 'Community reintegration and vocational capacity'],
+          ],
+        ),
+        TableBlock(
+          title: 'DRS Score Interpretation',
+          columns: ['Score Range', 'Disability Level'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['0', 'No disability'],
+            ['1', 'Mild disability'],
+            ['2-3', 'Partial disability'],
+            ['4-6', 'Moderate disability'],
+            ['7-11', 'Moderately severe disability'],
+            ['12-16', 'Severe disability'],
+            ['17-21', 'Extremely severe disability'],
+            ['22-24', 'Vegetative state'],
+            ['25-29', 'Extreme vegetative state'],
+            ['30', 'Death'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: DRS vs GOS vs FIM',
+          'The DRS (range 0-29) is better than GOS for tracking rehabilitation progress because it captures the FULL spectrum from coma through community reintegration. Lower DRS = better outcome (opposite direction from GOS). The DRS has a ceiling effect for mildly impaired patients (many score 0-1). The FIM has a ceiling effect in TBI because it is heavily weighted toward motor function (13/18 items) and only has 5 cognitive items, failing to capture executive dysfunction, memory deficits, and behavioral impairments that are common after TBI.',
+        ),
+        HeaderBlock('FIM in TBI'),
+        BulletCardBlock(
+          title: 'FIM Structure and TBI Limitations',
+          themeColor: const Color(0xFFEA580C),
+          backgroundColor: const Color(0xFFFFF7ED),
+          points: [
+            '18 total items: 13 Motor items (self-care, sphincter control, transfers, locomotion) + 5 Cognitive items (communication, social cognition)',
+            'Each item scored 1-7: 1 = total assist, 7 = complete independence; Range: 18-126',
+            'Ceiling effect: Many TBI patients achieve maximum motor scores but still have significant cognitive/behavioral impairments not captured by FIM',
+            'Heavily weighted toward physical function: 13/18 items are motor-based',
+            'Only 5 cognitive items: Inadequate for capturing executive dysfunction, memory deficits, impulsivity, and behavioral dysregulation',
+            'FIM was designed for general rehabilitation populations, NOT specifically for TBI',
+            'FIM efficiency (FIM gain/LOS) is commonly used in rehabilitation outcomes research but underestimates TBI-related disability',
+          ],
+        ),
+        HeaderBlock('Mayo Classification System'),
+        TextBlock(
+          'The Mayo Classification categorizes TBI into three tiers based on available clinical and imaging data, providing a practical framework when traditional severity measures are incomplete or unavailable.',
+        ),
+        TableBlock(
+          title: 'Mayo Classification Tiers',
+          columns: ['Tier', 'Criteria'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Definite (Moderate-Severe)', 'Death due to TBI, OR LOC >=30 min, OR PTA >=24 hrs, OR GCS <13 in first 24 hrs, OR positive neuroimaging (intracerebral/subdural/epidural hematoma, cerebral contusion, hemorrhagic DAI, brainstem injury, depressed skull fracture)'],
+            ['Probable (Mild)', 'LOC <30 min, OR PTA <24 hrs, OR depressed/dazed/confused mental state'],
+            ['Possible (Symptomatic)', 'Blurred vision, confusion, daze, headache, or nausea, but NO LOC/PTA or clear alteration of mental status documented'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Mayo Classification Utility',
+          'The Mayo Classification achieves 89% sensitivity and 98% specificity for identifying Definite (moderate-severe) TBI. Its primary advantage is utility in retrospective studies and when acute data are incomplete -- it integrates imaging findings, LOC, PTA, and GCS into a single framework rather than relying on any one measure.',
+        ),
+        HeaderBlock('CT Scoring Systems for Prognosis'),
+        TextBlock(
+          'Several CT-based scoring systems have been developed to prognosticate outcomes after TBI. They incorporate features such as midline shift, basal cistern compression, epidural/subdural hematomas, and intraventricular hemorrhage.',
+        ),
+        TableBlock(
+          title: 'CT Scoring Systems: Prognostic Accuracy Ranking',
+          columns: ['Rank', 'Scoring System', 'Key Features'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['1', 'Stockholm CT Score', 'Continuous scale; includes tSAH and diffuse axonal injury markers; best prognostic discrimination'],
+            ['2', 'Helsinki CT Score', 'Continuous scale; accounts for mass lesion type and suprasellar cistern status'],
+            ['3', 'Rotterdam CT Score', 'Sum score 1-6; basal cisterns, midline shift, EDH, IVH/tSAH; widely used in research'],
+            ['4', 'Marshall CT Classification', 'Categories I-VI (Diffuse I-IV + evacuated/non-evacuated mass); most widely known but least discriminating'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Stockholm > Helsinki > Rotterdam > Marshall',
+          'In head-to-head comparisons, Stockholm CT Score has the best prognostic accuracy for mortality and unfavorable outcome, followed by Helsinki, Rotterdam, then Marshall. Marshall remains the most commonly referenced in clinical practice due to its simplicity, but its categorical nature limits prognostic precision. The Rotterdam score is most commonly used in TBI research trials.',
+        ),
+      ],
+    ),
+    TopicTab(
+      title: 'Rancho, PTA & CRS-R',
+      blocks: [
+        HeaderBlock('Rancho Los Amigos Levels of Cognitive Functioning'),
+        TextBlock(
+          'The Rancho Los Amigos Scale (LCFS) describes 10 levels of cognitive and behavioral recovery after TBI, from no response (Level I) through modified independence (Level X). It is one of the most commonly tested TBI topics on PM&R board exams. Originally 8 levels, expanded to 10 to better describe community reintegration.',
+          isIntro: true,
+        ),
+        TableBlock(
+          title: 'Rancho Los Amigos Scale (All 10 Levels)',
+          columns: ['Level', 'Name', 'Description', 'Management'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['I', 'No Response', 'No response to any stimulation (visual, auditory, tactile, painful)', 'Sensory stimulation program; prevent contractures; skin care; family education'],
+            ['II', 'Generalized Response', 'Inconsistent, nonpurposeful reactions to stimuli; responds to pain with gross body movement or physiologic changes', 'Sensory stimulation; monitor for change; positioning program; range of motion'],
+            ['III', 'Localized Response', 'Inconsistent but purposeful responses; may follow simple commands; turns toward sound; pulls at tubes/restraints', 'Simple commands; orientation cues; begin structured stimulation; safety measures for tube-pulling'],
+            ['IV', 'Confused-Agitated', 'Heightened activity level; bizarre, non-purposeful behavior; no short-term memory; incoherent or inappropriate verbalization; may be combative', 'Minimize stimulation; quiet room; 1:1 supervision; padded environment; consistent routine; pharmacotherapy (beta-blockers first-line)'],
+            ['V', 'Confused-Inappropriate, Non-Agitated', 'Alert; responds to simple commands; poor memory; confabulates; cannot learn new information; inappropriate verbalizations', 'Structure and consistency; memory aids; repetitive orientation; simple ADL training; redirection'],
+            ['VI', 'Confused-Appropriate', 'Goal-directed behavior WITH cues; follows simple directions consistently; improved remote memory; emerging awareness of deficits; knows self and family', 'Increase functional tasks; supervised ADLs; safety awareness training; begin community outings with supervision'],
+            ['VII', 'Automatic-Appropriate', 'Oriented to setting; goes through daily routine automatically; minimal confusion; shallow recall; poor insight/judgment; requires supervision for safety', 'Community re-entry training; supervised outings; vocational assessment; compensatory strategy training; driving eval consideration'],
+            ['VIII', 'Purposeful-Appropriate', 'Alert and oriented; recalls and integrates past and recent events; independent in familiar environments; impaired abstract reasoning and stress tolerance', 'Community reintegration; vocational rehabilitation; driving evaluation; independent living skills; judgment training'],
+            ['IX', 'Purposeful-Appropriate (Standby Assist)', 'Uses assistive memory devices; aware of and monitors impairments; thinks about consequences; depression may emerge as insight improves; self-directed with standby assistance', 'Advance vocational goals; counseling for adjustment/depression; independence with monitoring; social skills refinement'],
+            ['X', 'Purposeful-Appropriate (Modified Independent)', 'Handles multiple tasks simultaneously; independently uses compensatory strategies; may need more time or periodic breaks; functionally independent in community', 'Discharge from structured rehabilitation; community follow-up as needed; periodic support for novel situations'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Rancho Level IV',
+          'Level IV (Confused-Agitated) is the most commonly tested level and the most challenging for rehabilitation teams. Agitation occurs in approximately 33% of TBI patients in acute rehabilitation. The Agitated Behavior Scale (ABS) has 14 items scored 1-4 (range 14-56); scores >21 indicate clinically significant agitation. Management: environmental modifications FIRST, then pharmacotherapy with beta-blockers as first-line (best Cochrane evidence). AVOID haloperidol and benzodiazepines.',
+        ),
+        BulletCardBlock(
+          title: 'Rancho Phase Groupings',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Levels I-III: Disorders of consciousness phase (coma/VS/MCS)',
+            'Level IV: Posttraumatic agitation phase (most pharmacologic intervention needed)',
+            'Levels V-VI: Posttraumatic amnesia (PTA) phase (confusion, memory impairment)',
+            'Levels VII-VIII: Higher-level cognitive recovery (gaining independence)',
+            'Levels IX-X: Community reintegration (added in the expanded 10-level version)',
+            'Original scale had 8 levels; IX and X were added to better characterize community reintegration outcomes',
+          ],
+        ),
+        HeaderBlock('Posttraumatic Amnesia (PTA) Assessment'),
+        TextBlock(
+          'PTA is the period of confusion and inability to form new continuous memories after TBI. PTA duration is the single best predictor of functional outcome and is more reliable than GCS for prognostication.',
+        ),
+        TableBlock(
+          title: 'PTA Duration and Predicted Outcome',
+          columns: ['PTA Duration', 'Severity', 'Expected Outcome'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['<5 minutes', 'Very mild', 'Good recovery expected'],
+            ['5-60 minutes', 'Mild', 'Good recovery expected'],
+            ['1-24 hours', 'Moderate', 'Good recovery likely'],
+            ['1-7 days', 'Severe', 'May have persistent deficits'],
+            ['1-4 weeks', 'Very severe', 'Significant disability likely'],
+            ['>4 weeks', 'Extremely severe', 'Poor functional outcome likely'],
+          ],
+        ),
+        TableBlock(
+          title: 'GOAT vs O-Log',
+          columns: ['Feature', 'GOAT', 'O-Log'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Full Name', 'Galveston Orientation and Amnesia Test', 'Orientation Log'],
+            ['Items', '10 questions (orientation + pre/post-injury memory)', '10 orientation items scored 0-3 each'],
+            ['Score Range', '0-100 (deductions for errors)', '0-30'],
+            ['Out of PTA', '>=75 on 2 consecutive days', '>=25 on 2 consecutive days'],
+            ['In PTA (impaired)', '<66', '<25'],
+            ['Borderline', '66-75', 'N/A'],
+            ['Advantage', 'Traditional, well-validated', 'Simpler; does not rely on retrograde memory; better for serial assessment'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: PTA Prognostic Value',
+          'PTA duration is the most commonly used and single best predictor of long-term outcome after TBI. Key thresholds: PTA <2 months makes severe disability unlikely. PTA >3 months makes good recovery unlikely. PTA correlates more strongly with outcome than GCS. The O-Log has the advantage of not relying on retrograde memory assessment, which can be independently impaired.',
+        ),
+        HeaderBlock('Coma Recovery Scale-Revised (CRS-R)'),
+        TextBlock(
+          'The CRS-R is the gold standard standardized assessment for differentiating vegetative state (VS/UWS) from minimally conscious state (MCS). It has 6 subscales with 23 total items and a score range of 0-23.',
+        ),
+        TableBlock(
+          title: 'CRS-R Subscales',
+          columns: ['Subscale', 'Score Range', 'Key Diagnostic Items'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Auditory', '0-4', 'Score 4 = consistent movement to command (MCS+)'],
+            ['Visual', '0-5', 'Score 5 = object recognition (MCS+); Score 3 = visual pursuit (MCS); Score 2 = fixation (MCS)'],
+            ['Motor', '0-6', 'Score 6 = functional object use (EMERGENCE from MCS); Score 5 = automatic motor response (MCS)'],
+            ['Oromotor/Verbal', '0-3', 'Score 3 = intelligible verbalization (EMERGENCE from MCS)'],
+            ['Communication', '0-2', 'Score 2 = functional accurate communication (EMERGENCE from MCS)'],
+            ['Arousal', '0-3', 'Attention and eye opening sustainability'],
+          ],
+        ),
+        BulletCardBlock(
+          title: 'CRS-R Diagnostic Criteria',
+          themeColor: const Color(0xFF0891B2),
+          backgroundColor: const Color(0xFFECFEFF),
+          points: [
+            'Vegetative State (VS/UWS): No evidence of awareness; reflexive responses only; sleep-wake cycles present but no purposeful behavior',
+            'MCS Criteria on CRS-R: Visual pursuit, visual fixation, localization to noxious stimuli, reproducible movement to command, automatic motor responses, OR intelligible verbalization',
+            'MCS-minus (MCS-): Non-language-mediated behaviors (visual pursuit, localization to pain, automatic motor responses)',
+            'MCS-plus (MCS+): Language-mediated behaviors (command-following, intelligible verbalization, object recognition)',
+            'Emergence from MCS: Requires functional object use OR functional accurate communication (YES/NO reliability)',
+            'Key distinction: VS has sleep-wake cycles (eyes open) but NO awareness; MCS has definite but INCONSISTENT evidence of awareness',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: VS Timing Definitions',
+          'Persistent VS: >=1 month duration (after traumatic OR non-traumatic brain injury). Permanent VS: >12 months after TBI, >3 months after non-traumatic injury (anoxic). VS after TBI has a BETTER prognosis than VS after anoxic injury. Late recoveries (beyond 12 months) are rare but have been documented, leading some to question the "permanent" terminology -- the ACRM now prefers "chronic" over "permanent."',
+        ),
+        PearlBlock(
+          'Board Pearl: CRS-R Clinical Significance',
+          'The CRS-R is the most accepted standardized instrument for disorders of consciousness assessment per the ACRM DOC Task Force. Up to 40% of patients clinically diagnosed as VS are actually in MCS when formally assessed with CRS-R. This misdiagnosis rate underscores the importance of standardized assessment. MCS patients have significantly better prognosis than VS patients, making accurate diagnosis critical for treatment decisions and goals of care discussions.',
+        ),
+        MnemonicBlock(
+          'CRS-R Subscales: "AVMOCA"',
+          'Auditory (0-4), Visual (0-5), Motor (0-6), Oromotor/Verbal (0-3), Communication (0-2), Arousal (0-3). Total range 0-23. Remember: the Visual and Motor subscales have the highest ranges and contain the key diagnostic items for MCS and emergence.',
+        ),
+        HeaderBlock('MCS+ vs MCS- Distinction'),
+        TableBlock(
+          title: 'MCS Subcategorization',
+          columns: ['Subcategory', 'Behaviors', 'Prognostic Significance'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['MCS+', 'Language-mediated: command following, intelligible verbalization, object recognition', 'Emergence to full consciousness: ~100%'],
+            ['MCS-', 'Non-language purposeful: visual pursuit/fixation, localization to noxious stimuli, automatic motor responses', 'Emergence to full consciousness: ~50%'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: MCS+ vs MCS- Prognosis',
+          'The distinction between MCS+ and MCS- has critical prognostic implications. Patients in MCS+ (language behaviors) have nearly 100% rate of emergence to full consciousness, compared to approximately 50% for MCS- patients. MCS+ indicates preserved cortical language networks and is associated with better long-term functional outcomes. This subcategorization should guide goals-of-care discussions and rehabilitation intensity decisions.',
+        ),
+        HeaderBlock('Cognitive Motor Dissociation (CMD)'),
+        TextBlock(
+          'Cognitive motor dissociation (CMD), also termed covert consciousness, refers to patients who are behaviorally unresponsive but demonstrate brain activation patterns consistent with awareness on advanced neuroimaging or electrophysiology.',
+        ),
+        BulletCardBlock(
+          title: 'Cognitive Motor Dissociation: Key Facts',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Approximately 25% of behaviorally unresponsive patients show covert consciousness when assessed with task-based fMRI or EEG paradigms (NEJM 2024)',
+            'Detection methods: Task-based fMRI (imagine playing tennis/navigating house), EEG motor imagery paradigms, high-density EEG connectivity analysis',
+            'CMD patients have better long-term outcomes than patients without covert awareness, even when behavioral presentations are identical',
+            'Clinical implications: CMD diagnosis may change goals of care, justify continued rehabilitation, and influence medicolegal decisions',
+            'AAN/ACRM guidelines now recommend advanced neuroimaging/EEG assessment when CMD is suspected in patients with prolonged DoC',
+          ],
+        ),
+        HeaderBlock('AAN/ACRM DoC Practice Guidelines'),
+        BulletCardBlock(
+          title: 'AAN/ACRM Disorders of Consciousness Guidelines',
+          themeColor: const Color(0xFF0891B2),
+          backgroundColor: const Color(0xFFECFEFF),
+          points: [
+            'CRS-R is the ONLY Level B recommended standardized assessment tool for disorders of consciousness',
+            'Vegetative State (VS) has been renamed to Unresponsive Wakefulness Syndrome (UWS) to reduce stigma and improve clinical accuracy',
+            'Serial assessments are required: single assessments are insufficient due to fluctuating arousal and awareness in DoC patients',
+            'Arousal facilitation protocol should precede each CRS-R assessment: deep pressure stimulation, environmental stimulation, and upright positioning to optimize arousal',
+            'Avoid prognostic nihilism: early withdrawal of life-sustaining treatment is a major contributor to poor outcomes; evidence supports continued rehabilitation',
+            'Recommend advanced neuroimaging (fMRI, PET) and electrophysiology (EEG) when behavioral assessments suggest DoC but CMD is suspected',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: AAN/ACRM DoC Key Points',
+          'Three critical points for boards: (1) CRS-R is the only Level B recommended assessment tool -- no other DoC assessment scale has this level of evidence. (2) VS is now termed UWS (Unresponsive Wakefulness Syndrome). (3) Serial assessments with arousal facilitation protocol are required because up to 40% of patients diagnosed as VS/UWS on single assessment are reclassified as MCS on repeated structured assessment.',
+        ),
+      ],
+    ),
+  ],
+);

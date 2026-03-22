@@ -1,0 +1,205 @@
+// NotebookLM-generated quiz questions — DO NOT REWRITE
+// Source: notebooklm-handoff/pathophysiology/quiz-questions.json
+// QA'd, LaTeX-stripped, medically verified.
+
+import '../../core/models/quiz_model.dart';
+
+class NotebookLMPathophysQuiz {
+  static const List<QuizQuestion> questions = [
+    QuizQuestion(
+      question: 'Which specific mechanism of primary brain injury is recognized as the most damaging force, responsible for shearing axons at the gray-white matter junctions?',
+      options: [
+        'Translational (linear) acceleration',
+        'Rotational (angular) acceleration',
+        'Direct contact forces',
+        'Static loading',
+      ],
+      correctIndex: 1,
+      explanation: 'Rotational forces create the greatest shear stress across tissues of different densities, leading to widespread axonal disruption.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'A patient presents with personality changes and impaired social judgment following a TBI. Based on the common locations of contusions, which area was likely injured?',
+      options: [
+        'Occipital poles',
+        'Parietal lobes',
+        'Orbitofrontal cortex',
+        'Posterior temporal lobe',
+      ],
+      correctIndex: 2,
+      explanation: 'Contusions in the inferior frontal region are common due to the rough bony surface of the anterior cranial fossa and lead to disinhibition.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Which CT finding and clinical characteristic are most indicative of a Subdural Hematoma (SDH) rather than an Epidural Hematoma (EDH)?',
+      options: [
+        'Biconvex shape that does not cross suture lines',
+        'Crescent-shaped blood that crosses suture lines',
+        "A 'lucid interval' following the initial impact",
+        'Involvement of the middle meningeal artery',
+      ],
+      correctIndex: 1,
+      explanation: "Subdural hematomas occur in the space between the dura and arachnoid, allowing blood to spread along the hemisphere's curvature across sutures.",
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'According to the Adams Grading System for Diffuse Axonal Injury (DAI), what is the anatomical location involved in a Grade 2 injury?',
+      options: [
+        'Dorsolateral midbrain',
+        'Parasagittal gray-white junction only',
+        'Corpus callosum',
+        'Internal capsule and basal ganglia',
+      ],
+      correctIndex: 2,
+      explanation: 'Grade 2 DAI involves the white matter at the gray-white junction plus focal lesions in the corpus callosum, often the splenium.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: "In the neurometabolic cascade of concussion described by Giza and Hovda, why does the brain enter a 'metabolic crisis' or energy mismatch?",
+      options: [
+        'Glutamate inhibition leads to a shutdown of glucose transport',
+        'Massive calcium efflux causes the mitochondria to stop producing ATP',
+        'Glucose demand for ionic pumps exceeds the available supply',
+        'The brain switches entirely to lipid metabolism due to insulin resistance',
+      ],
+      correctIndex: 2,
+      explanation: 'The Na+/K+ ATPase pumps work overtime to correct the ionic flux, creating a massive demand for glucose that outstrips supply.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Which form of cerebral edema is typically seen after severe TBI and is noted for being unresponsive to steroid treatment?',
+      options: [
+        'Vasogenic edema',
+        'Interstitial edema',
+        'Cytotoxic edema',
+        'Hydrostatic edema',
+      ],
+      correctIndex: 2,
+      explanation: 'Cytotoxic edema is intracellular swelling caused by ionic pump failure; steroids are contraindicated as they do not help and may increase mortality.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Ferroptosis is an emerging board-relevant concept describing a specific pathway of cell death in TBI. What is its defining characteristic?',
+      options: [
+        'Caspase-dependent DNA fragmentation',
+        'Iron-dependent lipid peroxidation',
+        'Cellular swelling and membrane rupture due to energy failure',
+        'Excessive mitochondrial fusion',
+      ],
+      correctIndex: 1,
+      explanation: 'Ferroptosis is driven by the accumulation of iron which catalyzes the lethal peroxidation of lipids within the cell membrane.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Based on research into the glymphatic system, why is sleep hygiene considered critical for neuroprotection after a brain injury?',
+      options: [
+        'Sleep allows the blood-brain barrier to fully close for the first time',
+        'Glymphatic clearance of metabolic waste increases by 60% during sleep',
+        'Sleep inhibits the M1 pro-inflammatory phenotype of microglia',
+        'Dreaming activates the internal capsule to prevent motor deficits',
+      ],
+      correctIndex: 1,
+      explanation: 'The glymphatic system, which flushes interstitial waste like tau and amyloid-beta, is significantly more active during sleep compared to wakefulness.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: "How does the chronic tau pathology found in Chronic Traumatic Encephalopathy (CTE) differ anatomically from that seen in Alzheimer's Disease (AD)?",
+      options: [
+        'CTE tau is found primarily in the medial temporal lobe',
+        'CTE tau is distributed at the depths of cortical sulci in a perivascular pattern',
+        'AD tau is localized to the superior cerebellar peduncle',
+        'CTE tau is found only in the white matter tracts',
+      ],
+      correctIndex: 1,
+      explanation: 'CTE is distinguished by tau accumulation at the sulcal depths and around small blood vessels, particularly in the superficial cortical layers.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'A patient experiences a single episode of systemic hypotension with a systolic blood pressure (SBP) below a critical threshold. What is this threshold, and what is its clinical significance in TBI?',
+      options: [
+        '< 110 mmHg; it increases the risk of seizure',
+        '< 90 mmHg; it doubles the mortality rate',
+        '< 70 mmHg; it causes immediate brain death',
+        '< 100 mmHg; it leads to vasogenic edema',
+      ],
+      correctIndex: 1,
+      explanation: 'A single episode of SBP < 90 mmHg is strongly associated with doubled mortality due to the loss of cerebral autoregulation and resulting ischemia.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Cortical spreading depolarization (CSD) occurs in a significant percentage of surgical TBI patients. How is this phenomenon characterized?',
+      options: [
+        'Rapid waves of hyperpolarization that reduce metabolic demand',
+        'Waves of neuronal depolarization that propagate across the cortex',
+        'An immediate electrical silence that prevents secondary injury',
+        'A phenomenon only detectable by invasive brain tissue oxygen monitors',
+      ],
+      correctIndex: 1,
+      explanation: 'CSD is characterized by waves of near-complete depolarization that spread at 2-5 mm/min, worsening secondary injury.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'What is the typical timeline for microglial activation following TBI, specifically regarding when the pro-inflammatory (M1) phenotype begins to dominate?',
+      options: [
+        'M1 dominance occurs within the first 3 hours',
+        'M1 phenotype begins to dominate around day 7 and persists',
+        'The M1 phenotype disappears entirely by week 2',
+        'M1 and M2 phenotypes reach a permanent equilibrium at 24 hours',
+      ],
+      correctIndex: 1,
+      explanation: 'After an initial reparative (M2) phase that peaks around days 3-5, the pro-inflammatory M1 phenotype takes over by day 7.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'According to the Monro-Kellie doctrine, why does intracranial pressure (ICP) rise exponentially rather than linearly as a mass expands?',
+      options: [
+        'The skull expands slightly to accommodate the volume before snapping back',
+        'Once compensatory mechanisms are exhausted, compliance drops',
+        'Arterial blood pressure increases to match the volume expansion',
+        'The brain tissue becomes more compressible over time',
+      ],
+      correctIndex: 1,
+      explanation: 'Once the displacement of CSF and venous blood is maximized, any further volume increase leads to rapid, exponential pressure spikes.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'What is the primary mechanism by which myelin debris from injured axons hinders recovery in Diffuse Axonal Injury (DAI)?',
+      options: [
+        'Myelin debris triggers the immediate release of iron leading to ferroptosis',
+        'It acts as a physical barrier that prevents astrocytes from forming scars',
+        'Myelin-associated inhibitors signal through the NgR1 receptor to suppress regeneration',
+        'It causes the massive efflux of potassium from the extracellular space',
+      ],
+      correctIndex: 2,
+      explanation: 'Molecules like Nogo-A and MAG in the debris signal to axons to stop growing and inhibit the differentiation of oligodendrocyte progenitor cells.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Which imaging modality is considered the most sensitive for detecting subtle Diffuse Axonal Injury (DAI) that might be missed on conventional MRI?',
+      options: [
+        'Non-contrast CT head',
+        'T2-weighted MRI',
+        'Diffusion Tensor Imaging (DTI)',
+        'Cerebral Angiography',
+      ],
+      correctIndex: 2,
+      explanation: 'DTI measures fractional anisotropy, which reflects the integrity of white matter tracts and can detect subtle damage.',
+      moduleId: 'pathophysiology',
+      difficulty: 'board',
+    ),
+  ];
+}

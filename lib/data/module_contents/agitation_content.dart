@@ -1,0 +1,341 @@
+import 'package:flutter/material.dart';
+import '../models/topic_content_model.dart';
+
+final TopicData agitationContent = TopicData(
+  id: 'agitation-behavioral-management',
+  title: 'Agitation & Behavioral Management',
+  tabs: [
+    TopicTab(
+      title: 'Agitation Assessment',
+      blocks: [
+        HeaderBlock('Posttraumatic Agitation: Definition & Epidemiology'),
+        TextBlock(
+          'Posttraumatic agitation is one of the most clinically challenging and commonly tested complications in TBI rehabilitation. It corresponds to Rancho Los Amigos Level IV (Confused-Agitated) and affects approximately 33% of TBI patients admitted to acute inpatient rehabilitation. Effective management requires a systematic approach: rule out medical causes, implement environmental modifications, and use pharmacotherapy as a last resort.',
+          isIntro: true,
+        ),
+        BulletCardBlock(
+          title: 'Key Epidemiologic and Clinical Facts',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'Incidence: ~33% of TBI patients in acute inpatient rehabilitation',
+            'Corresponds to Rancho Los Amigos Level IV: Confused and Agitated',
+            'Typically occurs during emergence from posttraumatic amnesia (PTA)',
+            'Duration: Usually self-limited (days to weeks); most resolve within 1-2 months',
+            'Characterized by excess physical and/or verbal activity that is non-purposeful and potentially harmful',
+            'Patients have NO short-term memory formation, NO orientation, and NO capacity for learning during this phase',
+            'Agitation may worsen with restraints -- physical restraints can INCREASE agitation and should be minimized',
+          ],
+        ),
+        HeaderBlock('Agitated Behavior Scale (ABS)'),
+        TextBlock(
+          'The Agitated Behavior Scale (ABS) is the standard instrument for quantifying agitation in TBI. It was developed by Corrigan (1989) specifically for TBI rehabilitation settings.',
+        ),
+        ScaleBlock(
+          scaleName: 'Agitated Behavior Scale (ABS)',
+          description:
+              '14 behavioral items, each scored 1 (absent) to 4 (present to an extreme degree). Total score range: 14-56. Administered by observation over a defined period (typically a nursing shift).',
+          columns: ['Score Range', 'Severity', 'Clinical Interpretation'],
+          rows: [
+            ['14-21', 'Normal / Absent', 'No clinically significant agitation; below treatment threshold'],
+            ['22-28', 'Mild', 'Agitation present but manageable with environmental modifications alone'],
+            ['29-35', 'Moderate', 'Significant agitation; may require pharmacotherapy in addition to environmental interventions'],
+            ['> 35', 'Severe', 'Severe agitation; high risk of self-harm or harm to staff; pharmacotherapy usually indicated'],
+          ],
+          boardPearl:
+              'The ABS cutoff for clinically significant agitation is > 21. The 14 items include: short attention span, impulsivity, uncooperativeness, violent/threatening behavior, explosive anger, self-stimulatory behavior, wandering, restlessness, repetitive behaviors, rapid/excessive talking, sudden mood changes, self-abusive behavior, pulling at tubes/restraints, and attempts to get out of bed/chair.',
+        ),
+        PearlBlock(
+          'Board Pearl: ABS Key Numbers',
+          'ABS: 14 items, scored 1-4 each. Range: 14-56. Cutoff for clinically significant agitation: > 21. Mild: 22-28, Moderate: 29-35, Severe: > 35. The ABS is the most widely used and validated instrument specifically for posttraumatic agitation. It should be scored by clinical observation over a defined time period, NOT by patient self-report.',
+        ),
+        HeaderBlock('Differential Diagnosis: Medical Causes of Agitation'),
+        BulletCardBlock(
+          title: 'Rule Out Medical Causes FIRST (Step 1)',
+          themeColor: const Color(0xFF0D9488),
+          backgroundColor: const Color(0xFFF0FDFA),
+          points: [
+            'Pain: Fractures (especially occult), visceral injury, headache, heterotopic ossification, musculoskeletal injury (the most common TREATABLE cause of agitation)',
+            'Infection: UTI, pneumonia, meningitis/ventriculitis, wound infection, line sepsis',
+            'Hydrocephalus: Acute obstructive or communicating; may present with acute behavioral change',
+            'Seizures: Including nonconvulsive status epilepticus (may only present as behavioral change; requires EEG)',
+            'Medication side effects: Paradoxical reactions to benzodiazepines, anticholinergics, steroids, opioids',
+            'Constipation / Fecal impaction: Extremely common overlooked cause of agitation in TBI',
+            'Urinary retention: Bladder distention causes autonomic discomfort and agitation',
+            'Hypoxia: Inadequate oxygenation from pneumonia, PE, atelectasis',
+            'Metabolic derangement: Hyponatremia, hypoglycemia, hepatic/renal failure, thyroid dysfunction',
+            'Sleep deprivation: ICU/hospital environment disrupts sleep-wake cycle; worsens agitation',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Step 1 Always',
+          'ALWAYS rule out medical causes before attributing agitation to the TBI itself. Pain and infection are the two most common reversible medical causes of agitation. Nonconvulsive status epilepticus can present ONLY as behavioral change -- if agitation is new, worsening, or atypical, obtain an EEG. Constipation and urinary retention are frequently overlooked triggers.',
+        ),
+      ],
+    ),
+    TopicTab(
+      title: 'Management',
+      blocks: [
+        HeaderBlock('Environmental Management: ALWAYS First-Line'),
+        TextBlock(
+          'Environmental modification is the cornerstone of agitation management in TBI and should ALWAYS be implemented before pharmacotherapy. The Table 2-11 approach (from Cuccurullo) emphasizes reducing stimulation, ensuring safety, and maintaining consistency. Pharmacotherapy is an adjunct, not a substitute for environmental management.',
+          isIntro: true,
+        ),
+        BulletCardBlock(
+          title: 'Environmental Modifications (Table 2-11 Approach)',
+          themeColor: const Color(0xFF3B82F6),
+          backgroundColor: const Color(0xFFEFF6FF),
+          points: [
+            'Reduce stimulation: Dim lights, minimize noise, limit visitors to 1-2 at a time, turn off TV/radio, avoid overstimulating activities',
+            'Consistent routine: Same staff, same schedule, predictable daily structure; reduces confusion and anxiety',
+            'Reorientation cues: Calendar, clock, family photos, familiar objects; orient patient frequently',
+            'Remove restraints: Physical restraints WORSEN agitation in most TBI patients; use padded mitts only to prevent line removal if absolutely necessary',
+            '1:1 supervision: Dedicated sitter for safety; more effective than restraints; provides calm, consistent redirection',
+            'Safety modifications: Padded side rails, low bed or floor mat, remove dangerous objects, helmet if risk of falls',
+            'Structure therapy sessions: Short sessions (15-20 minutes), frequent breaks, avoid frustrating tasks, match demands to cognitive level',
+            'Sleep hygiene: Maintain day-night cycle, minimize nighttime disruptions, consider melatonin',
+            'Allow mobility: Walking/wheelchair mobility with supervision is therapeutic and may reduce restlessness',
+            'Family education: Teach family NOT to correct, argue with, or overwhelm the patient; model calm redirection',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Environmental Modifications Are First-Line',
+          'On the board exam, the correct first step in agitation management is ALWAYS environmental modification, NOT pharmacotherapy. Restraints are generally CONTRAINDICATED as they increase agitation and injury risk. The 1:1 sitter, reduced stimulation, and consistent routine are the core interventions.',
+        ),
+        HeaderBlock('Pharmacotherapy Hierarchy for Agitation'),
+        TextBlock(
+          'When environmental modifications are insufficient and agitation poses a safety risk, pharmacotherapy may be added. The Cochrane review found that beta-blockers (propranolol, pindolol) have the BEST EVIDENCE for agitation management in TBI.',
+        ),
+        TableBlock(
+          title: 'Agitation Pharmacotherapy Hierarchy',
+          columns: ['Priority', 'Medication', 'Dose Range', 'Mechanism', 'Key Notes'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              '1st line',
+              'Propranolol',
+              '20-60 mg TID-QID',
+              'Non-selective beta-blocker',
+              'BEST Cochrane evidence for TBI agitation; controls sympathetic hyperactivity, tachycardia; also reduces tremor; lipophilic (crosses BBB)',
+            ],
+            [
+              '2nd line',
+              'Amantadine',
+              '100 mg BID',
+              'Dopaminergic / NMDA antagonist',
+              'Dual benefit: reduces agitation AND promotes cognitive recovery; second dose by noon; adjust for renal function',
+            ],
+            [
+              '3rd line',
+              'Valproic acid',
+              '250-500 mg BID-TID',
+              'Anticonvulsant / mood stabilizer',
+              'Dual benefit if seizure risk is elevated; monitor LFTs, CBC, drug levels; can cause weight gain, tremor, thrombocytopenia',
+            ],
+            [
+              '4th line',
+              'Trazodone',
+              '50-100 mg QHS (or BID-TID for agitation)',
+              'Serotonergic (5-HT2A antagonist)',
+              'Useful if sleep disturbance is contributing to agitation; sedating; first-line for sleep in TBI',
+            ],
+            [
+              '5th line',
+              'Low-dose quetiapine',
+              '25-50 mg BID',
+              'Atypical antipsychotic (D2/5-HT2A)',
+              'LEAST preferred option; may impair recovery (dopamine blockade); use lowest dose, shortest duration; better than typicals',
+            ],
+          ],
+        ),
+        BulletCardBlock(
+          title: 'Medications to AVOID for Agitation',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'Haloperidol: Typical antipsychotic; D2 blockade hinders motor and cognitive recovery; prolongs PTA; increases EPS risk',
+            'Benzodiazepines: GABAergic sedation impairs cognition; PARADOXICAL agitation is common in brain-injured patients; impairs neuroplasticity; causes dependence',
+            'Droperidol: Typical antipsychotic; same concerns as haloperidol plus QTc prolongation',
+            'Phenobarbital: Excessive GABAergic sedation; profound cognitive impairment',
+            'Restraints (physical): Although not pharmacologic, physical restraints are generally CONTRAINDICATED as they increase agitation, injury risk, and autonomic instability',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Beta-Blockers for Agitation',
+          'Propranolol has the BEST evidence for TBI agitation per the Cochrane systematic review. Mechanism: (1) reduces sympathetic hyperactivity (tachycardia, diaphoresis), (2) crosses the BBB (lipophilic) and may have central calming effects, (3) does NOT impair cognitive recovery. Pindolol is an alternative beta-blocker with intrinsic sympathomimetic activity (ISA), which may have slightly less bradycardia risk. Monitor heart rate and blood pressure.',
+        ),
+        HeaderBlock('Clinical Decision Algorithm'),
+        NumberedListBlock([
+          MapEntry('Rule out medical causes', 'Pain, infection, hydrocephalus, seizures, medications, constipation, urinary retention, hypoxia, metabolic derangement'),
+          MapEntry('Implement environmental modifications', 'Reduce stimulation, 1:1 sitter, remove restraints, consistent routine, reorientation, safety measures'),
+          MapEntry('Assess with ABS', 'Score > 21 = clinically significant; score > 35 = severe; track serially to monitor response'),
+          MapEntry('Start propranolol if pharmacotherapy needed', '20 mg TID, titrate to 60 mg TID-QID; monitor HR and BP; hold if HR < 60 or SBP < 90'),
+          MapEntry('Add amantadine for dual benefit', '100 mg BID (second dose by noon); promotes cognitive recovery while reducing agitation'),
+          MapEntry('Consider valproic acid if seizure risk is high', 'Dual benefit for agitation and seizure prophylaxis; monitor levels, LFTs, CBC'),
+          MapEntry('Reserve atypical antipsychotics for refractory cases', 'Low-dose quetiapine 25-50 mg only when other options exhausted; use for shortest duration possible'),
+        ]),
+      ],
+    ),
+    TopicTab(
+      title: 'PSH (Sympathetic Storming)',
+      blocks: [
+        HeaderBlock('Paroxysmal Sympathetic Hyperactivity (PSH)'),
+        TextBlock(
+          'Paroxysmal sympathetic hyperactivity (PSH) -- previously called sympathetic storming, dysautonomia, diencephalic storming, or paroxysmal autonomic instability with dystonia (PAID) -- is a syndrome of episodic sympathetic discharge in patients with severe TBI. It occurs in 15-33% of severe TBI patients, usually within the first 2 weeks of injury, and is associated with worse outcomes and prolonged ICU stays.',
+          isIntro: true,
+        ),
+        HeaderBlock('Diagnostic Criteria'),
+        BulletCardBlock(
+          title: 'PSH Diagnosis: 4 of 6 Clinical Features Required',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            '1. Fever (temperature > 38.5 C / 101.3 F, without infectious source)',
+            '2. Tachycardia (heart rate > 120-130 bpm, often paroxysmal)',
+            '3. Hypertension (systolic BP > 160 mmHg or 20% above baseline)',
+            '4. Tachypnea (respiratory rate > 30 breaths/min)',
+            '5. Diaphoresis (profuse sweating, often drenching)',
+            '6. Extensor posturing / rigidity (decerebrate or mixed posturing, dystonic postures)',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: PSH Diagnostic Criteria',
+          'PSH requires 4 of 6 features: Fever, Tachycardia, Hypertension, Tachypnea, Diaphoresis, and Extensor posturing. The episodes are PAROXYSMAL (come in waves lasting minutes to hours) and are often triggered by noxious stimuli (suctioning, turning, pain). The absence of an infectious source for fever is critical for diagnosis. PSH is a diagnosis of EXCLUSION -- always rule out sepsis, PE, seizures, and medication withdrawal.',
+        ),
+        HeaderBlock('PSH Assessment Measure (PSH-AM)'),
+        TextBlock(
+          'The PSH-AM was developed by Baguley et al. (2014) to standardize PSH diagnosis. It combines a Clinical Feature Scale (CFS) measuring the severity of each feature and a Diagnosis Likelihood Tool (DLT) assessing clinical context.',
+        ),
+        TableBlock(
+          title: 'PSH-AM Components',
+          columns: ['Component', 'What It Measures', 'Scoring'],
+          rows: [
+            [
+              'Clinical Feature Scale (CFS)',
+              'Severity of each of the 6 PSH features during an episode',
+              'Each feature scored 0-3 (absent to severe); total 0-18',
+            ],
+            [
+              'Diagnosis Likelihood Tool (DLT)',
+              'Clinical context supporting PSH diagnosis',
+              '11 criteria (e.g., severe TBI, episodes triggered by stimuli, episodes last > 30 min, no alternative diagnosis); total 0-11',
+            ],
+            [
+              'Combined PSH-AM',
+              'CFS + DLT = diagnostic probability',
+              '< 8 = unlikely; 8-16 = possible; > 17 = probable PSH',
+            ],
+          ],
+        ),
+        HeaderBlock('PSH Pathophysiology'),
+        BulletCardBlock(
+          title: 'Mechanism of Sympathetic Storming',
+          themeColor: const Color(0xFF6366F1),
+          backgroundColor: const Color(0xFFEEF2FF),
+          points: [
+            'Loss of cortical and diencephalic INHIBITION of sympathetic outflow due to severe brain injury',
+            'Results in uninhibited catecholamine surge from intact brainstem and spinal sympathetic circuits',
+            'Excitatory-inhibitory ratio (EIR) model: loss of descending inhibitory input creates a hyperexcitable state',
+            'Triggers include: noxious stimuli (suctioning, turning, pain), bladder distention, constipation',
+            'Most commonly occurs with severe diffuse axonal injury, brainstem injury, or bilateral hemispheric damage',
+            'Associated with hypothalamic-pituitary dysfunction',
+          ],
+        ),
+        HeaderBlock('PSH Treatment Algorithm'),
+        TableBlock(
+          title: 'PSH Pharmacotherapy',
+          columns: ['Agent', 'Mechanism', 'Target', 'Key Notes'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'Morphine / Opioids',
+              'Central sympatholytic; mu-receptor agonist',
+              'Acute episodes (first-line)',
+              'First-line for acute PSH episodes; reduces sympathetic outflow centrally; IV morphine 2-4 mg Q2-4H PRN or scheduled; effective for episode termination',
+            ],
+            [
+              'Propranolol',
+              'Non-selective beta-blocker',
+              'Prevention of episodes',
+              'Prevents sympathetic surges; 20-60 mg TID-QID; lipophilic (crosses BBB); controls HR and BP; best combined with morphine',
+            ],
+            [
+              'Bromocriptine',
+              'D2 dopamine agonist',
+              'Dopaminergic dysfunction',
+              'Addresses dopaminergic imbalance; 2.5-5 mg BID-TID; watch for hypotension',
+            ],
+            [
+              'Clonidine',
+              'Alpha-2 adrenergic agonist',
+              'Central sympatholytic',
+              'Reduces central sympathetic outflow; 0.1-0.3 mg BID-TID or patch; watch for rebound hypertension if stopped abruptly',
+            ],
+            [
+              'Gabapentin',
+              'GABA analog / calcium channel modulator',
+              'Adjunctive',
+              'May reduce paroxysmal episodes; 300-1200 mg TID; safe, minimal drug interactions',
+            ],
+            [
+              'Dantrolene',
+              'Direct muscle relaxant (blocks Ca2+ release from SR)',
+              'Rigidity / posturing component',
+              'Targets the extensor posturing/rigidity specifically; 25-100 mg BID-QID; monitor LFTs (hepatotoxicity); acts at the MUSCLE level (peripheral)',
+            ],
+            [
+              'Intrathecal Baclofen (ITB)',
+              'GABA-B agonist (intrathecal)',
+              'REFRACTORY PSH',
+              'For refractory cases unresponsive to oral medications; dramatically reduces storming episodes; 100x less drug than oral; requires surgical pump placement',
+            ],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: PSH Treatment Summary',
+          'Acute episodes: Morphine (first-line, terminates the episode). Prevention: Propranolol (controls sympathetic surges). Refractory: Intrathecal baclofen (ITB). Combination therapy is usually required. The treatment approach is: morphine + propranolol for most cases, add bromocriptine/clonidine/gabapentin as adjuncts, and reserve ITB for refractory cases. Dantrolene specifically targets the posturing/rigidity component.',
+        ),
+        HeaderBlock('PSH vs Agitation: Key Differences'),
+        TableBlock(
+          title: 'Differentiating PSH from Posttraumatic Agitation',
+          columns: ['Feature', 'PSH', 'Posttraumatic Agitation'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Consciousness level', 'Usually in coma or VS/MCS (low awareness)', 'Usually in PTA / Rancho IV (emerging awareness)'],
+            ['Vital sign changes', 'MARKED: fever, tachycardia, HTN, tachypnea', 'Minimal or absent vital sign changes'],
+            ['Diaphoresis', 'PROFUSE, drenching', 'Mild or absent'],
+            ['Posturing', 'Extensor posturing / dystonia PROMINENT', 'Absent (purposeful, non-purposeful movements)'],
+            ['Episodes', 'PAROXYSMAL (waves of minutes to hours)', 'More CONTINUOUS (sustained agitated state)'],
+            ['Triggers', 'Noxious stimuli (suctioning, turning, pain)', 'Overstimulation, confusion, frustration'],
+            ['Treatment', 'Morphine + propranolol; ITB for refractory', 'Environmental modification first; propranolol, amantadine'],
+            ['Timing', 'Usually within first 2 weeks', 'Usually weeks 2-8 (during PTA phase)'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: PSH Nomenclature',
+          'PSH has been called by many names: sympathetic storming, dysautonomia, diencephalic storming, paroxysmal autonomic instability with dystonia (PAID), and autonomic dysfunction syndrome. The consensus term adopted by the international expert panel is "paroxysmal sympathetic hyperactivity" (PSH). Know all the synonyms as different board questions may use different terminology. PSH occurs in 15-33% of severe TBI patients and is associated with younger age, DAI, and longer ICU stays.',
+        ),
+        HeaderBlock('Critical Numbers to Memorize'),
+        TableBlock(
+          title: 'Agitation & PSH Key Numbers',
+          columns: ['Parameter', 'Value'],
+          rows: [
+            ['Posttraumatic agitation incidence', '~33% of acute rehab TBI patients'],
+            ['Rancho level for agitation', 'Level IV (Confused-Agitated)'],
+            ['ABS items', '14 items, scored 1-4 each'],
+            ['ABS score range', '14-56'],
+            ['ABS clinically significant cutoff', '> 21'],
+            ['ABS severe agitation', '> 35'],
+            ['PSH diagnostic criteria', '4 of 6 features'],
+            ['PSH incidence in severe TBI', '15-33%'],
+            ['PSH-AM probable threshold', '> 17'],
+            ['PSH onset', 'Usually within first 2 weeks'],
+            ['Best evidence for agitation Rx', 'Beta-blockers (Cochrane review)'],
+            ['Amantadine agitation dose', '100 mg BID'],
+            ['Propranolol dose range', '20-60 mg TID-QID'],
+          ],
+        ),
+      ],
+    ),
+  ],
+);

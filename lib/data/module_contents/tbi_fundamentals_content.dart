@@ -1,0 +1,274 @@
+import 'package:flutter/material.dart';
+import '../models/topic_content_model.dart';
+
+final TopicData tbiFundamentalsContent = TopicData(
+  id: 'tbi-fundamentals',
+  title: 'TBI Fundamentals',
+  tabs: [
+    TopicTab(
+      title: 'Epidemiology',
+      blocks: [
+        HeaderBlock('Traumatic Brain Injury: The Silent Epidemic'),
+        TextBlock(
+          'Traumatic brain injury (TBI) is one of the leading causes of disability and death worldwide. Understanding its epidemiology is essential for both clinical practice and board preparation.',
+          isIntro: true,
+        ),
+        BulletCardBlock(
+          title: 'Key Epidemiologic Facts',
+          themeColor: const Color(0xFF3B82F6),
+          backgroundColor: const Color(0xFFEFF6FF),
+          points: [
+            'Approximately 1.7-2.8 million TBI-related ED visits, hospitalizations, and deaths occur annually in the US',
+            '16% of injury-related ED visits, hospitalizations, and deaths are attributable to TBI',
+            'Approximately 30% of trauma-related deaths are directly or partly attributable to TBI',
+            'Long-term disability prevalence: 3.17-5.3 million in the US',
+            'Combined economic cost estimated at \$60+ billion (2000 estimate)',
+          ],
+        ),
+        HeaderBlock('Causes of TBI'),
+        BulletCardBlock(
+          title: 'Etiology by Age Group',
+          themeColor: const Color(0xFF0D9488),
+          backgroundColor: const Color(0xFFF0FDFA),
+          points: [
+            'Falls: #1 cause overall, especially in very young (0-4) and elderly (≥75)',
+            'Motor vehicle crashes: #2 cause overall, #1 in adolescents/young adults (15-24)',
+            'Struck by/against objects: #3 cause',
+            'Assault: #4 cause; most common in young adults',
+            'Blast injury: Leading cause in military populations',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Demographics',
+          'Men are more likely to be injured than women at all age groups (ratio ~3:2). Adults ≥75 have the highest hospitalization and mortality rates. Children ≤4 have the highest ED visit rates. TBI-related mortality has been steadily decreasing since 1988 due to seatbelts, airbags, and improved acute management.',
+        ),
+        HeaderBlock('Updated Mortality and Leading Causes'),
+        BulletCardBlock(
+          title: 'Current TBI Mortality Data',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            '69,000+ TBI-related deaths per year in the US (increased from previous estimate of 52,000)',
+            'Firearms are now the LEADING cause of TBI-related death, primarily driven by suicide',
+            'CDC current ranking of TBI death causes: (1) Firearms, (2) Falls, (3) Motor vehicle crashes, (4) Assaults',
+            'Note: Falls remain the #1 cause of TBI-related ED visits and hospitalizations, but firearms surpass all causes for TBI-related DEATHS',
+          ],
+        ),
+        HeaderBlock('Age-Specific Patterns'),
+        TableBlock(
+          title: 'TBI by Age Group',
+          columns: ['Age Group', 'Leading Cause', 'Key Feature'],
+          rows: [
+            ['0-4 years', 'Falls', 'Highest ED visit rate; consider non-accidental trauma'],
+            ['5-14 years', 'Falls, sports', 'Sports concussion increasingly recognized'],
+            ['15-24 years', 'MVC, sports', 'Highest incidence; risk-taking behavior'],
+            ['25-64 years', 'MVC, falls', 'Alcohol involved in 25-50% of injuries'],
+            ['≥75 years', 'Falls', 'Highest mortality; increased SDH risk from atrophy'],
+          ],
+        ),
+        MnemonicBlock(
+          'Falls → MVC → Struck → Assault',
+          'Remember the etiology ranking: "Falling Men Strike Aggressively" — Falls, Motor Vehicle Crashes, Struck by objects, Assault.',
+        ),
+        HeaderBlock('TBI as a Chronic Disease'),
+        BulletCardBlock(
+          title: 'TBI: From Acute Event to Chronic Condition',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'CMS added TBI to its official chronic conditions list in June 2024, recognizing TBI as a lifelong health condition rather than a single acute event',
+            'TBI Model Systems (TBIMS) longitudinal data demonstrates that outcomes are DYNAMIC, not static -- patients may improve, plateau, or decline over decades',
+            'Chronic effects include progressive neurodegeneration, increased seizure risk, endocrine dysfunction, and accelerated aging',
+            'This reclassification has implications for long-term follow-up, insurance coverage, and chronic disease management models',
+          ],
+        ),
+        HeaderBlock('TBI and Dementia Risk'),
+        BulletCardBlock(
+          title: 'Long-Term Neurodegenerative Risk After TBI',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            '63-96% increased risk of all-cause dementia following TBI (meta-analysis data)',
+            '58-82% increased risk of Alzheimer disease specifically',
+            'Males are disproportionately affected, likely due to higher TBI incidence and severity',
+            'Risk is dose-dependent: more severe TBI and repeated injuries confer greater dementia risk',
+            'Proposed mechanisms: chronic neuroinflammation, tau accumulation, disrupted blood-brain barrier, and accelerated amyloid pathology',
+          ],
+        ),
+        HeaderBlock('Traumatic Encephalopathy Syndrome (TES)'),
+        BulletCardBlock(
+          title: 'NINDS TES Diagnostic Criteria',
+          themeColor: const Color(0xFF0891B2),
+          backgroundColor: const Color(0xFFECFEFF),
+          points: [
+            'TES is the clinical diagnosis corresponding to the pathological entity CTE (Chronic Traumatic Encephalopathy)',
+            'NINDS consensus criteria require ALL four: (1) Substantial history of repetitive head trauma, (2) Cognitive impairment in memory and/or executive function AND/OR neurobehavioral dysregulation (impulsivity, aggression, emotional lability), (3) Progressive course of decline, (4) No better explanation by another neurological or psychiatric disorder',
+            'CTE can only be definitively diagnosed on post-mortem neuropathology (perivascular p-tau in cortical sulcal depths)',
+            'TES provides a clinical framework for identification during life; biomarker and PET tau imaging research is ongoing',
+          ],
+        ),
+      ],
+    ),
+    TopicTab(
+      title: 'Definitions',
+      blocks: [
+        HeaderBlock('TBI Severity Classification'),
+        TextBlock(
+          'TBI severity is classified primarily using the Glasgow Coma Scale (GCS), duration of loss of consciousness (LOC), and duration of posttraumatic amnesia (PTA). These three parameters together determine whether a TBI is mild, moderate, or severe.',
+          isIntro: true,
+        ),
+        TableBlock(
+          title: 'TBI Severity Classification',
+          columns: ['Parameter', 'Mild', 'Moderate', 'Severe'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['GCS', '13-15', '9-12', '3-8'],
+            ['LOC', '<30 min', '30 min - 24 hrs', '>24 hrs'],
+            ['PTA', '<24 hrs', '1-7 days', '>7 days'],
+            ['Imaging', 'Normal', 'May be abnormal', 'Often abnormal'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Mild TBI Definition',
+          'The American Congress of Rehabilitation Medicine (ACRM) defines mild TBI as: a traumatically induced physiologic disruption of brain function with at least ONE of: (1) any LOC, (2) any memory loss before/after injury, (3) any alteration in mental status at time of injury, (4) focal neurologic deficits. The injury does NOT exceed: LOC of 30 min, PTA of 24 hrs, or initial GCS of 13.',
+        ),
+        HeaderBlock('Key Definitions'),
+        BulletCardBlock(
+          title: 'Essential Terminology',
+          themeColor: const Color(0xFF6366F1),
+          backgroundColor: const Color(0xFFEEF2FF),
+          points: [
+            'Coma: No eye opening, no command following, no verbalization (GCS ≤8)',
+            'LOC (Loss of Consciousness): Period of unresponsiveness after injury',
+            'PTA (Posttraumatic Amnesia): Period of confusion and inability to form new continuous memories after injury; strongest single predictor of functional outcome',
+            'Retrograde Amnesia: Memory loss for events BEFORE the injury',
+            'Anterograde Amnesia: Memory loss for events AFTER the injury',
+            'Coup injury: Brain damage at the site of impact',
+            'Contrecoup injury: Brain damage on the opposite side from impact',
+          ],
+        ),
+        HeaderBlock('Injury Mechanisms'),
+        BulletCardBlock(
+          title: 'How TBI Happens',
+          themeColor: const Color(0xFFEA580C),
+          backgroundColor: const Color(0xFFFFF7ED),
+          points: [
+            'Contact forces: Direct impact to the head → skull fractures, epidural hematomas, contusions (coup)',
+            'Inertial (acceleration/deceleration) forces: Brain moves within skull → contrecoup contusions, DAI, SDH',
+            'Blast injury (military): Primary (blast wave), Secondary (projectiles), Tertiary (body displacement), Quaternary (burns, inhalation)',
+            'Penetrating injury: Object penetrates skull → highest risk of seizures (33-50%)',
+          ],
+        ),
+        MnemonicBlock(
+          'Blast Injury Mechanisms: "1-2-3-4"',
+          'Primary = Pressure wave (blast overpressure), Secondary = Shrapnel/projectiles, Tertiary = Body thrown (acceleration), Quaternary = Burns/inhalation/crush. Think: "Pressure, Projectiles, Propelled, Plus everything else."',
+        ),
+        HeaderBlock('Military TBI'),
+        BulletCardBlock(
+          title: 'TBI in Military Populations',
+          themeColor: const Color(0xFF1B2A4A),
+          backgroundColor: const Color(0xFFEFF6FF),
+          points: [
+            '414,000+ service members diagnosed with TBI since 2000 (DoD TBI Worldwide Numbers)',
+            '56% of combat veterans in post-deployment screening had deployment-acquired mTBI',
+            'Blast injury is the signature injury of OEF/OIF/OND conflicts; most military TBIs are mild',
+            'High comorbidity with PTSD, depression, chronic pain, and substance use -- "polytrauma triad" (TBI + PTSD + pain)',
+            'PACT Act (2022): Expanded VA healthcare access for veterans with toxic exposures and TBI; presumes service connection for certain conditions',
+          ],
+        ),
+        HeaderBlock('Intimate Partner Violence and TBI (IPV-TBI)'),
+        BulletCardBlock(
+          title: 'IPV-Related TBI: An Underrecognized Epidemic',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            '31-39% of intimate partner violence (IPV) cases involve traumatic brain injury',
+            '73% of IPV-TBI patients are female',
+            'Higher ICU admission rate compared to non-IPV TBI (OR 4.29)',
+            'Higher mortality rate compared to non-IPV TBI (OR 3.20)',
+            'Mechanisms: direct blows to head/face, strangulation (anoxic injury), being thrown against objects',
+            'Frequently underdiagnosed due to delayed presentation, minimization, and lack of screening in ED and primary care settings',
+          ],
+        ),
+        HeaderBlock('Concussion Legislation'),
+        BulletCardBlock(
+          title: 'Youth Concussion Laws (Lystedt Law)',
+          themeColor: const Color(0xFF0D9488),
+          backgroundColor: const Color(0xFFF0FDFA),
+          points: [
+            'All 50 US states now have youth concussion laws, modeled after the Zackery Lystedt Law (Washington, 2009)',
+            'Three required components: (1) Preseason education for athletes, parents, and coaches on concussion recognition',
+            '(2) Mandatory removal from play when concussion is suspected -- "when in doubt, sit them out"',
+            '(3) Written clearance from a licensed healthcare provider before return to play',
+            'Laws apply to youth and high school athletes; some states extend to collegiate level',
+          ],
+        ),
+        HeaderBlock('CBI-M Classification Framework'),
+        BulletCardBlock(
+          title: 'NINDS 2025 Four-Pillar TBI Classification',
+          themeColor: const Color(0xFF6366F1),
+          backgroundColor: const Color(0xFFEEF2FF),
+          points: [
+            'CBI-M = Clinical, Biomarker, Imaging, Modifier -- a multidimensional TBI classification framework',
+            'Clinical (C): Traditional severity measures (GCS, LOC, PTA), symptom profiles, and functional status',
+            'Biomarker (B): Blood-based biomarkers (GFAP, UCH-L1, NfL, tau), CSF markers, and genetic risk factors (APOE4)',
+            'Imaging (I): Structural (CT, MRI) and advanced imaging (DTI, fMRI, PET) findings categorized by pathoanatomic type',
+            'Modifier (M): Patient-level factors that influence outcome -- age, sex, comorbidities, medications, social determinants, injury mechanism',
+            'Goal: Move beyond single-axis severity classification toward precision medicine approach for TBI diagnosis, prognosis, and treatment selection',
+          ],
+        ),
+      ],
+    ),
+    TopicTab(
+      title: 'Board Review',
+      blocks: [
+        HeaderBlock('High-Yield Board Facts'),
+        PearlBlock(
+          'The ONLY Level I BTF Recommendation',
+          'Steroids are CONTRAINDICATED in TBI. The CRASH trial (2004, >10,000 patients) showed methylprednisolone INCREASED 2-week mortality (RR 1.18). This is the single most important BTF fact for boards.',
+        ),
+        PearlBlock(
+          'ICP Threshold Change',
+          'BTF 4th Edition (2016) changed the ICP treatment threshold from 20 to 22 mmHg. "22 is the new 20." Normal ICP: 2-5 mmHg. ICP >40: neurological dysfunction. ICP >60: invariably fatal.',
+        ),
+        PearlBlock(
+          'CPP Targets',
+          'CPP = MAP - ICP. Target: 60-70 mmHg. CPP <50: poor outcomes. DO NOT push CPP >70 with vasopressors (risk of ARDS). This is a favorite distractor on boards.',
+        ),
+        PearlBlock(
+          'Mannitol vs Hypertonic Saline',
+          'Mannitol: osmotic diuretic, monitor serum osm <320. CONTRAINDICATED in hypotension (causes diuresis). Hypertonic saline: use in hypotensive patients with elevated ICP. "Mannitol = Monitor Osm < 320."',
+        ),
+        PearlBlock(
+          'Seizure Prophylaxis',
+          'Phenytoin/levetiracetam reduce EARLY PTS (≤7 days) but NOT late PTS. Levetiracetam is gaining favor (fewer drug interactions, less cognitive impairment). Prophylaxis beyond 1 week is NOT recommended.',
+        ),
+        PearlBlock(
+          'Nutrition After TBI',
+          'Feed by day 5-7 (BTF 4th Ed). TBI patients are HYPERmetabolic (140% caloric expenditure). Protein: 1.5-2 g/kg/day. Transgastric jejunal feeding reduces aspiration/VAP risk.',
+        ),
+        HeaderBlock('Critical Numbers to Memorize'),
+        TableBlock(
+          title: 'Numbers You Must Know',
+          columns: ['Parameter', 'Value'],
+          rows: [
+            ['ICP treatment threshold', '>22 mmHg (BTF 4th Ed)'],
+            ['CPP target', '60-70 mmHg'],
+            ['Normal ICP', '2-5 mmHg (up to 15 acceptable)'],
+            ['Fatal ICP', '>60 mmHg'],
+            ['Mannitol serum osm limit', '<320 mOsm/L'],
+            ['Na correction rate limit', '≤10 mEq/L per 24 hrs'],
+            ['GCS coma definition', '≤8'],
+            ['Mild TBI GCS', '13-15'],
+            ['Mild TBI LOC limit', '<30 min'],
+            ['Mild TBI PTA limit', '<24 hrs'],
+            ['DVT incidence without prophylaxis', '54%'],
+            ['TBI hypermetabolism', '140% of baseline'],
+            ['Feeding initiation', 'By day 5-7'],
+            ['Protein requirements', '1.5-2 g/kg/day'],
+          ],
+        ),
+      ],
+    ),
+  ],
+);

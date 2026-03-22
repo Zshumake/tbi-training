@@ -1,0 +1,205 @@
+// NotebookLM-generated quiz questions — DO NOT REWRITE
+// Source: .claude/notebooklm-handoff/acute-management/quiz-questions.json
+// QA'd, LaTeX-stripped, medically verified against BTF 4th Ed and landmark trials.
+
+import '../../core/models/quiz_model.dart';
+
+class NotebookLMAcuteMgmtQuiz {
+  static const List<QuizQuestion> questions = [
+    QuizQuestion(
+      question: 'According to the Brain Trauma Foundation (BTF) 4th Edition, what is the only Level I recommendation regarding the management of traumatic brain injury?',
+      options: [
+        'The use of hypertonic saline is preferred over mannitol in hypotensive patients.',
+        'Steroids are contraindicated for the treatment of severe TBI.',
+        'ICP monitoring must be initiated in all patients with a GCS of 3 to 8.',
+        'Prophylactic hypothermia should be initiated within 6 hours of injury.',
+      ],
+      correctIndex: 1,
+      explanation: 'The CRASH trial provided high-quality evidence that methylprednisolone significantly increased mortality, making this the only Level I recommendation.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'A 30-year-old patient with severe TBI has an intracranial pressure (ICP) of 21 mmHg. According to current BTF guidelines, what is the specific threshold at which ICP treatment should be initiated?',
+      options: [
+        '> 15 mmHg',
+        '> 20 mmHg',
+        '> 22 mmHg',
+        '> 25 mmHg',
+      ],
+      correctIndex: 2,
+      explanation: 'The BTF 4th Edition updated the treatment threshold from 20 to 22 mmHg based on clinical evidence.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'In the management of Cerebral Perfusion Pressure (CPP), which of the following targets and risks is most accurate according to the guidelines?',
+      options: [
+        'Target 70-80 mmHg; risk of cerebral ischemia if higher.',
+        'Target 60-70 mmHg; avoid using vasopressors to push CPP > 70 mmHg due to ARDS risk.',
+        'Target > 50 mmHg; risk of cerebral salt wasting if MAP is too low.',
+        'Target 50-60 mmHg; risk of intracranial hypertension if higher.',
+      ],
+      correctIndex: 1,
+      explanation: 'The recommended CPP range is 60-70 mmHg, and aggressive use of pressors to exceed 70 mmHg is associated with Acute Respiratory Distress Syndrome.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'A patient with severe TBI and multiple traumatic injuries presents with a Blood Pressure of 85/50 mmHg and an ICP of 24 mmHg. Which hyperosmolar therapy is most appropriate?',
+      options: [
+        'Mannitol 0.5 g/kg IV bolus',
+        'Hypertonic Saline (HTS)',
+        'Dexamethasone IV bolus',
+        'Furosemide 40 mg IV',
+      ],
+      correctIndex: 1,
+      explanation: 'HTS provides the necessary osmotic gradient to reduce ICP while simultaneously acting as a volume expander for hypotensive patients.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Regarding seizure prophylaxis in severe TBI, which statement aligns with the BTF guidelines and the Temkin trial?',
+      options: [
+        'Phenytoin should be continued for 6 months to prevent late post-traumatic seizures.',
+        'Levetiracetam is contraindicated due to its significant drug-drug interactions.',
+        'Anticonvulsants are recommended for 7 days to reduce the incidence of early post-traumatic seizures.',
+        'Valproate is the preferred agent for preventing seizures in penetrating brain injuries.',
+      ],
+      correctIndex: 2,
+      explanation: 'Prophylaxis is specifically recommended for the first week to prevent early seizures, which occur within 7 days of injury.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'The CRASH-3 trial investigated the use of Tranexamic Acid (TXA) in TBI. Which patient population demonstrated a significant reduction in head injury deaths when TXA was administered within 3 hours?',
+      options: [
+        'Patients with severe TBI (GCS 3-8)',
+        'Patients with mild-to-moderate TBI (GCS 9-15)',
+        'Patients with isolated subarachnoid hemorrhage',
+        'Patients presenting more than 8 hours after injury',
+      ],
+      correctIndex: 1,
+      explanation: 'Statistical benefits were specifically observed in the group with GCS 9-15 when treated early.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'The FDA has cleared blood-based biomarkers for TBI. Which pair of markers is used to help determine the need for a CT scan in mild TBI cases?',
+      options: [
+        'S100B and Tau',
+        'NSE and NfL',
+        'GFAP and UCH-L1',
+        'Lactate and Pyruvate',
+      ],
+      correctIndex: 2,
+      explanation: 'Glial Fibrillary Acidic Protein and Ubiquitin C-terminal Hydrolase L1 are the first FDA-cleared plasma markers for evaluating mild TBI.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: "During the management of refractory intracranial pressure, a 'Tier 3' intervention according to the SIBICC algorithm would include:",
+      options: [
+        'Mild hyperventilation to a PaCO2 of 32-35 mmHg',
+        'Cerebrospinal fluid (CSF) drainage via an EVD',
+        'High-dose barbiturate administration',
+        'Administration of 3% hypertonic saline',
+      ],
+      correctIndex: 2,
+      explanation: 'Barbiturate coma, along with hypothermia and decompressive craniectomy, are the highest-risk "last resort" Tier 3 options.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'A patient exhibits an ipsilateral dilated pupil and contralateral hemiparesis. The CT scan shows a medial temporal lobe displacement. Which herniation syndrome is most likely?',
+      options: [
+        'Subfalcine herniation',
+        'Uncal herniation',
+        'Tonsillar herniation',
+        'Central herniation',
+      ],
+      correctIndex: 1,
+      explanation: 'This syndrome involves the medial temporal lobe (uncus) compressing the CN III nerve and the cerebral peduncle.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Regarding nutritional support in severe TBI, what is the recommended protein intake and timing for initiation?',
+      options: [
+        '0.8-1.0 g/kg/day; begin by day 14',
+        '1.5-2.0 g/kg/day; attain full caloric replacement by day 5-7',
+        '2.5-3.0 g/kg/day; begin within the first 24 hours',
+        '1.2-1.5 g/kg/day; wait for gastric residuals to be < 100 mL',
+      ],
+      correctIndex: 1,
+      explanation: 'Severe TBI patients require high protein levels to combat hypermetabolism and should be fed within the first week to reduce mortality.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'Which finding from the DECRA trial significantly influenced the current approach to decompressive craniectomy (DC)?',
+      options: [
+        'Early prophylactic DC reduced mortality in patients with diffuse TBI.',
+        'Last-resort DC showed no benefit in refractory ICP cases.',
+        'Early bifrontal DC for diffuse injury resulted in more unfavorable outcomes compared to medical management.',
+        'A flap size of 10 x 10 cm was found to be the optimal size for expansion.',
+      ],
+      correctIndex: 2,
+      explanation: 'The DECRA trial demonstrated that while early surgery lowered ICP, it resulted in worse GOS-E scores at 6 months.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'In multimodal neuromonitoring, a brain tissue oxygen (PbtO2) value below which threshold is considered indicative of cerebral ischemia requiring treatment?',
+      options: [
+        '< 30 mmHg',
+        '< 15 mmHg',
+        '< 50 mmHg',
+        '< 5 mmHg',
+      ],
+      correctIndex: 1,
+      explanation: 'The BTF guidelines suggest treating when PbtO2 falls below 15 mmHg to prevent ischemic damage.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'A patient 6 days post-severe TBI develops a temperature of 39 degrees C, heart rate of 130 bpm, and extensor posturing triggered by bathing. Which of the following is the most likely diagnosis?',
+      options: [
+        'Early post-traumatic seizure',
+        'Paroxysmal Sympathetic Hyperactivity (PSH)',
+        'Central Diabetes Insipidus',
+        'Sepsis secondary to VAP',
+      ],
+      correctIndex: 1,
+      explanation: "PSH is characterized by 'storms' of fever, tachycardia, hypertension, and posturing, often appearing 5-7 days after injury.",
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: "Which of the following describes the correct mechanism and finding associated with the 'Acute Coagulopathy of TBI'?",
+      options: [
+        'Massive release of tissue factor from the injured brain activates the extrinsic coagulation cascade.',
+        'Heparin-like effect from the release of glycosaminoglycans from the BBB.',
+        'Inhibited Protein C activation leads to a hypercoagulable state.',
+        'Immediate platelet aggregation leads to widespread microvascular thrombosis.',
+      ],
+      correctIndex: 0,
+      explanation: 'The brain has high concentrations of tissue factor, which is released upon injury, leading to consumptive coagulopathy.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+    QuizQuestion(
+      question: 'When monitoring intracranial pressure, why is an External Ventricular Drain (EVD) considered the gold standard over intraparenchymal monitors?',
+      options: [
+        'It is non-invasive and has a lower infection rate.',
+        'It allows for both the monitoring of pressure and the therapeutic drainage of CSF.',
+        'It does not require calibration once placed.',
+        'It is more accurate because it measures oxygen saturation directly.',
+      ],
+      correctIndex: 1,
+      explanation: 'The dual capability of monitoring and treatment (drainage) is what makes the EVD the gold standard.',
+      moduleId: 'acute-management',
+      difficulty: 'board',
+    ),
+  ];
+}
