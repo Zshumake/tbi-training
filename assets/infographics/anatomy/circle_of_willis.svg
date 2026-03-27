@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="vesselGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" filter="url(#glow)">CIRCLE OF WILLIS — Cerebral Vasculature</text>
+  <text x="400" y="55" text-anchor="middle" fill="#94A3B8" font-size="12">Inferior Brain View — Arterial Supply &amp; TBI Relevance</text>
+
+  <!-- Brain outline - inferior view (subtle) -->
+  <ellipse cx="400" cy="300" rx="240" ry="210" fill="#1A1F2E" opacity="0.5" stroke="#2D3748" stroke-width="1"/>
+  <!-- Longitudinal fissure -->
+  <line x1="400" y1="95" x2="400" y2="505" stroke="#2D3748" stroke-width="1" opacity="0.4"/>
+  <!-- Lateral sulcus hints -->
+  <path d="M300,190 Q350,230 400,250" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.3"/>
+  <path d="M500,190 Q450,230 400,250" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.3"/>
+
+  <!-- Anterior label -->
+  <text x="400" y="82" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="600">ANTERIOR</text>
+
+  <!-- ===== VESSELS ===== -->
+
+  <!-- INTERNAL CAROTID ARTERIES (ICA) -->
+  <!-- Left ICA -->
+  <path d="M340,430 C338,400 340,370 345,340 C348,320 352,300 355,285" stroke="#EF4444" stroke-width="4" fill="none" filter="url(#vesselGlow)" opacity="0.9"/>
+  <!-- Right ICA -->
+  <path d="M460,430 C462,400 460,370 455,340 C452,320 448,300 445,285" stroke="#EF4444" stroke-width="4" fill="none" filter="url(#vesselGlow)" opacity="0.9"/>
+
+  <!-- ICA labels -->
+  <text x="310" y="440" text-anchor="end" fill="#EF4444" font-size="11" font-weight="600">L Internal</text>
+  <text x="310" y="452" text-anchor="end" fill="#EF4444" font-size="11" font-weight="600">Carotid A.</text>
+  <text x="490" y="440" fill="#EF4444" font-size="11" font-weight="600">R Internal</text>
+  <text x="490" y="452" fill="#EF4444" font-size="11" font-weight="600">Carotid A.</text>
+
+  <!-- ANTERIOR CEREBRAL ARTERIES (ACA) -->
+  <!-- Left ACA -->
+  <path d="M355,285 C358,270 365,255 380,240 C390,232 395,225 398,215" stroke="#22D3EE" stroke-width="3.5" fill="none" filter="url(#vesselGlow)"/>
+  <!-- ACA continuing forward -->
+  <path d="M398,215 C398,195 396,175 390,155 C385,140 378,125 370,115" stroke="#22D3EE" stroke-width="2.5" fill="none"/>
+  <!-- Right ACA -->
+  <path d="M445,285 C442,270 435,255 420,240 C410,232 405,225 402,215" stroke="#22D3EE" stroke-width="3.5" fill="none" filter="url(#vesselGlow)"/>
+  <!-- Right ACA continuing -->
+  <path d="M402,215 C402,195 404,175 410,155 C415,140 422,125 430,115" stroke="#22D3EE" stroke-width="2.5" fill="none"/>
+
+  <!-- AComA (ANTERIOR COMMUNICATING) -->
+  <line x1="388" y1="220" x2="412" y2="220" stroke="#F59E0B" stroke-width="3" filter="url(#vesselGlow)"/>
+  <!-- AComA aneurysm marker -->
+  <circle cx="400" cy="220" r="6" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <circle cx="400" cy="220" r="2" fill="#F59E0B"/>
+
+  <!-- ACA territory label -->
+  <line x1="398" y1="155" x2="280" y2="120" stroke="#22D3EE" stroke-width="0.8" opacity="0.6"/>
+  <rect x="130" y="95" width="155" height="48" rx="4" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1"/>
+  <text x="207" y="112" text-anchor="middle" fill="#22D3EE" font-size="11" font-weight="700">ACA Territory</text>
+  <text x="207" y="126" text-anchor="middle" fill="#E8ECF1" font-size="9">Medial hemispheres</text>
+  <text x="207" y="138" text-anchor="middle" fill="#E8ECF1" font-size="9">Motor/sensory: LEGS</text>
+
+  <!-- AComA label -->
+  <line x1="400" y1="213" x2="400" y2="180" stroke="#F59E0B" stroke-width="0.8" opacity="0.6"/>
+  <rect x="335" y="160" width="130" height="20" rx="3" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1"/>
+  <text x="400" y="174" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="600">AComA — Aneurysm site</text>
+
+  <!-- MIDDLE CEREBRAL ARTERIES (MCA) -->
+  <!-- Left MCA -->
+  <path d="M355,285 C340,278 320,272 295,265 C270,258 245,252 220,248" stroke="#EF4444" stroke-width="3.5" fill="none" filter="url(#vesselGlow)"/>
+  <!-- MCA branches -->
+  <path d="M260,260 C240,248 220,235 200,220" stroke="#EF4444" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M280,265 C265,252 250,240 235,225" stroke="#EF4444" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M240,255 C225,245 210,238 195,235" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Right MCA -->
+  <path d="M445,285 C460,278 480,272 505,265 C530,258 555,252 580,248" stroke="#EF4444" stroke-width="3.5" fill="none" filter="url(#vesselGlow)"/>
+  <!-- MCA branches -->
+  <path d="M540,260 C560,248 580,235 600,220" stroke="#EF4444" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M520,265 C535,252 550,240 565,225" stroke="#EF4444" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M560,255 C575,245 590,238 605,235" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- MCA territory labels -->
+  <rect x="520" y="195" width="160" height="48" rx="4" fill="#1A1F2E" stroke="#EF4444" stroke-width="1"/>
+  <text x="600" y="212" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="700">MCA Territory</text>
+  <text x="600" y="226" text-anchor="middle" fill="#E8ECF1" font-size="9">Lateral hemispheres</text>
+  <text x="600" y="238" text-anchor="middle" fill="#E8ECF1" font-size="9">Motor/sensory: ARMS + FACE</text>
+  <line x1="555" y1="248" x2="520" y2="235" stroke="#EF4444" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- POSTERIOR COMMUNICATING ARTERIES (PComA) -->
+  <!-- Left PComA -->
+  <path d="M355,290 C355,305 358,315 365,325" stroke="#F59E0B" stroke-width="2.5" fill="none" filter="url(#vesselGlow)"/>
+  <!-- Right PComA -->
+  <path d="M445,290 C445,305 442,315 435,325" stroke="#F59E0B" stroke-width="2.5" fill="none" filter="url(#vesselGlow)"/>
+
+  <!-- PComA label -->
+  <line x1="455" y1="310" x2="520" y2="310" stroke="#F59E0B" stroke-width="0.8" opacity="0.6"/>
+  <text x="525" y="308" fill="#F59E0B" font-size="9" font-weight="600">PComA</text>
+  <text x="525" y="320" fill="#94A3B8" font-size="8">CN III compression</text>
+  <text x="525" y="330" fill="#94A3B8" font-size="8">in uncal herniation</text>
+
+  <!-- POSTERIOR CEREBRAL ARTERIES (PCA) -->
+  <!-- Left PCA -->
+  <path d="M365,325 C355,340 340,350 315,360 C290,370 260,375 235,375" stroke="#A78BFA" stroke-width="3" fill="none" filter="url(#vesselGlow)"/>
+  <path d="M280,370 C260,365 240,358 225,348" stroke="#A78BFA" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Right PCA -->
+  <path d="M435,325 C445,340 460,350 485,360 C510,370 540,375 565,375" stroke="#A78BFA" stroke-width="3" fill="none" filter="url(#vesselGlow)"/>
+  <path d="M520,370 C540,365 560,358 575,348" stroke="#A78BFA" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- PCA territory label -->
+  <rect x="130" y="350" width="155" height="48" rx="4" fill="#1A1F2E" stroke="#A78BFA" stroke-width="1"/>
+  <text x="207" y="367" text-anchor="middle" fill="#A78BFA" font-size="11" font-weight="700">PCA Territory</text>
+  <text x="207" y="381" text-anchor="middle" fill="#E8ECF1" font-size="9">Occipital lobes</text>
+  <text x="207" y="393" text-anchor="middle" fill="#E8ECF1" font-size="9">VISION (visual cortex)</text>
+  <line x1="285" y1="375" x2="310" y2="365" stroke="#A78BFA" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- BASILAR ARTERY -->
+  <path d="M400,420 C400,400 400,380 400,360 C400,345 400,335 400,330" stroke="#A78BFA" stroke-width="4.5" fill="none" filter="url(#vesselGlow)"/>
+
+  <!-- Basilar splits into PCAs -->
+  <circle cx="400" cy="328" r="3" fill="#A78BFA" opacity="0.6"/>
+
+  <!-- Basilar label -->
+  <text x="400" y="460" text-anchor="middle" fill="#A78BFA" font-size="11" font-weight="600">Basilar Artery</text>
+
+  <!-- VERTEBRAL ARTERIES -->
+  <!-- Left vertebral -->
+  <path d="M350,510 C355,490 365,470 375,455 C385,440 392,430 398,422" stroke="#A78BFA" stroke-width="3" fill="none" opacity="0.8"/>
+  <!-- Right vertebral -->
+  <path d="M450,510 C445,490 435,470 425,455 C415,440 408,430 402,422" stroke="#A78BFA" stroke-width="3" fill="none" opacity="0.8"/>
+
+  <!-- Vertebral labels -->
+  <text x="330" y="510" text-anchor="end" fill="#A78BFA" font-size="10">L Vertebral A.</text>
+  <text x="470" y="510" fill="#A78BFA" font-size="10">R Vertebral A.</text>
+
+  <!-- Circle of Willis highlight ring -->
+  <ellipse cx="400" cy="285" rx="55" ry="60" fill="none" stroke="#F59E0B" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.3"/>
+  <text x="475" y="273" fill="#F59E0B" font-size="8" font-weight="600" opacity="0.5">Circle of Willis</text>
+
+  <!-- MCA Vasospasm box (Board Pearl) -->
+  <rect x="40" y="555" width="720" height="38" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+  <text x="56" y="572" fill="#22D3EE" font-size="11" font-weight="700">BOARD PEARL:</text>
+  <text x="158" y="572" fill="#E8ECF1" font-size="11">MCA territory most commonly affected in TBI-related vasospasm. AComA = most common aneurysm site.</text>
+  <text x="158" y="586" fill="#E8ECF1" font-size="11">PComA aneurysm → CN III palsy ("down and out" pupil). Vertebrobasilar → "locked-in syndrome."</text>
+</svg>

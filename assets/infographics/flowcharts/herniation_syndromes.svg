@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1050" width="800" height="1050">
+  <defs>
+    <marker id="arrow1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#EF4444"/>
+    </marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F59E0B"/>
+    </marker>
+    <marker id="arrow3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22D3EE"/>
+    </marker>
+    <marker id="arrow4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#34D399"/>
+    </marker>
+    <marker id="arrow5" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#A78BFA"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1050" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">Herniation Syndromes</text>
+  <text x="400" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="middle">5 Types of Brain Herniation in TBI</text>
+  <line x1="220" y1="68" x2="580" y2="68" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- Brain Cross-Section (simplified sagittal-ish outline) -->
+  <!-- Skull outline -->
+  <ellipse cx="400" cy="330" rx="220" ry="200" fill="none" stroke="#4B5563" stroke-width="2.5"/>
+
+  <!-- Brain surface (cortex) -->
+  <ellipse cx="400" cy="320" rx="200" ry="180" fill="#1A1F2E" stroke="#6B7280" stroke-width="1.5"/>
+
+  <!-- Falx cerebri (midline) -->
+  <line x1="400" y1="140" x2="400" y2="350" stroke="#6B7280" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="400" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Falx Cerebri</text>
+
+  <!-- Tentorium cerebelli -->
+  <line x1="260" y1="400" x2="540" y2="400" stroke="#6B7280" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="570" y="395" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6B7280">Tentorium</text>
+
+  <!-- Brainstem -->
+  <rect x="380" y="380" width="40" height="110" rx="12" fill="#2D3748" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="400" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#9CA3AF" text-anchor="middle" transform="rotate(-90,400,440)">Brainstem</text>
+
+  <!-- Foramen Magnum -->
+  <line x1="365" y1="500" x2="435" y2="500" stroke="#6B7280" stroke-width="2.5"/>
+  <text x="400" y="518" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Foramen Magnum</text>
+
+  <!-- Cerebellum -->
+  <ellipse cx="400" cy="460" rx="70" ry="35" fill="#2D3748" stroke="#6B7280" stroke-width="1"/>
+  <text x="400" y="464" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#9CA3AF" text-anchor="middle">Cerebellum</text>
+
+  <!-- Lateral ventricles (simplified) -->
+  <ellipse cx="355" cy="280" rx="30" ry="15" fill="#0F1419" stroke="#4B5563" stroke-width="1"/>
+  <ellipse cx="445" cy="280" rx="30" ry="15" fill="#0F1419" stroke="#4B5563" stroke-width="1"/>
+
+  <!-- ===== HERNIATION TYPE 1: SUBFALCINE ===== -->
+  <!-- Arrow curving under falx -->
+  <path d="M 340,240 Q 370,210 400,230 Q 430,250 460,230" fill="none" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow1)"/>
+  <circle cx="340" cy="240" r="5" fill="#EF4444"/>
+  <text x="400" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444" text-anchor="middle">1</text>
+
+  <!-- ===== HERNIATION TYPE 2: UNCAL ===== -->
+  <!-- Arrow from temporal lobe medially -->
+  <path d="M 275,370 Q 310,380 340,395" fill="none" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow2)"/>
+  <circle cx="275" cy="370" r="5" fill="#F59E0B"/>
+  <text x="260" y="363" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#F59E0B">2</text>
+
+  <!-- ===== HERNIATION TYPE 3: CENTRAL ===== -->
+  <!-- Arrow straight down through tentorial notch -->
+  <line x1="400" y1="355" x2="400" y2="385" stroke="#22D3EE" stroke-width="3" marker-end="url(#arrow3)"/>
+  <circle cx="400" cy="355" r="5" fill="#22D3EE"/>
+  <text x="418" y="355" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">3</text>
+
+  <!-- ===== HERNIATION TYPE 4: TONSILLAR ===== -->
+  <!-- Arrow from cerebellum down through foramen magnum -->
+  <line x1="400" y1="475" x2="400" y2="510" stroke="#34D399" stroke-width="3" marker-end="url(#arrow4)"/>
+  <circle cx="400" cy="475" r="5" fill="#34D399"/>
+  <text x="420" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">4</text>
+
+  <!-- ===== HERNIATION TYPE 5: UPWARD ===== -->
+  <!-- Arrow from posterior fossa upward -->
+  <line x1="470" y1="430" x2="460" y2="395" stroke="#A78BFA" stroke-width="3" marker-end="url(#arrow5)"/>
+  <circle cx="470" cy="430" r="5" fill="#A78BFA"/>
+  <text x="488" y="428" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#A78BFA">5</text>
+
+  <!-- ===== DETAIL BOXES ===== -->
+
+  <!-- Box 1: Subfalcine -->
+  <rect x="25" y="100" width="195" height="115" rx="8" fill="#1A1F2E" stroke="#EF4444" stroke-width="2"/>
+  <rect x="25" y="100" width="195" height="25" rx="8" fill="#EF4444" opacity="0.12"/>
+  <circle cx="42" cy="113" r="9" fill="#EF4444" opacity="0.3" stroke="#EF4444" stroke-width="1"/>
+  <text x="42" y="117" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">1</text>
+  <text x="130" y="117" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#EF4444" text-anchor="middle">Subfalcine</text>
+  <text x="38" y="143" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Cingulate gyrus herniates</text>
+  <text x="38" y="157" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">under falx cerebri</text>
+  <line x1="38" y1="165" x2="207" y2="165" stroke="#EF4444" stroke-width="0.5" opacity="0.3"/>
+  <text x="38" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">ACA compression</text>
+  <text x="38" y="196" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#EF4444">Contralateral leg weakness</text>
+
+  <!-- Connector line from box to arrow -->
+  <line x1="220" y1="175" x2="335" y2="240" stroke="#EF4444" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+
+  <!-- Box 2: Uncal -->
+  <rect x="25" y="230" width="195" height="130" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="25" y="230" width="195" height="25" rx="8" fill="#F59E0B" opacity="0.12"/>
+  <circle cx="42" cy="243" r="9" fill="#F59E0B" opacity="0.3" stroke="#F59E0B" stroke-width="1"/>
+  <text x="42" y="247" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle">2</text>
+  <text x="130" y="247" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F59E0B" text-anchor="middle">Uncal</text>
+  <text x="38" y="273" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Medial temporal lobe</text>
+  <text x="38" y="287" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">through tentorial notch</text>
+  <line x1="38" y1="295" x2="207" y2="295" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+  <text x="38" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">CN III compression</text>
+  <text x="38" y="326" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B">Ipsilateral fixed dilated pupil</text>
+  <text x="38" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B">Contralateral hemiparesis</text>
+
+  <!-- Box 3: Central (Transtentorial) -->
+  <rect x="580" y="100" width="195" height="130" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <rect x="580" y="100" width="195" height="25" rx="8" fill="#22D3EE" opacity="0.12"/>
+  <circle cx="597" cy="113" r="9" fill="#22D3EE" opacity="0.3" stroke="#22D3EE" stroke-width="1"/>
+  <text x="597" y="117" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#22D3EE" text-anchor="middle">3</text>
+  <text x="690" y="117" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#22D3EE" text-anchor="middle">Central</text>
+  <text x="593" y="143" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Bilateral downward</text>
+  <text x="593" y="157" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">displacement through</text>
+  <text x="593" y="171" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">tentorial notch</text>
+  <line x1="593" y1="179" x2="762" y2="179" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+  <text x="593" y="196" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#22D3EE">Bilateral Babinski signs</text>
+  <text x="593" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#22D3EE">Cushing triad</text>
+  <text x="593" y="226" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">(HTN, bradycardia, irregular resp)</text>
+
+  <!-- Connector line -->
+  <line x1="580" y1="200" x2="418" y2="355" stroke="#22D3EE" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+
+  <!-- Box 4: Tonsillar -->
+  <rect x="580" y="250" width="195" height="120" rx="8" fill="#1A1F2E" stroke="#34D399" stroke-width="2"/>
+  <rect x="580" y="250" width="195" height="25" rx="8" fill="#34D399" opacity="0.12"/>
+  <circle cx="597" cy="263" r="9" fill="#34D399" opacity="0.3" stroke="#34D399" stroke-width="1"/>
+  <text x="597" y="267" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">4</text>
+  <text x="690" y="267" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#34D399" text-anchor="middle">Tonsillar</text>
+  <text x="593" y="293" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Cerebellar tonsils through</text>
+  <text x="593" y="307" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">foramen magnum</text>
+  <line x1="593" y1="315" x2="762" y2="315" stroke="#34D399" stroke-width="0.5" opacity="0.3"/>
+  <text x="593" y="332" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">Medullary compression</text>
+  <text x="593" y="348" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#EF4444">Cardiorespiratory arrest</text>
+  <text x="593" y="364" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#EF4444">MOST LETHAL</text>
+
+  <!-- Connector line -->
+  <line x1="580" y1="350" x2="420" y2="490" stroke="#34D399" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+
+  <!-- Box 5: Upward -->
+  <rect x="580" y="390" width="195" height="110" rx="8" fill="#1A1F2E" stroke="#A78BFA" stroke-width="2"/>
+  <rect x="580" y="390" width="195" height="25" rx="8" fill="#A78BFA" opacity="0.12"/>
+  <circle cx="597" cy="403" r="9" fill="#A78BFA" opacity="0.3" stroke="#A78BFA" stroke-width="1"/>
+  <text x="597" y="407" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#A78BFA" text-anchor="middle">5</text>
+  <text x="690" y="407" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#A78BFA" text-anchor="middle">Upward</text>
+  <text x="593" y="433" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Posterior fossa mass</text>
+  <text x="593" y="447" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">herniates upward</text>
+  <line x1="593" y1="455" x2="762" y2="455" stroke="#A78BFA" stroke-width="0.5" opacity="0.3"/>
+  <text x="593" y="472" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">Midbrain compression</text>
+  <text x="593" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#A78BFA">Obstructive hydrocephalus</text>
+
+  <!-- Connector line -->
+  <line x1="580" y1="450" x2="475" y2="430" stroke="#A78BFA" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+
+  <!-- Kernohan Notch Pearl Box -->
+  <rect x="130" y="560" width="540" height="115" rx="10" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="130" y="560" width="540" height="28" rx="10" fill="#F59E0B" opacity="0.1"/>
+  <text x="400" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#F59E0B" text-anchor="middle">Clinical Pearl: Kernohan Notch Phenomenon</text>
+  <text x="400" y="605" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1" text-anchor="middle">In uncal herniation, the contralateral cerebral peduncle may be compressed</text>
+  <text x="400" y="623" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1" text-anchor="middle">against the opposite tentorial edge (Kernohan notch).</text>
+  <text x="400" y="648" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Result: FALSE LOCALIZING SIGN</text>
+  <text x="400" y="666" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">Ipsilateral (not contralateral) hemiparesis + ipsilateral dilated pupil</text>
+
+  <!-- Summary Quick Reference Table -->
+  <rect x="50" y="700" width="700" height="195" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="400" y="725" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">Quick Reference</text>
+  <line x1="70" y1="735" x2="730" y2="735" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Header -->
+  <text x="130" y="755" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#9CA3AF" text-anchor="middle">Type</text>
+  <text x="300" y="755" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#9CA3AF" text-anchor="middle">Structure</text>
+  <text x="500" y="755" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#9CA3AF" text-anchor="middle">Key Finding</text>
+  <line x1="70" y1="762" x2="730" y2="762" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Row 1 -->
+  <text x="130" y="780" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#EF4444" text-anchor="middle">Subfalcine</text>
+  <text x="300" y="780" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Cingulate under falx</text>
+  <text x="500" y="780" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Contralateral leg weakness (ACA)</text>
+
+  <!-- Row 2 -->
+  <text x="130" y="800" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">Uncal</text>
+  <text x="300" y="800" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Medial temporal</text>
+  <text x="500" y="800" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">CN III palsy + contralateral hemiparesis</text>
+
+  <!-- Row 3 -->
+  <text x="130" y="820" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#22D3EE" text-anchor="middle">Central</text>
+  <text x="300" y="820" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Bilateral downward</text>
+  <text x="500" y="820" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Bilateral Babinski, Cushing triad</text>
+
+  <!-- Row 4 -->
+  <text x="130" y="840" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#34D399" text-anchor="middle">Tonsillar</text>
+  <text x="300" y="840" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Cerebellar tonsils</text>
+  <text x="500" y="840" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Cardiorespiratory arrest</text>
+
+  <!-- Row 5 -->
+  <text x="130" y="860" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#A78BFA" text-anchor="middle">Upward</text>
+  <text x="300" y="860" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Posterior fossa up</text>
+  <text x="500" y="860" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Midbrain compression, hydrocephalus</text>
+
+  <!-- Vertical separator lines -->
+  <line x1="210" y1="740" x2="210" y2="880" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+  <line x1="400" y1="740" x2="400" y2="880" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- Footer -->
+  <text x="400" y="920" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Herniation is a neurosurgical emergency requiring immediate intervention</text>
+</svg>

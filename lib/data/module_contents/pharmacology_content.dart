@@ -527,6 +527,37 @@ final TopicData pharmacologyContent = TopicData(
           'Board Pearl: "Start Low, Go Slow"',
           'This is the overarching principle of ALL pharmacotherapy in TBI. The injured brain has: (1) Altered blood-brain barrier permeability (drugs reach higher CNS concentrations), (2) Disrupted neurotransmitter systems (heightened sensitivity to receptor modulation), (3) Impaired drug metabolism (hepatic and renal function may be compromised), (4) Increased susceptibility to sedation and cognitive side effects. Always start at the lowest dose, titrate slowly, use the fewest medications possible, and reassess regularly for continued need.',
         ),
+        HeaderBlock('Progesterone Phase III Trial Failures'),
+        TextBlock(
+          'Progesterone showed promising neuroprotective effects in Phase II trials for acute severe TBI (anti-inflammatory, anti-excitotoxic, anti-apoptotic, anti-edema). However, both Phase III trials definitively failed.',
+        ),
+        BulletCardBlock(
+          title: 'Progesterone Trials: Important Negative Results',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'PROTECT III (Wright et al., NEJM 2014): Phase III RCT -- NO benefit for acute severe TBI despite promising Phase II data',
+            'SyNAPSe (Skolnick et al., NEJM 2014): Phase III RCT of 1,195 patients -- NO benefit; however, NO adverse effects reported (confirmed safety)',
+            'Possible explanations for failure: heterogeneity of TBI, timing of administration, multifactorial nature of secondary injury',
+            'Key board lesson: Promising Phase II results do NOT guarantee Phase III success; this is a classic example of translational failure in TBI neuroprotection research',
+          ],
+        ),
+        HeaderBlock('CNS Polypharmacy in TBI'),
+        PearlBlock(
+          'Board Pearl: Polypharmacy as Strongest Predictor',
+          'CNS polypharmacy had the STRONGEST association with neurobehavioral symptom distress in TBI, even after controlling for injury severity and demographics. 45-85% of TBI patients are prescribed psychotropic and pain medications. Sedating medications are the most problematic contributors. Key principles: minimize CNS-active agents, regularly reassess need for each medication, watch for cumulative anticholinergic burden from multiple medications (common hidden anticholinergics: diphenhydramine, oxybutynin, TCAs, promethazine).',
+        ),
+        HeaderBlock('Key AED Drug Interactions'),
+        BulletCardBlock(
+          title: 'High-Yield Anticonvulsant Interactions',
+          themeColor: const Color(0xFFD97706),
+          backgroundColor: const Color(0xFFFFFBEB),
+          points: [
+            'Carbamazepine AUTO-INDUCES its own metabolism: requires dose increases over 2-4 weeks as clearance rises; monitor levels closely after initiation',
+            'Valproic acid DOUBLES lamotrigine levels by inhibiting glucuronidation: requires halving lamotrigine dose when co-prescribed; increases Stevens-Johnson syndrome risk',
+            'Ondansetron is the PREFERRED antiemetic over metoclopramide in TBI (metoclopramide is a dopamine antagonist that may impair recovery, similar to haloperidol)',
+          ],
+        ),
       ],
     ),
   ],

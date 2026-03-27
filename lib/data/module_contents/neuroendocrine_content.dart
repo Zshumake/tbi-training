@@ -18,7 +18,7 @@ final TopicData neuroendocrineContent = TopicData(
           themeColor: const Color(0xFF3B82F6),
           backgroundColor: const Color(0xFFEFF6FF),
           points: [
-            'Prevalence: approximately 27.5% of TBI patients develop some degree of hypopituitarism (meta-analysis data)',
+            'Prevalence: approximately 33% of TBI patients develop some degree of hypopituitarism (2024 meta-analysis of 52 studies, N=7,367; updated from prior 27.5% estimate)',
             'Can occur after mild, moderate, or severe TBI — severity increases risk but does not exclude mild TBI',
             'Mechanism: direct trauma to hypothalamus/pituitary, shearing of the pituitary stalk, vascular injury to the hypophyseal portal system, hemorrhagic necrosis of the pituitary gland',
             'The anterior pituitary is supplied by portal vessels (indirect supply) making it vulnerable to ischemia; the posterior pituitary has a direct arterial supply',
@@ -564,6 +564,26 @@ final TopicData neuroendocrineContent = TopicData(
         MnemonicBlock(
           'Pituitary Axes: "Go Look For The Adenoma, Pal"',
           'GH (growth hormone), LH/FSH (gonadotropins), FSH, TSH (thyroid), ACTH (adrenal), Prolactin — the anterior pituitary hormones affected by TBI. Remember to screen ALL axes. GH is most common deficit, ACTH is most dangerous to miss. Always replace cortisol BEFORE thyroid ("Cortisol Comes First").',
+        ),
+        HeaderBlock('Emerging Diagnostic Advances'),
+        BulletCardBlock(
+          title: 'New Diagnostic Tools and Pearls',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Macimorelin (Macrilen): FDA-approved ORAL GH stimulation test; 87% sensitivity, 98% specificity at GH cutoff 5.1 ng/mL; simpler than insulin tolerance test (oral vs IV)',
+            'Copeptin: emerging biomarker for central DI vs primary polydipsia; hypertonic saline-stimulated copeptin > 4.9 pmol/L differentiates with 96.5% diagnostic accuracy (NEJM 2018)',
+            'FEurate (Fractional Excretion of Urate): elevated (> 11%) in BOTH SIADH and CSW during hyponatremia; after sodium correction, FEurate NORMALIZES in SIADH but REMAINS ELEVATED in CSW -- most reliable biochemical differentiator',
+            'ITT contraindications in TBI: seizure disorder (common post-TBI) and coronary artery disease make ITT dangerous; glucagon stimulation test (GST) is the preferred alternative',
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Cortisol-Before-Levothyroxine Rule',
+          'When treating multiple concurrent pituitary deficiencies, ALWAYS replace cortisol BEFORE starting levothyroxine. Starting thyroid hormone replacement without cortisol coverage can precipitate adrenal crisis -- levothyroxine increases metabolic rate and cortisol clearance, unmasking latent adrenal insufficiency. This is a critical safety pearl: cortisol comes FIRST.',
+        ),
+        PearlBlock(
+          'Board Pearl: Testosterone Safety in TBI',
+          'Contrary to common clinical concern, a double-blind placebo-controlled pilot study found that testosterone replacement in TBI patients showed NO increase in agitation or aggression -- in fact, an INVERSE correlation was found (higher testosterone = less agitation). The greatest absolute improvement in FIM scores and grip strength was seen in the testosterone group. The fear of exacerbating behavioral problems should not prevent appropriate hypogonadism treatment after TBI.',
         ),
       ],
     ),

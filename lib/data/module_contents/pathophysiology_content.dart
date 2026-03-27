@@ -242,6 +242,22 @@ final TopicData pathophysiologyContent = TopicData(
             'Anemia: Decreased oxygen delivery; target hemoglobin >7 g/dL (some advocate >10 in severe TBI)',
           ],
         ),
+        TableBlock(
+          title: 'Secondary Insults: Thresholds and Impact',
+          columns: ['Insult', 'Clinical Threshold', 'Board Significance'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Hypotension', 'SBP <90 mmHg; single episode DOUBLES mortality', 'Most detrimental secondary insult'],
+            ['Hypoxemia', 'PaO2 <60 mmHg or SpO2 <94%', 'Maintain SpO2 >94%'],
+            ['Hyperthermia', '>38C; 10-13% metabolic increase per degree', 'Maintain normothermia'],
+            ['Hyperglycemia', '>180 mg/dL; osmotic/oxidative injury', 'Target 100-180 mg/dL'],
+            ['Hypoglycemia', '<70 mg/dL; direct neuronal injury', 'Avoid glucose <70 mg/dL'],
+            ['Seizures', 'Any clinical or subclinical; 3-5x metabolic demand', 'Prophylax 7 days in severe TBI'],
+            ['Hyponatremia', 'Na <135 mEq/L; worsens cerebral edema', 'Screen for SIADH, CSW'],
+            ['Coagulopathy', 'Abnormal INR, platelets, fibrinogen', 'Correct with appropriate products'],
+            ['Anemia', 'Hgb <7 g/dL; decreased O2 delivery', 'Target >7 g/dL (some: >10 in severe TBI)'],
+          ],
+        ),
         MnemonicBlock(
           'Secondary Insults: "CRASH HIT"',
           'Coagulopathy, Raised ICP, Anemia, Seizures, Hypotension, Hypoxia, Infection/Inflammation, Temperature (fever). These are all preventable/treatable secondary insults that worsen outcomes after TBI.',

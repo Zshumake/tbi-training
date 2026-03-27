@@ -70,6 +70,20 @@ final TopicData tbiFundamentalsContent = TopicData(
           'Falls → MVC → Struck → Assault',
           'Remember the etiology ranking: "Falling Men Strike Aggressively" — Falls, Motor Vehicle Crashes, Struck by objects, Assault.',
         ),
+        HeaderBlock('Economic Burden of TBI'),
+        BulletCardBlock(
+          title: 'TBI Economic Impact',
+          themeColor: const Color(0xFFD97706),
+          backgroundColor: const Color(0xFFFFFBEB),
+          points: [
+            'Total economic burden: \$76.5 billion annually (CDC, 2010 dollars)',
+            'Direct medical costs: \$9.2 billion',
+            'Work-loss costs: \$6.5 billion',
+            'Quality-of-life value lost: \$60.8 billion',
+            'Per-person lifetime cost highest for fatal TBI (~\$400,000/case)',
+            'Aggregate economic impact dominated by mild TBI due to far greater incidence',
+          ],
+        ),
         HeaderBlock('TBI as a Chronic Disease'),
         BulletCardBlock(
           title: 'TBI: From Acute Event to Chronic Condition',
@@ -131,6 +145,57 @@ final TopicData tbiFundamentalsContent = TopicData(
         PearlBlock(
           'Board Pearl: Mild TBI Definition',
           'The American Congress of Rehabilitation Medicine (ACRM) defines mild TBI as: a traumatically induced physiologic disruption of brain function with at least ONE of: (1) any LOC, (2) any memory loss before/after injury, (3) any alteration in mental status at time of injury, (4) focal neurologic deficits. The injury does NOT exceed: LOC of 30 min, PTA of 24 hrs, or initial GCS of 13.',
+        ),
+        PearlBlock(
+          'Board Pearl: Worst Indicator Rules',
+          'When severity parameters conflict (e.g., GCS 14 but PTA of 5 days), the patient is classified by the MOST SEVERE indicator. In this example, the patient would be classified as having a moderate TBI based on PTA duration, even though the GCS suggests mild injury. This "worst indicator rules" principle is commonly tested.',
+        ),
+        HeaderBlock('ACRM 2023 Updated mTBI Criteria'),
+        TableBlock(
+          title: '1993 vs 2023 ACRM Diagnostic Criteria',
+          columns: ['Feature', '1993 ACRM', '2023 ACRM'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Mechanism', 'Implied', 'Explicit: plausible traumatic mechanism required'],
+            ['Clinical signs', 'LOC, PTA, AMS, focal deficits', 'Expanded: clinical signs attributed to mechanism sufficient'],
+            ['Acute symptoms', 'Not separately categorized', 'Two or more symptoms + abnormal findings sufficient'],
+            ['Neuroimaging', 'Not addressed', 'Trauma-related intracranial abnormality sufficient for dx'],
+            ['Diagnostic certainty', 'Binary (present/absent)', 'Tiered: confirmed, suspected, possible'],
+            ['Clinical exam', 'Not specified', 'Cognitive impairment, oculomotor abnormality as supporting'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: 2023 ACRM Updates',
+          'The 2023 ACRM criteria add clinical examination findings (cognitive impairment, oculomotor abnormalities) and blood biomarkers as supporting diagnostic elements. Neuroimaging showing trauma-related intracranial abnormalities is now independently sufficient for diagnosis. Tiered certainty levels (confirmed, suspected, possible) allow treatment initiation even without definitive diagnosis. Severity thresholds (LOC <30 min, GCS 13-15, PTA <24h) remain unchanged.',
+        ),
+        HeaderBlock('Comparison of TBI Definitions'),
+        TableBlock(
+          title: 'Key TBI Definitions for Boards',
+          columns: ['Definition', 'Unique Feature', 'Primary Application'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['ACRM 1993', 'Foundational; AMS alone is sufficient', 'Clinical diagnosis, rehabilitation'],
+            ['ACRM 2023', 'Tiered certainty; biomarkers and imaging integrated', 'Updated clinical framework'],
+            ['WHO 2004', 'Exclusion criteria (drugs, penetrating injury)', 'Epidemiological research'],
+            ['DoD/VA 2007/2021', 'Intracranial lesion as independent 5th criterion', 'Military populations'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: DoD/VA Definition',
+          'The DoD/VA definition uniquely includes intracranial lesion as a fifth diagnostic criterion, meaning imaging-positive TBI can be diagnosed even without LOC, PTA, or AMS. The DoD/VA does not routinely use GCS for classification in clinical practice and instead relies more heavily on LOC and PTA duration.',
+        ),
+        HeaderBlock('Complicated vs Uncomplicated Mild TBI'),
+        BulletCardBlock(
+          title: 'Complicated vs Uncomplicated mTBI',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'Uncomplicated mTBI: GCS 13-15 with NORMAL neuroimaging',
+            'Complicated mTBI: GCS 13-15 with trauma-related abnormalities on neuroimaging (contusion, hemorrhage, skull fracture)',
+            'Complicated mTBI outcomes more closely resemble MODERATE TBI than uncomplicated mTBI',
+            'Higher rates of persistent symptoms, longer recovery times, and greater functional disability',
+            'This distinction is clinically relevant for disposition decisions, follow-up planning, and prognostic counseling',
+          ],
         ),
         HeaderBlock('Key Definitions'),
         BulletCardBlock(

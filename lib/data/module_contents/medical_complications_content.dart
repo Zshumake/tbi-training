@@ -134,6 +134,10 @@ final TopicData medicalComplicationsContent = TopicData(
           'Board Pearl: PTH Diagnosis and Treatment',
           'Periventricular lucency (transependymal CSF migration) on CT is the key finding distinguishing true PTH from ex vacuo ventriculomegaly. The diagnostic algorithm: suspect PTH if clinical plateau or decline with ventriculomegaly, then perform high-volume lumbar puncture (30-50 mL) and reassess gait/cognition. If improvement occurs, proceed to VP shunt placement. Treatment: ventriculoperitoneal (VP) shunt.',
         ),
+        PearlBlock(
+          'Board Pearl: Post-Craniectomy Hydrocephalus',
+          'PTH incidence after decompressive craniectomy (DC) is 27% -- significantly higher than the general severe TBI population (3.9-8%). Risk factors: larger craniectomy size, bilateral craniectomy, subdural fluid collections, meningitis, and delayed cranioplasty. A staged approach (cranioplasty first, then VP shunt if needed) is associated with fewer complications and remains preferred at most centers. ETV (endoscopic third ventriculostomy) is emerging as an alternative for select cases of non-communicating PTH.',
+        ),
         HeaderBlock('Updated PTE Evidence: Levetiracetam vs Phenytoin'),
         TextBlock(
           'Since the Temkin trial (1990) established phenytoin as the standard for early PTS prophylaxis, multiple studies have compared levetiracetam (LEV) to phenytoin (PHT). The most important is Inaba et al. (2013), which has shaped modern practice favoring levetiracetam.',
@@ -157,6 +161,19 @@ final TopicData medicalComplicationsContent = TopicData(
         PearlBlock(
           'Board Pearl: LEV vs PHT — Equivalent Efficacy, Better Profile',
           'Inaba et al. (2013) demonstrated that levetiracetam and phenytoin have EQUIVALENT efficacy for early PTS prophylaxis. Levetiracetam is increasingly preferred because: (1) no drug level monitoring needed, (2) fewer drug interactions (renal excretion vs CYP450), (3) less cognitive impairment, (4) does not impede neurological recovery. However, the BTF 4th Edition still lists phenytoin as Level IIA because the Temkin trial was the original RCT. Neither drug prevents LATE PTS. Prophylaxis beyond 7 days remains NOT recommended.',
+        ),
+        HeaderBlock('AED Withdrawal Timing'),
+        BulletCardBlock(
+          title: 'When to Consider Stopping Anticonvulsants',
+          themeColor: const Color(0xFF059669),
+          backgroundColor: const Color(0xFFF0FDF4),
+          points: [
+            'No seizures for 2 years: Generally accepted as the minimum duration of seizure freedom before considering AED taper',
+            'EEG normalization: Supports but does not guarantee successful withdrawal',
+            'Withdrawal should be gradual: Taper over 2-6 months to minimize withdrawal seizure risk',
+            'Risk factors for recurrence: Penetrating injury, persistent EEG abnormalities, multiple seizure types, structural lesion on imaging',
+            'Neurocritical Care Society (2024): Reaffirmed 7-day prophylaxis window for moderate-to-severe TBI; prophylaxis in mild/moderate TBI yields a very small absolute risk reduction (~0.6%)',
+          ],
         ),
         HeaderBlock('Posttraumatic Headache (ICHD-3 Classification)'),
         TextBlock(
@@ -484,6 +501,116 @@ final TopicData medicalComplicationsContent = TopicData(
           'Board Pearl: VTE Prophylaxis Timing',
           'The key dilemma in TBI is balancing VTE risk (54% DVT without prophylaxis) against hemorrhagic risk. Mechanical prophylaxis (SCDs) should be started IMMEDIATELY. Pharmacologic prophylaxis (LMWH or UFH) is typically started 24-72 hours after injury once repeat imaging confirms hemorrhage stability. If pharmacologic prophylaxis is contraindicated (expanding hemorrhage), a retrievable IVC filter should be considered. The "54% without prophylaxis" number is high-yield.',
         ),
+        HeaderBlock('Evolving IVC Filter Recommendations'),
+        BulletCardBlock(
+          title: 'IVC Filters: Updated 2024 Guidelines',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Current evidence (2024 ACS/SIR guidelines) recommends AGAINST routine prophylactic IVC filter placement in TBI',
+            'Prophylactic IVC filtration is paradoxically associated with INCREASED DVT and PE rates without mortality benefit (likely due to filter-related thrombosis)',
+            'Current indications for IVC filter: documented acute proximal DVT or PE when anticoagulation is ABSOLUTELY contraindicated, or recurrent PE despite adequate anticoagulation',
+            'Filters should be RETRIEVABLE and removed as soon as anticoagulation can be safely initiated',
+          ],
+        ),
+        HeaderBlock('VTE Diagnostic Testing'),
+        TableBlock(
+          title: 'VTE Diagnostic Modalities',
+          columns: ['Test', 'Use', 'Key Features'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'Duplex ultrasonography',
+              'First-line for DVT screening',
+              'Sensitivity > 95% for proximal DVT; less sensitive for calf DVT',
+            ],
+            [
+              'CT pulmonary angiography (CTPA)',
+              'Gold standard for PE diagnosis',
+              'High sensitivity and specificity for pulmonary embolism',
+            ],
+            [
+              'D-dimer',
+              'Screening / exclusion test',
+              'High sensitivity but LOW specificity; useful for exclusion in low-probability patients; frequently elevated in trauma (limiting utility)',
+            ],
+            [
+              'Venography',
+              'Historical gold standard for DVT',
+              'Rarely used now due to invasiveness; replaced by duplex ultrasound',
+            ],
+          ],
+        ),
+        HeaderBlock('Acute Coagulopathy of TBI'),
+        TextBlock(
+          'TBI releases tissue factor (TF) from injured brain parenchyma (abundant in cerebral arterial adventitia and astrocytes), activating the extrinsic coagulation cascade and causing a dual-phase coagulopathy: both hypercoagulability and consumptive coagulopathy. This explains why TBI patients can have both hemorrhagic progression and thrombotic complications.',
+        ),
+        TableBlock(
+          title: 'Viscoelastic Testing (TEG/ROTEM) vs Conventional Coagulation Tests',
+          columns: ['Feature', 'TEG/ROTEM', 'Conventional (PT/INR, PTT)'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Sample', 'Whole blood', 'Plasma'],
+            ['Time to result', '10-15 minutes', '45-60 minutes'],
+            ['Platelet function', 'Can detect (TEG platelet mapping)', 'Cannot detect'],
+            ['Fibrinolysis', 'Can detect', 'Cannot detect'],
+            ['Clinical advantage', 'Real-time guided resuscitation', 'Standard of care but slower and less comprehensive'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: TXA in TBI (CRASH-3)',
+          'The CRASH-3 trial (Lancet 2019) showed that tranexamic acid (TXA) given within 3 hours of injury reduced head injury-related death in patients with mild-to-moderate head injuries (GCS 9-15). Benefit was NOT demonstrated in severe TBI (GCS 3-8). Key point: TXA must be given WITHIN 3 HOURS and benefits are specific to GCS 9-15, not the most severely injured patients.',
+        ),
+        HeaderBlock('Paroxysmal Sympathetic Hyperactivity (PSH)'),
+        TextBlock(
+          'PSH occurs in 10-30% of severe TBI patients admitted to ICU. It is characterized by paroxysmal episodes of sympathetic activation with tachycardia, hypertension, tachypnea, hyperthermia, diaphoresis, and extensor posturing.',
+        ),
+        BulletCardBlock(
+          title: 'PSH-AM Diagnostic Tool (Assessment Measure)',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'Clinical Feature Scale (CFS): scores intensity of 6 cardinal features (HR, BP, RR, temperature, sweating, posturing) on 0-3 scale each (max 18)',
+            'Diagnosis Likelihood Tool (DLT): 11 yes/no criteria assessing clinical context (max 11)',
+            'Combined score interpretation: < 8 = unlikely PSH, 8-16 = possible PSH, >= 17 = probable PSH',
+            'Three management pillars: (1) reduce environmental stimulation, (2) reduce sympathetic excitatory afferents, (3) inhibit sympathetic effects on target organs',
+          ],
+        ),
+        TableBlock(
+          title: 'PSH Pharmacotherapy Tiers',
+          columns: ['Tier', 'Purpose', 'Agents'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Tier 1', 'Acute episode management', 'Morphine/fentanyl (sympathetic afferent reduction); midazolam/diazepam'],
+            ['Tier 2', 'Episodic recurrence reduction', 'Propranolol (best evidence per Cochrane); clonidine (alpha-2 agonist)'],
+            ['Tier 3', 'Refractory cases', 'Gabapentin; intrathecal baclofen (severe dystonia); bromocriptine; dantrolene (hyperthermia/rigidity)'],
+          ],
+        ),
+        HeaderBlock('Fever Management and Normothermia'),
+        BulletCardBlock(
+          title: '2024 ESICM/NACCS Consensus on Temperature Management',
+          themeColor: const Color(0xFF059669),
+          backgroundColor: const Color(0xFFF0FDF4),
+          points: [
+            'Strong recommendation for controlled normothermia: target 36.0-37.5 C in severe TBI',
+            'Neurogenic fever (> 37.5 C without sepsis): promptly detect and treat, irrespective of ICP level',
+            'Continuous temperature monitoring recommended in severe TBI',
+            'Therapeutic hypothermia (below 36 C) is NOT recommended -- multiple multicenter RCTs failed to demonstrate neurological benefit',
+            'Fever control methods: acetaminophen, NSAIDs, and surface/intravascular cooling devices',
+            'Shivering management is essential as part of any normothermia protocol',
+          ],
+        ),
+        HeaderBlock('VAP Prevention in TBI'),
+        BulletCardBlock(
+          title: 'Ventilator-Associated Pneumonia in TBI',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'VAP incidence in TBI: 36% -- nearly DOUBLE the general ICU rate',
+            'Triple-hit hypothesis: sympathetic hyperactivity + iatrogenic ventilatory injury + intestinal dysbiosis with systemic immune dysregulation',
+            '2024 ISID 8-component prevention bundle: hand hygiene, daily sedation interruption, cuff pressure 20-30 cm H2O, minimize ventilation duration, HOB 30-45 degrees, oral care, subglottic secretion drainage, prevent circuit condensation',
+          ],
+        ),
       ],
     ),
     TopicTab(
@@ -595,6 +722,10 @@ final TopicData medicalComplicationsContent = TopicData(
             'Clinical impact: Safety concern (cannot detect gas leaks, smoke, spoiled food); reduced taste perception (flavor is largely smell-dependent); decreased quality of life and appetite',
             'Testing: University of Pennsylvania Smell Identification Test (UPSIT) -- 40-item scratch-and-sniff test; most widely used standardized olfactory test',
           ],
+        ),
+        PearlBlock(
+          'Board Pearl: Olfactory Training',
+          'Olfactory training (systematic sniffing of 4 distinct odors twice daily for 12+ weeks) is the most evidence-based rehabilitation approach for post-traumatic anosmia. Only approximately 10% show functional improvement within 1 year. Late recovery is possible even 9+ years post-injury, likely via olfactory neurogenesis -- the olfactory system is one of the few CNS structures with ongoing neuronal regeneration.',
         ),
       ],
     ),

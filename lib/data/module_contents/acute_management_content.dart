@@ -13,6 +13,21 @@ final TopicData acuteManagementContent = TopicData(
           'The BTF 4th Edition guidelines (Carney et al., Neurosurgery 2017) are the foundation of evidence-based severe TBI management. The 4th edition significantly reduced the number of Level I recommendations compared to prior editions due to insufficient quality evidence. There is only ONE Level I recommendation in the entire guideline.',
           isIntro: true,
         ),
+        TableBlock(
+          title: 'BTF 4th Edition Evidence Classification',
+          columns: ['Level', 'Definition', 'Strength'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Level I', 'High-quality RCTs', 'Strongest; should be followed'],
+            ['Level IIA', 'Moderate-quality RCTs or well-designed cohort studies', 'Strong recommendation'],
+            ['Level IIB', 'Lower-quality RCTs or well-designed cohort studies', 'Moderate recommendation'],
+            ['Level III', 'Case series, expert opinion, or case-control studies', 'Weak; insufficient for definitive guidance'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: BTF Evidence Structure',
+          'The 4th Edition contains only ONE Level I recommendation (steroids contraindicated) compared to multiple Level I recommendations in prior editions. Many 3rd Edition recommendations were downgraded due to methodological limitations. The guidelines apply primarily to adults with severe TBI (GCS 3-8). Pediatric guidelines are published separately.',
+        ),
         PearlBlock(
           'The ONLY Level I BTF Recommendation',
           'Steroids are CONTRAINDICATED in TBI. The CRASH trial (Lancet 2004, >10,000 patients) showed methylprednisolone INCREASED 2-week mortality (RR 1.18) and 6-month mortality. This is the single most important BTF fact for boards. Remember: "CRASH landed steroids" -- steroids CRASH and burn in TBI.',
@@ -108,6 +123,32 @@ final TopicData acuteManagementContent = TopicData(
             'Hypotension is the single most detrimental secondary insult in TBI',
             'Both hypotension AND hypoxemia independently worsen outcomes; together they are synergistically harmful',
           ],
+        ),
+        BulletCardBlock(
+          title: 'Fluid Resuscitation in TBI',
+          themeColor: const Color(0xFF059669),
+          backgroundColor: const Color(0xFFECFDF5),
+          points: [
+            'Isotonic crystalloids (normal saline or lactated Ringer\'s) are the PREFERRED resuscitation fluids',
+            'Hypotonic solutions (D5W, half-normal saline) are CONTRAINDICATED -- worsen cerebral edema',
+            'Albumin is NOT recommended: SAFE-TBI substudy showed INCREASED mortality with albumin resuscitation in TBI patients',
+            'Colloids offer no advantage over crystalloids in TBI and may be harmful',
+          ],
+        ),
+        HeaderBlock('Temkin Trial: Phenytoin Seizure Prophylaxis'),
+        TableBlock(
+          title: 'Temkin Trial Results (NEJM 1990, N=404)',
+          columns: ['Time Period', 'Phenytoin', 'Placebo', 'Result'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Early PTS (Day 0-7)', '3.6%', '14.2%', 'SIGNIFICANT (P<0.001); 73% RRR'],
+            ['Late PTS (Day 8 - Year 1)', '21.5%', '15.7%', 'NOT significant'],
+            ['Late PTS (Through Year 2)', '27.5%', '21.1%', 'NOT significant'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: Temkin Trial',
+          'The Temkin trial is the foundational evidence for 7-day seizure prophylaxis. Phenytoin reduced early PTS by 73% but had absolutely NO effect on late PTS. This finding is why prophylaxis beyond 7 days is NOT recommended. Note: BTF 4th Edition does NOT recommend valproate due to a trend toward increased mortality in the Temkin valproate trial (1999).',
         ),
         BulletCardBlock(
           title: 'Prophylactic Hypothermia (Level IIB)',

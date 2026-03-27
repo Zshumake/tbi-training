@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22D3EE"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">ICP Management Stepwise Algorithm</text>
+  <line x1="150" y1="58" x2="650" y2="58" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- CPP Side Note Box (left) -->
+  <rect x="20" y="80" width="170" height="90" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="105" y="102" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F59E0B" text-anchor="middle">CPP Target</text>
+  <text x="105" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1" text-anchor="middle">60 - 70 mmHg</text>
+  <line x1="35" y1="132" x2="175" y2="132" stroke="#F59E0B" stroke-width="0.5" opacity="0.4"/>
+  <text x="105" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle">Avoid CPP &gt;70</text>
+  <text x="105" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#F59E0B" text-anchor="middle">(increased ARDS risk)</text>
+
+  <!-- Step 1 -->
+  <rect x="230" y="85" width="340" height="70" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="260" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">STEP 1</text>
+  <text x="400" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">HOB elevated 30 degrees</text>
+  <text x="400" y="138" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Head midline, avoid jugular compression</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="400" y1="155" x2="400" y2="185" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="230" y="190" width="340" height="70" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="260" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">STEP 2</text>
+  <text x="400" y="225" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">Sedation / Analgesia</text>
+  <text x="400" y="243" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Propofol, Fentanyl</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="400" y1="260" x2="400" y2="290" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="230" y="295" width="340" height="70" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="260" y="317" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">STEP 3</text>
+  <text x="400" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">CSF Drainage via EVD</text>
+  <text x="400" y="348" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">External ventricular drain</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="400" y1="365" x2="400" y2="395" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="230" y="400" width="340" height="70" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="260" y="422" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">STEP 4</text>
+  <text x="400" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">Hyperosmolar Therapy</text>
+  <text x="400" y="453" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Mannitol 20% or Hypertonic Saline (23.4%)</text>
+
+  <!-- Arrow 4→Decision -->
+  <line x1="400" y1="470" x2="400" y2="505" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision Diamond -->
+  <polygon points="400,510 500,560 400,610 300,560" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="555" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">ICP still</text>
+  <text x="400" y="570" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">&gt;22 mmHg?</text>
+
+  <!-- NO branch -->
+  <line x1="500" y1="560" x2="600" y2="560" stroke="#34D399" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="610" y="540" width="150" height="40" rx="8" fill="#1A1F2E" stroke="#34D399" stroke-width="1.5"/>
+  <text x="685" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#34D399" text-anchor="middle">Continue monitoring</text>
+  <text x="550" y="550" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">NO</text>
+
+  <!-- YES arrow down -->
+  <line x1="400" y1="610" x2="400" y2="645" stroke="#EF4444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="415" y="635" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">YES</text>
+
+  <!-- Step 5 -->
+  <rect x="230" y="650" width="340" height="70" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="260" y="672" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">STEP 5</text>
+  <text x="400" y="685" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">Mild Hyperventilation</text>
+  <text x="400" y="703" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Target PaCO2 32 - 35 mmHg</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="400" y1="720" x2="400" y2="755" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6 -->
+  <rect x="230" y="760" width="340" height="70" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="260" y="782" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#22D3EE">STEP 6</text>
+  <text x="400" y="795" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">Neuromuscular Blockade</text>
+  <text x="400" y="813" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Cisatracurium</text>
+
+  <!-- Arrow 6→7 -->
+  <line x1="400" y1="830" x2="400" y2="865" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 7 (Last Resort - Red border) -->
+  <rect x="210" y="870" width="380" height="80" rx="10" fill="#1A1F2E" stroke="#EF4444" stroke-width="2.5"/>
+  <text x="240" y="895" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">STEP 7 — LAST RESORT</text>
+  <text x="400" y="915" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">Barbiturate Coma (Pentobarbital)</text>
+  <text x="400" y="935" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E8ECF1" text-anchor="middle">OR Decompressive Craniectomy</text>
+
+  <!-- ICP Target Reference -->
+  <rect x="20" y="200" width="170" height="55" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.7"/>
+  <text x="105" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#22D3EE" text-anchor="middle">ICP Target</text>
+  <text x="105" y="242" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#E8ECF1" text-anchor="middle">&lt; 22 mmHg</text>
+
+  <!-- Escalation indicator bar on left -->
+  <rect x="215" y="85" width="6" height="865" rx="3" fill="url(#escalationGrad)"/>
+  <defs>
+    <linearGradient id="escalationGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Escalation label -->
+  <text x="12" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" transform="rotate(-90,12,580)" text-anchor="middle">ESCALATION LADDER</text>
+
+  <!-- Footer reference -->
+  <text x="400" y="990" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Based on BTF Guidelines (4th Edition) — ICP threshold 22 mmHg</text>
+  <text x="400" y="1005" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#4B5563" text-anchor="middle">CPP = MAP - ICP | Goal: CPP 60-70 mmHg</text>
+</svg>

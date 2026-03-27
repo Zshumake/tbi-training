@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1,1 L4,7 L7,1" fill="#22D3EE" stroke="none"/>
+    </marker>
+    <marker id="arrowDownRed" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1,1 L4,7 L7,1" fill="#EF4444" stroke="none"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" filter="url(#glow)">UMN vs LMN — Corticospinal Tract</text>
+  <text x="400" y="55" text-anchor="middle" fill="#94A3B8" font-size="12">Motor Cortex → Muscle | Key Lesion Localizations</text>
+
+  <!-- UMN zone bracket -->
+  <line x1="120" y1="75" x2="120" y2="430" stroke="#22D3EE" stroke-width="2"/>
+  <line x1="120" y1="75" x2="130" y2="75" stroke="#22D3EE" stroke-width="2"/>
+  <line x1="120" y1="430" x2="130" y2="430" stroke="#22D3EE" stroke-width="2"/>
+  <text x="115" y="260" text-anchor="middle" fill="#22D3EE" font-size="14" font-weight="700" transform="rotate(-90,115,260)">UPPER MOTOR NEURON (UMN)</text>
+
+  <!-- LMN zone bracket -->
+  <line x1="120" y1="445" x2="120" y2="630" stroke="#EF4444" stroke-width="2"/>
+  <line x1="120" y1="445" x2="130" y2="445" stroke="#EF4444" stroke-width="2"/>
+  <line x1="120" y1="630" x2="130" y2="630" stroke="#EF4444" stroke-width="2"/>
+  <text x="115" y="540" text-anchor="middle" fill="#EF4444" font-size="14" font-weight="700" transform="rotate(-90,115,540)">LOWER MOTOR NEURON (LMN)</text>
+
+  <!-- ===== 1. MOTOR CORTEX (PRECENTRAL GYRUS) ===== -->
+  <path d="M320,80 Q350,72 380,78 Q410,84 440,78 Q470,72 500,80 L500,108 Q470,100 440,106 Q410,112 380,106 Q350,100 320,108Z" fill="#22D3EE" opacity="0.2" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="410" y="97" text-anchor="middle" fill="#22D3EE" font-size="12" font-weight="700">MOTOR CORTEX</text>
+  <text x="410" y="107" text-anchor="middle" fill="#22D3EE" font-size="9">(Precentral Gyrus)</text>
+
+  <!-- Homunculus hint - tiny labels -->
+  <text x="340" y="88" text-anchor="middle" fill="#94A3B8" font-size="7">Leg</text>
+  <text x="370" y="85" text-anchor="middle" fill="#94A3B8" font-size="7">Trunk</text>
+  <text x="420" y="85" text-anchor="middle" fill="#94A3B8" font-size="7">Arm</text>
+  <text x="460" y="85" text-anchor="middle" fill="#94A3B8" font-size="7">Hand</text>
+  <text x="488" y="88" text-anchor="middle" fill="#94A3B8" font-size="7">Face</text>
+
+  <!-- Right side annotation box for cortex -->
+  <line x1="500" y1="90" x2="560" y2="90" stroke="#22D3EE" stroke-width="0.8" opacity="0.5"/>
+  <rect x="565" y="74" width="195" height="35" rx="4" fill="#1A1F2E" stroke="#22D3EE" stroke-width="0.8"/>
+  <text x="662" y="90" text-anchor="middle" fill="#E8ECF1" font-size="9">Contralateral motor control</text>
+  <text x="662" y="102" text-anchor="middle" fill="#94A3B8" font-size="8">Betz cells (largest neurons in CNS)</text>
+
+  <!-- Descending tract line -->
+  <path d="M410,110 L410,150" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- ===== 2. CORONA RADIATA ===== -->
+  <!-- Fan shape -->
+  <path d="M340,110 L390,155 L410,160 L430,155 L480,110" stroke="#22D3EE" stroke-width="1" fill="#22D3EE" opacity="0.08"/>
+  <path d="M390,155 L410,170 L430,155" stroke="#22D3EE" stroke-width="2" fill="none"/>
+  <text x="410" y="165" text-anchor="middle" fill="#22D3EE" font-size="11" font-weight="600">Corona Radiata</text>
+
+  <!-- Descending -->
+  <path d="M410,172 L410,200" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- ===== 3. INTERNAL CAPSULE ===== -->
+  <path d="M380,205 L410,210 L440,205 L440,235 L410,240 L380,235Z" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="410" y="222" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">Internal Capsule</text>
+  <text x="410" y="234" text-anchor="middle" fill="#F59E0B" font-size="9">(Posterior Limb)</text>
+
+  <!-- Internal capsule annotation -->
+  <line x1="440" y1="220" x2="560" y2="210" stroke="#F59E0B" stroke-width="0.8" opacity="0.5"/>
+  <rect x="565" y="196" width="195" height="32" rx="4" fill="#1A1F2E" stroke="#F59E0B" stroke-width="0.8"/>
+  <text x="662" y="211" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="600">Site of lacunar strokes</text>
+  <text x="662" y="223" text-anchor="middle" fill="#94A3B8" font-size="8">Pure motor hemiparesis</text>
+
+  <!-- Descending -->
+  <path d="M410,242 L410,270" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- ===== 4. CEREBRAL PEDUNCLE ===== -->
+  <path d="M395,275 L425,275 L420,305 L400,305Z" fill="#22D3EE" opacity="0.12" stroke="#22D3EE" stroke-width="1.2"/>
+  <text x="410" y="293" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">Cerebral</text>
+  <text x="410" y="303" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">Peduncle</text>
+
+  <!-- Kernohan notch reference -->
+  <line x1="425" y1="290" x2="560" y2="280" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
+  <rect x="565" y="266" width="195" height="32" rx="4" fill="#1A1F2E" stroke="#A78BFA" stroke-width="0.8"/>
+  <text x="662" y="281" text-anchor="middle" fill="#A78BFA" font-size="9" font-weight="600">Kernohan notch site</text>
+  <text x="662" y="293" text-anchor="middle" fill="#94A3B8" font-size="8">Ipsilateral hemiparesis (false localizing)</text>
+
+  <!-- Descending -->
+  <path d="M410,307 L410,335" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- ===== 5. PONS (transit) ===== -->
+  <ellipse cx="410" cy="345" rx="30" ry="12" fill="#22D3EE" opacity="0.06" stroke="#22D3EE" stroke-width="0.8"/>
+  <text x="410" y="348" text-anchor="middle" fill="#94A3B8" font-size="9">Pons</text>
+
+  <!-- Descending -->
+  <path d="M410,358 L410,380" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- ===== 6. PYRAMIDAL DECUSSATION ===== -->
+  <!-- X crossing pattern -->
+  <path d="M395,385 L425,420" stroke="#22D3EE" stroke-width="2.5" fill="none"/>
+  <path d="M425,385 L395,420" stroke="#22D3EE" stroke-width="2.5" fill="none"/>
+  <circle cx="410" cy="402" r="18" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="410" y="398" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">PYRAMIDAL</text>
+  <text x="410" y="409" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">DECUSSATION</text>
+
+  <!-- Decussation annotation -->
+  <line x1="428" y1="402" x2="560" y2="395" stroke="#EF4444" stroke-width="0.8" opacity="0.5"/>
+  <rect x="565" y="378" width="195" height="40" rx="4" fill="#1A1F2E" stroke="#EF4444" stroke-width="0.8"/>
+  <text x="662" y="394" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="600">~85% fibers cross here</text>
+  <text x="662" y="406" text-anchor="middle" fill="#94A3B8" font-size="8">Medulla oblongata level</text>
+  <text x="662" y="416" text-anchor="middle" fill="#94A3B8" font-size="8">Lesion above → contralateral deficits</text>
+
+  <!-- ===== TRANSITION LINE ===== -->
+  <line x1="140" y1="435" x2="680" y2="435" stroke="#4A5568" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Descending into spinal cord -->
+  <path d="M395,422 L385,460" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- ===== 7. LATERAL CORTICOSPINAL TRACT ===== -->
+  <!-- Spinal cord cross section hint -->
+  <ellipse cx="385" cy="480" rx="40" ry="25" fill="#1A1F2E" stroke="#4A5568" stroke-width="1"/>
+  <!-- Lateral CST position -->
+  <path d="M355,470 Q345,480 355,490" stroke="#22D3EE" stroke-width="3" fill="none"/>
+  <text x="385" y="478" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="600">Lateral CST</text>
+  <text x="385" y="490" text-anchor="middle" fill="#94A3B8" font-size="8">(Spinal cord)</text>
+
+  <!-- Descending to anterior horn -->
+  <path d="M385,505 L385,530" stroke="#22D3EE" stroke-width="2" fill="none"/>
+
+  <!-- ===== 8. ALPHA MOTOR NEURON ===== -->
+  <!-- Cell body -->
+  <circle cx="385" cy="545" r="12" fill="#EF4444" opacity="0.2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="385" y="548" text-anchor="middle" fill="#EF4444" font-size="8" font-weight="700">AHC</text>
+  <!-- Dendrites -->
+  <line x1="373" y1="538" x2="365" y2="530" stroke="#EF4444" stroke-width="1" opacity="0.5"/>
+  <line x1="375" y1="548" x2="365" y2="548" stroke="#EF4444" stroke-width="1" opacity="0.5"/>
+  <line x1="373" y1="555" x2="365" y2="562" stroke="#EF4444" stroke-width="1" opacity="0.5"/>
+
+  <text x="385" y="565" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="600">Alpha Motor Neuron</text>
+  <text x="385" y="575" text-anchor="middle" fill="#94A3B8" font-size="8">(Anterior horn cell)</text>
+
+  <!-- Axon descending -->
+  <path d="M397" y1="548" d="M397,548 L440,580 L470,600" stroke="#EF4444" stroke-width="2" fill="none" marker-end="url(#arrowDownRed)"/>
+
+  <!-- ===== 9. NMJ ===== -->
+  <rect x="468" y="598" width="40" height="16" rx="3" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1"/>
+  <text x="488" y="610" text-anchor="middle" fill="#34D399" font-size="8" font-weight="600">NMJ</text>
+
+  <!-- ===== 10. MUSCLE ===== -->
+  <path d="M520,595 L560,595 L570,610 L560,625 L520,625 L510,610Z" fill="#34D399" opacity="0.15" stroke="#34D399" stroke-width="1.5"/>
+  <!-- Muscle fiber lines -->
+  <line x1="520" y1="605" x2="560" y2="605" stroke="#34D399" stroke-width="0.5" opacity="0.4"/>
+  <line x1="520" y1="615" x2="560" y2="615" stroke="#34D399" stroke-width="0.5" opacity="0.4"/>
+  <text x="540" y="612" text-anchor="middle" fill="#34D399" font-size="10" font-weight="700">MUSCLE</text>
+
+  <!-- Connection NMJ to muscle -->
+  <line x1="508" y1="606" x2="518" y2="608" stroke="#34D399" stroke-width="1.5"/>
+
+  <!-- ===== UMN LESION EFFECTS BOX ===== -->
+  <rect x="15" y="310" width="190" height="115" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="110" y="330" text-anchor="middle" fill="#22D3EE" font-size="12" font-weight="700">UMN Lesion Signs</text>
+  <line x1="30" y1="336" x2="190" y2="336" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="32" cy="352" r="3" fill="#22D3EE"/>
+  <text x="40" y="356" fill="#E8ECF1" font-size="10">Spasticity (velocity-dependent)</text>
+  <circle cx="32" cy="370" r="3" fill="#22D3EE"/>
+  <text x="40" y="374" fill="#E8ECF1" font-size="10">Hyperreflexia</text>
+  <circle cx="32" cy="388" r="3" fill="#22D3EE"/>
+  <text x="40" y="392" fill="#E8ECF1" font-size="10">Babinski + (upgoing toe)</text>
+  <circle cx="32" cy="406" r="3" fill="#22D3EE"/>
+  <text x="40" y="410" fill="#E8ECF1" font-size="10">Clonus</text>
+  <circle cx="32" cy="420" r="3" fill="#22D3EE"/>
+  <text x="40" y="420" fill="#E8ECF1" font-size="10">No atrophy (initially)</text>
+
+  <!-- ===== LMN LESION EFFECTS BOX ===== -->
+  <rect x="15" y="470" width="190" height="115" rx="6" fill="#1A1F2E" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="110" y="490" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="700">LMN Lesion Signs</text>
+  <line x1="30" y1="496" x2="190" y2="496" stroke="#EF4444" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="32" cy="512" r="3" fill="#EF4444"/>
+  <text x="40" y="516" fill="#E8ECF1" font-size="10">Flaccidity</text>
+  <circle cx="32" cy="530" r="3" fill="#EF4444"/>
+  <text x="40" y="534" fill="#E8ECF1" font-size="10">Hyporeflexia / Areflexia</text>
+  <circle cx="32" cy="548" r="3" fill="#EF4444"/>
+  <text x="40" y="552" fill="#E8ECF1" font-size="10">Fasciculations</text>
+  <circle cx="32" cy="566" r="3" fill="#EF4444"/>
+  <text x="40" y="570" fill="#E8ECF1" font-size="10">Muscle atrophy</text>
+  <circle cx="32" cy="580" r="3" fill="#EF4444"/>
+  <text x="40" y="580" fill="#E8ECF1" font-size="10">Babinski − (downgoing)</text>
+
+  <!-- Board Pearl -->
+  <rect x="40" y="650" width="720" height="40" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+  <text x="56" y="668" fill="#22D3EE" font-size="11" font-weight="700">BOARD PEARL:</text>
+  <text x="158" y="668" fill="#E8ECF1" font-size="11">TBI → UMN pattern (spasticity develops days-weeks post-injury). Spinal shock = initial flaccidity → resolves to spasticity.</text>
+  <text x="158" y="683" fill="#E8ECF1" font-size="11">Internal capsule: small lesion → large deficit (fibers converge). "Clasp-knife" = UMN; "Lead-pipe" = extrapyramidal.</text>
+</svg>

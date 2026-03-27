@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22D3EE"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#EF4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="700" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">Graduated Return-to-Play Protocol</text>
+  <text x="400" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="middle">Berlin Consensus (2016) / Amsterdam Update (2022)</text>
+  <line x1="180" y1="66" x2="620" y2="66" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- Progress bar background -->
+  <rect x="40" y="80" width="720" height="8" rx="4" fill="#1A1F2E"/>
+  <defs>
+    <linearGradient id="progressGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect x="40" y="80" width="720" height="8" rx="4" fill="url(#progressGrad)"/>
+
+  <!-- Step dots on progress bar -->
+  <circle cx="100" cy="84" r="6" fill="#22D3EE"/>
+  <circle cx="220" cy="84" r="6" fill="#22D3EE"/>
+  <circle cx="340" cy="84" r="6" fill="#22D3EE"/>
+  <circle cx="460" cy="84" r="6" fill="#F59E0B"/>
+  <circle cx="580" cy="84" r="6" fill="#EF4444"/>
+  <circle cx="700" cy="84" r="6" fill="#34D399"/>
+
+  <!-- Step 1 -->
+  <rect x="25" y="105" width="120" height="200" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <rect x="25" y="105" width="120" height="32" rx="10" fill="#22D3EE" opacity="0.15"/>
+  <text x="85" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">Step 1</text>
+  <line x1="40" y1="140" x2="130" y2="140" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+  <text x="85" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Symptom-Limited</text>
+  <text x="85" y="174" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Activity</text>
+  <line x1="40" y1="185" x2="130" y2="185" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+  <text x="85" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Daily activities</text>
+  <text x="85" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">that do not</text>
+  <text x="85" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">provoke symptoms</text>
+  <text x="85" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#22D3EE" text-anchor="middle">Gradual return</text>
+  <text x="85" y="264" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#22D3EE" text-anchor="middle">to school/work</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="145" y1="200" x2="155" y2="200" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="145" y="105" width="120" height="200" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <rect x="145" y="105" width="120" height="32" rx="10" fill="#22D3EE" opacity="0.15"/>
+  <text x="205" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">Step 2</text>
+  <line x1="160" y1="140" x2="250" y2="140" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+  <text x="205" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Light Aerobic</text>
+  <text x="205" y="174" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Exercise</text>
+  <line x1="160" y1="185" x2="250" y2="185" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+  <text x="205" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Walking</text>
+  <text x="205" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Swimming</text>
+  <text x="205" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Stationary cycling</text>
+  <text x="205" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#F59E0B" text-anchor="middle">&lt;70% max HR</text>
+  <text x="205" y="264" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#F59E0B" text-anchor="middle">No resistance</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="265" y1="200" x2="275" y2="200" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="265" y="105" width="120" height="200" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <rect x="265" y="105" width="120" height="32" rx="10" fill="#22D3EE" opacity="0.15"/>
+  <text x="325" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">Step 3</text>
+  <line x1="280" y1="140" x2="370" y2="140" stroke="#22D3EE" stroke-width="0.5" opacity="0.3"/>
+  <text x="325" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Sport-Specific</text>
+  <text x="325" y="174" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Exercise</text>
+  <line x1="280" y1="185" x2="370" y2="185" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+  <text x="325" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Running drills</text>
+  <text x="325" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Skating drills</text>
+  <text x="325" y="238" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#EF4444" text-anchor="middle">NO head impact</text>
+  <text x="325" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#EF4444" text-anchor="middle">activities</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="385" y1="200" x2="395" y2="200" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="385" y="105" width="120" height="200" rx="10" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="385" y="105" width="120" height="32" rx="10" fill="#F59E0B" opacity="0.15"/>
+  <text x="445" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#F59E0B" text-anchor="middle">Step 4</text>
+  <line x1="400" y1="140" x2="490" y2="140" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+  <text x="445" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Non-Contact</text>
+  <text x="445" y="174" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Training Drills</text>
+  <line x1="400" y1="185" x2="490" y2="185" stroke="#F59E0B" stroke-width="0.3" opacity="0.3"/>
+  <text x="445" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Passing drills</text>
+  <text x="445" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Cutting drills</text>
+  <text x="445" y="238" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#F59E0B" text-anchor="middle">Increase cognitive</text>
+  <text x="445" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#F59E0B" text-anchor="middle">load + complexity</text>
+  <text x="445" y="268" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#9CA3AF" text-anchor="middle">Add resistance</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="505" y1="200" x2="515" y2="200" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5 -->
+  <rect x="505" y="105" width="130" height="200" rx="10" fill="#1A1F2E" stroke="#EF4444" stroke-width="2.5"/>
+  <rect x="505" y="105" width="130" height="32" rx="10" fill="#EF4444" opacity="0.15"/>
+  <text x="570" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#EF4444" text-anchor="middle">Step 5</text>
+  <line x1="520" y1="140" x2="620" y2="140" stroke="#EF4444" stroke-width="0.5" opacity="0.3"/>
+  <text x="570" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Full-Contact</text>
+  <text x="570" y="174" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Practice</text>
+  <line x1="520" y1="185" x2="620" y2="185" stroke="#EF4444" stroke-width="0.3" opacity="0.3"/>
+  <text x="570" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Full participation</text>
+  <text x="570" y="219" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">in normal practice</text>
+  <rect x="515" y="235" width="110" height="35" rx="5" fill="#EF4444" opacity="0.1" stroke="#EF4444" stroke-width="1"/>
+  <text x="570" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="700" fill="#EF4444" text-anchor="middle">REQUIRES</text>
+  <text x="570" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="700" fill="#EF4444" text-anchor="middle">MEDICAL CLEARANCE</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="635" y1="200" x2="645" y2="200" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6 -->
+  <rect x="645" y="105" width="130" height="200" rx="10" fill="#1A1F2E" stroke="#34D399" stroke-width="2.5"/>
+  <rect x="645" y="105" width="130" height="32" rx="10" fill="#34D399" opacity="0.15"/>
+  <text x="710" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#34D399" text-anchor="middle">Step 6</text>
+  <line x1="660" y1="140" x2="760" y2="140" stroke="#34D399" stroke-width="0.5" opacity="0.3"/>
+  <text x="710" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Return to</text>
+  <text x="710" y="176" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#E8ECF1" text-anchor="middle">Competition</text>
+  <line x1="660" y1="188" x2="760" y2="188" stroke="#34D399" stroke-width="0.3" opacity="0.3"/>
+  <text x="710" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Full unrestricted</text>
+  <text x="710" y="224" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">game play</text>
+  <text x="710" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#34D399" text-anchor="middle">&#x2713;</text>
+
+  <!-- Symptom recurrence arrow (back one step) -->
+  <rect x="120" y="340" width="560" height="70" rx="10" fill="#1A1F2E" stroke="#EF4444" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="400" y="365" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#EF4444" text-anchor="middle">If symptoms recur at any step:</text>
+  <text x="400" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1" text-anchor="middle">Drop back to previous asymptomatic step after 24-hour rest period</text>
+  <!-- Back arrow icon -->
+  <text x="100" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#EF4444" text-anchor="middle">&#x21A9;</text>
+
+  <!-- 24-hour note -->
+  <rect x="200" y="435" width="400" height="50" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="400" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Minimum 24 hours between each step</text>
+  <text x="400" y="476" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">Minimum 6 steps = Minimum 6 days to RTP</text>
+
+  <!-- Pediatric note -->
+  <rect x="200" y="505" width="400" height="45" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.7"/>
+  <text x="400" y="525" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#22D3EE" text-anchor="middle">Pediatric patients (&lt;18): More conservative timeline</text>
+  <text x="400" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Return to learn before return to play</text>
+
+  <!-- Footer -->
+  <text x="400" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Based on Berlin (2016) and Amsterdam (2022) Consensus Statements on Concussion in Sport</text>
+</svg>

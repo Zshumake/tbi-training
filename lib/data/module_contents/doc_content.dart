@@ -122,6 +122,47 @@ final TopicData docContent = TopicData(
             'Functional accurate communication: Reliable yes/no responses to basic orientation questions (6 of 6 correct on 2 consecutive evaluations on CRS-R)',
           ],
         ),
+        HeaderBlock('Diagnostic Boundaries: Summary of Transitions'),
+        TableBlock(
+          title: 'Summary of DOC Diagnostic Boundaries',
+          columns: ['Transition', 'Key Diagnostic Behavior(s)', 'CRS-R Subscale Score(s)'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            [
+              'Coma → VS/UWS',
+              'Return of eye opening; sleep-wake cycles without awareness',
+              'Arousal >= 1 with no MCS-qualifying behaviors',
+            ],
+            [
+              'VS/UWS → MCS-',
+              'Visual fixation (> 2 sec), visual pursuit, localization to noxious stimuli, object reaching, contingent emotional responses',
+              'Visual >= 2, Motor >= 3, or Auditory = 2',
+            ],
+            [
+              'MCS- → MCS+',
+              'Command-following (reproducible or consistent), intelligible verbalization, intentional communication',
+              'Auditory >= 3, Verbal = 3, or Communication = 1',
+            ],
+            [
+              'MCS → Emergence',
+              'Functional object use OR functional accurate yes/no communication',
+              'Motor = 6 or Communication = 2',
+            ],
+          ],
+        ),
+        HeaderBlock('Common Diagnostic Pitfalls'),
+        BulletCardBlock(
+          title: 'Errors That Lead to DOC Misdiagnosis',
+          themeColor: const Color(0xFFDC2626),
+          backgroundColor: const Color(0xFFFEF2F2),
+          points: [
+            'Misinterpreting reflexive behaviors as purposeful: Eye-opening, yawning, chewing, and brief orienting eye movements can occur in VS and do NOT indicate awareness',
+            'Missing inconsistent MCS behaviors: MCS is characterized by INCONSISTENT purposeful behavior -- a single missed observation can lead to misclassification as VS',
+            'Confounders suppressing behavioral responses: Sedating medications, pain, infection, metabolic derangements, subclinical seizures, hydrocephalus, and sensory impairment can all mask purposeful behavior',
+            'Equating total CRS-R score with diagnosis: Diagnosis depends on SPECIFIC SUBSCALE scores, not the total score',
+            'Insufficient assessments: A single CRS-R assessment misses approximately 36% of MCS patients -- minimum 5 assessments recommended',
+          ],
+        ),
         PearlBlock(
           'Board Pearl: Misdiagnosis Rate',
           'Studies consistently show a 30-40% misdiagnosis rate when VS is diagnosed by clinical impression alone without standardized behavioral assessment. The most common error is diagnosing VS in a patient who is actually in MCS. The CRS-R reduces this error rate dramatically and is the recommended assessment tool per the ACRM DOC Task Force (2010, updated 2018).',
@@ -240,6 +281,37 @@ final TopicData docContent = TopicData(
         PearlBlock(
           'Board Pearl: N20 SSEP — Etiology Matters',
           'Bilateral absence of cortical N20 SSEP has near-100% specificity for poor outcome (death or VS) in post-ANOXIC injury. However, in TRAUMATIC DOC, absent N20 is less reliable — recovery of consciousness has been reported despite bilaterally absent N20. This is because traumatic DOC involves focal white matter injury rather than global cortical necrosis. Always specify the etiology when interpreting SSEP prognostic data.',
+        ),
+        HeaderBlock('Perturbational Complexity Index (PCI)'),
+        TextBlock(
+          'PCI is an advanced consciousness assessment derived from TMS-EEG recordings. Based on Integrated Information Theory, it measures the complexity of brain responses to a brief TMS pulse, providing an objective measure of consciousness independent of sensory processing, motor function, or executive function.',
+        ),
+        BulletCardBlock(
+          title: 'PCI: Key Concepts',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'Method: Brief TMS pulse delivered to cortex; spatiotemporal EEG response is binarized and compressed using lossless algorithm to estimate algorithmic complexity',
+            'Threshold: PCI ~0.31 discriminates conscious from unconscious states with high accuracy (Casali et al., 2013)',
+            'Conscious states: high complexity (integrated yet differentiated responses)',
+            'Unconscious states: simple (synchronized) or no responses',
+            'Sensitivity of 92% for detecting MCS in severely brain-injured patients',
+            'PCI values fall above consciousness cutoff in ALL MCS patients tested, even when spontaneous EEG is inconclusive',
+            'Key advantage: detects capacity for consciousness INDEPENDENT of motor function -- useful for CMD patients who cannot produce behavioral responses',
+          ],
+        ),
+        HeaderBlock('Serum Biomarkers for DOC (NfL and GFAP)'),
+        BulletCardBlock(
+          title: 'Emerging Biomarkers for Consciousness',
+          themeColor: const Color(0xFF0891B2),
+          backgroundColor: const Color(0xFFECFEFF),
+          points: [
+            'Neurofilament Light Chain (NfL): 68 kDa neuron-specific cytoskeletal protein released after neuronal injury; serum levels remain elevated > 1 year post-TBI',
+            'NfL significantly discriminates VS/UWS and MCS from EMCS: higher NfL = worse consciousness level',
+            'GFAP (Glial Fibrillary Acidic Protein): reflects astrocytic injury/activation; significantly elevated in prolonged DOC vs healthy controls (p < 0.0001)',
+            'NfL + GFAP combined may serve as objective serum biomarkers to complement CRS-R and neuroimaging for DOC prognostication',
+            'NOT yet in clinical guidelines -- rapidly developing research area',
+          ],
         ),
       ],
     ),
@@ -407,6 +479,10 @@ final TopicData docContent = TopicData(
           'Board Pearl: The Washout Finding',
           'The washout finding is the most commonly tested aspect of this trial. The fact that recovery slowed when amantadine was stopped and the groups converged by week 6 indicates amantadine has a DIRECT PHARMACOLOGICAL EFFECT on neurotransmission rather than altering the underlying trajectory of recovery. In clinical practice, amantadine is often continued beyond 4 weeks based on this reasoning.',
         ),
+        PearlBlock(
+          'Board Pearl: Amantadine in Non-TBI Etiologies',
+          'A 2024 double-blind placebo-controlled study found that amantadine did NOT show statistically significant benefit for cognitive recovery in post-aneurysmal SAH patients with severe DOC. This suggests the benefit may be specific to TRAUMATIC mechanisms. The AAN Level B recommendation for amantadine is specific to traumatic VS/MCS 4-16 weeks post-TBI. Evidence in non-traumatic etiologies (anoxic, hemorrhagic) remains limited and unconfirmed.',
+        ),
         HeaderBlock('Amantadine Mechanism & Comparators'),
         TableBlock(
           title: 'Dopaminergic Agents in TBI: Mechanism Comparison',
@@ -454,7 +530,7 @@ final TopicData docContent = TopicData(
         ),
         PearlBlock(
           'Board Pearl: The Zolpidem Paradox',
-          'The zolpidem paradox is frequently tested. A GABA-A modulator (normally a sedative) paradoxically improves consciousness in a small subset (6-7%) of DOC patients. The proposed mechanism involves GABAergic inhibition of overactive inhibitory globus pallidus neurons, leading to disinhibition of the thalamus and restoration of thalamocortical signaling. The effect is transient (1-4 hours per dose) and not all patients respond. A zolpidem challenge is sometimes performed as a diagnostic/therapeutic trial.',
+          'The zolpidem paradox is frequently tested. A GABA-A modulator (normally a sedative) paradoxically improves consciousness in a small subset (6-7%) of DOC patients. The proposed mechanism involves GABAergic inhibition of overactive globus pallidus internus (GPi), leading to disinhibition of the central thalamus and restoration of thalamocortical signaling. EEG in responders shows a strong low-frequency frontocentral oscillatory peak that zolpidem sharply reduces. FDG-PET in responders shows increased metabolism in dorsolateral prefrontal and mesiofrontal cortices after drug but not placebo. DBS of the central thalamus has restored arousal in zolpidem-responsive patients, supporting the thalamic mechanism. The effect is transient (1-4 hours per dose).',
         ),
         HeaderBlock('Emerging Neuromodulation Therapies: Evidence Summary'),
         TableBlock(

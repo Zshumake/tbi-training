@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="anteriorPit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="posteriorPit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" filter="url(#glow)">HYPOTHALAMIC-PITUITARY ANATOMY</text>
+  <text x="400" y="55" text-anchor="middle" fill="#94A3B8" font-size="12">Midline Sagittal View — Post-Traumatic Hypopituitarism</text>
+
+  <!-- Brain outline context - sagittal -->
+  <path d="M100,120 C120,80 200,60 300,65 C400,68 480,75 530,90 C580,105 610,130 620,165 C630,200 625,240 610,270 C595,300 570,320 540,335 C510,350 475,355 440,352 C410,350 390,345 380,340" stroke="#2D3748" stroke-width="1" fill="#1A1F2E" opacity="0.5"/>
+
+  <!-- Corpus callosum hint -->
+  <path d="M200,130 C260,110 340,105 400,108 C450,110 490,118 510,130" stroke="#2D3748" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Thalamus (context) -->
+  <ellipse cx="400" cy="175" rx="60" ry="35" fill="#2D3748" opacity="0.3" stroke="#4A5568" stroke-width="0.8"/>
+  <text x="400" y="178" text-anchor="middle" fill="#4A5568" font-size="10">Thalamus</text>
+
+  <!-- ===== HYPOTHALAMUS ===== -->
+  <path d="M310,195 C320,185 340,180 360,182 C375,184 385,190 390,200 C395,210 392,225 385,235 C378,245 365,250 350,248 C335,246 320,238 312,225 C305,215 305,205 310,195Z" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="350" y="210" text-anchor="middle" fill="#34D399" font-size="13" font-weight="700">HYPOTHALAMUS</text>
+
+  <!-- Hypothalamic nuclei dots -->
+  <circle cx="330" cy="200" r="4" fill="#34D399" opacity="0.4"/>
+  <circle cx="345" cy="195" r="3" fill="#34D399" opacity="0.4"/>
+  <circle cx="360" cy="200" r="4" fill="#34D399" opacity="0.4"/>
+  <circle cx="340" cy="225" r="3" fill="#34D399" opacity="0.3"/>
+  <circle cx="360" cy="230" r="3" fill="#34D399" opacity="0.3"/>
+
+  <!-- Nuclei labels -->
+  <line x1="330" y1="196" x2="230" y2="160" stroke="#34D399" stroke-width="0.8" opacity="0.6"/>
+  <text x="225" y="155" text-anchor="end" fill="#34D399" font-size="9">Supraoptic n.</text>
+  <text x="225" y="166" text-anchor="end" fill="#94A3B8" font-size="8">(ADH production)</text>
+
+  <line x1="360" y1="196" x2="230" y2="185" stroke="#34D399" stroke-width="0.8" opacity="0.6"/>
+  <text x="225" y="183" text-anchor="end" fill="#34D399" font-size="9">Paraventricular n.</text>
+  <text x="225" y="194" text-anchor="end" fill="#94A3B8" font-size="8">(Oxytocin, CRH)</text>
+
+  <line x1="340" y1="228" x2="230" y2="220" stroke="#34D399" stroke-width="0.8" opacity="0.6"/>
+  <text x="225" y="218" text-anchor="end" fill="#34D399" font-size="9">Arcuate n.</text>
+  <text x="225" y="229" text-anchor="end" fill="#94A3B8" font-size="8">(GnRH, GHRH, DA)</text>
+
+  <!-- ===== PITUITARY STALK (INFUNDIBULUM) ===== -->
+  <path d="M365,248 C368,260 370,275 372,290 C374,305 375,315 375,325" stroke="#EF4444" stroke-width="3" fill="none" filter="url(#glow)"/>
+  <path d="M355,248 C358,260 360,275 362,290 C364,305 365,315 365,325" stroke="#EF4444" stroke-width="3" fill="none" filter="url(#glow)"/>
+  <!-- Stalk fill -->
+  <path d="M355,248 C358,260 360,275 362,290 C364,305 365,315 365,325 L375,325 C375,315 374,305 372,290 C370,275 368,260 365,248Z" fill="#EF4444" opacity="0.15"/>
+
+  <!-- Stalk label with emphasis -->
+  <line x1="375" y1="280" x2="480" y2="250" stroke="#EF4444" stroke-width="1"/>
+  <rect x="485" y="232" width="180" height="48" rx="4" fill="#1A1F2E" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="575" y="250" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="700">PITUITARY STALK</text>
+  <text x="575" y="263" text-anchor="middle" fill="#EF4444" font-size="10">(Infundibulum)</text>
+  <text x="575" y="276" text-anchor="middle" fill="#EF4444" font-size="9" opacity="0.8">Most vulnerable to shear injury</text>
+
+  <!-- Portal vessels along stalk -->
+  <circle cx="360" cy="260" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="372" cy="270" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="362" cy="285" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="370" cy="300" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <text x="380" y="302" fill="#94A3B8" font-size="7">Portal vessels</text>
+
+  <!-- ===== SELLA TURCICA ===== -->
+  <path d="M300,360 C310,375 325,385 340,390 C355,393 380,393 395,390 C410,385 425,375 435,360" stroke="#4A5568" stroke-width="2.5" fill="none"/>
+  <!-- Anterior clinoid -->
+  <path d="M300,360 C295,350 292,340 290,330" stroke="#4A5568" stroke-width="2" fill="none"/>
+  <!-- Posterior clinoid / dorsum sellae -->
+  <path d="M435,360 C440,350 443,340 445,330" stroke="#4A5568" stroke-width="2" fill="none"/>
+  <text x="370" y="408" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="600">Sella Turcica</text>
+
+  <!-- Sphenoid sinus below -->
+  <path d="M320,395 C330,415 350,425 370,427 C390,425 410,415 420,395" stroke="#2D3748" stroke-width="1" fill="#1A1F2E" opacity="0.4"/>
+  <text x="370" y="422" text-anchor="middle" fill="#2D3748" font-size="8">Sphenoid sinus</text>
+
+  <!-- ===== ANTERIOR PITUITARY ===== -->
+  <path d="M332,325 C335,340 340,355 348,365 C356,375 365,378 370,378 L370,325Z" fill="url(#anteriorPit)" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="345" y="350" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700" transform="rotate(-10,345,350)">ANT</text>
+
+  <!-- Anterior pituitary hormones -->
+  <line x1="332" y1="345" x2="200" y2="310" stroke="#F59E0B" stroke-width="0.8" opacity="0.6"/>
+  <rect x="80" y="278" width="125" height="90" rx="4" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1"/>
+  <text x="142" y="295" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">Anterior Pituitary</text>
+  <text x="142" y="312" text-anchor="middle" fill="#E8ECF1" font-size="9">GH — Growth hormone</text>
+  <text x="142" y="324" text-anchor="middle" fill="#E8ECF1" font-size="9">ACTH — Cortisol axis</text>
+  <text x="142" y="336" text-anchor="middle" fill="#E8ECF1" font-size="9">TSH — Thyroid axis</text>
+  <text x="142" y="348" text-anchor="middle" fill="#E8ECF1" font-size="9">FSH/LH — Gonadal</text>
+  <text x="142" y="360" text-anchor="middle" fill="#E8ECF1" font-size="9">Prolactin</text>
+  <text x="142" y="276" text-anchor="middle" fill="#F59E0B" font-size="8" opacity="0.7">(#1 deficient post-TBI: GH)</text>
+
+  <!-- ===== POSTERIOR PITUITARY ===== -->
+  <path d="M370,325 L370,378 C375,378 384,375 392,365 C400,355 405,340 408,325Z" fill="url(#posteriorPit)" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="393" y="350" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="700" transform="rotate(10,393,350)">POST</text>
+
+  <!-- Posterior pituitary hormones -->
+  <line x1="408" y1="345" x2="530" y2="340" stroke="#22D3EE" stroke-width="0.8" opacity="0.6"/>
+  <rect x="535" y="310" width="175" height="62" rx="4" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1"/>
+  <text x="622" y="327" text-anchor="middle" fill="#22D3EE" font-size="11" font-weight="700">Posterior Pituitary</text>
+  <text x="622" y="344" text-anchor="middle" fill="#E8ECF1" font-size="9">ADH (Vasopressin)</text>
+  <text x="622" y="356" text-anchor="middle" fill="#E8ECF1" font-size="9">Oxytocin</text>
+  <text x="622" y="368" text-anchor="middle" fill="#94A3B8" font-size="8" font-style="italic">"Produced in hypothalamus,</text>
+  <text x="622" y="379" text-anchor="middle" fill="#94A3B8" font-size="8" font-style="italic">stored &amp; released here"</text>
+
+  <!-- Axonal transport arrows (hypothalamus → posterior pit) -->
+  <path d="M355,238 C358,250 360,270 362,290 C364,305 366,318 368,330" stroke="#22D3EE" stroke-width="1" fill="none" stroke-dasharray="3,3" opacity="0.4"/>
+  <text x="350" y="310" text-anchor="end" fill="#22D3EE" font-size="7" opacity="0.5">Axonal</text>
+  <text x="350" y="318" text-anchor="end" fill="#22D3EE" font-size="7" opacity="0.5">transport</text>
+
+  <!-- ===== CAVERNOUS SINUSES ===== -->
+  <!-- Left cavernous sinus -->
+  <ellipse cx="290" cy="350" rx="20" ry="25" fill="#A78BFA" opacity="0.1" stroke="#A78BFA" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="290" y="353" text-anchor="middle" fill="#A78BFA" font-size="7">Cavernous</text>
+  <text x="290" y="362" text-anchor="middle" fill="#A78BFA" font-size="7">Sinus</text>
+  <!-- Right cavernous sinus -->
+  <ellipse cx="450" cy="350" rx="20" ry="25" fill="#A78BFA" opacity="0.1" stroke="#A78BFA" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="450" y="353" text-anchor="middle" fill="#A78BFA" font-size="7">Cavernous</text>
+  <text x="450" y="362" text-anchor="middle" fill="#A78BFA" font-size="7">Sinus</text>
+
+  <!-- Cavernous sinus contents label -->
+  <line x1="470" y1="348" x2="530" y2="395" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
+  <text x="535" y="395" fill="#A78BFA" font-size="9">CN III, IV, V1, V2, VI</text>
+  <text x="535" y="406" fill="#A78BFA" font-size="9">ICA passes through</text>
+
+  <!-- Optic chiasm (context) -->
+  <path d="M335,245 L370,260 L405,245" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M335,245 L370,260" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <text x="370" y="242" text-anchor="middle" fill="#F59E0B" font-size="8" opacity="0.5">Optic chiasm</text>
+
+  <!-- Board Pearl -->
+  <rect x="40" y="438" width="720" height="52" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+  <text x="56" y="456" fill="#22D3EE" font-size="11" font-weight="700">BOARD PEARLS:</text>
+  <text x="165" y="456" fill="#E8ECF1" font-size="11">Fracture near sella → Diabetes Insipidus (DI). Stalk injury → triphasic response (DI → SIADH → DI).</text>
+  <text x="56" y="472" fill="#E8ECF1" font-size="11">Post-TBI hypopituitarism: GH deficiency most common (up to 20%). Screen at 3-12 months post-injury.</text>
+  <text x="56" y="486" fill="#E8ECF1" font-size="11">ACTH deficiency most dangerous (adrenal crisis) — check AM cortisol if clinical suspicion.</text>
+</svg>

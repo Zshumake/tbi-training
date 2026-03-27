@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="hernArrow" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8" fill="#EF4444"/>
+    </marker>
+    <marker id="hernArrow2" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8" fill="#F59E0B"/>
+    </marker>
+    <marker id="hernArrow3" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8" fill="#22D3EE"/>
+    </marker>
+    <marker id="hernArrow4" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8" fill="#A78BFA"/>
+    </marker>
+    <marker id="hernArrow5" markerWidth="10" markerHeight="8" refX="0" refY="4" orient="auto">
+      <path d="M10,0 L0,4 L10,8" fill="#34D399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" filter="url(#glow)">BRAIN HERNIATION SYNDROMES</text>
+  <text x="400" y="55" text-anchor="middle" fill="#94A3B8" font-size="12">Coronal Section — 5 Herniation Types with Clinical Correlates</text>
+
+  <!-- ===== SKULL OUTLINE (Coronal) ===== -->
+  <path d="M180,100 C180,80 220,62 300,58 C370,55 430,55 500,58 C580,62 620,80 620,100 L620,460 C620,480 580,495 500,498 C430,500 370,500 300,498 C220,495 180,480 180,460Z" fill="#1A1F2E" opacity="0.6" stroke="#4A5568" stroke-width="2"/>
+
+  <!-- ===== FALX CEREBRI (Midline) ===== -->
+  <line x1="400" y1="60" x2="400" y2="260" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="400" y="76" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">FALX CEREBRI</text>
+
+  <!-- ===== TENTORIUM CEREBELLI ===== -->
+  <path d="M210,310 C280,290 340,285 370,290 L400,300 L430,290 C460,285 520,290 590,310" stroke="#F59E0B" stroke-width="2.5" fill="none"/>
+  <!-- Tentorial notch opening -->
+  <path d="M370,290 Q400,310 430,290" stroke="#F59E0B" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+  <text x="280" y="280" fill="#F59E0B" font-size="10" font-weight="700">TENTORIUM CEREBELLI</text>
+
+  <!-- Tentorial notch label -->
+  <text x="400" y="318" text-anchor="middle" fill="#F59E0B" font-size="8" font-style="italic">Tentorial notch</text>
+
+  <!-- ===== FORAMEN MAGNUM ===== -->
+  <path d="M350,470 Q400,480 450,470" stroke="#F59E0B" stroke-width="2.5" fill="none"/>
+  <text x="400" y="492" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">FORAMEN MAGNUM</text>
+
+  <!-- ===== BRAIN STRUCTURES ===== -->
+
+  <!-- LEFT HEMISPHERE -->
+  <path d="M200,105 C200,100 260,82 340,80 L395,80 L395,260 L200,260Z" fill="#2D3748" opacity="0.4" stroke="#4A5568" stroke-width="0.5"/>
+  <!-- Gyri hints -->
+  <path d="M220,140 Q260,130 300,140 Q340,150 380,140" stroke="#4A5568" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M220,180 Q260,170 300,180 Q340,190 380,180" stroke="#4A5568" stroke-width="0.8" fill="none" opacity="0.4"/>
+
+  <!-- RIGHT HEMISPHERE -->
+  <path d="M405,80 L460,80 C540,82 600,100 600,105 L600,260 L405,260Z" fill="#2D3748" opacity="0.4" stroke="#4A5568" stroke-width="0.5"/>
+  <path d="M420,140 Q460,130 500,140 Q540,150 580,140" stroke="#4A5568" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M420,180 Q460,170 500,180 Q540,190 580,180" stroke="#4A5568" stroke-width="0.8" fill="none" opacity="0.4"/>
+
+  <!-- MASS LESION (right side) to drive herniations -->
+  <circle cx="530" cy="155" r="40" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="530" y="152" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="600">MASS</text>
+  <text x="530" y="164" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="600">LESION</text>
+
+  <!-- Cingulate gyrus (for subfalcine) -->
+  <path d="M350,200 Q390,190 395,210 Q395,230 390,250" stroke="#94A3B8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M450,200 Q410,190 405,210 Q405,230 410,250" stroke="#94A3B8" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Temporal lobes (below lateral) -->
+  <path d="M210,265 C230,270 280,285 330,290 Q370,292 370,290" fill="#2D3748" opacity="0.3" stroke="#4A5568" stroke-width="0.5"/>
+  <path d="M590,265 C570,270 520,285 470,290 Q430,292 430,290" fill="#2D3748" opacity="0.3" stroke="#4A5568" stroke-width="0.5"/>
+
+  <!-- Medial temporal / uncus label -->
+  <text x="450" y="292" fill="#94A3B8" font-size="7" opacity="0.5">uncus</text>
+
+  <!-- BRAINSTEM -->
+  <path d="M380,300 L420,300 L418,400 L382,400Z" fill="#2D3748" opacity="0.5" stroke="#4A5568" stroke-width="1"/>
+  <text x="400" y="350" text-anchor="middle" fill="#94A3B8" font-size="9">Brainstem</text>
+
+  <!-- CN III on brainstem -->
+  <line x1="420" y1="315" x2="445" y2="310" stroke="#94A3B8" stroke-width="0.8"/>
+  <text x="448" y="313" fill="#94A3B8" font-size="7">CN III</text>
+
+  <!-- CEREBELLUM -->
+  <path d="M320,390 C340,370 370,365 400,368 C430,365 460,370 480,390 C490,410 485,430 470,445 C455,458 430,465 400,465 C370,465 345,458 330,445 C315,430 310,410 320,390Z" fill="#2D3748" opacity="0.3" stroke="#4A5568" stroke-width="0.8"/>
+  <!-- Cerebellar folia -->
+  <path d="M340,420 Q400,410 460,420" stroke="#4A5568" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <path d="M345,435 Q400,425 455,435" stroke="#4A5568" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <text x="400" y="415" text-anchor="middle" fill="#94A3B8" font-size="9">Cerebellum</text>
+  <!-- Tonsils -->
+  <ellipse cx="385" cy="460" rx="12" ry="8" fill="#2D3748" opacity="0.4" stroke="#4A5568" stroke-width="0.5"/>
+  <ellipse cx="415" cy="460" rx="12" ry="8" fill="#2D3748" opacity="0.4" stroke="#4A5568" stroke-width="0.5"/>
+  <text x="400" y="463" text-anchor="middle" fill="#94A3B8" font-size="7">tonsils</text>
+
+  <!-- Cerebral peduncle hints -->
+  <text x="375" y="308" text-anchor="end" fill="#94A3B8" font-size="7">peduncle</text>
+
+  <!-- ========== HERNIATION ARROWS & LABELS ========== -->
+
+  <!-- === 1. SUBFALCINE (Cingulate under falx) === -->
+  <path d="M480,185 C460,190 440,195 415,200" stroke="#EF4444" stroke-width="3" fill="none" marker-end="url(#hernArrow)"/>
+  <!-- Curved arrow crossing midline -->
+  <text x="445" y="178" fill="#EF4444" font-size="10" font-weight="700">1</text>
+
+  <!-- Subfalcine label box -->
+  <rect x="560" y="170" width="220" height="72" rx="5" fill="#1A1F2E" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="670" y="188" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="700">1. SUBFALCINE</text>
+  <text x="670" y="202" text-anchor="middle" fill="#E8ECF1" font-size="9">Cingulate gyrus under falx cerebri</text>
+  <text x="670" y="216" text-anchor="middle" fill="#E8ECF1" font-size="9">→ ACA compression</text>
+  <text x="670" y="230" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="600">→ Contralateral leg weakness</text>
+  <text x="670" y="240" text-anchor="middle" fill="#94A3B8" font-size="8">(Most common herniation type)</text>
+  <line x1="560" y1="200" x2="490" y2="185" stroke="#EF4444" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- === 2. UNCAL (Transtentorial) === -->
+  <path d="M460,285 C450,295 440,300 420,305" stroke="#F59E0B" stroke-width="3" fill="none" marker-end="url(#hernArrow2)"/>
+  <text x="468" y="282" fill="#F59E0B" font-size="10" font-weight="700">2</text>
+
+  <!-- Uncal label box -->
+  <rect x="560" y="258" width="220" height="85" rx="5" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="670" y="276" text-anchor="middle" fill="#F59E0B" font-size="12" font-weight="700">2. UNCAL (Transtentorial)</text>
+  <text x="670" y="290" text-anchor="middle" fill="#E8ECF1" font-size="9">Medial temporal through tentorial notch</text>
+  <text x="670" y="304" text-anchor="middle" fill="#E8ECF1" font-size="9">→ CN III compression (ipsilateral)</text>
+  <text x="670" y="318" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="600">→ "Blown pupil" + contralateral</text>
+  <text x="670" y="330" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="600">hemiparesis</text>
+  <text x="670" y="340" text-anchor="middle" fill="#94A3B8" font-size="8">(Most clinically important)</text>
+  <line x1="560" y1="300" x2="470" y2="290" stroke="#F59E0B" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- === 3. CENTRAL (Bilateral downward) === -->
+  <path d="M400,270 L400,295" stroke="#22D3EE" stroke-width="3" fill="none" marker-end="url(#hernArrow3)"/>
+  <text x="388" y="268" fill="#22D3EE" font-size="10" font-weight="700">3</text>
+
+  <!-- Central label box -->
+  <rect x="15" y="100" width="160" height="72" rx="5" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="95" y="118" text-anchor="middle" fill="#22D3EE" font-size="12" font-weight="700">3. CENTRAL</text>
+  <text x="95" y="132" text-anchor="middle" fill="#E8ECF1" font-size="9">Bilateral downward shift</text>
+  <text x="95" y="146" text-anchor="middle" fill="#E8ECF1" font-size="9">→ Brainstem compression</text>
+  <text x="95" y="160" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="600">→ Cushing triad: HTN,</text>
+  <text x="95" y="170" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="600">bradycardia, irregular resp</text>
+  <line x1="175" y1="145" x2="393" y2="272" stroke="#22D3EE" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- === 4. TONSILLAR === -->
+  <path d="M400,458 L400,478" stroke="#A78BFA" stroke-width="3" fill="none" marker-end="url(#hernArrow4)"/>
+  <text x="388" y="456" fill="#A78BFA" font-size="10" font-weight="700">4</text>
+
+  <!-- Tonsillar label box -->
+  <rect x="15" y="420" width="175" height="72" rx="5" fill="#1A1F2E" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="102" y="438" text-anchor="middle" fill="#A78BFA" font-size="12" font-weight="700">4. TONSILLAR</text>
+  <text x="102" y="452" text-anchor="middle" fill="#E8ECF1" font-size="9">Cerebellar tonsils through</text>
+  <text x="102" y="464" text-anchor="middle" fill="#E8ECF1" font-size="9">foramen magnum</text>
+  <text x="102" y="478" text-anchor="middle" fill="#A78BFA" font-size="9" font-weight="600">→ Cardiorespiratory arrest</text>
+  <text x="102" y="490" text-anchor="middle" fill="#94A3B8" font-size="8">(Most rapidly fatal)</text>
+  <line x1="190" y1="465" x2="390" y2="468" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- === 5. UPWARD (Ascending) === -->
+  <path d="M400,380 L400,355" stroke="#34D399" stroke-width="3" fill="none"/>
+  <!-- Upward arrow (reversed) -->
+  <polygon points="400,348 394,358 406,358" fill="#34D399"/>
+  <text x="412" y="373" fill="#34D399" font-size="10" font-weight="700">5</text>
+
+  <!-- Upward label box -->
+  <rect x="15" y="310" width="175" height="72" rx="5" fill="#1A1F2E" stroke="#34D399" stroke-width="1.5"/>
+  <text x="102" y="328" text-anchor="middle" fill="#34D399" font-size="12" font-weight="700">5. UPWARD</text>
+  <text x="102" y="342" text-anchor="middle" fill="#E8ECF1" font-size="9">Posterior fossa mass →</text>
+  <text x="102" y="354" text-anchor="middle" fill="#E8ECF1" font-size="9">upward through tentorial notch</text>
+  <text x="102" y="368" text-anchor="middle" fill="#34D399" font-size="9" font-weight="600">→ Hydrocephalus, midbrain</text>
+  <text x="102" y="380" text-anchor="middle" fill="#34D399" font-size="9" font-weight="600">compression</text>
+  <line x1="190" y1="355" x2="395" y2="363" stroke="#34D399" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- ===== ANATOMICAL BOUNDARY LABELS ===== -->
+  <!-- Already labeled: Falx, Tentorium, Foramen Magnum above -->
+
+  <!-- ===== KERNOHAN NOTCH PEARL BOX ===== -->
+  <rect x="40" y="520" width="720" height="42" rx="6" fill="#1A1F2E" stroke="#A78BFA" stroke-width="1.5" opacity="0.9"/>
+  <text x="56" y="538" fill="#A78BFA" font-size="11" font-weight="700">KERNOHAN NOTCH:</text>
+  <text x="195" y="538" fill="#E8ECF1" font-size="11">False localizing sign — ipsilateral hemiparesis from contralateral cerebral peduncle compression</text>
+  <text x="195" y="554" fill="#E8ECF1" font-size="11">against the tentorial edge. "Notch" in contralateral peduncle → motor deficit ipsilateral to lesion.</text>
+
+  <!-- Board Pearl -->
+  <rect x="40" y="572" width="720" height="42" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+  <text x="56" y="590" fill="#22D3EE" font-size="11" font-weight="700">BOARD PEARL:</text>
+  <text x="158" y="590" fill="#E8ECF1" font-size="11">Uncal: "down and out" pupil (CN III). Cushing triad = late sign (central). Tonsillar = do NOT LP!</text>
+  <text x="158" y="606" fill="#E8ECF1" font-size="11">Subfalcine most common. Uncal most tested. Duret hemorrhages = secondary brainstem bleeds.</text>
+
+  <!-- Summary legend at bottom -->
+  <rect x="160" y="625" width="480" height="65" rx="6" fill="#0F1419" stroke="#2D3748" stroke-width="1"/>
+  <text x="400" y="642" text-anchor="middle" fill="#94A3B8" font-size="10" font-weight="600">HERNIATION TYPE SUMMARY</text>
+  <circle cx="200" cy="658" r="4" fill="#EF4444"/> <text x="210" y="662" fill="#E8ECF1" font-size="9">Subfalcine</text>
+  <circle cx="300" cy="658" r="4" fill="#F59E0B"/> <text x="310" y="662" fill="#E8ECF1" font-size="9">Uncal</text>
+  <circle cx="385" cy="658" r="4" fill="#22D3EE"/> <text x="395" y="662" fill="#E8ECF1" font-size="9">Central</text>
+  <circle cx="465" cy="658" r="4" fill="#A78BFA"/> <text x="475" y="662" fill="#E8ECF1" font-size="9">Tonsillar</text>
+  <circle cx="545" cy="658" r="4" fill="#34D399"/> <text x="555" y="662" fill="#E8ECF1" font-size="9">Upward</text>
+  <text x="400" y="682" text-anchor="middle" fill="#94A3B8" font-size="8">Anatomical boundaries: Falx cerebri | Tentorium cerebelli | Foramen magnum</text>
+</svg>

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1150" width="800" height="1150">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22D3EE"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34D399"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1150" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">Posttraumatic Agitation Algorithm</text>
+  <line x1="150" y1="55" x2="650" y2="55" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- Entry Node -->
+  <rect x="250" y="70" width="300" height="50" rx="25" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2.5"/>
+  <text x="400" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#E8ECF1" text-anchor="middle">Patient with Agitation</text>
+
+  <!-- Arrow to decision -->
+  <line x1="400" y1="120" x2="400" y2="150" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision Diamond: Risk of injury? -->
+  <polygon points="400,155 530,210 400,265 270,210" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Risk of injury to</text>
+  <text x="400" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">self / others / property?</text>
+
+  <!-- YES Branch (left) -->
+  <line x1="270" y1="210" x2="130" y2="210" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="200" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#EF4444">YES</text>
+
+  <!-- Ensure Safety Box -->
+  <rect x="20" y="185" width="120" height="50" rx="8" fill="#1A1F2E" stroke="#EF4444" stroke-width="2"/>
+  <text x="80" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#EF4444" text-anchor="middle">ENSURE</text>
+  <text x="80" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#EF4444" text-anchor="middle">SAFETY</text>
+
+  <!-- Arrow down from Ensure Safety -->
+  <line x1="80" y1="235" x2="80" y2="268" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Acute PRN Box -->
+  <rect x="10" y="273" width="140" height="75" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="80" y="293" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#F59E0B" text-anchor="middle">Acute PRN</text>
+  <text x="80" y="312" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1" text-anchor="middle">Short-acting benzo</text>
+  <text x="80" y="328" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">OR</text>
+  <text x="80" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1" text-anchor="middle">Atypical antipsychotic</text>
+
+  <!-- Arrow from acute to maintenance -->
+  <line x1="80" y1="348" x2="80" y2="380" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowAmber)"/>
+  <text x="80" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Then</text>
+
+  <!-- Arrow merging to maintenance section -->
+  <line x1="80" y1="385" x2="250" y2="450" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowAmber)"/>
+
+  <!-- NO Branch (right) -->
+  <line x1="530" y1="210" x2="590" y2="210" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="555" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#34D399">NO</text>
+
+  <!-- Consider Etiologies Box -->
+  <rect x="595" y="155" width="185" height="175" rx="8" fill="#1A1F2E" stroke="#34D399" stroke-width="1.5"/>
+  <text x="687" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399" text-anchor="middle">Consider Etiologies</text>
+  <line x1="610" y1="185" x2="765" y2="185" stroke="#34D399" stroke-width="0.5" opacity="0.4"/>
+  <text x="612" y="203" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1">&#x2022; Pain</text>
+  <text x="612" y="221" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1">&#x2022; Infection / Fever</text>
+  <text x="612" y="239" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1">&#x2022; Seizure</text>
+  <text x="612" y="257" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1">&#x2022; Medication effect</text>
+  <text x="612" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1">&#x2022; Constipation</text>
+  <text x="612" y="293" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1">&#x2022; Hypoxia</text>
+  <text x="612" y="319" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">&#x2022; Urinary retention</text>
+
+  <!-- Arrow from etiologies down to environment -->
+  <line x1="687" y1="330" x2="687" y2="368" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="687" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Treat, then</text>
+
+  <!-- Environmental Modifications Box -->
+  <rect x="250" y="370" width="340" height="85" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="420" y="393" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">Environmental Modifications</text>
+  <line x1="270" y1="400" x2="570" y2="400" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <text x="420" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1" text-anchor="middle">Low stimulation environment</text>
+  <text x="420" y="438" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1" text-anchor="middle">1:1 sitter  |  Floor bed  |  Padded side rails</text>
+
+  <!-- Arrow to connect etiologies to env box -->
+  <line x1="595" y1="395" x2="590" y2="395" stroke="#22D3EE" stroke-width="2"/>
+
+  <!-- Arrow from environment to pharmacotherapy -->
+  <line x1="420" y1="455" x2="420" y2="490" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="420" y="485" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">If persists</text>
+
+  <!-- Pharmacotherapy Hierarchy -->
+  <rect x="175" y="495" width="450" height="290" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="400" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#22D3EE" text-anchor="middle">Pharmacotherapy Hierarchy</text>
+  <line x1="195" y1="530" x2="605" y2="530" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Drug 1 -->
+  <rect x="200" y="545" width="50" height="28" rx="6" fill="#22D3EE" opacity="0.2" stroke="#22D3EE" stroke-width="1"/>
+  <text x="225" y="564" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">1</text>
+  <text x="270" y="564" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1">Propranolol</text>
+  <text x="430" y="564" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF">Beta-blocker, first-line</text>
+
+  <!-- Drug 2 -->
+  <rect x="200" y="585" width="50" height="28" rx="6" fill="#22D3EE" opacity="0.15" stroke="#22D3EE" stroke-width="1"/>
+  <text x="225" y="604" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">2</text>
+  <text x="270" y="604" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1">Amantadine</text>
+  <text x="430" y="604" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF">Dopamine agonist</text>
+
+  <!-- Drug 3 -->
+  <rect x="200" y="625" width="50" height="28" rx="6" fill="#22D3EE" opacity="0.1" stroke="#22D3EE" stroke-width="1"/>
+  <text x="225" y="644" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">3</text>
+  <text x="270" y="644" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1">Valproic Acid</text>
+  <text x="430" y="644" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF">Mood stabilizer / AED</text>
+
+  <!-- Drug 4 -->
+  <rect x="200" y="665" width="50" height="28" rx="6" fill="#22D3EE" opacity="0.08" stroke="#22D3EE" stroke-width="1"/>
+  <text x="225" y="684" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">4</text>
+  <text x="270" y="684" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1">Trazodone</text>
+  <text x="430" y="684" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF">Serotonin modulator</text>
+
+  <!-- Drug 5 -->
+  <rect x="200" y="705" width="50" height="28" rx="6" fill="#22D3EE" opacity="0.05" stroke="#22D3EE" stroke-width="1"/>
+  <text x="225" y="724" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">5</text>
+  <text x="270" y="724" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1">Low-dose Quetiapine</text>
+  <text x="470" y="724" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF">Atypical antipsychotic</text>
+
+  <!-- Escalation arrow -->
+  <text x="185" y="660" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" transform="rotate(-90,185,660)" text-anchor="middle">ESCALATE</text>
+
+  <!-- AVOID Box (Red) -->
+  <rect x="175" y="820" width="450" height="120" rx="10" fill="#1A1F2E" stroke="#EF4444" stroke-width="2.5"/>
+  <rect x="175" y="820" width="450" height="30" rx="10" fill="#EF4444" opacity="0.15"/>
+  <text x="400" y="842" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#EF4444" text-anchor="middle">AVOID</text>
+  <text x="220" y="870" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1">&#x2716;  Chronic benzodiazepines</text>
+  <text x="510" y="870" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">(impair cognition/recovery)</text>
+  <text x="220" y="893" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1">&#x2716;  Haloperidol</text>
+  <text x="510" y="893" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">(lowers seizure threshold)</text>
+  <text x="220" y="916" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1">&#x2716;  Anticholinergics</text>
+  <text x="510" y="916" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">(worsen confusion)</text>
+
+  <!-- Footer -->
+  <text x="400" y="970" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Adapted from Consensus Guidelines on Posttraumatic Agitation Management</text>
+</svg>

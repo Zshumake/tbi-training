@@ -3,6 +3,15 @@ import 'notebooklm_acute_mgmt_quiz.dart';
 import 'notebooklm_pathophys_quiz.dart';
 import 'notebooklm_classification_quiz.dart';
 import 'notebooklm_fundamentals_quiz.dart';
+import 'notebooklm_neuroimaging_quiz.dart';
+import 'notebooklm_doc_quiz.dart';
+import 'notebooklm_complications_quiz.dart';
+import 'notebooklm_pharmacology_quiz.dart';
+import 'notebooklm_agitation_quiz.dart';
+import 'notebooklm_spasticity_quiz.dart';
+import 'notebooklm_neuroendocrine_quiz.dart';
+import 'notebooklm_pediatric_geriatric_quiz.dart';
+import 'notebooklm_rehab_continuum_quiz.dart';
 
 class TBIQuizBank {
   static const List<QuizQuestion> _handwritten = [
@@ -587,6 +596,15 @@ class TBIQuizBank {
     ...NotebookLMPathophysQuiz.questions,
     ...NotebookLMClassificationQuiz.questions,
     ...NotebookLMFundamentalsQuiz.questions,
+    ...NotebookLMNeuroimagingQuiz.questions,
+    ...NotebookLMDOCQuiz.questions,
+    ...NotebookLMComplicationsQuiz.questions,
+    ...NotebookLMPharmacologyQuiz.questions,
+    ...NotebookLMAgitationQuiz.questions,
+    ...NotebookLMSpasticityQuiz.questions,
+    ...NotebookLMNeuroendocrineQuiz.questions,
+    ...NotebookLMPediatricGeriatricQuiz.questions,
+    ...NotebookLMRehabContinuumQuiz.questions,
   ];
 
   static List<QuizQuestion> getQuestionsForModule(String moduleId) {

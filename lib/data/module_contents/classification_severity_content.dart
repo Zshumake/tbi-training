@@ -148,6 +148,20 @@ final TopicData classificationSeverityContent = TopicData(
           'Board Pearl: FOUR Score Advantages',
           'The FOUR Score is superior to GCS for ICU patients because: (1) It can assess intubated patients (no verbal component needed). (2) It includes brainstem reflexes (pupil, corneal, cough). (3) It distinguishes vegetative state from locked-in syndrome (locked-in patients can blink to command = Eye score 4). (4) A score of 0 suggests brain death. (5) Each component has the same range (0-4) making it easier to remember.',
         ),
+        TableBlock(
+          title: 'GCS vs FOUR Score Comparison',
+          columns: ['Feature', 'GCS', 'FOUR Score'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Assesses intubated patients', 'No (verbal component lost)', 'Yes (no verbal component)'],
+            ['Brainstem reflex assessment', 'No', 'Yes (pupil, corneal, cough)'],
+            ['Detects locked-in syndrome', 'No', 'Yes (blink to command = E4)'],
+            ['Identifies brain death', 'No (minimum = 3)', 'Yes (score of 0)'],
+            ['Minimum score', '3', '0'],
+            ['Score range per component', 'Variable (1-4, 1-5, 1-6)', 'Uniform (0-4 each)'],
+            ['Inter-rater reliability', 'Moderate', 'Good to excellent'],
+          ],
+        ),
         MnemonicBlock(
           'FOUR Score Components: "FOUR = 4 components, each scored 0-4"',
           'Eye, Motor, Brainstem, Respiration. Total range: 0-16. Think "E-M-B-R" or "Every Measure Before Resuscitation." A total score of 0 = possible brain death. Unlike GCS, the minimum score is 0 (not 3).',
@@ -226,7 +240,40 @@ final TopicData classificationSeverityContent = TopicData(
           'Board Pearl: DRS vs GOS vs FIM',
           'The DRS (range 0-29) is better than GOS for tracking rehabilitation progress because it captures the FULL spectrum from coma through community reintegration. Lower DRS = better outcome (opposite direction from GOS). The DRS has a ceiling effect for mildly impaired patients (many score 0-1). The FIM has a ceiling effect in TBI because it is heavily weighted toward motor function (13/18 items) and only has 5 cognitive items, failing to capture executive dysfunction, memory deficits, and behavioral impairments that are common after TBI.',
         ),
+        HeaderBlock('DRS vs GOS vs FIM Comparison'),
+        TableBlock(
+          title: 'Outcome Measures Compared',
+          columns: ['Feature', 'DRS', 'GOS', 'FIM'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['Score range', '0-30', '1-5', '18-126'],
+            ['Direction', 'Lower = better', 'Higher = better', 'Higher = better'],
+            ['TBI-specific', 'Yes', 'No (but widely used)', 'No'],
+            ['Spectrum covered', 'Coma to community', 'Global outcome only', 'ADL independence only'],
+            ['Sensitivity to change during rehab', 'Good', 'Poor', 'Moderate'],
+            ['Ceiling effect', 'Mild impairment', 'Moderate disability', 'Moderate-severe TBI'],
+            ['Primary use', 'Rehabilitation monitoring', 'Clinical trials', 'Rehabilitation outcomes'],
+          ],
+        ),
         HeaderBlock('FIM in TBI'),
+        TableBlock(
+          title: 'FIM Scoring Scale (7-Point)',
+          columns: ['Score', 'Level of Independence'],
+          headerColor: const Color(0xFF1B2A4A),
+          rows: [
+            ['7', 'Complete independence'],
+            ['6', 'Modified independence (device, extra time)'],
+            ['5', 'Supervision'],
+            ['4', 'Minimal assistance (patient performs >=75%)'],
+            ['3', 'Moderate assistance (patient performs >=50%)'],
+            ['2', 'Maximal assistance (patient performs >=25%)'],
+            ['1', 'Total assistance (patient performs <25%)'],
+          ],
+        ),
+        PearlBlock(
+          'Board Pearl: FIM Efficiency',
+          'FIM Efficiency = (Discharge FIM - Admission FIM) / Length of Stay (days). Higher FIM efficiency indicates more rapid functional improvement per day of rehabilitation. Used for program evaluation, reimbursement justification, and facility comparison. FIM efficiency underestimates TBI-related disability due to the FIM ceiling effect.',
+        ),
         BulletCardBlock(
           title: 'FIM Structure and TBI Limitations',
           themeColor: const Color(0xFFEA580C),
@@ -356,6 +403,10 @@ final TopicData classificationSeverityContent = TopicData(
         PearlBlock(
           'Board Pearl: PTA Prognostic Value',
           'PTA duration is the most commonly used and single best predictor of long-term outcome after TBI. Key thresholds: PTA <2 months makes severe disability unlikely. PTA >3 months makes good recovery unlikely. PTA correlates more strongly with outcome than GCS. The O-Log has the advantage of not relying on retrograde memory assessment, which can be independently impaired.',
+        ),
+        PearlBlock(
+          'Board Pearl: Pediatric PTA Assessment (COAT)',
+          'The Children\'s Orientation and Amnesia Test (COAT) is a modified PTA assessment tool designed for children aged 3-15 years. It adapts orientation and memory questions to developmentally appropriate levels. Use COAT for pediatric TBI PTA assessment instead of GOAT or O-Log.',
         ),
         HeaderBlock('Coma Recovery Scale-Revised (CRS-R)'),
         TextBlock(

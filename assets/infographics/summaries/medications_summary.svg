@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#bgGrad)"/>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="800" height="65" fill="#1A1F2E"/>
+  <text x="400" y="30" text-anchor="middle" fill="#22D3EE" font-size="24" font-weight="700" letter-spacing="1">TBI MEDICATIONS</text>
+  <text x="400" y="50" text-anchor="middle" fill="#5A6575" font-size="13">Pharmacologic Management Cheat Sheet</text>
+  <line x1="100" y1="62" x2="700" y2="62" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- ===== AVOID COLUMN (LEFT - RED) ===== -->
+  <rect x="25" y="80" rx="12" ry="12" width="365" height="920" fill="#1A1F2E" stroke="#EF4444" stroke-width="2"/>
+  <rect x="25" y="80" rx="12" ry="12" width="365" height="50" fill="#EF4444" fill-opacity="0.15"/>
+  <text x="207" y="106" text-anchor="middle" fill="#EF4444" font-size="20" font-weight="700">AVOID</text>
+  <text x="207" y="122" text-anchor="middle" fill="#EF4444" font-size="10" opacity="0.8">Impair neuroplasticity / recovery</text>
+
+  <!-- Drug 1: Haloperidol -->
+  <rect x="40" y="145" rx="8" ry="8" width="335" height="105" fill="#0F1419" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+  <rect x="40" y="145" rx="8" ry="8" width="335" height="28" fill="#EF4444" fill-opacity="0.08"/>
+  <text x="55" y="165" fill="#EF4444" font-size="15" font-weight="700">Haloperidol</text>
+  <text x="310" y="165" text-anchor="end" fill="#5A6575" font-size="10">(Typical antipsychotic)</text>
+  <text x="55" y="188" fill="#E8ECF1" font-size="11">Dopamine D2 antagonist</text>
+  <text x="55" y="205" fill="#8A9AB5" font-size="10">Impairs cognitive recovery, motor function</text>
+  <text x="55" y="222" fill="#8A9AB5" font-size="10">Lowers seizure threshold</text>
+  <text x="55" y="239" fill="#F59E0B" font-size="10" font-style="italic">Alt: Quetiapine if antipsychotic needed</text>
+
+  <!-- Drug 2: Phenytoin (chronic) -->
+  <rect x="40" y="260" rx="8" ry="8" width="335" height="105" fill="#0F1419" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+  <rect x="40" y="260" rx="8" ry="8" width="335" height="28" fill="#EF4444" fill-opacity="0.08"/>
+  <text x="55" y="280" fill="#EF4444" font-size="15" font-weight="700">Phenytoin (chronic use)</text>
+  <text x="55" y="303" fill="#E8ECF1" font-size="11">Impairs cognitive recovery long-term</text>
+  <text x="55" y="320" fill="#8A9AB5" font-size="10">OK for first 7 days (early seizure prophylaxis)</text>
+  <text x="55" y="337" fill="#8A9AB5" font-size="10">No benefit for late seizures (>7 days)</text>
+  <text x="55" y="354" fill="#F59E0B" font-size="10" font-style="italic">Alt: Levetiracetam for prophylaxis</text>
+
+  <!-- Drug 3: Benzodiazepines -->
+  <rect x="40" y="375" rx="8" ry="8" width="335" height="105" fill="#0F1419" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+  <rect x="40" y="375" rx="8" ry="8" width="335" height="28" fill="#EF4444" fill-opacity="0.08"/>
+  <text x="55" y="395" fill="#EF4444" font-size="15" font-weight="700">Benzodiazepines</text>
+  <text x="310" y="395" text-anchor="end" fill="#5A6575" font-size="10">(Lorazepam, Diazepam)</text>
+  <text x="55" y="418" fill="#E8ECF1" font-size="11">GABA agonist &#x2192; excessive sedation</text>
+  <text x="55" y="435" fill="#8A9AB5" font-size="10">Impairs arousal, attention, memory</text>
+  <text x="55" y="452" fill="#8A9AB5" font-size="10">Paradoxical agitation in TBI</text>
+  <text x="55" y="469" fill="#F59E0B" font-size="10" font-style="italic">Alt: Trazodone, buspirone for anxiety</text>
+
+  <!-- Drug 4: Anticholinergics -->
+  <rect x="40" y="490" rx="8" ry="8" width="335" height="95" fill="#0F1419" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+  <rect x="40" y="490" rx="8" ry="8" width="335" height="28" fill="#EF4444" fill-opacity="0.08"/>
+  <text x="55" y="510" fill="#EF4444" font-size="15" font-weight="700">Anticholinergics</text>
+  <text x="310" y="510" text-anchor="end" fill="#5A6575" font-size="10">(Diphenhydramine, etc.)</text>
+  <text x="55" y="533" fill="#E8ECF1" font-size="11">Block ACh &#x2192; impair memory, attention</text>
+  <text x="55" y="550" fill="#8A9AB5" font-size="10">Worsen confusion, agitation</text>
+  <text x="55" y="567" fill="#8A9AB5" font-size="10">Already depleted ACh in TBI brain</text>
+
+  <!-- Drug 5: Dopamine antagonists -->
+  <rect x="40" y="595" rx="8" ry="8" width="335" height="95" fill="#0F1419" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+  <rect x="40" y="595" rx="8" ry="8" width="335" height="28" fill="#EF4444" fill-opacity="0.08"/>
+  <text x="55" y="615" fill="#EF4444" font-size="15" font-weight="700">Dopamine Antagonists</text>
+  <text x="310" y="615" text-anchor="end" fill="#5A6575" font-size="10">(Metoclopramide, etc.)</text>
+  <text x="55" y="638" fill="#E8ECF1" font-size="11">Block DA pathways needed for recovery</text>
+  <text x="55" y="655" fill="#8A9AB5" font-size="10">Impairs arousal, motivation, cognition</text>
+  <text x="55" y="672" fill="#F59E0B" font-size="10" font-style="italic">Alt: Ondansetron for nausea</text>
+
+  <!-- General avoid note -->
+  <rect x="40" y="705" rx="6" ry="6" width="335" height="45" fill="#EF4444" fill-opacity="0.05" stroke="#EF4444" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="207" y="724" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="600">Also avoid: Barbiturates, Alpha-2 agonists</text>
+  <text x="207" y="740" text-anchor="middle" fill="#8A9AB5" font-size="9">(excessive sedation, impair plasticity)</text>
+
+  <!-- ===== PROMOTE COLUMN (RIGHT - GREEN) ===== -->
+  <rect x="410" y="80" rx="12" ry="12" width="365" height="920" fill="#1A1F2E" stroke="#34D399" stroke-width="2"/>
+  <rect x="410" y="80" rx="12" ry="12" width="365" height="50" fill="#34D399" fill-opacity="0.15"/>
+  <text x="592" y="106" text-anchor="middle" fill="#34D399" font-size="20" font-weight="700">PROMOTE</text>
+  <text x="592" y="122" text-anchor="middle" fill="#34D399" font-size="10" opacity="0.8">Enhance neurotransmission / recovery</text>
+
+  <!-- Drug 1: Methylphenidate -->
+  <rect x="425" y="145" rx="8" ry="8" width="335" height="105" fill="#0F1419" stroke="#34D399" stroke-width="1" opacity="0.8"/>
+  <rect x="425" y="145" rx="8" ry="8" width="335" height="28" fill="#34D399" fill-opacity="0.08"/>
+  <text x="440" y="165" fill="#34D399" font-size="15" font-weight="700">Methylphenidate</text>
+  <rect x="620" y="152" rx="4" ry="4" width="125" height="18" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1"/>
+  <text x="682" y="165" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">ATTENTION</text>
+  <text x="440" y="188" fill="#E8ECF1" font-size="11">DA/NE reuptake inhibitor</text>
+  <text x="440" y="205" fill="#8A9AB5" font-size="10">Improves processing speed, attention</text>
+  <text x="440" y="222" fill="#8A9AB5" font-size="10">Start 5mg BID, titrate to effect</text>
+  <text x="440" y="239" fill="#F59E0B" font-size="10">Most studied stimulant in TBI</text>
+
+  <!-- Drug 2: Amantadine -->
+  <rect x="425" y="260" rx="8" ry="8" width="335" height="105" fill="#0F1419" stroke="#34D399" stroke-width="1" opacity="0.8"/>
+  <rect x="425" y="260" rx="8" ry="8" width="335" height="28" fill="#34D399" fill-opacity="0.08"/>
+  <text x="440" y="280" fill="#34D399" font-size="15" font-weight="700">Amantadine</text>
+  <rect x="620" y="267" rx="4" ry="4" width="125" height="18" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1"/>
+  <text x="682" y="280" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">AROUSAL</text>
+  <text x="440" y="303" fill="#E8ECF1" font-size="11">DA release + NMDA antagonist</text>
+  <text x="440" y="320" fill="#8A9AB5" font-size="10">Accelerates recovery from DOC</text>
+  <text x="440" y="337" fill="#F59E0B" font-size="10" font-weight="600">Level 1 evidence (Giacino 2012)</text>
+  <text x="440" y="354" fill="#8A9AB5" font-size="10">100-200mg BID, avoid evening dosing</text>
+
+  <!-- Drug 3: Donepezil -->
+  <rect x="425" y="375" rx="8" ry="8" width="335" height="105" fill="#0F1419" stroke="#34D399" stroke-width="1" opacity="0.8"/>
+  <rect x="425" y="375" rx="8" ry="8" width="335" height="28" fill="#34D399" fill-opacity="0.08"/>
+  <text x="440" y="395" fill="#34D399" font-size="15" font-weight="700">Donepezil</text>
+  <rect x="620" y="382" rx="4" ry="4" width="125" height="18" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1"/>
+  <text x="682" y="395" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">MEMORY</text>
+  <text x="440" y="418" fill="#E8ECF1" font-size="11">Acetylcholinesterase inhibitor</text>
+  <text x="440" y="435" fill="#8A9AB5" font-size="10">Boosts ACh &#x2192; improves memory</text>
+  <text x="440" y="452" fill="#8A9AB5" font-size="10">Start 5mg daily, increase to 10mg</text>
+  <text x="440" y="469" fill="#8A9AB5" font-size="10">May help attention as well</text>
+
+  <!-- Drug 4: Modafinil -->
+  <rect x="425" y="490" rx="8" ry="8" width="335" height="95" fill="#0F1419" stroke="#34D399" stroke-width="1" opacity="0.8"/>
+  <rect x="425" y="490" rx="8" ry="8" width="335" height="28" fill="#34D399" fill-opacity="0.08"/>
+  <text x="440" y="510" fill="#34D399" font-size="15" font-weight="700">Modafinil</text>
+  <rect x="620" y="497" rx="4" ry="4" width="125" height="18" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1"/>
+  <text x="682" y="510" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">EDS / FATIGUE</text>
+  <text x="440" y="533" fill="#E8ECF1" font-size="11">Wakefulness-promoting agent</text>
+  <text x="440" y="550" fill="#8A9AB5" font-size="10">Excessive daytime sleepiness</text>
+  <text x="440" y="567" fill="#8A9AB5" font-size="10">100-200mg each morning</text>
+
+  <!-- Drug 5: Bromocriptine -->
+  <rect x="425" y="595" rx="8" ry="8" width="335" height="95" fill="#0F1419" stroke="#34D399" stroke-width="1" opacity="0.8"/>
+  <rect x="425" y="595" rx="8" ry="8" width="335" height="28" fill="#34D399" fill-opacity="0.08"/>
+  <text x="440" y="615" fill="#34D399" font-size="15" font-weight="700">Bromocriptine</text>
+  <rect x="620" y="602" rx="4" ry="4" width="125" height="18" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1"/>
+  <text x="682" y="615" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">EXECUTIVE FXN</text>
+  <text x="440" y="638" fill="#E8ECF1" font-size="11">Direct D2 agonist</text>
+  <text x="440" y="655" fill="#8A9AB5" font-size="10">Frontal lobe / executive dysfunction</text>
+  <text x="440" y="672" fill="#8A9AB5" font-size="10">Initiation, planning, organization</text>
+
+  <!-- Additional meds -->
+  <rect x="425" y="705" rx="6" ry="6" width="335" height="65" fill="#34D399" fill-opacity="0.05" stroke="#34D399" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="592" y="724" text-anchor="middle" fill="#34D399" font-size="10" font-weight="600">Also consider:</text>
+  <text x="592" y="740" text-anchor="middle" fill="#E8ECF1" font-size="9">Sertraline (depression/mood) | Propranolol (agitation)</text>
+  <text x="592" y="755" text-anchor="middle" fill="#E8ECF1" font-size="9">Melatonin (sleep) | Baclofen/Tizanidine (spasticity)</text>
+
+  <!-- ===== BOTTOM PEARL ===== -->
+  <rect x="100" y="1020" rx="12" ry="12" width="600" height="80" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="1050" text-anchor="middle" fill="#F59E0B" font-size="22" font-weight="700" letter-spacing="1">"START LOW, GO SLOW"</text>
+  <text x="400" y="1072" text-anchor="middle" fill="#E8ECF1" font-size="12">TBI brains are more sensitive to medications</text>
+  <text x="400" y="1088" text-anchor="middle" fill="#8A9AB5" font-size="10">Titrate gradually | Monitor for paradoxical effects | Re-evaluate regularly</text>
+
+  <!-- Neurotransmitter summary -->
+  <rect x="100" y="1115" rx="8" ry="8" width="600" height="55" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1"/>
+  <text x="400" y="1138" text-anchor="middle" fill="#22D3EE" font-size="12" font-weight="700">Key Neurotransmitters in TBI Recovery</text>
+  <text x="180" y="1158" fill="#E8ECF1" font-size="10">DA = Arousal/Motivation</text>
+  <text x="370" y="1158" fill="#E8ECF1" font-size="10">NE = Attention</text>
+  <text x="510" y="1158" fill="#E8ECF1" font-size="10">ACh = Memory</text>
+  <text x="650" y="1158" fill="#E8ECF1" font-size="10">5-HT = Mood</text>
+
+  <!-- Footer -->
+  <text x="400" y="1190" text-anchor="middle" fill="#3A4555" font-size="9">TBI Training | Board Review Quick Reference</text>
+</svg>

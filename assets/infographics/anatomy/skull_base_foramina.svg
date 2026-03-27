@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="boneGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#3D3528" />
+      <stop offset="100%" stop-color="#2A2418"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" filter="url(#glow)">SKULL BASE FORAMINA — Inferior View</text>
+  <text x="400" y="55" text-anchor="middle" fill="#94A3B8" font-size="12">Cranial Nerve Exit Points &amp; TBI Injury Risk</text>
+
+  <!-- Legend -->
+  <rect x="580" y="42" width="12" height="12" rx="2" fill="#EF4444" opacity="0.8"/>
+  <text x="596" y="52" fill="#EF4444" font-size="10">High injury risk</text>
+  <rect x="580" y="58" width="12" height="12" rx="2" fill="#F59E0B" opacity="0.8"/>
+  <text x="596" y="68" fill="#F59E0B" font-size="10">Moderate risk</text>
+  <rect x="580" y="74" width="12" height="12" rx="2" fill="#64748B" opacity="0.8"/>
+  <text x="596" y="84" fill="#64748B" font-size="10">Lower risk</text>
+
+  <!-- Skull base outline - inferior view -->
+  <ellipse cx="400" cy="360" rx="260" ry="280" fill="url(#boneGrad)" stroke="#4A3D2E" stroke-width="2"/>
+  <!-- Inner detail -->
+  <ellipse cx="400" cy="360" rx="250" ry="270" fill="none" stroke="#4A3D2E" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- ANTERIOR CRANIAL FOSSA dividing line -->
+  <path d="M180,240 Q400,260 620,240" stroke="#4A5568" stroke-width="1" fill="none" stroke-dasharray="4,3"/>
+  <text x="400" y="145" text-anchor="middle" fill="#4A5568" font-size="11" font-weight="600">ANTERIOR FOSSA</text>
+
+  <!-- MIDDLE CRANIAL FOSSA dividing line -->
+  <path d="M160,400 Q400,380 640,400" stroke="#4A5568" stroke-width="1" fill="none" stroke-dasharray="4,3"/>
+  <text x="220" y="320" text-anchor="middle" fill="#4A5568" font-size="11" font-weight="600">MIDDLE FOSSA</text>
+
+  <!-- POSTERIOR CRANIAL FOSSA -->
+  <text x="400" y="510" text-anchor="middle" fill="#4A5568" font-size="11" font-weight="600">POSTERIOR FOSSA</text>
+
+  <!-- ===== FORAMINA ===== -->
+
+  <!-- 1. CRIBRIFORM PLATE (HIGH RISK - RED) -->
+  <rect x="370" y="155" width="60" height="20" rx="3" fill="#EF4444" opacity="0.3" stroke="#EF4444" stroke-width="1.5"/>
+  <!-- Tiny holes pattern -->
+  <circle cx="380" cy="165" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="388" cy="162" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="396" cy="166" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="404" cy="162" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="412" cy="166" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="420" cy="163" r="1.5" fill="#EF4444" opacity="0.5"/>
+  <!-- Label -->
+  <line x1="430" y1="160" x2="540" y2="120" stroke="#EF4444" stroke-width="1"/>
+  <text x="545" y="112" fill="#EF4444" font-size="11" font-weight="700">Cribriform Plate</text>
+  <text x="545" y="125" fill="#EF4444" font-size="10">CN I (Olfactory)</text>
+  <text x="545" y="138" fill="#EF4444" font-size="9" opacity="0.8">#1 injured CN in TBI</text>
+  <text x="545" y="150" fill="#EF4444" font-size="9" opacity="0.7">→ Anosmia, CSF rhinorrhea</text>
+
+  <!-- 2. OPTIC CANAL (MODERATE RISK - AMBER) -->
+  <ellipse cx="360" cy="210" rx="10" ry="7" fill="#F59E0B" opacity="0.3" stroke="#F59E0B" stroke-width="1.2"/>
+  <ellipse cx="440" cy="210" rx="10" ry="7" fill="#F59E0B" opacity="0.3" stroke="#F59E0B" stroke-width="1.2"/>
+  <!-- Label left -->
+  <line x1="350" y1="210" x2="130" y2="170" stroke="#F59E0B" stroke-width="1"/>
+  <text x="125" y="160" text-anchor="end" fill="#F59E0B" font-size="11" font-weight="700">Optic Canal</text>
+  <text x="125" y="173" text-anchor="end" fill="#F59E0B" font-size="10">CN II (Optic)</text>
+  <text x="125" y="186" text-anchor="end" fill="#F59E0B" font-size="9" opacity="0.7">+ Ophthalmic artery</text>
+
+  <!-- 3. SUPERIOR ORBITAL FISSURE (MODERATE - AMBER) -->
+  <path d="M340,230 Q350,225 365,232" stroke="#F59E0B" stroke-width="2" fill="none"/>
+  <path d="M435,232 Q450,225 460,230" stroke="#F59E0B" stroke-width="2" fill="none"/>
+  <!-- Label right -->
+  <line x1="462" y1="230" x2="560" y2="195" stroke="#F59E0B" stroke-width="1"/>
+  <text x="565" y="188" fill="#F59E0B" font-size="11" font-weight="700">Superior Orbital Fissure</text>
+  <text x="565" y="201" fill="#F59E0B" font-size="10">CN III, IV, V1, VI</text>
+  <text x="565" y="214" fill="#F59E0B" font-size="9" opacity="0.7">Orbital apex syndrome</text>
+
+  <!-- 4. FORAMEN ROTUNDUM (LOW RISK) -->
+  <circle cx="345" cy="275" r="7" fill="#64748B" opacity="0.3" stroke="#64748B" stroke-width="1"/>
+  <circle cx="455" cy="275" r="7" fill="#64748B" opacity="0.3" stroke="#64748B" stroke-width="1"/>
+  <!-- Label left -->
+  <line x1="338" y1="275" x2="130" y2="255" stroke="#64748B" stroke-width="1"/>
+  <text x="125" y="248" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600">Foramen Rotundum</text>
+  <text x="125" y="261" text-anchor="end" fill="#94A3B8" font-size="10">CN V2 (Maxillary)</text>
+
+  <!-- 5. FORAMEN OVALE (LOW RISK) -->
+  <ellipse cx="335" cy="310" rx="10" ry="7" fill="#64748B" opacity="0.3" stroke="#64748B" stroke-width="1"/>
+  <ellipse cx="465" cy="310" rx="10" ry="7" fill="#64748B" opacity="0.3" stroke="#64748B" stroke-width="1"/>
+  <!-- Label left -->
+  <line x1="325" y1="310" x2="130" y2="300" stroke="#64748B" stroke-width="1"/>
+  <text x="125" y="293" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600">Foramen Ovale</text>
+  <text x="125" y="306" text-anchor="end" fill="#94A3B8" font-size="10">CN V3 (Mandibular)</text>
+
+  <!-- Foramen Spinosum (landmark) -->
+  <circle cx="320" cy="335" r="5" fill="#EF4444" opacity="0.2" stroke="#EF4444" stroke-width="0.8"/>
+  <circle cx="480" cy="335" r="5" fill="#EF4444" opacity="0.2" stroke="#EF4444" stroke-width="0.8"/>
+  <line x1="486" y1="335" x2="560" y2="300" stroke="#EF4444" stroke-width="0.8" opacity="0.6"/>
+  <text x="565" y="295" fill="#EF4444" font-size="9" opacity="0.7">F. Spinosum</text>
+  <text x="565" y="306" fill="#EF4444" font-size="9" opacity="0.7">(Middle meningeal a.)</text>
+
+  <!-- 6. INTERNAL ACOUSTIC MEATUS (HIGH RISK - RED for temporal bone fx) -->
+  <ellipse cx="310" cy="395" rx="10" ry="8" fill="#EF4444" opacity="0.3" stroke="#EF4444" stroke-width="1.2"/>
+  <ellipse cx="490" cy="395" rx="10" ry="8" fill="#EF4444" opacity="0.3" stroke="#EF4444" stroke-width="1.2"/>
+  <!-- Label right -->
+  <line x1="500" y1="395" x2="580" y2="370" stroke="#EF4444" stroke-width="1"/>
+  <text x="585" y="363" fill="#EF4444" font-size="11" font-weight="700">Internal Acoustic Meatus</text>
+  <text x="585" y="376" fill="#EF4444" font-size="10">CN VII (Facial), VIII (Vestibulocochlear)</text>
+  <text x="585" y="389" fill="#EF4444" font-size="9" opacity="0.8">Temporal bone fractures</text>
+  <text x="585" y="401" fill="#EF4444" font-size="9" opacity="0.7">→ Facial palsy, hearing loss</text>
+
+  <!-- 7. JUGULAR FORAMEN (MODERATE - AMBER) -->
+  <ellipse cx="325" cy="445" rx="12" ry="9" fill="#F59E0B" opacity="0.25" stroke="#F59E0B" stroke-width="1"/>
+  <ellipse cx="475" cy="445" rx="12" ry="9" fill="#F59E0B" opacity="0.25" stroke="#F59E0B" stroke-width="1"/>
+  <!-- Label left -->
+  <line x1="313" y1="445" x2="130" y2="420" stroke="#F59E0B" stroke-width="1"/>
+  <text x="125" y="410" text-anchor="end" fill="#F59E0B" font-size="11" font-weight="700">Jugular Foramen</text>
+  <text x="125" y="423" text-anchor="end" fill="#F59E0B" font-size="10">CN IX, X, XI</text>
+  <text x="125" y="436" text-anchor="end" fill="#F59E0B" font-size="9" opacity="0.7">Jugular vein, vagus nerve</text>
+
+  <!-- 8. HYPOGLOSSAL CANAL (LOW RISK) -->
+  <circle cx="350" cy="475" r="5" fill="#64748B" opacity="0.3" stroke="#64748B" stroke-width="1"/>
+  <circle cx="450" cy="475" r="5" fill="#64748B" opacity="0.3" stroke="#64748B" stroke-width="1"/>
+  <!-- Label left -->
+  <line x1="345" y1="475" x2="130" y2="470" stroke="#64748B" stroke-width="1"/>
+  <text x="125" y="463" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600">Hypoglossal Canal</text>
+  <text x="125" y="476" text-anchor="end" fill="#94A3B8" font-size="10">CN XII (Hypoglossal)</text>
+  <text x="125" y="489" text-anchor="end" fill="#94A3B8" font-size="9" opacity="0.7">Tongue deviation</text>
+
+  <!-- 9. FORAMEN MAGNUM (MODERATE - AMBER) -->
+  <ellipse cx="400" cy="530" rx="50" ry="35" fill="#F59E0B" opacity="0.12" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="400" y="525" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">FORAMEN</text>
+  <text x="400" y="539" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">MAGNUM</text>
+  <!-- Label -->
+  <line x1="400" y1="565" x2="400" y2="590" stroke="#F59E0B" stroke-width="1"/>
+  <text x="400" y="603" text-anchor="middle" fill="#F59E0B" font-size="10">Brainstem, Vertebral Arteries, Spinal Cord</text>
+  <text x="400" y="616" text-anchor="middle" fill="#F59E0B" font-size="9" opacity="0.7">Tonsillar herniation site</text>
+
+  <!-- Anterior label -->
+  <text x="400" y="100" text-anchor="middle" fill="#4A5568" font-size="11" font-weight="600">ANTERIOR</text>
+  <polygon points="400,104 395,112 405,112" fill="#4A5568" transform="rotate(180,400,108)"/>
+
+  <!-- Posterior label -->
+  <text x="400" y="640" text-anchor="middle" fill="#4A5568" font-size="11" font-weight="600">POSTERIOR</text>
+  <polygon points="400,632 395,624 405,624" fill="#4A5568"/>
+
+  <!-- Board Pearl -->
+  <rect x="40" y="653" width="720" height="38" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+  <text x="56" y="670" fill="#22D3EE" font-size="11" font-weight="700">BOARD PEARL:</text>
+  <text x="158" y="670" fill="#E8ECF1" font-size="11">CN I (#1 TBI) → anosmia. Temporal bone fx → CN VII/VIII. Basilar skull fx → CSF leak + Battle sign/raccoon eyes.</text>
+  <text x="158" y="684" fill="#E8ECF1" font-size="11">CN VI (longest intracranial course) → false localizing sign in raised ICP.</text>
+</svg>

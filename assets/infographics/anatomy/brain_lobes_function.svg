@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#0A0E13"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" filter="url(#glow)">BRAIN LOBES &amp; TBI-RELEVANT FUNCTIONS</text>
+  <text x="400" y="55" text-anchor="middle" fill="#94A3B8" font-size="12">Lateral View — Left Hemisphere</text>
+
+  <!-- Brain outline - lateral view -->
+  <!-- Main cerebrum -->
+  <path d="M120,235 C120,140 180,85 280,80 C360,76 440,78 500,85 C560,92 600,115 615,150 C630,185 628,230 620,260 C612,290 590,310 560,325 C530,340 480,348 420,350 C360,352 300,345 250,335 C200,325 160,310 140,285 C125,268 120,255 120,235Z" fill="none" stroke="#4A5568" stroke-width="1.5"/>
+
+  <!-- FRONTAL LOBE -->
+  <path d="M120,235 C120,140 180,85 280,80 C320,78 345,80 345,80 L345,170 C345,170 320,250 300,290 C280,320 250,335 210,340 C175,330 150,310 140,285 C125,268 120,255 120,235Z" fill="#22D3EE" opacity="0.15" stroke="#22D3EE" stroke-width="1.5"/>
+  <!-- Central sulcus hint -->
+  <path d="M345,80 C348,120 350,170 340,250 C335,280 320,310 300,335" stroke="#E8ECF1" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="230" y="180" text-anchor="middle" fill="#22D3EE" font-size="15" font-weight="700">FRONTAL</text>
+  <text x="230" y="196" text-anchor="middle" fill="#22D3EE" font-size="10" opacity="0.8">Executive function</text>
+  <text x="230" y="208" text-anchor="middle" fill="#22D3EE" font-size="10" opacity="0.8">Personality, Motor</text>
+
+  <!-- PARIETAL LOBE -->
+  <path d="M345,80 C380,78 440,78 500,85 C530,90 555,100 570,115 L570,175 C560,195 530,220 500,240 C470,258 430,270 400,280 C370,290 345,290 335,280 C340,260 345,230 345,200 C345,160 345,120 345,80Z" fill="#F59E0B" opacity="0.12" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="440" y="160" text-anchor="middle" fill="#F59E0B" font-size="15" font-weight="700">PARIETAL</text>
+  <text x="440" y="176" text-anchor="middle" fill="#F59E0B" font-size="10" opacity="0.8">Sensation</text>
+  <text x="440" y="188" text-anchor="middle" fill="#F59E0B" font-size="10" opacity="0.8">Spatial awareness</text>
+
+  <!-- TEMPORAL LOBE -->
+  <path d="M210,340 C250,335 300,335 340,290 C355,295 370,300 400,300 C430,300 455,295 470,285 L480,310 C490,330 485,345 470,350 C440,355 390,352 350,350 C310,348 270,345 240,340Z" fill="#34D399" opacity="0.15" stroke="#34D399" stroke-width="1.5"/>
+  <!-- Lateral sulcus hint -->
+  <path d="M200,335 C260,310 320,285 400,280 C450,275 490,280 520,275" stroke="#E8ECF1" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="350" y="325" text-anchor="middle" fill="#34D399" font-size="15" font-weight="700">TEMPORAL</text>
+  <text x="350" y="341" text-anchor="middle" fill="#34D399" font-size="10" opacity="0.8">Memory, Language, Emotion</text>
+
+  <!-- OCCIPITAL LOBE -->
+  <path d="M570,115 C600,135 620,170 625,210 C628,240 622,270 610,290 C598,308 580,320 560,325 C540,330 515,325 500,315 C485,305 478,295 475,280 C480,265 495,248 510,235 C535,215 555,190 565,165 C568,145 570,125 570,115Z" fill="#A78BFA" opacity="0.15" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="565" y="220" text-anchor="middle" fill="#A78BFA" font-size="14" font-weight="700">OCCIPITAL</text>
+  <text x="565" y="236" text-anchor="middle" fill="#A78BFA" font-size="10" opacity="0.8">Vision</text>
+
+  <!-- CEREBELLUM -->
+  <path d="M530,340 C555,335 580,340 598,350 C615,360 625,375 620,390 C615,405 600,412 575,415 C550,418 520,416 500,410 C480,404 468,392 470,378 C472,364 490,348 530,340Z" fill="#EC4899" opacity="0.15" stroke="#EC4899" stroke-width="1.5"/>
+  <!-- Horizontal fissure lines -->
+  <path d="M485,385 Q545,378 610,390" stroke="#EC4899" stroke-width="0.7" fill="none" opacity="0.4"/>
+  <path d="M490,395 Q545,388 605,400" stroke="#EC4899" stroke-width="0.7" fill="none" opacity="0.4"/>
+  <text x="545" y="380" text-anchor="middle" fill="#EC4899" font-size="12" font-weight="700">CEREBELLUM</text>
+  <text x="545" y="395" text-anchor="middle" fill="#EC4899" font-size="9" opacity="0.8">Coordination</text>
+
+  <!-- BRAINSTEM -->
+  <path d="M460,350 C458,365 455,380 450,400 C447,415 445,430 448,440 C452,430 458,420 462,410 C466,395 468,375 468,360Z" fill="#EF4444" opacity="0.2" stroke="#EF4444" stroke-width="1.2"/>
+  <text x="420" y="410" text-anchor="end" fill="#EF4444" font-size="11" font-weight="700">BRAINSTEM</text>
+  <text x="420" y="423" text-anchor="end" fill="#EF4444" font-size="9" opacity="0.8">Consciousness</text>
+  <text x="420" y="435" text-anchor="end" fill="#EF4444" font-size="9" opacity="0.8">Cranial nerves</text>
+
+  <!-- Sulcus labels -->
+  <text x="345" y="72" text-anchor="middle" fill="#94A3B8" font-size="9" font-style="italic">Central Sulcus</text>
+  <text x="270" y="285" text-anchor="middle" fill="#94A3B8" font-size="9" font-style="italic">Lateral Sulcus</text>
+
+  <!-- ===== ANNOTATION BOXES ===== -->
+
+  <!-- Frontal annotation -->
+  <rect x="15" y="85" width="100" height="62" rx="4" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1"/>
+  <text x="65" y="100" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="700">MOST COMMONLY</text>
+  <text x="65" y="112" text-anchor="middle" fill="#22D3EE" font-size="9" font-weight="700">CONTUSED</text>
+  <line x1="65" y1="116" x2="65" y2="116" stroke="#22D3EE" stroke-width="0.5"/>
+  <text x="65" y="128" text-anchor="middle" fill="#E8ECF1" font-size="8">Behavioral &amp;</text>
+  <text x="65" y="139" text-anchor="middle" fill="#E8ECF1" font-size="8">cognitive deficits</text>
+  <line x1="115" y1="116" x2="175" y2="180" stroke="#22D3EE" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Temporal annotation -->
+  <rect x="15" y="320" width="105" height="62" rx="4" fill="#1A1F2E" stroke="#34D399" stroke-width="1"/>
+  <text x="67" y="335" text-anchor="middle" fill="#34D399" font-size="9" font-weight="700">ANTERIOR TIP</text>
+  <text x="67" y="347" text-anchor="middle" fill="#34D399" font-size="9" font-weight="700">CONTUSION SITE</text>
+  <text x="67" y="362" text-anchor="middle" fill="#E8ECF1" font-size="8">Amnestic deficits</text>
+  <text x="67" y="373" text-anchor="middle" fill="#E8ECF1" font-size="8">Emotional lability</text>
+  <line x1="120" y1="350" x2="210" y2="340" stroke="#34D399" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Parietal annotation -->
+  <rect x="660" y="100" width="120" height="52" rx="4" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1"/>
+  <text x="720" y="118" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="700">NEGLECT SYNDROMES</text>
+  <text x="720" y="132" text-anchor="middle" fill="#E8ECF1" font-size="8">R parietal → L neglect</text>
+  <text x="720" y="143" text-anchor="middle" fill="#E8ECF1" font-size="8">Agraphesthesia, astereognosis</text>
+  <line x1="660" y1="128" x2="520" y2="165" stroke="#F59E0B" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Occipital annotation -->
+  <rect x="660" y="195" width="120" height="52" rx="4" fill="#1A1F2E" stroke="#A78BFA" stroke-width="1"/>
+  <text x="720" y="212" text-anchor="middle" fill="#A78BFA" font-size="9" font-weight="700">CORTICAL BLINDNESS</text>
+  <text x="720" y="226" text-anchor="middle" fill="#E8ECF1" font-size="8">Hemianopia</text>
+  <text x="720" y="238" text-anchor="middle" fill="#E8ECF1" font-size="8">Anton syndrome (denial)</text>
+  <line x1="660" y1="222" x2="610" y2="225" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Cerebellum annotation -->
+  <rect x="660" y="340" width="120" height="52" rx="4" fill="#1A1F2E" stroke="#EC4899" stroke-width="1"/>
+  <text x="720" y="358" text-anchor="middle" fill="#EC4899" font-size="9" font-weight="700">ATAXIA</text>
+  <text x="720" y="372" text-anchor="middle" fill="#E8ECF1" font-size="8">Tonsillar herniation risk</text>
+  <text x="720" y="383" text-anchor="middle" fill="#E8ECF1" font-size="8">Dysmetria, intention tremor</text>
+  <line x1="660" y1="365" x2="615" y2="380" stroke="#EC4899" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Brainstem annotation -->
+  <rect x="260" y="430" width="130" height="52" rx="4" fill="#1A1F2E" stroke="#EF4444" stroke-width="1"/>
+  <text x="325" y="447" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">DAI GRADE III SITE</text>
+  <text x="325" y="461" text-anchor="middle" fill="#E8ECF1" font-size="8">Consciousness, cranial nerves</text>
+  <text x="325" y="473" text-anchor="middle" fill="#E8ECF1" font-size="8">Worst prognosis DAI</text>
+  <line x1="390" y1="458" x2="440" y2="425" stroke="#EF4444" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Board Pearl -->
+  <rect x="40" y="455" width="200" height="38" rx="6" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+  <text x="56" y="472" fill="#22D3EE" font-size="10" font-weight="700">BOARD PEARL:</text>
+  <text x="56" y="486" fill="#E8ECF1" font-size="9">Coup = impact site</text>
+  <text x="145" y="486" fill="#E8ECF1" font-size="9">Contrecoup = opposite</text>
+</svg>

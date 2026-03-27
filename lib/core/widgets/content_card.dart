@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../data/models/module_model.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/services/progress_service.dart';
 
 class ContentCard extends StatelessWidget {
   final ModuleModel module;
@@ -90,7 +91,9 @@ class ContentCard extends StatelessWidget {
                 ),
               ],
             ),
-            child: ClipRRect(
+            child: Stack(
+              children: [
+                ClipRRect(
               borderRadius: BorderRadius.circular(16),
               child: Row(
                 children: [
@@ -223,6 +226,31 @@ class ContentCard extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+                // Visited checkmark badge
+                if (ProgressService.visitedModules.contains(module.id))
+                  Positioned(
+                    top: 8,
+                    right: 8,
+                    child: Container(
+                      width: 22,
+                      height: 22,
+                      decoration: BoxDecoration(
+                        color: AppTheme.primaryCyan.withValues(alpha: 0.15),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: AppTheme.primaryCyan.withValues(alpha: 0.4),
+                          width: 1,
+                        ),
+                      ),
+                      child: const Icon(
+                        Icons.check_rounded,
+                        color: AppTheme.primaryCyan,
+                        size: 14,
+                      ),
+                    ),
+                  ),
+              ],
             ),
           ),
         ),

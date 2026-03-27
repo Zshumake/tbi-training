@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" letter-spacing="0.5">DAI PREDILECTION SITES</text>
+  <text x="400" y="56" text-anchor="middle" fill="#5A6575" font-size="12">Diffuse Axonal Injury — Adams Classification</text>
+  <line x1="180" y1="66" x2="620" y2="66" stroke="#22D3EE" stroke-width="1" opacity="0.3"/>
+
+  <!-- Sagittal brain outline -->
+  <!-- Cerebrum -->
+  <path d="M180,260 Q180,120 320,95 Q400,80 480,95 Q580,115 600,180 Q620,240 600,300 Q580,340 540,360 Q500,375 460,370" fill="#1A1F2E" stroke="#3A4255" stroke-width="2.5"/>
+  <!-- Cerebellum -->
+  <path d="M460,370 Q500,390 510,410 Q515,435 490,445 Q460,450 440,435 Q420,420 430,395 Q440,378 460,370" fill="#1A1F2E" stroke="#3A4255" stroke-width="2"/>
+  <!-- Brainstem -->
+  <path d="M430,360 Q420,380 415,410 Q412,430 418,445 Q422,455 430,458" fill="none" stroke="#3A4255" stroke-width="2.5"/>
+  <path d="M460,370 Q445,385 438,410 Q435,430 438,445 Q440,452 445,455" fill="none" stroke="#3A4255" stroke-width="2"/>
+  <!-- Frontal lobe label area -->
+  <path d="M180,260 Q200,340 260,370 Q320,390 380,380 Q410,375 430,360" fill="#1A1F2E" stroke="#3A4255" stroke-width="2"/>
+
+  <!-- Corpus callosum -->
+  <path d="M250,200 Q300,175 400,175 Q480,178 520,195 Q535,205 530,220 Q520,230 500,225 Q420,210 320,210 Q270,215 255,220 Q240,225 240,215 Q242,205 250,200" fill="#2A3545" stroke="#4A5A6F" stroke-width="1.5"/>
+  <text x="390" y="200" text-anchor="middle" fill="#6A7A8F" font-size="9" font-style="italic">Corpus callosum</text>
+
+  <!-- Ventricles (simplified) -->
+  <path d="M300,230 Q350,225 400,228 Q440,230 470,235 Q475,250 460,260 Q420,265 370,262 Q330,260 310,255 Q295,248 300,230" fill="#0F1419" stroke="#2A3545" stroke-width="1"/>
+
+  <!-- Cortical sulci -->
+  <path d="M280,130 Q300,140 310,125" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M340,110 Q360,120 370,105" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M400,100 Q420,110 430,95" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M470,110 Q490,125 510,115" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M540,145 Q555,160 570,150" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M580,195 Q595,215 600,205" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M590,260 Q600,280 605,270" fill="none" stroke="#2A3545" stroke-width="1"/>
+
+  <!-- ===== Grade I: Subcortical white matter (gray-white junction) ===== -->
+  <!-- Dots at gray-white junction -->
+  <circle cx="260" cy="150" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="310" cy="130" r="4.5" fill="#34D399" opacity="0.8"/>
+  <circle cx="370" cy="118" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="430" cy="115" r="4.5" fill="#34D399" opacity="0.8"/>
+  <circle cx="490" cy="125" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="540" cy="155" r="4.5" fill="#34D399" opacity="0.8"/>
+  <circle cx="570" cy="185" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="585" cy="230" r="4.5" fill="#34D399" opacity="0.8"/>
+  <circle cx="575" cy="290" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="220" cy="200" r="4.5" fill="#34D399" opacity="0.8"/>
+  <circle cx="210" cy="260" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="240" cy="310" r="4.5" fill="#34D399" opacity="0.8"/>
+  <circle cx="300" cy="340" r="5" fill="#34D399" opacity="0.8"/>
+  <circle cx="370" cy="355" r="4.5" fill="#34D399" opacity="0.8"/>
+  <!-- Leader -->
+  <line x1="260" y1="150" x2="120" y2="130" stroke="#34D399" stroke-width="1" opacity="0.6"/>
+  <text x="115" y="125" text-anchor="end" fill="#34D399" font-size="10" font-weight="600">Gray-white junction</text>
+
+  <!-- ===== Grade II: Corpus callosum ===== -->
+  <circle cx="290" cy="195" r="6" fill="#F59E0B" opacity="0.85"/>
+  <circle cx="340" cy="188" r="5.5" fill="#F59E0B" opacity="0.85"/>
+  <circle cx="390" cy="185" r="6" fill="#F59E0B" opacity="0.85"/>
+  <circle cx="440" cy="188" r="5.5" fill="#F59E0B" opacity="0.85"/>
+  <circle cx="490" cy="198" r="6" fill="#F59E0B" opacity="0.85"/>
+
+  <!-- ===== Grade III: Brainstem / dorsolateral midbrain ===== -->
+  <circle cx="435" cy="385" r="6" fill="#EF4444" opacity="0.85"/>
+  <circle cx="440" cy="410" r="5.5" fill="#EF4444" opacity="0.85"/>
+  <circle cx="435" cy="435" r="6" fill="#EF4444" opacity="0.85"/>
+  <!-- Leader for brainstem -->
+  <line x1="435" y1="435" x2="350" y2="450" stroke="#EF4444" stroke-width="1" opacity="0.6"/>
+  <text x="345" y="455" text-anchor="end" fill="#EF4444" font-size="10" font-weight="600">Dorsolateral midbrain</text>
+
+  <!-- Legend Box -->
+  <rect x="620" y="100" rx="8" ry="8" width="165" height="180" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.5"/>
+  <text x="702" y="125" text-anchor="middle" fill="#E8ECF1" font-size="13" font-weight="700">Adams Grades</text>
+  <line x1="635" y1="133" x2="770" y2="133" stroke="#3A4255" stroke-width="1"/>
+
+  <!-- Grade I -->
+  <circle cx="645" cy="155" r="6" fill="#34D399" opacity="0.8"/>
+  <text x="660" y="152" fill="#34D399" font-size="12" font-weight="700">Grade I</text>
+  <text x="660" y="165" fill="#E8ECF1" font-size="9">Subcortical white matter</text>
+  <text x="660" y="176" fill="#5A6575" font-size="9" font-style="italic">Mild</text>
+
+  <!-- Grade II -->
+  <circle cx="645" cy="198" r="6" fill="#F59E0B" opacity="0.85"/>
+  <text x="660" y="195" fill="#F59E0B" font-size="12" font-weight="700">Grade II</text>
+  <text x="660" y="208" fill="#E8ECF1" font-size="9">Corpus callosum</text>
+  <text x="660" y="219" fill="#5A6575" font-size="9" font-style="italic">Moderate</text>
+
+  <!-- Grade III -->
+  <circle cx="645" cy="242" r="6" fill="#EF4444" opacity="0.85"/>
+  <text x="660" y="239" fill="#EF4444" font-size="12" font-weight="700">Grade III</text>
+  <text x="660" y="252" fill="#E8ECF1" font-size="9">Brainstem</text>
+  <text x="660" y="263" fill="#5A6575" font-size="9" font-style="italic">Severe</text>
+
+  <!-- Pearl box -->
+  <rect x="130" y="470" rx="8" ry="8" width="540" height="25" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="145" y="487" fill="#F59E0B" font-size="11" font-weight="700">PEARL:</text>
+  <text x="200" y="487" fill="#E8ECF1" font-size="11">Retraction balls (axonal swelling) = histologic hallmark of DAI</text>
+
+  <!-- MRI note -->
+  <rect x="620" y="300" rx="6" ry="6" width="165" height="50" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.8"/>
+  <text x="702" y="318" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="600">Best seen on MRI</text>
+  <text x="702" y="332" text-anchor="middle" fill="#E8ECF1" font-size="9">SWI / DWI sequences</text>
+  <text x="702" y="344" text-anchor="middle" fill="#5A6575" font-size="8">CT often normal</text>
+</svg>
