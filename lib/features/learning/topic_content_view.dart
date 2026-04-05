@@ -276,45 +276,46 @@ class TopicContentView extends StatelessWidget {
               bottomLeft: Radius.circular(11),
               bottomRight: Radius.circular(11),
             ),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: DataTable(
-                headingRowColor:
-                    WidgetStateProperty.all(AppTheme.surfaceElevated),
-                columnSpacing: 16,
-                horizontalMargin: 12,
-                headingTextStyle: const TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 12,
-                  color: AppTheme.textPrimary,
-                ),
-                dataTextStyle: const TextStyle(
-                  fontSize: 12,
-                  color: AppTheme.textPrimary,
-                  height: 1.3,
-                ),
-                columns: block.columns
-                    .map((c) => DataColumn(label: Text(c)))
-                    .toList(),
-                rows: List.generate(block.rows.length, (rowIndex) {
-                  return DataRow(
-                    color: WidgetStateProperty.all(
-                      rowIndex.isEven
-                          ? AppTheme.surface
-                          : AppTheme.surfaceElevated,
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minWidth: constraints.maxWidth),
+                    child: DataTable(
+                      headingRowColor:
+                          WidgetStateProperty.all(AppTheme.surfaceElevated),
+                      columnSpacing: 16,
+                      horizontalMargin: 12,
+                      headingTextStyle: const TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 12,
+                        color: AppTheme.textPrimary,
+                      ),
+                      dataTextStyle: const TextStyle(
+                        fontSize: 12,
+                        color: AppTheme.textPrimary,
+                        height: 1.3,
+                      ),
+                      columns: block.columns
+                          .map((c) => DataColumn(label: Expanded(child: Text(c))))
+                          .toList(),
+                      rows: List.generate(block.rows.length, (rowIndex) {
+                        return DataRow(
+                          color: WidgetStateProperty.all(
+                            rowIndex.isEven
+                                ? AppTheme.surface
+                                : AppTheme.surfaceElevated,
+                          ),
+                          cells: block.rows[rowIndex]
+                              .map((cell) => DataCell(Text(cell)))
+                              .toList(),
+                        );
+                      }),
                     ),
-                    cells: block.rows[rowIndex]
-                        .map((cell) => DataCell(
-                              ConstrainedBox(
-                                constraints:
-                                    const BoxConstraints(maxWidth: 180),
-                                child: Text(cell),
-                              ),
-                            ))
-                        .toList(),
-                  );
-                }),
-              ),
+                  ),
+                );
+              },
             ),
           ),
         ],
@@ -466,45 +467,46 @@ class TopicContentView extends StatelessWidget {
               ],
             ),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: DataTable(
-              columnSpacing: 16,
-              horizontalMargin: 12,
-              headingRowColor:
-                  WidgetStateProperty.all(AppTheme.surfaceElevated),
-              headingTextStyle: const TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 11,
-                color: AppTheme.textPrimary,
-              ),
-              dataTextStyle: const TextStyle(
-                fontSize: 11,
-                height: 1.3,
-                color: AppTheme.textPrimary,
-              ),
-              columns: block.columns
-                  .map((c) => DataColumn(label: Text(c)))
-                  .toList(),
-              rows: List.generate(block.rows.length, (rowIndex) {
-                return DataRow(
-                  color: WidgetStateProperty.all(
-                    rowIndex.isEven
-                        ? AppTheme.surface
-                        : AppTheme.surfaceElevated,
+          LayoutBuilder(
+            builder: (context, constraints) {
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(minWidth: constraints.maxWidth),
+                  child: DataTable(
+                    columnSpacing: 16,
+                    horizontalMargin: 12,
+                    headingRowColor:
+                        WidgetStateProperty.all(AppTheme.surfaceElevated),
+                    headingTextStyle: const TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 11,
+                      color: AppTheme.textPrimary,
+                    ),
+                    dataTextStyle: const TextStyle(
+                      fontSize: 11,
+                      height: 1.3,
+                      color: AppTheme.textPrimary,
+                    ),
+                    columns: block.columns
+                        .map((c) => DataColumn(label: Expanded(child: Text(c))))
+                        .toList(),
+                    rows: List.generate(block.rows.length, (rowIndex) {
+                      return DataRow(
+                        color: WidgetStateProperty.all(
+                          rowIndex.isEven
+                              ? AppTheme.surface
+                              : AppTheme.surfaceElevated,
+                        ),
+                        cells: block.rows[rowIndex]
+                            .map((cell) => DataCell(Text(cell)))
+                            .toList(),
+                      );
+                    }),
                   ),
-                  cells: block.rows[rowIndex]
-                      .map((cell) => DataCell(
-                            ConstrainedBox(
-                              constraints:
-                                  const BoxConstraints(maxWidth: 160),
-                              child: Text(cell),
-                            ),
-                          ))
-                      .toList(),
-                );
-              }),
-            ),
+                ),
+              );
+            },
           ),
           if (block.boardPearl != null)
             Container(
@@ -633,7 +635,7 @@ class _AnimatedContentListState extends State<_AnimatedContentList>
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       itemCount: widget.items.length,
       itemBuilder: (context, index) {
         // Calculate the stagger interval for this item
@@ -671,7 +673,12 @@ class _AnimatedContentListState extends State<_AnimatedContentList>
               ),
             );
           },
-          child: widget.items[index],
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 800),
+              child: widget.items[index],
+            ),
+          ),
         );
       },
     );
