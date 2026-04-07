@@ -88,13 +88,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           SliverAppBar(
             expandedHeight: Responsive.value<double>(
               context,
-              phone: 240,
-              tablet: 200,
-              desktop: 180,
+              phone: 280,
+              tablet: 240,
+              desktop: 220,
             ),
+            collapsedHeight: 60,
             pinned: true,
             backgroundColor: AppTheme.background,
             flexibleSpace: FlexibleSpaceBar(
+              collapseMode: CollapseMode.parallax,
               background: _HeroHeader(
                 moduleCount: modules.length,
                 questionCount: totalQuestions,
@@ -102,20 +104,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 glowAnimation: _glowAnimation,
                 breathAnimation: _breathController,
               ),
-              title: Text(
-                'TBI Training',
-                style: TextStyle(
-                  fontWeight: FontWeight.w800,
-                  fontSize: Responsive.value<double>(
-                    context,
-                    phone: 18,
-                    tablet: 20,
-                    desktop: 22,
-                  ),
-                  letterSpacing: -0.5,
-                ),
+            ),
+            title: const Text(
+              'TBI Training',
+              style: TextStyle(
+                fontWeight: FontWeight.w800,
+                fontSize: 18,
+                letterSpacing: -0.3,
               ),
             ),
+            centerTitle: false,
           ),
 
           // ── Quick Actions Row ──
@@ -919,7 +917,7 @@ class _HeroHeader extends StatelessWidget {
         // Content
         SafeArea(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
+            padding: const EdgeInsets.fromLTRB(20, 70, 20, 0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
