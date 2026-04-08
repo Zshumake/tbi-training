@@ -2,7 +2,8 @@ name: Deploy Flutter Web to shuhub.xyz
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - 'lib/**'
       - 'assets/**'
@@ -28,6 +29,7 @@ jobs:
         with:
           lfs: false
           fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
@@ -35,53 +37,20 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Flutter version
-        run: flutter --version
-
       - name: Install dependencies
         run: flutter pub get
 
       - name: Build web (release)
         run: flutter build web --release --base-href /tbi-training/
 
-      - name: Strip audio assets from web build
-        run: |
-          # Audio files use LFS and do not serve correctly via GitHub Pages.
-          # Podcasts remain functional on native (macOS, iOS, Android) builds.
-          rm -rf build/web/assets/assets/audio || true
-          # Flutter generates an AssetManifest that references audio files; patch it
-          # so the web runtime does not attempt to fetch missing assets.
-          if [ -f build/web/assets/AssetManifest.json ]; then
-            python3 -c "
-import json, os
-p = 'build/web/assets/AssetManifest.json'
-with open(p) as f:
-    m = json.load(f)
-m = {k: v for k, v in m.items() if 'audio/' not in k}
-with open(p, 'w') as f:
-    json.dump(m, f)
-print(f'Stripped audio entries from AssetManifest.json')
-"
-          fi
-          if [ -f build/web/assets/AssetManifest.bin.json ]; then
-            python3 -c "
-import json
-p = 'build/web/assets/AssetManifest.bin.json'
-with open(p) as f:
-    m = json.load(f)
-m = {k: v for k, v in m.items() if 'audio/' not in k}
-with open(p, 'w') as f:
-    json.dump(m, f)
-print(f'Stripped audio entries from AssetManifest.bin.json')
-"
-          fi
+      - name: Strip audio assets
+        run: rm -rf build/web/assets/assets/audio || true
 
-      - name: Replace docs/ with fresh build
+      - name: Replace docs with fresh build
         run: |
           rm -rf docs
           cp -R build/web docs
           du -sh docs/
-          find docs -type f | wc -l
 
       - name: Commit and push if changed
         run: |
@@ -90,12 +59,8 @@ print(f'Stripped audio entries from AssetManifest.bin.json')
           git add docs/
           if git diff --cached --quiet; then
             echo "No changes to docs/ — nothing to deploy."
-          else
-            git commit -m "chore(deploy): rebuild web bundle for shuhub.xyz
-
-Auto-deploy from ${{ github.sha }}
-
-Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-            git push origin main
-            echo "Deployed to shuhub.xyz/tbi-training/"
+            exit 0
           fi
+          git commit -m "chore(deploy): rebuild web bundle for shuhub.xyz [skip ci]"
+          git push origin main
+          echo "Deployed to shuhub.xyz/tbi-training/"
