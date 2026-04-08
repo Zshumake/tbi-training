@@ -541,8 +541,8 @@ This relationship explains why a patient may appear clinically stable for hours 
 
 | ICP Value | Clinical Significance |
 |-----------|----------------------|
-| 2--5 mmHg | Normal range |
-| Up to 15 mmHg | Generally considered harmless |
+| 5--15 mmHg | Normal range in adults (supine) |
+| 15--20 mmHg | Mildly elevated; generally tolerated |
 | > 20 mmHg for > 5 minutes | Traditional definition of elevated ICP |
 | > 22 mmHg | BTF 4th Edition treatment threshold (changed from 20) |
 | > 40 mmHg | Neurological dysfunction; impaired electrical activity |

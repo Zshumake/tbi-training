@@ -99,8 +99,8 @@ The CRASH trial result is the foundation of the **sole Level I recommendation** 
 
 | ICP Range | Clinical Significance |
 |-----------|----------------------|
-| 2--5 mmHg | Normal range |
-| Up to 15 mmHg | Generally considered harmless |
+| 5--15 mmHg | Normal range in adults (supine) |
+| 15--20 mmHg | Mildly elevated; generally tolerated |
 | >20 mmHg sustained | Traditional definition of elevated ICP |
 | >22 mmHg | BTF 4th Edition treatment threshold |
 | >40 mmHg | Neurological dysfunction and impaired electrical activity |
@@ -534,8 +534,8 @@ The Brain Oxygen Optimization in Severe TBI (BOOST) trials represent the most im
 
 | Biomarker | Cell Source | What It Measures | Peak Timing | FDA Status | Normal Values |
 |-----------|-----------|-----------------|-------------|------------|---------------|
-| GFAP | Astrocytes | Astrocytic injury/gliosis | 20--24 hours (detectable within 1 hour) | FDA-cleared 2018 (Banyan BTI); Abbott i-STAT 2024 | <30 pg/mL |
-| UCH-L1 | Neurons | Neuronal cell body injury | Within 8 hours (shorter half-life) | FDA-cleared 2018 (Banyan BTI); Abbott i-STAT 2024 | <360 pg/mL |
+| GFAP | Astrocytes | Astrocytic injury/gliosis | 20--24 hours (detectable within 1 hour) | FDA-cleared 2018 (Banyan BTI); Abbott i-STAT 2024 | <22 pg/mL |
+| UCH-L1 | Neurons | Neuronal cell body injury | Within 8 hours (shorter half-life) | FDA-cleared 2018 (Banyan BTI); Abbott i-STAT 2024 | <327 pg/mL |
 
 ### ALERT-TBI Pivotal Study
 
@@ -544,7 +544,7 @@ The ALERT-TBI study (Bazarian et al., *Lancet Neurology*, 2018) validated the co
 - **Negative Predictive Value (NPV):** 99.6%
 - **Specificity:** ~37% (many false positives)
 
-The primary clinical utility is **ruling OUT** the need for CT in mild TBI: a negative test (GFAP <30 pg/mL + UCH-L1 <360 pg/mL) indicates low risk for CT-positive findings. A positive test still requires CT confirmation.
+The primary clinical utility is **ruling OUT** the need for CT in mild TBI: a negative test (GFAP <22 pg/mL AND UCH-L1 <327 pg/mL) indicates low risk for CT-positive findings. A positive test still requires CT confirmation.
 
 ### Other Research Biomarkers
 
@@ -554,7 +554,7 @@ The primary clinical utility is **ruling OUT** the need for CT in mild TBI: a ne
 | NfL (Neurofilament Light) | Axons | Axonal injury/degeneration | Research only; rises days-weeks post-injury; correlates with DAI severity |
 | Tau | Axons (microtubule-associated) | Axonal injury; neurodegeneration | Research only; implicated in CTE; plasma p-tau217 under investigation |
 
-> **Clinical Pearl:** GFAP + UCH-L1 are the FIRST FDA-cleared blood tests for TBI. Primary use is ruling out need for CT in mild TBI patients. The Abbott i-STAT TBI cartridge (2024) provides bedside results in 15 minutes using whole blood. GFAP <30 pg/mL + UCH-L1 <360 pg/mL = low risk. This is an emerging board topic.
+> **Clinical Pearl:** GFAP + UCH-L1 are the FIRST FDA-cleared blood tests for TBI. Primary use is ruling out need for CT in mild TBI patients. The Abbott i-STAT TBI cartridge (2024) provides bedside results in 15 minutes using whole blood. GFAP <22 pg/mL AND UCH-L1 <327 pg/mL = low risk (NPV 99.6%). This is an emerging board topic.
 
 ---
 

@@ -184,7 +184,7 @@ The Giacino et al. trial, published in the New England Journal of Medicine in 20
 | Groups at week 6 | Converged (no overall difference from baseline to week 6) |
 | AAN recommendation | Level B: amantadine 100-200 mg BID for VS/MCS after TBI |
 
-> **Clinical Pearl:** Three facts about the Giacino trial that are tested repeatedly: (1) Amantadine is the ONLY medication with Class I evidence for disorders of consciousness after TBI, (2) the effect is pharmacological, not disease-modifying (groups converged after washout), and (3) the AAN Level B recommendation supports amantadine 100-200 mg BID for functional recovery from VS/MCS. Beyond DOC, amantadine is also used for agitation (100 mg BID), fatigue, and initiation deficits in higher-functioning TBI patients.
+> **Clinical Pearl:** Three facts about the Giacino trial that are tested repeatedly: (1) Amantadine is the only pharmacologic agent with a Class I (high-quality RCT) study supporting its use in disorders of consciousness after TBI, which underlies the AAN/ACRM Level B recommendation (NOT a Class/Level I recommendation), (2) the effect is pharmacological, not disease-modifying (groups converged after washout), and (3) the AAN Level B recommendation supports amantadine 100-200 mg BID for functional recovery from VS/MCS. Beyond DOC, amantadine is also used for agitation (100 mg BID), fatigue, and initiation deficits in higher-functioning TBI patients.
 
 ### 8.2.5 Donepezil
 
@@ -291,7 +291,7 @@ Understanding whether an agent acts presynaptically (increasing dopamine availab
 
 **Clinical Decision Tree for Dopaminergic Agent Selection:**
 
-1. Is the patient in a disorder of consciousness (VS/MCS)? -> **Amantadine** (only Class I evidence)
+1. Is the patient in a disorder of consciousness (VS/MCS)? -> **Amantadine** (Level B AAN/ACRM recommendation; only agent with Class I RCT evidence)
 2. Is the primary deficit attention or processing speed? -> **Methylphenidate** (strongest evidence for attention)
 3. Is the primary deficit executive function, initiation, or akinetic mutism? -> **Bromocriptine** (direct D2 agonist for frontal deficits)
 4. Is the primary deficit excessive daytime sleepiness? -> **Modafinil** (wakefulness-promoting without stimulant side effects)
@@ -395,7 +395,7 @@ The following comprehensive comparison table is essential for selecting the appr
 |---|---|---|---|---|
 | **Mechanism** | DA/NE reuptake inhibitor | DA release + NMDA antagonist | Weak DAT inhibitor + NE/histamine/orexin | Direct D2 agonist |
 | **Primary target** | Attention, processing speed | Arousal, DOC recovery, agitation | Excessive daytime sleepiness | Executive function, initiation |
-| **Evidence level** | Strongest for attention | ONLY Class I for DOC (Giacino 2012) | Class I for EDS; inconsistent for fatigue | Moderate (Whyte 2008 pilot) |
+| **Evidence level** | Strongest for attention | AAN/ACRM Level B for DOC (Giacino 2012, only Class I RCT) | Class I evidence for EDS; inconsistent for fatigue | Moderate (Whyte 2008 pilot) |
 | **Typical dosing** | 5-20 mg BID (max 60 mg/day) | 100-200 mg BID (2nd dose by noon) | 100-200 mg daily (AM) | 1.25-15 mg/day (divided) |
 | **Key side effects** | Insomnia, anorexia, tachycardia | Insomnia, livedo reticularis, edema | Headache, nausea, rare SJS | HYPOTENSION (first-dose), nausea |
 | **DEA schedule** | Schedule II (highest abuse risk) | Not scheduled | Schedule IV (low abuse risk) | Not scheduled |

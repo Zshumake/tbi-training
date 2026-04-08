@@ -60,7 +60,7 @@ class _MedMatchingViewState extends State<MedMatchingView> {
         _MedPair('Valproic acid', 'Mood stabilization / agitation'),
         _MedPair('Trazodone', 'Agitation + sleep disturbance'),
         _MedPair('Quetiapine', 'Agitation with psychotic features'),
-        _MedPair('DDAVP', 'Diabetes insipidus'),
+        _MedPair('Sertraline', 'Post-TBI depression / emotional lability'),
       ],
       boardPearl:
           'Beta-blockers (propranolol) have the strongest evidence for agitation in TBI per Cochrane review. '

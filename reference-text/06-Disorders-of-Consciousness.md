@@ -409,7 +409,7 @@ The discovery that approximately 1 in 4 behaviorally unresponsive brain-injured 
 
 ### The Landmark Trial
 
-The Giacino et al. amantadine trial, published in the *New England Journal of Medicine* in 2012, is the single most important and most commonly tested pharmacological trial in TBI rehabilitation. It provides the only Class I (Level B) evidence for a drug intervention to accelerate recovery from disorders of consciousness after severe TBI.
+The Giacino et al. amantadine trial, published in the *New England Journal of Medicine* in 2012, is the single most important and most commonly tested pharmacological trial in TBI rehabilitation. It is the only Class I (high-quality RCT) study supporting a drug intervention to accelerate recovery from disorders of consciousness after severe TBI, and forms the basis for the AAN/ACRM 2018 Level B recommendation for amantadine in VS/MCS.
 
 ### Study Design
 
@@ -427,9 +427,9 @@ The Giacino et al. amantadine trial, published in the *New England Journal of Me
 | Timepoint | Dose | Notes |
 |-----------|------|-------|
 | Weeks 1--2 | 100 mg BID (200 mg/day) | Second dose given by noon to avoid insomnia |
-| Weeks 3--4 | 150 mg BID (300 mg/day) | Increase if insufficient response |
-| Maximum | 200 mg BID (400 mg/day) | Do not exceed; adjust for renal impairment |
-| Weeks 5--6 | Taper/washout | 2-week washout period to assess drug vs. disease effect |
+| Week 3 | 150 mg BID (300 mg/day) | Increased if DRS had not improved by >=2 points from baseline |
+| Week 4 | 200 mg BID (400 mg/day) | Maximum dose; adjust for renal impairment |
+| Weeks 5--6 | Taper over 2--3 days, then washout | 2-week observation period to assess drug vs. disease effect |
 
 ### Key Results
 

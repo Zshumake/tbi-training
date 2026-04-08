@@ -56,7 +56,7 @@ const AnatomyDiagram hemorrhageLayersDiagram = AnatomyDiagram(
       name: 'Epidural Space',
       description:
           'Between skull and dura. EDH: biconvex, middle meningeal artery, '
-          'does NOT cross sutures, lucid interval in ~50%',
+          'does NOT cross sutures, lucid interval in ~20-50%',
       color: Color(0xFFEF4444), // danger red — arterial
       annotations: [
         LayerAnnotation(
@@ -80,8 +80,8 @@ const AnatomyDiagram hemorrhageLayersDiagram = AnatomyDiagram(
         LayerAnnotation(
           label: 'Lucid interval',
           detail:
-              'Classic "talk and die" presentation occurs in ~50% of EDH. '
-              'Patient may initially appear well after trauma, then '
+              'Classic "talk and die" presentation occurs in ~20-50% of '
+              'EDH. Patient may initially appear well after trauma, then '
               'decompensates as hematoma expands. Requires high suspicion '
               'with temporal bone fractures.',
           x: 0.68,
@@ -245,7 +245,7 @@ const AnatomyDiagram hemorrhageLayersDiagram = AnatomyDiagram(
       title: 'EDH vs SDH — Key CT Distinctions',
       content:
           'EDH: Biconvex (lens), does NOT cross sutures, CAN cross midline. '
-          'Arterial (middle meningeal a.), lucid interval in ~50%.\n'
+          'Arterial (middle meningeal a.), lucid interval in ~20-50%.\n'
           'SDH: Crescent-shaped, DOES cross sutures, does NOT cross midline. '
           'Venous (bridging veins), worse prognosis (60-80% mortality acute).\n\n'
           'Mnemonic: EDH = "E" for "egg-shaped" (biconvex). '

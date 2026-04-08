@@ -472,13 +472,12 @@ class ICPCrisisScenario {
       ScenarioStep(
         id: 'step_4',
         narrative:
-            'Post-operatively (or following delayed intervention), the '
-            'patient is back in the Neuro-ICU. Six hours after surgery, '
-            'the nurse reports the left pupil is now 7 mm and '
-            'non-reactive (ipsilateral to the craniectomy site was '
-            'right-sided). ICP has acutely risen to 32 mmHg. This '
-            'suggests contralateral pathology. What is your immediate '
-            'management?',
+            'Post-operatively, the patient is back in the Neuro-ICU. '
+            'Six hours after the right-sided craniectomy, the nurse reports '
+            'the LEFT pupil is now 7 mm and non-reactive -- this is '
+            'contralateral to the surgical site. ICP has acutely risen to '
+            '32 mmHg. A new contralateral mass lesion is suspected. What '
+            'is your immediate management?',
         vitals: VitalSigns(
           hr: 48,
           sbp: 172,

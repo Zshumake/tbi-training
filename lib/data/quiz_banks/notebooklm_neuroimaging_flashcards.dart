@@ -11,7 +11,7 @@ class NotebookLMNeuroimagingFlashcards {
     Flashcard(front: 'What is the FDA-cleared decision threshold for GFAP to recommend a head CT?', back: '> 30 pg/mL', moduleId: 'neuroimaging'),
     Flashcard(front: 'What is the FDA-cleared decision threshold for UCH-L1 to recommend a head CT?', back: '> 360 pg/mL', moduleId: 'neuroimaging'),
     Flashcard(front: 'Biomarker testing for mTBI is most clinically useful due to its high _____ predictive value.', back: 'Negative', moduleId: 'neuroimaging'),
-    Flashcard(front: 'If both GFAP and UCH-L1 are below their respective thresholds, what is the reported negative predictive value (NPV) for an intracranial lesion?', back: '99.3%', moduleId: 'neuroimaging'),
+    Flashcard(front: 'If both GFAP and UCH-L1 are below their respective thresholds, what is the reported negative predictive value (NPV) for an intracranial lesion?', back: '99.6% (per ALERT-TBI)', moduleId: 'neuroimaging'),
     Flashcard(front: 'What is the primary limitation of using GFAP and UCH-L1 for TBI screening?', back: 'Low specificity (resulting in many false positives)', moduleId: 'neuroimaging'),
     Flashcard(front: 'By approximately what percentage can the use of blood biomarkers reduce unnecessary head CT scans in mTBI patients?', back: 'Up to 40%', moduleId: 'neuroimaging'),
     Flashcard(front: 'Within what time frame post-injury can the i-STAT TBI Whole Blood assay be used?', back: 'Up to 24 hours', moduleId: 'neuroimaging'),

@@ -8,9 +8,9 @@ final TopicData acuteManagementContent = TopicData(
     TopicTab(
       title: 'BTF Guidelines',
       blocks: [
-        HeaderBlock('Brain Trauma Foundation 4th Edition Guidelines (2016)'),
+        HeaderBlock('Brain Trauma Foundation 4th Edition Guidelines (2016/2017)'),
         TextBlock(
-          'The BTF 4th Edition guidelines (Carney et al., Neurosurgery 2017) are the foundation of evidence-based severe TBI management. The 4th edition significantly reduced the number of Level I recommendations compared to prior editions due to insufficient quality evidence. There is only ONE Level I recommendation in the entire guideline.',
+          'The BTF 4th Edition guidelines (Carney et al., Neurosurgery 2017) remain the current published edition and the foundation of evidence-based severe TBI management as of 2026. The 4th edition significantly reduced the number of Level I recommendations compared to prior editions due to insufficient quality evidence — there is only ONE Level I recommendation in the entire guideline. A 5th Edition is in active development under BTF and the Military TBI Initiative but has not yet been published; the 4th Edition thresholds (ICP >22 mmHg, CPP 60-70) remain in force. Recent complementary guidance has been issued by ESICM/NACCS (temperature, 2024), the Neurocritical Care Society (seizure prophylaxis, 2024), and the NIH-NINDS CBI-M classification framework (Lancet Neurology 2025).',
           isIntro: true,
         ),
         TableBlock(

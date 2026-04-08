@@ -53,9 +53,10 @@ class CTCaseData {
           name: 'Epidural Hematoma',
           description:
               'Biconvex (lens-shaped) hyperdensity in the right temporal '
-              'region. Does not cross suture lines. Typical middle meningeal '
+              'region (viewer left = patient right by radiologic convention). '
+              'Does not cross suture lines. Typical middle meningeal '
               'artery tear.',
-          targetZone: Rect.fromLTWH(0.62, 0.32, 0.22, 0.30),
+          targetZone: Rect.fromLTWH(0.16, 0.32, 0.22, 0.30),
           color: Color(0xFFF87171),
           boardPearl:
               'EDH is biconvex and does NOT cross suture lines. The "lucid '
@@ -76,9 +77,10 @@ class CTCaseData {
           name: 'Acute Subdural Hematoma',
           description:
               'Crescent-shaped hyperdensity along the left cerebral '
-              'convexity. Crosses suture lines freely. Effaced sulci and '
-              'compressed left lateral ventricle indicate mass effect.',
-          targetZone: Rect.fromLTWH(0.08, 0.18, 0.18, 0.55),
+              'convexity (viewer right = patient left by radiologic '
+              'convention). Crosses suture lines freely. Effaced sulci '
+              'and compressed left lateral ventricle indicate mass effect.',
+          targetZone: Rect.fromLTWH(0.74, 0.18, 0.18, 0.55),
           color: Color(0xFFFB923C),
           boardPearl:
               'Acute SDH is crescent-shaped and crosses suture lines '
@@ -90,7 +92,7 @@ class CTCaseData {
       ],
     ),
     CTCase(
-      title: 'Case 3: Bifrontal Contusions + SAH',
+      title: 'Case 3: Bifrontal Contusions',
       clinicalContext:
           '45 y/o male, high-speed MVC with frontal impact. GCS 9. '
           'Bilateral periorbital ecchymosis ("raccoon eyes"). Agitated '
@@ -99,9 +101,9 @@ class CTCaseData {
         CTFinding(
           name: 'Left Frontal Contusion',
           description:
-              'Mixed-density lesion in the left frontal lobe with '
-              'surrounding edema. Typical coup injury location from '
-              'frontal impact.',
+              'Mixed-density lesion in the left frontal lobe (viewer '
+              'right = patient left). Surrounding edema. Typical coup '
+              'injury location from frontal impact.',
           targetZone: Rect.fromLTWH(0.52, 0.12, 0.22, 0.22),
           color: Color(0xFF60A5FA),
           boardPearl:
@@ -114,16 +116,18 @@ class CTCaseData {
         CTFinding(
           name: 'Right Frontal Contusion',
           description:
-              'Mixed-density lesion in the right frontal lobe. '
-              'Coup injury pattern (frontal impact) with petechial '
-              'hemorrhages and perilesional edema.',
+              'Mixed-density lesion in the right frontal lobe (viewer '
+              'left = patient right). Coup injury pattern (frontal '
+              'impact) with petechial hemorrhages and perilesional edema.',
           targetZone: Rect.fromLTWH(0.26, 0.12, 0.22, 0.22),
           color: Color(0xFF38BDF8),
           boardPearl:
-              'SAH in the sylvian fissures is common with contusions. '
-              'Traumatic SAH is the most common CT finding in TBI. '
-              'It increases risk of vasospasm (screen with TCD days 3-14) '
-              'and posttraumatic hydrocephalus.',
+              'Bifrontal contusions classically follow frontal impact '
+              '(coup) with possible occipital contrecoup. They are the '
+              'pathologic substrate of post-TBI executive dysfunction, '
+              'disinhibition, and emotional lability. Hemorrhagic '
+              'progression of contusion (HPC) occurs in ~50% of cases '
+              'within 24-72 hours.',
         ),
       ],
     ),

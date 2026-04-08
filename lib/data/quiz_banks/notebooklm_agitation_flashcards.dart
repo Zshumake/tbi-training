@@ -77,7 +77,7 @@ class NotebookLMAgitationFlashcards {
     Flashcard(front: 'Which medication is used specifically for aggressive hypersexual behavior by lowering testosterone?', back: 'Medroxyprogesterone acetate', moduleId: 'agitation-behavioral'),
     Flashcard(front: 'Which drug interaction must be monitored when using Valproic acid for agitation?', back: 'Lamotrigine (or Carbamazepine/Phenytoin)', moduleId: 'agitation-behavioral'),
     Flashcard(front: 'In the context of TBI and SUD, which usually occurs first: the TBI or the opioid use?', back: 'TBI usually precedes opioid use.', moduleId: 'agitation-behavioral'),
-    Flashcard(front: 'What is the score range for a \'probable\' diagnosis of PSH using the PSH-AM?', back: 'A score > 17', moduleId: 'agitation-behavioral'),
+    Flashcard(front: 'What is the score range for a \'probable\' diagnosis of PSH using the PSH-AM?', back: 'A score >= 17 (8-16 = possible; <8 = unlikely)', moduleId: 'agitation-behavioral'),
     Flashcard(front: 'Which factor in the ABS 2023 update includes crying and laughter?', back: 'Factor 2: Aggression/Lability', moduleId: 'agitation-behavioral'),
   ];
 }

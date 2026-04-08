@@ -27,7 +27,7 @@ class NotebookLMNeuroimagingQuiz {
         'GFAP > 30 pg/mL OR UCH-L1 > 360 pg/mL',
       ],
       correctIndex: 0,
-      explanation: 'When both biomarkers are below their respective FDA-cleared thresholds, the negative predictive value for an intracranial lesion is approximately 99.3%.',
+      explanation: 'When both biomarkers are below their respective FDA-cleared thresholds (Abbott i-STAT TBI plasma assay), the negative predictive value for an intracranial lesion is approximately 99.6%.',
       moduleId: 'neuroimaging',
       difficulty: 'board',
     ),

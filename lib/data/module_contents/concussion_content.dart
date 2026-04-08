@@ -13,9 +13,9 @@ final TopicData concussionContent = TopicData(
           'Concussion, synonymous with mild TBI for clinical purposes, is the most common form of brain injury. Understanding the definitions, assessment tools, and acute management is essential for PM&R board preparation and clinical practice, particularly in sports medicine settings.',
           isIntro: true,
         ),
-        HeaderBlock('ACRM Definition of Mild TBI'),
+        HeaderBlock('ACRM Definition of Mild TBI (1993 — Classic Criteria)'),
         BulletCardBlock(
-          title: 'American Congress of Rehabilitation Medicine (ACRM) Criteria',
+          title: 'American Congress of Rehabilitation Medicine (ACRM) 1993 Criteria',
           themeColor: const Color(0xFF3B82F6),
           backgroundColor: const Color(0xFFEFF6FF),
           points: [
@@ -26,6 +26,21 @@ final TopicData concussionContent = TopicData(
             '(4) Focal neurological deficit(s) that may or may not be transient',
             'The injury severity does NOT exceed: LOC < 30 minutes, PTA < 24 hours, initial GCS 13-15 (when assessed at 30 min post-injury)',
             'BOARD PEARL: Only ONE criterion is needed. A patient who was "dazed" but never lost consciousness still meets mTBI criteria.',
+          ],
+        ),
+        HeaderBlock('ACRM 2023 Updated Diagnostic Criteria'),
+        BulletCardBlock(
+          title: 'ACRM 2023 mTBI Criteria (Silverberg et al., Arch Phys Med Rehabil 2023)',
+          themeColor: const Color(0xFF7C3AED),
+          backgroundColor: const Color(0xFFF5F3FF),
+          points: [
+            'First update to the ACRM mTBI definition since 1993; developed via Delphi consensus by 17-member working group plus 32 external experts (90.7% final agreement)',
+            'Mechanism: contact and/or external forces to head/body that transmit to the brain — explicitly INCLUDES blast/explosion mechanisms (a key change from 1993)',
+            'Requires a plausible mechanism PLUS at least one clinical sign, acute symptom, clinical/laboratory finding, OR new/worsening symptom on neurological examination',
+            'Introduces tiered diagnostic certainty: "Confirmed mTBI" when criteria are clearly met; "Suspected mTBI" when there is a plausible mechanism with acute symptom onset but no objective finding can be established',
+            'GCS still 13-15 at 30 min, but the criteria de-emphasize LOC/PTA as required elements and emphasize objective findings and structured evidence',
+            'Explicitly excludes injuries better explained by drugs/alcohol, medications, other injuries (cervical/orofacial), or pre-existing conditions',
+            'BOARD PEARL: The 2023 update is now the current ACRM standard. Expect newer board questions to reference "tiered certainty" and "Suspected vs Confirmed mTBI". The 1993 criteria are still widely cited in older literature and remain useful for understanding the historical framework.',
           ],
         ),
         HeaderBlock('2022 Amsterdam/Berlin Consensus Definition'),

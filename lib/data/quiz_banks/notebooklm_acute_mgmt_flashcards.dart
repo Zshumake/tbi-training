@@ -42,7 +42,7 @@ class NotebookLMAcuteMgmtFlashcards {
     Flashcard(front: 'Identify the three components of the Cushing Triad.', back: 'Hypertension, bradycardia, and irregular respirations.', moduleId: 'acute-management'),
     Flashcard(front: 'By which post-injury day does the BTF recommend reaching full nutritional replacement to decrease mortality?', back: 'Day 5 to 7.', moduleId: 'acute-management'),
     Flashcard(front: 'What is the recommended daily protein intake for a patient with severe TBI?', back: '1.5-2 g/kg/day', moduleId: 'acute-management'),
-    Flashcard(front: 'When should pharmacologic DVT prophylaxis be initiated in a TBI patient if the follow-up CT is stable?', back: 'Within 24-48 hours of admission.', moduleId: 'acute-management'),
+    Flashcard(front: 'When should pharmacologic DVT prophylaxis be initiated in a TBI patient if the follow-up CT is stable?', back: '24-72 hours after stable imaging.', moduleId: 'acute-management'),
     Flashcard(front: 'Which advanced monitor measures brain tissue oxygen levels?', back: 'PbtO2', moduleId: 'acute-management'),
     Flashcard(front: 'What is the treatment threshold for brain tissue oxygen (PbtO2) according to BTF guidelines?', back: '< 15 mmHg', moduleId: 'acute-management'),
     Flashcard(front: 'In cerebral microdialysis, a lactate/pyruvate ratio (LPR) greater than _____ indicates a metabolic crisis.', back: '40', moduleId: 'acute-management'),

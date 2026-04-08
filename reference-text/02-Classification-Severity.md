@@ -712,14 +712,14 @@ In February 2018, the FDA cleared the first blood test for TBI evaluation --- th
 **GFAP (Glial Fibrillary Acidic Protein):**
 - Cell of origin: Astrocytes
 - Marker type: Astrocyte activation/injury
-- Cutoff value: < 30 pg/mL
+- Cutoff value: < 22 pg/mL (Banyan BTI; FDA-cleared)
 - Temporal profile: Elevated within 1 hour of injury; peaks at 20--24 hours
 - Clinical significance: Highly sensitive for intracranial lesions on CT
 
 **UCH-L1 (Ubiquitin C-terminal Hydrolase L1):**
 - Cell of origin: Neurons
 - Marker type: Neuronal injury
-- Cutoff value: < 360 pg/mL
+- Cutoff value: < 327 pg/mL (Banyan BTI; FDA-cleared)
 - Temporal profile: Elevated within 1 hour; peaks at approximately 8 hours; shorter half-life than GFAP
 - Clinical significance: Complements GFAP for neuronal-specific injury detection
 
@@ -730,11 +730,11 @@ When combined, these biomarkers demonstrated exceptional performance in the ALER
 | Performance Metric | Value |
 |-------------------|-------|
 | AUC for intracranial lesion detection | 0.94 |
-| Negative predictive value (NPV) | 99.3% |
+| Negative predictive value (NPV) | 99.6% |
 | Sensitivity | 97.6% |
 | Estimated CT scan reduction | 30--40% in GCS 13--15 patients |
 
-The test is intended for patients aged 18 years and older with suspected mild TBI (GCS 13--15), with blood samples collected within 12 hours of injury. A negative result (both biomarkers below cutoff) has a 99.3% negative predictive value for intracranial lesion on CT, potentially allowing clinicians to safely forego CT scanning in a substantial proportion of mTBI patients.
+The test is intended for patients aged 18 years and older with suspected mild TBI (GCS 13--15), with blood samples collected within 12 hours of injury. A negative result (both biomarkers below cutoff) has a 99.6% negative predictive value for intracranial lesion on CT, potentially allowing clinicians to safely forego CT scanning in a substantial proportion of mTBI patients.
 
 In January 2021, Abbott received FDA 510(k) clearance for a handheld point-of-care TBI plasma test (i-STAT TBI Plasma) based on the Banyan technology, enabling near-patient testing in emergency departments, sports venues, and military settings.
 

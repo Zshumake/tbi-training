@@ -135,7 +135,7 @@ class NotebookLMClassificationQuiz {
       difficulty: 'board',
     ),
     QuizQuestion(
-      question: 'Which FDA-cleared blood-based biomarker combination has a 99.3% Negative Predictive Value (NPV) for ruling out CT-positive TBI?',
+      question: 'Which FDA-cleared blood-based biomarker combination has a 99.6% Negative Predictive Value (NPV) for ruling out CT-positive TBI?',
       options: [
         'GFAP + UCH-L1',
         'GFAP + MAP-2',

@@ -70,7 +70,7 @@ class NotebookLMPediatricGeriatricFlashcards {
     Flashcard(front: 'What is the primary criteria for inpatient rehabilitation eligibility in geriatric TBI?', back: 'The patient must be medically stable and tolerate 3 hours of therapy across 2+ disciplines.', moduleId: 'pediatric-geriatric'),
     Flashcard(front: 'Cervicovestibular rehabilitation is specifically recommended for adolescents with dizziness or headache persisting beyond how many days?', back: '10 days.', moduleId: 'pediatric-geriatric'),
     Flashcard(front: 'What is the specific motor response for a pGCS score of 1?', back: 'None.', moduleId: 'pediatric-geriatric'),
-    Flashcard(front: 'Which age group of children uses the SCAT6 Child Version for concussion assessment?', back: 'Ages 5-12.', moduleId: 'pediatric-geriatric'),
+    Flashcard(front: 'Which age group of children uses the SCAT6 Child Version for concussion assessment?', back: 'Ages 8-12 (narrowed from 5-12 in Child-SCAT5).', moduleId: 'pediatric-geriatric'),
     Flashcard(front: 'How does the risk of post-traumatic epilepsy in children compare to adults for similar injury severity?', back: 'The risk is lower in children.', moduleId: 'pediatric-geriatric'),
     Flashcard(front: 'What is the primary risk of using Baclofen in elderly TBI patients, requiring a "start low, go slow" approach?', back: 'High risk of sedation and cognitive impairment.', moduleId: 'pediatric-geriatric'),
     Flashcard(front: 'A suspected AHT case with a history that is inconsistent with the child\'s developmental stage is considered a _____.', back: 'Red flag.', moduleId: 'pediatric-geriatric'),

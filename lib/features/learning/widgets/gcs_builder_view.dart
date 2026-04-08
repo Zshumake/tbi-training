@@ -93,13 +93,13 @@ class _GCSBuilderViewState extends State<GCSBuilderView>
     ),
     GCSCase(
       vignette:
-          '45-year-old female, bicycle crash without helmet. Eyes open to voice, oriented speech, localizes pain.',
+          '45-year-old female, bicycle crash without helmet. Eyes open to voice, oriented speech, follows commands on exam.',
       correctE: 3,
       correctELabel: 'E3: To voice',
       correctV: 5,
       correctVLabel: 'V5: Oriented',
-      correctM: 5,
-      correctMLabel: 'M5: Localizing',
+      correctM: 6,
+      correctMLabel: 'M6: Obeys commands',
     ),
     GCSCase(
       vignette:
