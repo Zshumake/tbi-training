@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22D3EE"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34D399"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="900" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">Post-Traumatic Seizure Management</text>
+  <line x1="180" y1="55" x2="620" y2="55" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- Entry Node -->
+  <rect x="260" y="75" width="280" height="48" rx="24" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2.5"/>
+  <text x="400" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#E8ECF1" text-anchor="middle">Severe TBI Patient</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="123" x2="400" y2="155" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Start prophylaxis -->
+  <rect x="230" y="160" width="340" height="65" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="400" y="185" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#E8ECF1" text-anchor="middle">Start AED Prophylaxis</text>
+  <text x="400" y="207" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#34D399" text-anchor="middle">Levetiracetam (Keppra) preferred</text>
+
+  <!-- Side note: Early vs Late PTS -->
+  <rect x="600" y="140" width="180" height="110" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.7"/>
+  <text x="690" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#22D3EE" text-anchor="middle">PTS Classification</text>
+  <line x1="615" y1="170" x2="765" y2="170" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <text x="615" y="188" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Immediate: &lt;24 hrs</text>
+  <text x="615" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Early: 1-7 days</text>
+  <text x="615" y="224" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">Late: &gt;7 days</text>
+  <text x="615" y="244" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">(Late PTS = post-traumatic</text>
+  <text x="615" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">epilepsy)</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="225" x2="400" y2="260" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Timeline bar -->
+  <rect x="150" y="265" width="500" height="50" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="250" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#F59E0B">DAY 0</text>
+  <line x1="290" y1="275" x2="560" y2="275" stroke="#F59E0B" stroke-width="2"/>
+  <text x="290" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#F59E0B">&#x25CF;</text>
+  <text x="560" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#F59E0B">&#x25CF;</text>
+  <text x="560" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#F59E0B">DAY 7</text>
+  <text x="400" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E8ECF1" text-anchor="middle">Prophylaxis period (early seizure prevention)</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="315" x2="400" y2="350" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- STOP Prophylaxis -->
+  <rect x="230" y="355" width="340" height="65" rx="10" fill="#EF4444" opacity="0.08" stroke="#EF4444" stroke-width="2.5"/>
+  <text x="400" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#EF4444" text-anchor="middle">STOP Prophylaxis at Day 7</text>
+  <text x="400" y="402" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">No evidence of benefit for late PTS prevention</text>
+
+  <!-- Arrow down to decision -->
+  <line x1="400" y1="420" x2="400" y2="460" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision: Seizure after day 7? -->
+  <polygon points="400,465 530,520 400,575 270,520" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="513" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Seizure occurs</text>
+  <text x="400" y="530" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">after Day 7?</text>
+
+  <!-- NO (left) -->
+  <line x1="270" y1="520" x2="170" y2="520" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="222" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">NO</text>
+  <rect x="35" y="498" width="140" height="44" rx="8" fill="#34D399" opacity="0.1" stroke="#34D399" stroke-width="1.5"/>
+  <text x="105" y="516" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#34D399" text-anchor="middle">Continue</text>
+  <text x="105" y="534" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#34D399" text-anchor="middle">monitoring</text>
+
+  <!-- YES (down) -->
+  <line x1="400" y1="575" x2="400" y2="615" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="415" y="600" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">YES</text>
+
+  <!-- Start Therapeutic AED -->
+  <rect x="210" y="620" width="380" height="85" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2"/>
+  <text x="400" y="645" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#E8ECF1" text-anchor="middle">Start Therapeutic AED</text>
+  <line x1="230" y1="655" x2="570" y2="655" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <text x="310" y="675" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1" text-anchor="middle">Partial seizures:</text>
+  <text x="490" y="675" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#22D3EE" text-anchor="middle">Carbamazepine</text>
+  <text x="310" y="695" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E8ECF1" text-anchor="middle">Generalized seizures:</text>
+  <text x="490" y="695" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#22D3EE" text-anchor="middle">Valproic Acid</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="705" x2="400" y2="740" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Monitor 2 years -->
+  <rect x="230" y="745" width="340" height="50" rx="10" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="400" y="768" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1" text-anchor="middle">Monitor: 2 years seizure-free</text>
+  <text x="400" y="786" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">Maintain therapeutic drug levels</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="795" x2="400" y2="825" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Consider withdrawal -->
+  <rect x="230" y="830" width="340" height="50" rx="10" fill="#34D399" opacity="0.1" stroke="#34D399" stroke-width="2"/>
+  <text x="400" y="852" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#34D399" text-anchor="middle">Consider AED Withdrawal</text>
+  <text x="400" y="872" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Gradual taper over approximately 1 year</text>
+
+  <!-- Side note: Risk factors -->
+  <rect x="20" y="620" width="170" height="135" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+  <text x="105" y="642" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle">Risk Factors for PTE</text>
+  <line x1="35" y1="650" x2="175" y2="650" stroke="#F59E0B" stroke-width="0.5" opacity="0.4"/>
+  <text x="35" y="668" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">&#x2022; Penetrating injury</text>
+  <text x="35" y="686" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">&#x2022; Depressed skull fx</text>
+  <text x="35" y="704" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">&#x2022; SDH / EDH</text>
+  <text x="35" y="722" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">&#x2022; Early PTS</text>
+  <text x="35" y="740" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1">&#x2022; GCS &lt;10</text>
+
+  <!-- Footer -->
+  <text x="400" y="895" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">PTS = Post-Traumatic Seizure | PTE = Post-Traumatic Epilepsy | Based on BTF / AAN Guidelines</text>
+</svg>

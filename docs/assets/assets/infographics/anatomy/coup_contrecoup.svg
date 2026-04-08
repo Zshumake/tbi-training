@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#EF4444"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" letter-spacing="0.5">COUP-CONTRECOUP MECHANISM</text>
+  <line x1="200" y1="47" x2="600" y2="47" stroke="#22D3EE" stroke-width="1" opacity="0.3"/>
+
+  <!-- Head outline (lateral view) -->
+  <!-- Skull -->
+  <path d="M280,240 Q270,180 290,130 Q320,80 380,65 Q440,55 490,70 Q540,90 555,140 Q565,180 555,230 Q550,260 535,280 Q520,295 500,300 Q480,305 460,295 Q440,290 430,300 Q410,320 380,330 Q350,335 330,320 Q310,305 295,285 Q283,260 280,240" fill="#1A1F2E" stroke="#3A4255" stroke-width="2.5"/>
+
+  <!-- Face suggestion -->
+  <path d="M295,285 Q290,300 300,315 Q310,325 330,320" fill="none" stroke="#3A4255" stroke-width="1.5"/>
+  <!-- Eye socket -->
+  <ellipse cx="310" cy="260" rx="15" ry="10" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <!-- Nose -->
+  <path d="M300,270 Q295,290 305,300" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <!-- Jaw -->
+  <path d="M330,320 Q370,340 410,320" fill="none" stroke="#3A4255" stroke-width="1.5"/>
+
+  <!-- Brain inside skull -->
+  <path d="M310,230 Q305,180 320,145 Q345,105 390,90 Q430,82 465,95 Q500,110 520,145 Q535,180 530,225 Q525,250 510,270 Q490,285 465,280 Q440,275 420,285 Q400,295 380,300 Q355,305 340,290 Q320,270 310,245 Z" fill="#1E2535" stroke="#3A4555" stroke-width="1"/>
+
+  <!-- Sulci -->
+  <path d="M350,115 Q370,125 380,110" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M410,100 Q425,110 435,100" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M470,115 Q485,130 495,120" fill="none" stroke="#2A3545" stroke-width="1"/>
+  <path d="M510,160 Q520,175 525,165" fill="none" stroke="#2A3545" stroke-width="1"/>
+
+  <!-- Inferior surface (rough skull base area) -->
+  <path d="M330,290 Q380,310 430,290" fill="none" stroke="#4A5A6F" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="380" y="315" text-anchor="middle" fill="#4A5A6F" font-size="7">Rough skull base</text>
+
+  <!-- ===== IMPACT ARROW ===== -->
+  <line x1="180" y1="160" x2="270" y2="180" stroke="#EF4444" stroke-width="4" marker-end="url(#arrowRed)"/>
+  <line x1="170" y1="140" x2="260" y2="160" stroke="#EF4444" stroke-width="3" marker-end="url(#arrowRed)" opacity="0.5"/>
+  <line x1="175" y1="180" x2="265" y2="200" stroke="#EF4444" stroke-width="3" marker-end="url(#arrowRed)" opacity="0.5"/>
+  <text x="160" y="145" text-anchor="end" fill="#EF4444" font-size="16" font-weight="700">IMPACT</text>
+  <text x="160" y="162" text-anchor="end" fill="#EF4444" font-size="12">Force direction</text>
+
+  <!-- ===== COUP INJURY (at impact site - frontal left) ===== -->
+  <!-- Contusion area -->
+  <ellipse cx="318" cy="185" rx="18" ry="22" fill="#EF4444" fill-opacity="0.4" stroke="#EF4444" stroke-width="1.5"/>
+  <circle cx="312" cy="178" r="4" fill="#EF4444" opacity="0.6"/>
+  <circle cx="322" cy="192" r="5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="315" cy="195" r="3" fill="#EF4444" opacity="0.6"/>
+
+  <!-- Coup label -->
+  <line x1="318" y1="160" x2="280" y2="80" stroke="#EF4444" stroke-width="1.2"/>
+  <rect x="195" y="62" rx="6" ry="6" width="90" height="30" fill="#1A1F2E" stroke="#EF4444" stroke-width="2"/>
+  <text x="240" y="82" text-anchor="middle" fill="#EF4444" font-size="15" font-weight="700">COUP</text>
+
+  <!-- ===== CONTRECOUP INJURY (opposite pole) ===== -->
+  <!-- Contusion area on opposite side -->
+  <ellipse cx="515" cy="200" rx="16" ry="25" fill="#F59E0B" fill-opacity="0.4" stroke="#F59E0B" stroke-width="1.5"/>
+  <circle cx="510" cy="190" r="5" fill="#F59E0B" opacity="0.5"/>
+  <circle cx="518" cy="205" r="4" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="513" cy="215" r="3" fill="#F59E0B" opacity="0.5"/>
+
+  <!-- Contrecoup label -->
+  <line x1="530" y1="195" x2="620" y2="110" stroke="#F59E0B" stroke-width="1.2"/>
+  <rect x="575" y="82" rx="6" ry="6" width="145" height="38" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="647" y="100" text-anchor="middle" fill="#F59E0B" font-size="15" font-weight="700">CONTRECOUP</text>
+  <text x="647" y="114" text-anchor="middle" fill="#E8ECF1" font-size="9">Opposite to impact</text>
+
+  <!-- Internal arrow showing brain movement -->
+  <path d="M340,200 Q420,210 500,200" fill="none" stroke="#5A6575" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowRed)"/>
+  <text x="420" y="225" text-anchor="middle" fill="#5A6575" font-size="8" font-style="italic">Brain moves within skull</text>
+
+  <!-- Vulnerable locations diagram (bottom section) -->
+  <rect x="50" y="340" rx="8" ry="8" width="700" height="50" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.2"/>
+
+  <text x="65" y="360" fill="#F59E0B" font-size="11" font-weight="700">MOST VULNERABLE:</text>
+  <text x="195" y="360" fill="#E8ECF1" font-size="11">Inferior frontal lobes and anterior temporal tips</text>
+  <text x="65" y="378" fill="#22D3EE" font-size="10" font-weight="600">WHY?</text>
+  <text x="105" y="378" fill="#E8ECF1" font-size="10">Rough bony prominences of anterior/middle fossa floor (sphenoid wing, orbital roof)</text>
+
+  <!-- Small brain inferior view showing vulnerable spots -->
+  <g transform="translate(640, 240)">
+    <ellipse cx="0" cy="0" rx="55" ry="65" fill="none" stroke="#3A4255" stroke-width="1.5"/>
+    <line x1="0" y1="-65" x2="0" y2="65" stroke="#2A3545" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <!-- Frontal poles -->
+    <circle cx="-15" cy="-50" r="8" fill="#EF4444" opacity="0.5"/>
+    <circle cx="15" cy="-50" r="8" fill="#EF4444" opacity="0.5"/>
+    <!-- Temporal tips -->
+    <circle cx="-45" cy="-10" r="8" fill="#EF4444" opacity="0.5"/>
+    <circle cx="45" cy="-10" r="8" fill="#EF4444" opacity="0.5"/>
+    <text x="0" y="80" text-anchor="middle" fill="#5A6575" font-size="8">Inferior view</text>
+    <text x="0" y="90" text-anchor="middle" fill="#EF4444" font-size="7">Red = vulnerable</text>
+  </g>
+</svg>

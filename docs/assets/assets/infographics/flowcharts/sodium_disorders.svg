@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="800" height="1100">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22D3EE"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1100" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">SIADH vs CSW vs DI</text>
+  <text x="400" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#9CA3AF" text-anchor="middle">Sodium Disorder Differential in TBI</text>
+  <line x1="200" y1="74" x2="600" y2="74" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- Entry Node -->
+  <rect x="250" y="90" width="300" height="48" rx="24" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2.5"/>
+  <text x="400" y="118" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#E8ECF1" text-anchor="middle">Sodium Abnormality Detected</text>
+
+  <!-- Arrow down to decision -->
+  <line x1="400" y1="138" x2="400" y2="168" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Main Decision: Na level -->
+  <polygon points="400,173 530,233 400,293 270,233" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="225" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#F59E0B" text-anchor="middle">Serum Na+</text>
+  <text x="400" y="243" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">level?</text>
+
+  <!-- LOW branch (left) -->
+  <line x1="270" y1="233" x2="170" y2="233" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="220" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#22D3EE">LOW</text>
+  <text x="220" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">&lt;135 mEq/L</text>
+
+  <!-- HIGH branch (right) -->
+  <line x1="530" y1="233" x2="620" y2="233" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="575" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#EF4444">HIGH</text>
+  <text x="575" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF">&gt;145 mEq/L</text>
+
+  <!-- HYPONATREMIA Section (Left) -->
+  <!-- Volume Status Decision -->
+  <rect x="30" y="208" width="145" height="50" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="102" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#22D3EE" text-anchor="middle">Assess Volume</text>
+  <text x="102" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#22D3EE" text-anchor="middle">Status</text>
+
+  <!-- Branch to Euvolemic -->
+  <line x1="60" y1="258" x2="60" y2="310" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="60" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#9CA3AF" text-anchor="middle">EUVOLEMIC</text>
+
+  <!-- Branch to Hypovolemic -->
+  <line x1="140" y1="258" x2="140" y2="310" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="140" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#9CA3AF" text-anchor="middle">HYPOVOLEMIC</text>
+
+  <!-- SIADH Box -->
+  <rect x="10" y="315" width="110" height="155" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2.5"/>
+  <rect x="10" y="315" width="110" height="30" rx="10" fill="#22D3EE" opacity="0.15"/>
+  <text x="65" y="336" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#22D3EE" text-anchor="middle">SIADH</text>
+  <line x1="22" y1="348" x2="108" y2="348" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <text x="22" y="366" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Serum Osm</text>
+  <text x="95" y="366" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">LOW</text>
+  <text x="22" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine Osm</text>
+  <text x="95" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">HIGH</text>
+  <text x="22" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine Na</text>
+  <text x="95" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">HIGH &gt;40</text>
+  <text x="22" y="414" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Volume</text>
+  <text x="95" y="414" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">Euvolemic</text>
+  <line x1="22" y1="424" x2="108" y2="424" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <text x="22" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine output</text>
+  <text x="95" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">LOW</text>
+  <text x="22" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Weight</text>
+  <text x="95" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">Stable/Up</text>
+
+  <!-- Arrow to SIADH treatment -->
+  <line x1="65" y1="470" x2="65" y2="505" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- SIADH Treatment -->
+  <rect x="10" y="510" width="110" height="45" rx="8" fill="#34D399" opacity="0.1" stroke="#34D399" stroke-width="1.5"/>
+  <text x="65" y="530" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399" text-anchor="middle">Rx: Fluid</text>
+  <text x="65" y="546" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399" text-anchor="middle">Restriction</text>
+
+  <!-- CSW Box -->
+  <rect x="135" y="315" width="110" height="155" rx="10" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2.5"/>
+  <rect x="135" y="315" width="110" height="30" rx="10" fill="#F59E0B" opacity="0.15"/>
+  <text x="190" y="336" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F59E0B" text-anchor="middle">CSW</text>
+  <line x1="147" y1="348" x2="233" y2="348" stroke="#F59E0B" stroke-width="0.5" opacity="0.4"/>
+  <text x="147" y="366" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Serum Osm</text>
+  <text x="228" y="366" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">LOW</text>
+  <text x="147" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine Osm</text>
+  <text x="228" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">HIGH</text>
+  <text x="147" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine Na</text>
+  <text x="228" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">HIGH &gt;40</text>
+  <text x="147" y="414" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Volume</text>
+  <text x="228" y="414" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">Hypovolemic</text>
+  <line x1="147" y1="424" x2="233" y2="424" stroke="#F59E0B" stroke-width="0.5" opacity="0.4"/>
+  <text x="147" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine output</text>
+  <text x="228" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">HIGH</text>
+  <text x="147" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Weight</text>
+  <text x="228" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">Down</text>
+
+  <!-- Arrow to CSW treatment -->
+  <line x1="190" y1="470" x2="190" y2="505" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowAmber)"/>
+
+  <!-- CSW Treatment -->
+  <rect x="135" y="510" width="110" height="45" rx="8" fill="#34D399" opacity="0.1" stroke="#34D399" stroke-width="1.5"/>
+  <text x="190" y="530" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399" text-anchor="middle">Rx: IV Normal</text>
+  <text x="190" y="546" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399" text-anchor="middle">Saline</text>
+
+  <!-- KEY DIFFERENTIATOR Box -->
+  <rect x="30" y="580" width="215" height="75" rx="8" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="137" y="600" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle">KEY DIFFERENTIATOR</text>
+  <text x="137" y="618" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">SIADH = Euvolemic, LOW UOP</text>
+  <text x="137" y="636" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">CSW = Hypovolemic, HIGH UOP</text>
+  <text x="137" y="650" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">(Opposite treatments!)</text>
+
+  <!-- HYPERNATREMIA Section (Right) — DI -->
+  <rect x="620" y="208" width="160" height="50" rx="8" fill="#1A1F2E" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="700" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#EF4444" text-anchor="middle">Hypernatremia</text>
+  <text x="700" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">&gt;145 mEq/L</text>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="258" x2="700" y2="290" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Decision: Dilute urine + polyuria? -->
+  <polygon points="700,295 780,340 700,385 620,340" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="700" y="333" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">Dilute urine +</text>
+  <text x="700" y="348" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">polyuria?</text>
+
+  <!-- YES down -->
+  <line x1="700" y1="385" x2="700" y2="415" stroke="#34D399" stroke-width="2"/>
+  <text x="715" y="405" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">YES</text>
+
+  <!-- DI Box -->
+  <rect x="625" y="420" width="150" height="155" rx="10" fill="#1A1F2E" stroke="#EF4444" stroke-width="2.5"/>
+  <rect x="625" y="420" width="150" height="30" rx="10" fill="#EF4444" opacity="0.15"/>
+  <text x="700" y="441" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#EF4444" text-anchor="middle">DI</text>
+  <line x1="640" y1="453" x2="760" y2="453" stroke="#EF4444" stroke-width="0.5" opacity="0.4"/>
+  <text x="640" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Serum Osm</text>
+  <text x="755" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">HIGH</text>
+  <text x="640" y="488" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine Osm</text>
+  <text x="755" y="488" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">LOW</text>
+  <text x="640" y="506" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine Na</text>
+  <text x="755" y="506" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">LOW</text>
+  <text x="640" y="524" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Urine output</text>
+  <text x="755" y="524" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">VERY HIGH</text>
+  <text x="640" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Specific Gravity</text>
+  <text x="755" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">&lt;1.005</text>
+  <text x="640" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF">Cause</text>
+  <text x="755" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#E8ECF1" text-anchor="end">ADH deficient</text>
+
+  <!-- Arrow to DI treatment -->
+  <line x1="700" y1="575" x2="700" y2="610" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- DI Treatment -->
+  <rect x="625" y="615" width="150" height="45" rx="8" fill="#34D399" opacity="0.1" stroke="#34D399" stroke-width="1.5"/>
+  <text x="700" y="635" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399" text-anchor="middle">Rx: DDAVP</text>
+  <text x="700" y="651" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">+ Free water</text>
+
+  <!-- DI Types Note -->
+  <rect x="590" y="680" width="190" height="55" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1" opacity="0.7"/>
+  <text x="685" y="698" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#22D3EE" text-anchor="middle">Central DI: Responds to DDAVP</text>
+  <text x="685" y="714" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#22D3EE" text-anchor="middle">Nephrogenic DI: Does NOT respond</text>
+  <text x="685" y="728" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">TBI typically causes Central DI</text>
+
+  <!-- WARNING Box -->
+  <rect x="200" y="720" width="370" height="70" rx="10" fill="#1A1F2E" stroke="#EF4444" stroke-width="2.5"/>
+  <rect x="200" y="720" width="370" height="25" rx="10" fill="#EF4444" opacity="0.15"/>
+  <text x="385" y="739" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#EF4444" text-anchor="middle">WARNING: Correction Rate</text>
+  <text x="385" y="762" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#E8ECF1" text-anchor="middle">Na+ correction must not exceed</text>
+  <text x="385" y="782" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#F59E0B" text-anchor="middle">10 mEq/L per 24 hours</text>
+
+  <!-- Comparison Table Header -->
+  <rect x="60" y="820" width="680" height="250" rx="10" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="400" y="845" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle">Quick Comparison</text>
+  <line x1="80" y1="855" x2="720" y2="855" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Table headers -->
+  <text x="120" y="875" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#9CA3AF" text-anchor="middle">Feature</text>
+  <text x="270" y="875" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#22D3EE" text-anchor="middle">SIADH</text>
+  <text x="430" y="875" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle">CSW</text>
+  <text x="590" y="875" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">DI</text>
+
+  <line x1="80" y1="883" x2="720" y2="883" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Rows -->
+  <text x="120" y="900" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Serum Na+</text>
+  <text x="270" y="900" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Low</text>
+  <text x="430" y="900" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Low</text>
+  <text x="590" y="900" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">High</text>
+
+  <text x="120" y="920" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Volume</text>
+  <text x="270" y="920" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Euvolemic</text>
+  <text x="430" y="920" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Hypovolemic</text>
+  <text x="590" y="920" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Hypovolemic</text>
+
+  <text x="120" y="940" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Urine Output</text>
+  <text x="270" y="940" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Low</text>
+  <text x="430" y="940" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">High</text>
+  <text x="590" y="940" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Very High</text>
+
+  <text x="120" y="960" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Urine Na</text>
+  <text x="270" y="960" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">&gt;40</text>
+  <text x="430" y="960" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">&gt;40</text>
+  <text x="590" y="960" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Low</text>
+
+  <text x="120" y="980" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Urine Osm</text>
+  <text x="270" y="980" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">High</text>
+  <text x="430" y="980" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">High</text>
+  <text x="590" y="980" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#E8ECF1" text-anchor="middle">Low</text>
+
+  <line x1="80" y1="990" x2="720" y2="990" stroke="#22D3EE" stroke-width="0.3" opacity="0.3"/>
+
+  <text x="120" y="1010" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">Treatment</text>
+  <text x="270" y="1010" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#34D399" text-anchor="middle">Fluid Restrict</text>
+  <text x="430" y="1010" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#34D399" text-anchor="middle">IV NS / Volume</text>
+  <text x="590" y="1010" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#34D399" text-anchor="middle">DDAVP</text>
+
+  <!-- Vertical lines for table -->
+  <line x1="190" y1="860" x2="190" y2="1060" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+  <line x1="350" y1="860" x2="350" y2="1060" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+  <line x1="510" y1="860" x2="510" y2="1060" stroke="#22D3EE" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- Footer -->
+  <text x="400" y="1090" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">SIADH = Syndrome of Inappropriate ADH | CSW = Cerebral Salt Wasting | DI = Diabetes Insipidus</text>
+</svg>

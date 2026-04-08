@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#bgGrad)"/>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="800" height="65" fill="#1A1F2E"/>
+  <text x="400" y="30" text-anchor="middle" fill="#22D3EE" font-size="24" font-weight="700" letter-spacing="1">GLASGOW COMA SCALE</text>
+  <text x="400" y="50" text-anchor="middle" fill="#5A6575" font-size="13">Quick Reference Card</text>
+  <line x1="100" y1="62" x2="700" y2="62" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- ===== THREE COLUMNS ===== -->
+
+  <!-- EYE OPENING (E) Column -->
+  <rect x="30" y="80" rx="10" ry="10" width="235" height="380" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5" opacity="0.8"/>
+  <rect x="30" y="80" rx="10" ry="10" width="235" height="40" fill="#22D3EE" fill-opacity="0.15"/>
+  <text x="147" y="106" text-anchor="middle" fill="#22D3EE" font-size="16" font-weight="700">EYE OPENING (E)</text>
+  <text x="147" y="118" text-anchor="middle" fill="#5A6575" font-size="10">Score 1-4</text>
+
+  <!-- E4 -->
+  <rect x="45" y="135" rx="6" ry="6" width="205" height="50" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="65" cy="160" r="14" fill="#22D3EE" opacity="0.2" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="65" y="165" text-anchor="middle" fill="#22D3EE" font-size="16" font-weight="700">4</text>
+  <text x="90" y="153" fill="#E8ECF1" font-size="12" font-weight="600">Spontaneous</text>
+  <text x="90" y="170" fill="#8A9AB5" font-size="10">Eyes open without stimulation</text>
+
+  <!-- E3 -->
+  <rect x="45" y="195" rx="6" ry="6" width="205" height="50" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="65" cy="220" r="14" fill="#22D3EE" opacity="0.2" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="65" y="225" text-anchor="middle" fill="#22D3EE" font-size="16" font-weight="700">3</text>
+  <text x="90" y="213" fill="#E8ECF1" font-size="12" font-weight="600">To voice</text>
+  <text x="90" y="230" fill="#8A9AB5" font-size="10">Opens to verbal command</text>
+
+  <!-- E2 -->
+  <rect x="45" y="255" rx="6" ry="6" width="205" height="50" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="65" cy="280" r="14" fill="#22D3EE" opacity="0.2" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="65" y="285" text-anchor="middle" fill="#22D3EE" font-size="16" font-weight="700">2</text>
+  <text x="90" y="273" fill="#E8ECF1" font-size="12" font-weight="600">To pressure</text>
+  <text x="90" y="290" fill="#8A9AB5" font-size="10">Opens to painful stimulus</text>
+
+  <!-- E1 -->
+  <rect x="45" y="315" rx="6" ry="6" width="205" height="50" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="65" cy="340" r="14" fill="#22D3EE" opacity="0.2" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="65" y="345" text-anchor="middle" fill="#22D3EE" font-size="16" font-weight="700">1</text>
+  <text x="90" y="333" fill="#E8ECF1" font-size="12" font-weight="600">None</text>
+  <text x="90" y="350" fill="#8A9AB5" font-size="10">No eye opening</text>
+
+  <!-- NT -->
+  <rect x="45" y="375" rx="6" ry="6" width="205" height="35" fill="#0F1419" stroke="#2A3040" stroke-width="1"/>
+  <text x="65" y="397" text-anchor="middle" fill="#5A6575" font-size="12" font-weight="600">NT</text>
+  <text x="90" y="397" fill="#5A6575" font-size="10">Not testable (swelling, etc.)</text>
+
+  <!-- VERBAL (V) Column -->
+  <rect x="282" y="80" rx="10" ry="10" width="235" height="380" fill="#1A1F2E" stroke="#34D399" stroke-width="1.5" opacity="0.8"/>
+  <rect x="282" y="80" rx="10" ry="10" width="235" height="40" fill="#34D399" fill-opacity="0.15"/>
+  <text x="400" y="106" text-anchor="middle" fill="#34D399" font-size="16" font-weight="700">VERBAL (V)</text>
+  <text x="400" y="118" text-anchor="middle" fill="#5A6575" font-size="10">Score 1-5</text>
+
+  <!-- V5 -->
+  <rect x="297" y="135" rx="6" ry="6" width="205" height="44" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="317" cy="157" r="14" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="317" y="162" text-anchor="middle" fill="#34D399" font-size="16" font-weight="700">5</text>
+  <text x="342" y="153" fill="#E8ECF1" font-size="11" font-weight="600">Oriented</text>
+  <text x="342" y="168" fill="#8A9AB5" font-size="9">Knows who/where/when</text>
+
+  <!-- V4 -->
+  <rect x="297" y="187" rx="6" ry="6" width="205" height="44" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="317" cy="209" r="14" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="317" y="214" text-anchor="middle" fill="#34D399" font-size="16" font-weight="700">4</text>
+  <text x="342" y="205" fill="#E8ECF1" font-size="11" font-weight="600">Confused</text>
+  <text x="342" y="220" fill="#8A9AB5" font-size="9">Conversational but disoriented</text>
+
+  <!-- V3 -->
+  <rect x="297" y="239" rx="6" ry="6" width="205" height="44" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="317" cy="261" r="14" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="317" y="266" text-anchor="middle" fill="#34D399" font-size="16" font-weight="700">3</text>
+  <text x="342" y="257" fill="#E8ECF1" font-size="11" font-weight="600">Inappropriate words</text>
+  <text x="342" y="272" fill="#8A9AB5" font-size="9">Random/exclamatory speech</text>
+
+  <!-- V2 -->
+  <rect x="297" y="291" rx="6" ry="6" width="205" height="44" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="317" cy="313" r="14" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="317" y="318" text-anchor="middle" fill="#34D399" font-size="16" font-weight="700">2</text>
+  <text x="342" y="309" fill="#E8ECF1" font-size="11" font-weight="600">Incomprehensible</text>
+  <text x="342" y="324" fill="#8A9AB5" font-size="9">Moaning, no words</text>
+
+  <!-- V1 -->
+  <rect x="297" y="343" rx="6" ry="6" width="205" height="44" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="317" cy="365" r="14" fill="#34D399" opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="317" y="370" text-anchor="middle" fill="#34D399" font-size="16" font-weight="700">1</text>
+  <text x="342" y="361" fill="#E8ECF1" font-size="11" font-weight="600">None</text>
+  <text x="342" y="376" fill="#8A9AB5" font-size="9">No verbal response</text>
+
+  <!-- MOTOR (M) Column -->
+  <rect x="534" y="80" rx="10" ry="10" width="238" height="380" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5" opacity="0.8"/>
+  <rect x="534" y="80" rx="10" ry="10" width="238" height="40" fill="#F59E0B" fill-opacity="0.15"/>
+  <text x="653" y="106" text-anchor="middle" fill="#F59E0B" font-size="16" font-weight="700">MOTOR (M)</text>
+  <text x="653" y="118" text-anchor="middle" fill="#5A6575" font-size="10">Score 1-6</text>
+
+  <!-- M6 -->
+  <rect x="549" y="132" rx="5" ry="5" width="208" height="37" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="569" cy="150" r="12" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="569" y="155" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">6</text>
+  <text x="590" y="147" fill="#E8ECF1" font-size="10" font-weight="600">Obeys commands</text>
+  <text x="590" y="161" fill="#8A9AB5" font-size="8">Follows instructions</text>
+
+  <!-- M5 -->
+  <rect x="549" y="175" rx="5" ry="5" width="208" height="37" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="569" cy="193" r="12" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="569" y="198" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">5</text>
+  <text x="590" y="190" fill="#E8ECF1" font-size="10" font-weight="600">Localizes pain</text>
+  <text x="590" y="203" fill="#8A9AB5" font-size="8">Reaches toward stimulus</text>
+
+  <!-- M4 -->
+  <rect x="549" y="218" rx="5" ry="5" width="208" height="37" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="569" cy="236" r="12" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="569" y="241" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">4</text>
+  <text x="590" y="233" fill="#E8ECF1" font-size="10" font-weight="600">Withdrawal</text>
+  <text x="590" y="246" fill="#8A9AB5" font-size="8">Pulls away from pain</text>
+
+  <!-- M3 -->
+  <rect x="549" y="261" rx="5" ry="5" width="208" height="37" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="569" cy="279" r="12" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="569" y="284" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">3</text>
+  <text x="590" y="276" fill="#E8ECF1" font-size="10" font-weight="600">Abnormal flexion</text>
+  <text x="590" y="289" fill="#8A9AB5" font-size="8">Decorticate posturing</text>
+
+  <!-- M2 -->
+  <rect x="549" y="304" rx="5" ry="5" width="208" height="37" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="569" cy="322" r="12" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="569" y="327" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">2</text>
+  <text x="590" y="319" fill="#E8ECF1" font-size="10" font-weight="600">Extension</text>
+  <text x="590" y="332" fill="#8A9AB5" font-size="8">Decerebrate posturing</text>
+
+  <!-- M1 -->
+  <rect x="549" y="347" rx="5" ry="5" width="208" height="37" fill="#0F1419" stroke="#3A4255" stroke-width="1"/>
+  <circle cx="569" cy="365" r="12" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="569" y="370" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">1</text>
+  <text x="590" y="362" fill="#E8ECF1" font-size="10" font-weight="600">None</text>
+  <text x="590" y="375" fill="#8A9AB5" font-size="8">No motor response</text>
+
+  <!-- ===== SEVERITY CLASSIFICATION BAR ===== -->
+  <text x="400" y="495" text-anchor="middle" fill="#E8ECF1" font-size="16" font-weight="700">SEVERITY CLASSIFICATION</text>
+
+  <!-- Severity bar -->
+  <rect x="50" y="510" rx="10" ry="10" width="700" height="55" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.5"/>
+
+  <!-- Severe 3-8 -->
+  <rect x="60" y="520" rx="8" ry="8" width="260" height="35" fill="#EF4444" fill-opacity="0.2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="190" y="537" text-anchor="middle" fill="#EF4444" font-size="14" font-weight="700">SEVERE</text>
+  <text x="190" y="551" text-anchor="middle" fill="#EF4444" font-size="12">GCS 3 - 8</text>
+
+  <!-- Moderate 9-12 -->
+  <rect x="330" y="520" rx="8" ry="8" width="170" height="35" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="415" y="537" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="700">MODERATE</text>
+  <text x="415" y="551" text-anchor="middle" fill="#F59E0B" font-size="12">GCS 9 - 12</text>
+
+  <!-- Mild 13-15 -->
+  <rect x="510" y="520" rx="8" ry="8" width="230" height="35" fill="#34D399" fill-opacity="0.2" stroke="#34D399" stroke-width="1.5"/>
+  <text x="625" y="537" text-anchor="middle" fill="#34D399" font-size="14" font-weight="700">MILD</text>
+  <text x="625" y="551" text-anchor="middle" fill="#34D399" font-size="12">GCS 13 - 15</text>
+
+  <!-- ===== KEY PEARLS ===== -->
+  <rect x="50" y="585" rx="10" ry="10" width="700" height="200" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="50" y="585" rx="10" ry="10" width="700" height="35" fill="#F59E0B" fill-opacity="0.1"/>
+  <text x="400" y="608" text-anchor="middle" fill="#F59E0B" font-size="16" font-weight="700">HIGH-YIELD PEARLS</text>
+
+  <!-- Pearl 1 -->
+  <circle cx="80" cy="645" r="8" fill="#F59E0B" opacity="0.3"/>
+  <text x="80" y="649" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">1</text>
+  <text x="100" y="643" fill="#E8ECF1" font-size="12" font-weight="600">Motor score is the STRONGEST predictor of outcome</text>
+  <text x="100" y="658" fill="#8A9AB5" font-size="10">Best individual component for prognosis</text>
+
+  <!-- Pearl 2 -->
+  <circle cx="80" cy="690" r="8" fill="#F59E0B" opacity="0.3"/>
+  <text x="80" y="694" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">2</text>
+  <text x="100" y="688" fill="#E8ECF1" font-size="12" font-weight="600">GCS &#x2264; 8 = Coma (intubation threshold)</text>
+  <text x="100" y="703" fill="#8A9AB5" font-size="10">Cannot protect airway &#x2192; requires intubation</text>
+
+  <!-- Pearl 3 -->
+  <circle cx="80" cy="735" r="8" fill="#F59E0B" opacity="0.3"/>
+  <text x="80" y="739" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">3</text>
+  <text x="100" y="733" fill="#E8ECF1" font-size="12" font-weight="600">"T" suffix = intubated (e.g., GCS 6T)</text>
+  <text x="100" y="748" fill="#8A9AB5" font-size="10">Verbal score cannot be assessed; record as V1T or VT</text>
+
+  <!-- Pearl 4 -->
+  <circle cx="80" cy="770" r="8" fill="#F59E0B" opacity="0.3"/>
+  <text x="80" y="774" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">4</text>
+  <text x="100" y="770" fill="#E8ECF1" font-size="12" font-weight="600">Report individual components (E3V4M5 = 12)</text>
+
+  <!-- ===== GCS FORMULA ===== -->
+  <rect x="200" y="810" rx="10" ry="10" width="400" height="50" fill="#22D3EE" fill-opacity="0.1" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="400" y="835" text-anchor="middle" fill="#22D3EE" font-size="18" font-weight="700">GCS = E + V + M</text>
+  <text x="400" y="852" text-anchor="middle" fill="#5A6575" font-size="11">Range: 3 (worst) to 15 (best)</text>
+
+  <!-- Posturing comparison -->
+  <rect x="50" y="880" rx="10" ry="10" width="700" height="110" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.2"/>
+  <text x="400" y="905" text-anchor="middle" fill="#E8ECF1" font-size="14" font-weight="700">POSTURING QUICK REFERENCE</text>
+
+  <!-- Decorticate -->
+  <rect x="80" y="920" rx="6" ry="6" width="300" height="55" fill="#0F1419" stroke="#F59E0B" stroke-width="1"/>
+  <text x="230" y="940" text-anchor="middle" fill="#F59E0B" font-size="13" font-weight="700">Decorticate (M3)</text>
+  <text x="230" y="955" text-anchor="middle" fill="#E8ECF1" font-size="10">Arms FLEXED, legs extended</text>
+  <text x="230" y="968" text-anchor="middle" fill="#8A9AB5" font-size="9">Lesion above red nucleus</text>
+
+  <!-- Decerebrate -->
+  <rect x="420" y="920" rx="6" ry="6" width="300" height="55" fill="#0F1419" stroke="#EF4444" stroke-width="1"/>
+  <text x="570" y="940" text-anchor="middle" fill="#EF4444" font-size="13" font-weight="700">Decerebrate (M2)</text>
+  <text x="570" y="955" text-anchor="middle" fill="#E8ECF1" font-size="10">Arms EXTENDED, legs extended</text>
+  <text x="570" y="968" text-anchor="middle" fill="#8A9AB5" font-size="9">Lesion below red nucleus (WORSE)</text>
+
+  <!-- Mnemonic -->
+  <rect x="150" y="1000" rx="8" ry="8" width="500" height="35" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1"/>
+  <text x="400" y="1022" text-anchor="middle" fill="#22D3EE" font-size="12" font-weight="600">Mnemonic: de-COR-ticate = toward the CORe (flexion inward)</text>
+
+  <!-- PTA Classification -->
+  <rect x="50" y="1055" rx="10" ry="10" width="700" height="120" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.2"/>
+  <text x="400" y="1080" text-anchor="middle" fill="#E8ECF1" font-size="14" font-weight="700">TBI SEVERITY BY PTA DURATION</text>
+
+  <text x="120" y="1105" fill="#34D399" font-size="11" font-weight="600">Mild:</text>
+  <text x="165" y="1105" fill="#E8ECF1" font-size="11">PTA &lt; 1 hour</text>
+
+  <text x="320" y="1105" fill="#F59E0B" font-size="11" font-weight="600">Moderate:</text>
+  <text x="395" y="1105" fill="#E8ECF1" font-size="11">PTA 1-24 hours</text>
+
+  <text x="540" y="1105" fill="#EF4444" font-size="11" font-weight="600">Severe:</text>
+  <text x="595" y="1105" fill="#E8ECF1" font-size="11">PTA 1-7 days</text>
+
+  <text x="250" y="1130" fill="#EF4444" font-size="11" font-weight="600">Very Severe:</text>
+  <text x="345" y="1130" fill="#E8ECF1" font-size="11">PTA 1-4 weeks</text>
+
+  <text x="480" y="1130" fill="#EF4444" font-size="11" font-weight="600">Extremely Severe:</text>
+  <text x="615" y="1130" fill="#E8ECF1" font-size="11">PTA &gt; 4 weeks</text>
+
+  <text x="400" y="1158" text-anchor="middle" fill="#5A6575" font-size="10">LOC &gt; 24h also = severe TBI</text>
+
+  <!-- Footer -->
+  <text x="400" y="1190" text-anchor="middle" fill="#3A4555" font-size="9">TBI Training | Board Review Quick Reference</text>
+</svg>

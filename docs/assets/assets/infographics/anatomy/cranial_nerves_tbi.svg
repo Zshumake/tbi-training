@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" letter-spacing="0.5">CRANIAL NERVES MOST AFFECTED BY TBI</text>
+  <text x="400" y="56" text-anchor="middle" fill="#5A6575" font-size="12">Inferior (basilar) view of skull base</text>
+  <line x1="180" y1="66" x2="620" y2="66" stroke="#22D3EE" stroke-width="1" opacity="0.3"/>
+
+  <!-- Skull base outline (inferior view) -->
+  <ellipse cx="400" cy="330" rx="210" ry="250" fill="none" stroke="#3A4255" stroke-width="2.5"/>
+
+  <!-- Brain inferior surface -->
+  <ellipse cx="400" cy="320" rx="190" ry="230" fill="#1A1F2E" stroke="#2A3545" stroke-width="1.5"/>
+
+  <!-- Anterior fossa floor -->
+  <path d="M280,160 Q400,175 520,160" fill="none" stroke="#2A3545" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="155" text-anchor="middle" fill="#3A4555" font-size="8">Anterior fossa</text>
+
+  <!-- Middle fossa boundary -->
+  <path d="M240,280 Q400,310 560,280" fill="none" stroke="#2A3545" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="300" text-anchor="middle" fill="#3A4555" font-size="8">Middle fossa</text>
+
+  <!-- Posterior fossa boundary -->
+  <path d="M290,420 Q400,450 510,420" fill="none" stroke="#2A3545" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="445" text-anchor="middle" fill="#3A4555" font-size="8">Posterior fossa</text>
+
+  <!-- Midline -->
+  <line x1="400" y1="90" x2="400" y2="560" stroke="#2A3545" stroke-width="1" stroke-dasharray="3,4" opacity="0.5"/>
+
+  <!-- Frontal lobes (inferior) -->
+  <path d="M280,120 Q340,105 400,100 Q460,105 520,120 Q530,150 520,180 Q460,195 400,200 Q340,195 280,180 Q270,150 280,120" fill="#1A1F2E" stroke="#2A3545" stroke-width="1"/>
+  <!-- Olfactory groove -->
+  <rect x="370" y="120" width="60" height="65" rx="5" fill="#0F1419" stroke="#2A3545" stroke-width="1"/>
+  <text x="400" y="157" text-anchor="middle" fill="#3A4555" font-size="7">Olfactory groove</text>
+
+  <!-- Cribriform plate (perforated) -->
+  <rect x="380" y="125" width="40" height="25" rx="3" fill="none" stroke="#3A4555" stroke-width="1"/>
+  <circle cx="387" cy="132" r="1.5" fill="#3A4555"/>
+  <circle cx="393" cy="132" r="1.5" fill="#3A4555"/>
+  <circle cx="400" cy="132" r="1.5" fill="#3A4555"/>
+  <circle cx="407" cy="132" r="1.5" fill="#3A4555"/>
+  <circle cx="413" cy="132" r="1.5" fill="#3A4555"/>
+  <circle cx="390" cy="140" r="1.5" fill="#3A4555"/>
+  <circle cx="400" cy="140" r="1.5" fill="#3A4555"/>
+  <circle cx="410" cy="140" r="1.5" fill="#3A4555"/>
+  <text x="400" y="117" text-anchor="middle" fill="#4A5A6F" font-size="7">Cribriform plate</text>
+
+  <!-- Temporal bone petrous ridge (bilateral) -->
+  <path d="M280,280 Q310,310 340,340 Q360,355 370,370" fill="none" stroke="#3A4555" stroke-width="2"/>
+  <path d="M520,280 Q490,310 460,340 Q440,355 430,370" fill="none" stroke="#3A4555" stroke-width="2"/>
+  <text x="290" y="330" fill="#3A4555" font-size="7" transform="rotate(-45,290,330)">Petrous ridge</text>
+  <text x="510" y="330" fill="#3A4555" font-size="7" transform="rotate(45,510,330)">Petrous ridge</text>
+
+  <!-- Tentorial edge -->
+  <path d="M310,370 Q400,395 490,370" fill="none" stroke="#4A5A6F" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="400" y="392" text-anchor="middle" fill="#4A5A6F" font-size="7">Tentorial edge</text>
+
+  <!-- Clivus -->
+  <rect x="388" y="340" width="24" height="50" rx="4" fill="#0F1419" stroke="#3A4555" stroke-width="1"/>
+  <text x="400" y="398" text-anchor="middle" fill="#3A4555" font-size="7">Clivus</text>
+
+  <!-- Foramen magnum -->
+  <ellipse cx="400" cy="460" rx="40" ry="30" fill="#0F1419" stroke="#3A4555" stroke-width="1.5"/>
+  <text x="400" y="463" text-anchor="middle" fill="#3A4555" font-size="7">Foramen magnum</text>
+
+  <!-- ===== CN I - Olfactory (MOST COMMON - brightest) ===== -->
+  <line x1="390" y1="135" x2="390" y2="100" stroke="#EF4444" stroke-width="3.5" opacity="0.9"/>
+  <line x1="410" y1="135" x2="410" y2="100" stroke="#EF4444" stroke-width="3.5" opacity="0.9"/>
+  <!-- Leader -->
+  <line x1="400" y1="100" x2="170" y2="95" stroke="#EF4444" stroke-width="1"/>
+  <!-- Label box -->
+  <rect x="30" y="78" rx="6" ry="6" width="145" height="48" fill="#1A1F2E" stroke="#EF4444" stroke-width="2"/>
+  <text x="102" y="96" text-anchor="middle" fill="#EF4444" font-size="13" font-weight="700">CN I — Olfactory</text>
+  <text x="102" y="110" text-anchor="middle" fill="#E8ECF1" font-size="9">Through cribriform plate</text>
+  <text x="102" y="122" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">#1 Most common (7%)</text>
+
+  <!-- ===== CN III - Oculomotor (at tentorial edge) ===== -->
+  <line x1="380" y1="370" x2="350" y2="335" stroke="#F59E0B" stroke-width="2" opacity="0.65"/>
+  <circle cx="375" cy="373" r="4" fill="#F59E0B" opacity="0.65"/>
+  <!-- Leader -->
+  <line x1="350" y1="335" x2="180" y2="310" stroke="#F59E0B" stroke-width="1" opacity="0.7"/>
+  <rect x="75" y="295" rx="5" ry="5" width="110" height="38" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.2" opacity="0.8"/>
+  <text x="130" y="311" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="600">CN III</text>
+  <text x="130" y="325" text-anchor="middle" fill="#E8ECF1" font-size="8">At tentorial edge</text>
+
+  <!-- ===== CN IV - Trochlear (dorsal exit, longest course) ===== -->
+  <line x1="420" y1="410" x2="470" y2="380" stroke="#F59E0B" stroke-width="2" opacity="0.6"/>
+  <circle cx="420" cy="410" r="4" fill="#F59E0B" opacity="0.6"/>
+  <!-- Leader -->
+  <line x1="470" y1="380" x2="620" y2="350" stroke="#F59E0B" stroke-width="1" opacity="0.7"/>
+  <rect x="620" y="330" rx="5" ry="5" width="150" height="48" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.2" opacity="0.8"/>
+  <text x="695" y="348" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="600">CN IV — Trochlear</text>
+  <text x="695" y="361" text-anchor="middle" fill="#E8ECF1" font-size="8">Longest intracranial course</text>
+  <text x="695" y="373" text-anchor="middle" fill="#E8ECF1" font-size="8">Only dorsal exit CN</text>
+
+  <!-- ===== CN VI - Abducens (along clivus) ===== -->
+  <line x1="395" y1="365" x2="395" y2="340" stroke="#22D3EE" stroke-width="2" opacity="0.55"/>
+  <line x1="405" y1="365" x2="405" y2="340" stroke="#22D3EE" stroke-width="2" opacity="0.55"/>
+  <!-- Leader -->
+  <line x1="395" y1="345" x2="220" y2="380" stroke="#22D3EE" stroke-width="1" opacity="0.6"/>
+  <rect x="120" y="370" rx="5" ry="5" width="105" height="38" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.2" opacity="0.7"/>
+  <text x="172" y="386" text-anchor="middle" fill="#22D3EE" font-size="11" font-weight="600">CN VI</text>
+  <text x="172" y="400" text-anchor="middle" fill="#E8ECF1" font-size="8">Along clivus</text>
+
+  <!-- ===== CN VII - Facial (2nd most common) ===== -->
+  <circle cx="330" cy="330" r="5" fill="#EF4444" opacity="0.75"/>
+  <line x1="330" y1="330" x2="310" y2="310" stroke="#EF4444" stroke-width="2.5" opacity="0.75"/>
+  <!-- Leader -->
+  <line x1="310" y1="310" x2="130" y2="225" stroke="#EF4444" stroke-width="1" opacity="0.8"/>
+  <rect x="30" y="195" rx="6" ry="6" width="145" height="48" fill="#1A1F2E" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="102" y="213" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="700">CN VII — Facial</text>
+  <text x="102" y="227" text-anchor="middle" fill="#E8ECF1" font-size="9">Through temporal bone</text>
+  <text x="102" y="239" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="600">#2 Most common</text>
+
+  <!-- ===== CN VIII - Vestibulocochlear ===== -->
+  <circle cx="470" cy="330" r="5" fill="#22D3EE" opacity="0.6"/>
+  <line x1="470" y1="330" x2="490" y2="310" stroke="#22D3EE" stroke-width="2" opacity="0.6"/>
+  <!-- Leader -->
+  <line x1="490" y1="310" x2="630" y2="265" stroke="#22D3EE" stroke-width="1" opacity="0.6"/>
+  <rect x="630" y="245" rx="5" ry="5" width="145" height="48" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.2" opacity="0.7"/>
+  <text x="702" y="263" text-anchor="middle" fill="#22D3EE" font-size="11" font-weight="600">CN VIII — Vestibulocochl.</text>
+  <text x="702" y="277" text-anchor="middle" fill="#E8ECF1" font-size="8">Through temporal bone</text>
+  <text x="702" y="289" text-anchor="middle" fill="#E8ECF1" font-size="8">Hearing loss, vertigo</text>
+
+  <!-- Frequency Legend -->
+  <rect x="580" y="85" rx="8" ry="8" width="200" height="100" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.5"/>
+  <text x="680" y="107" text-anchor="middle" fill="#E8ECF1" font-size="11" font-weight="700">Injury Frequency</text>
+  <line x1="595" y1="113" x2="765" y2="113" stroke="#3A4255" stroke-width="1"/>
+  <!-- Gradient bar -->
+  <rect x="600" y="122" width="30" height="12" rx="2" fill="#EF4444" opacity="0.9"/>
+  <text x="638" y="132" fill="#E8ECF1" font-size="9">Most common</text>
+  <rect x="600" y="140" width="30" height="12" rx="2" fill="#F59E0B" opacity="0.7"/>
+  <text x="638" y="150" fill="#E8ECF1" font-size="9">Moderate frequency</text>
+  <rect x="600" y="158" width="30" height="12" rx="2" fill="#22D3EE" opacity="0.5"/>
+  <text x="638" y="168" fill="#E8ECF1" font-size="9">Less common</text>
+
+  <!-- Pearl -->
+  <rect x="140" y="545" rx="8" ry="8" width="520" height="28" fill="#1A1F2E" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="155" y="564" fill="#F59E0B" font-size="11" font-weight="700">PEARL:</text>
+  <text x="210" y="564" fill="#E8ECF1" font-size="11">CN I anosmia may go undetected — always test smell after TBI</text>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1419"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#22D3EE" font-size="22" font-weight="700" letter-spacing="0.5">MONRO-KELLIE DOCTRINE</text>
+  <text x="400" y="48" text-anchor="middle" fill="#5A6575" font-size="11">Fixed intracranial volume: Brain + Blood + CSF = Constant</text>
+  <line x1="180" y1="58" x2="620" y2="58" stroke="#22D3EE" stroke-width="1" opacity="0.3"/>
+
+  <!-- ===== PIE CHART 1: NORMAL ===== -->
+  <g transform="translate(140, 145)">
+    <text x="0" y="-55" text-anchor="middle" fill="#E8ECF1" font-size="13" font-weight="700">Normal</text>
+    <!-- Brain 80% - covers 288 degrees -->
+    <path d="M0,0 L0,-45 A45,45 0 1,1 -42.73,14.27 Z" fill="#22D3EE" opacity="0.7"/>
+    <!-- Blood 10% - covers 36 degrees -->
+    <path d="M0,0 L-42.73,14.27 A45,45 0 0,1 -32.73,-31.09 Z" fill="#EF4444" opacity="0.7"/>
+    <!-- CSF 10% - covers 36 degrees -->
+    <path d="M0,0 L-32.73,-31.09 A45,45 0 0,1 0,-45 Z" fill="#34D399" opacity="0.7"/>
+    <!-- Labels -->
+    <text x="12" y="10" fill="#0F1419" font-size="9" font-weight="700">Brain</text>
+    <text x="12" y="22" fill="#0F1419" font-size="8">80%</text>
+    <text x="-42" y="-2" fill="#E8ECF1" font-size="7">Blood</text>
+    <text x="-38" y="8" fill="#E8ECF1" font-size="7">10%</text>
+    <text x="-24" y="-35" fill="#E8ECF1" font-size="7">CSF</text>
+    <text x="-20" y="-26" fill="#E8ECF1" font-size="7">10%</text>
+  </g>
+
+  <!-- Arrow between 1 and 2 -->
+  <text x="265" y="145" fill="#5A6575" font-size="20">&#x2192;</text>
+  <text x="265" y="162" fill="#5A6575" font-size="8" text-anchor="middle">Mass grows</text>
+
+  <!-- ===== PIE CHART 2: COMPENSATED ===== -->
+  <g transform="translate(400, 145)">
+    <text x="0" y="-55" text-anchor="middle" fill="#34D399" font-size="13" font-weight="700">Compensated</text>
+    <!-- Brain 80% - 288 deg -->
+    <path d="M0,0 L0,-45 A45,45 0 1,1 -42.73,14.27 Z" fill="#22D3EE" opacity="0.7"/>
+    <!-- Mass 5% - 18 deg -->
+    <path d="M0,0 L-42.73,14.27 A45,45 0 0,0 -44.56,5.38 Z" fill="#F59E0B" opacity="0.8"/>
+    <!-- Blood 7% - 25.2 deg -->
+    <path d="M0,0 L-44.56,5.38 A45,45 0 0,0 -38.97,-22.5 Z" fill="#EF4444" opacity="0.6"/>
+    <!-- CSF 8% - 28.8 deg -->
+    <path d="M0,0 L-38.97,-22.5 A45,45 0 0,0 0,-45 Z" fill="#34D399" opacity="0.5"/>
+
+    <text x="12" y="10" fill="#0F1419" font-size="9" font-weight="700">Brain</text>
+    <text x="12" y="22" fill="#0F1419" font-size="8">80%</text>
+    <text x="-50" y="14" fill="#F59E0B" font-size="7" font-weight="600">Mass</text>
+    <text x="-48" y="-6" fill="#E8ECF1" font-size="7">Blood&#x2193;</text>
+    <text x="-28" y="-32" fill="#E8ECF1" font-size="7">CSF&#x2193;</text>
+
+    <!-- Note -->
+    <text x="0" y="60" text-anchor="middle" fill="#34D399" font-size="8">CSF displaced to</text>
+    <text x="0" y="70" text-anchor="middle" fill="#34D399" font-size="8">spinal canal</text>
+    <text x="0" y="82" text-anchor="middle" fill="#5A6575" font-size="8">ICP remains normal</text>
+  </g>
+
+  <!-- Arrow between 2 and 3 -->
+  <text x="525" y="145" fill="#5A6575" font-size="20">&#x2192;</text>
+  <text x="525" y="162" fill="#EF4444" font-size="8" text-anchor="middle">Exhausted!</text>
+
+  <!-- ===== PIE CHART 3: DECOMPENSATED ===== -->
+  <g transform="translate(660, 145)">
+    <text x="0" y="-55" text-anchor="middle" fill="#EF4444" font-size="13" font-weight="700">Decompensated</text>
+    <!-- Brain 75% - 270 deg -->
+    <path d="M0,0 L0,-45 A45,45 0 1,1 -45,0 Z" fill="#22D3EE" opacity="0.7"/>
+    <!-- Mass 10% - 36 deg -->
+    <path d="M0,0 L-45,0 A45,45 0 0,0 -42.73,-14.27 Z" fill="#F59E0B" opacity="0.9"/>
+    <!-- Blood 8% - 28.8 deg -->
+    <path d="M0,0 L-42.73,-14.27 A45,45 0 0,0 -22.5,-38.97 Z" fill="#EF4444" opacity="0.6"/>
+    <!-- CSF 7% - 25.2 deg -->
+    <path d="M0,0 L-22.5,-38.97 A45,45 0 0,0 0,-45 Z" fill="#34D399" opacity="0.4"/>
+
+    <text x="12" y="5" fill="#0F1419" font-size="8" font-weight="700">Brain</text>
+    <text x="12" y="15" fill="#0F1419" font-size="7">75%</text>
+    <text x="-50" y="-2" fill="#F59E0B" font-size="7" font-weight="700">Mass&#x2191;</text>
+    <text x="-42" y="-22" fill="#E8ECF1" font-size="6">Blood</text>
+    <text x="-18" y="-38" fill="#E8ECF1" font-size="6">CSF</text>
+
+    <!-- ICP spike indicator -->
+    <path d="M50,-20 L55,-40 L60,-15 L65,-35 L70,-10" fill="none" stroke="#EF4444" stroke-width="2"/>
+    <text x="75" y="-20" fill="#EF4444" font-size="10" font-weight="700">ICP&#x2191;&#x2191;</text>
+    <text x="0" y="60" text-anchor="middle" fill="#EF4444" font-size="8" font-weight="600">Compensation exhausted</text>
+    <text x="0" y="72" text-anchor="middle" fill="#EF4444" font-size="8">Rapid ICP elevation</text>
+    <text x="0" y="84" text-anchor="middle" fill="#EF4444" font-size="8" font-weight="700">HERNIATION RISK</text>
+  </g>
+
+  <!-- ===== PRESSURE-VOLUME CURVE ===== -->
+  <rect x="100" y="260" rx="8" ry="8" width="600" height="130" fill="#1A1F2E" stroke="#3A4255" stroke-width="1.5"/>
+  <text x="400" y="280" text-anchor="middle" fill="#E8ECF1" font-size="12" font-weight="700">Intracranial Pressure-Volume Curve</text>
+
+  <!-- Axes -->
+  <line x1="170" y1="370" x2="640" y2="370" stroke="#5A6575" stroke-width="1.5"/>
+  <line x1="170" y1="370" x2="170" y2="290" stroke="#5A6575" stroke-width="1.5"/>
+  <!-- Axis labels -->
+  <text x="405" y="388" text-anchor="middle" fill="#5A6575" font-size="10">Intracranial Volume</text>
+  <text x="140" y="330" text-anchor="middle" fill="#5A6575" font-size="10" transform="rotate(-90,140,330)">ICP</text>
+
+  <!-- The curve -->
+  <path d="M180,365 Q300,362 400,355 Q450,348 480,330 Q510,305 530,295 Q560,292 600,290" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+
+  <!-- Compliance zone (flat part) -->
+  <rect x="190" y="353" width="200" height="15" rx="3" fill="#34D399" fill-opacity="0.15" stroke="none"/>
+  <text x="290" y="348" text-anchor="middle" fill="#34D399" font-size="9" font-weight="600">HIGH COMPLIANCE</text>
+  <text x="290" y="358" text-anchor="middle" fill="#34D399" font-size="7">Good compensation</text>
+
+  <!-- Critical point -->
+  <circle cx="460" cy="340" r="5" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"/>
+  <text x="460" y="330" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="700">Critical Point</text>
+  <line x1="460" y1="340" x2="460" y2="370" stroke="#F59E0B" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Steep zone -->
+  <rect x="470" y="290" width="140" height="25" rx="3" fill="#EF4444" fill-opacity="0.15" stroke="none"/>
+  <text x="540" y="302" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="600">LOW COMPLIANCE</text>
+  <text x="540" y="312" text-anchor="middle" fill="#EF4444" font-size="7">Small &#x394;V = Large &#x394;P</text>
+
+  <!-- Legend -->
+  <rect x="130" y="288" rx="4" ry="4" width="10" height="10" fill="#22D3EE" opacity="0.7"/>
+  <text x="145" y="297" fill="#E8ECF1" font-size="8">Brain</text>
+  <rect x="180" y="288" rx="4" ry="4" width="10" height="10" fill="#EF4444" opacity="0.7"/>
+  <text x="195" y="297" fill="#E8ECF1" font-size="8">Blood</text>
+  <rect x="225" y="288" rx="4" ry="4" width="10" height="10" fill="#34D399" opacity="0.7"/>
+  <text x="240" y="297" fill="#E8ECF1" font-size="8">CSF</text>
+  <rect x="268" y="288" rx="4" ry="4" width="10" height="10" fill="#F59E0B" opacity="0.8"/>
+  <text x="283" y="297" fill="#E8ECF1" font-size="8">Mass</text>
+</svg>

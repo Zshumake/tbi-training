@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 950" width="800" height="950">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22D3EE"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34D399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="950" rx="12" fill="#0F1419"/>
+
+  <!-- Title -->
+  <text x="400" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22D3EE" text-anchor="middle">Disorders of Consciousness</text>
+  <text x="400" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#9CA3AF" text-anchor="middle">Diagnostic Algorithm</text>
+  <line x1="200" y1="74" x2="600" y2="74" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- Entry Node -->
+  <rect x="270" y="90" width="260" height="48" rx="24" fill="#1A1F2E" stroke="#22D3EE" stroke-width="2.5"/>
+  <text x="400" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#E8ECF1" text-anchor="middle">Unresponsive Patient</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="138" x2="400" y2="168" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision 1: Eyes open? -->
+  <polygon points="400,173 520,228 400,283 280,228" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Does patient</text>
+  <text x="400" y="238" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">open eyes?</text>
+
+  <!-- NO → Coma (right) -->
+  <line x1="520" y1="228" x2="610" y2="228" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="560" y="218" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">NO</text>
+  <rect x="615" y="208" width="130" height="40" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="2"/>
+  <text x="680" y="233" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#EF4444" text-anchor="middle">COMA</text>
+
+  <!-- YES down -->
+  <line x1="400" y1="283" x2="400" y2="318" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="415" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">YES</text>
+
+  <!-- Decision 2: Sleep-wake cycles? -->
+  <polygon points="400,323 520,378 400,433 280,378" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="372" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Sleep-wake</text>
+  <text x="400" y="388" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">cycles present?</text>
+
+  <!-- NO → Coma (right) -->
+  <line x1="520" y1="378" x2="610" y2="378" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="560" y="368" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">NO</text>
+  <rect x="615" y="358" width="130" height="40" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="2"/>
+  <text x="680" y="383" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#EF4444" text-anchor="middle">COMA</text>
+
+  <!-- YES down -->
+  <line x1="400" y1="433" x2="400" y2="468" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="415" y="455" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">YES</text>
+
+  <!-- Decision 3: Purposeful behavior? -->
+  <polygon points="400,473 530,528 400,583 270,528" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="522" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Any purposeful</text>
+  <text x="400" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">behavior?</text>
+
+  <!-- NO → VS/UWS (right) -->
+  <line x1="530" y1="528" x2="610" y2="528" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="565" y="518" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">NO</text>
+  <rect x="615" y="503" width="160" height="50" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="2"/>
+  <text x="695" y="523" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#EF4444" text-anchor="middle">VS / UWS</text>
+  <text x="695" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Vegetative State / Unresponsive</text>
+  <text x="695" y="552" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Wakefulness Syndrome</text>
+
+  <!-- YES down -->
+  <line x1="400" y1="583" x2="400" y2="618" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="415" y="605" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">YES</text>
+
+  <!-- Decision 4: Language-mediated? -->
+  <polygon points="400,623 540,678 400,733 260,678" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="672" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">Language-mediated</text>
+  <text x="400" y="688" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">responses?</text>
+
+  <!-- NO → MCS- (left) -->
+  <line x1="260" y1="678" x2="165" y2="678" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="215" y="668" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#EF4444">NO</text>
+  <rect x="30" y="653" width="140" height="50" rx="8" fill="#F59E0B" opacity="0.1" stroke="#F59E0B" stroke-width="2"/>
+  <text x="100" y="675" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F59E0B" text-anchor="middle">MCS -</text>
+  <text x="100" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Minimally Conscious (minus)</text>
+
+  <!-- YES → MCS+ (right) -->
+  <line x1="540" y1="678" x2="610" y2="678" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="570" y="668" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">YES</text>
+  <rect x="615" y="653" width="140" height="50" rx="8" fill="#F59E0B" opacity="0.1" stroke="#F59E0B" stroke-width="2"/>
+  <text x="685" y="675" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F59E0B" text-anchor="middle">MCS +</text>
+  <text x="685" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Minimally Conscious (plus)</text>
+
+  <!-- Arrow from MCS+ down -->
+  <line x1="685" y1="703" x2="685" y2="735" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrow from MCS- to same decision -->
+  <line x1="100" y1="703" x2="100" y2="760" stroke="#22D3EE" stroke-width="1.5"/>
+  <line x1="100" y1="760" x2="530" y2="760" stroke="#22D3EE" stroke-width="1.5"/>
+
+  <!-- Decision 5: Reliable communication? -->
+  <polygon points="685,740 780,785 685,830 590,785" fill="#1A1F2E" stroke="#F59E0B" stroke-width="2"/>
+  <text x="685" y="778" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">Reliable communication</text>
+  <text x="685" y="792" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">OR functional</text>
+  <text x="685" y="806" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#F59E0B" text-anchor="middle">object use?</text>
+
+  <!-- YES → Emerged -->
+  <line x1="685" y1="830" x2="685" y2="860" stroke="#34D399" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="700" y="850" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#34D399">YES</text>
+
+  <rect x="575" y="865" width="220" height="45" rx="8" fill="#34D399" opacity="0.15" stroke="#34D399" stroke-width="2.5"/>
+  <text x="685" y="893" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#34D399" text-anchor="middle">Emerged from MCS</text>
+
+  <!-- CRS-R Side Box -->
+  <rect x="30" y="810" width="220" height="95" rx="8" fill="#1A1F2E" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="140" y="833" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#22D3EE" text-anchor="middle">Assessment Tool</text>
+  <line x1="45" y1="840" x2="235" y2="840" stroke="#22D3EE" stroke-width="0.5" opacity="0.4"/>
+  <text x="140" y="860" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#E8ECF1" text-anchor="middle">CRS-R</text>
+  <text x="140" y="878" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Coma Recovery Scale - Revised</text>
+  <text x="140" y="895" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#34D399" text-anchor="middle">Level B Recommendation (AAN 2018)</text>
+
+  <!-- Footer -->
+  <text x="400" y="938" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">AAN/ACRM/NIDILRR Practice Guideline: Disorders of Consciousness (2018)</text>
+</svg>
