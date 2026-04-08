@@ -329,35 +329,56 @@ class TopicContentView extends StatelessWidget {
       child: Column(
         children: block.items.map((item) {
           return Padding(
-            padding: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.only(bottom: 10),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  width: 28,
-                  height: 28,
-                  decoration: BoxDecoration(
-                    color: AppTheme.accent.withValues(alpha: 0.15),
-                    borderRadius: BorderRadius.circular(8),
+                // Label pill — grows to fit content, with a min width so
+                // short numeric keys ("1", "2") still read as pills.
+                ConstrainedBox(
+                  constraints: const BoxConstraints(
+                    minWidth: 32,
+                    minHeight: 28,
+                    maxWidth: 180,
                   ),
-                  alignment: Alignment.center,
-                  child: Text(
-                    item.key,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.accent,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 6,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppTheme.accent.withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: AppTheme.accent.withValues(alpha: 0.25),
+                        width: 1,
+                      ),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      item.key,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                        color: AppTheme.accent,
+                        height: 1.2,
+                      ),
                     ),
                   ),
                 ),
-                const SizedBox(width: 10),
+                const SizedBox(width: 12),
                 Expanded(
-                  child: Text(
-                    item.value,
-                    style: const TextStyle(
-                      fontSize: 13,
-                      height: 1.5,
-                      color: AppTheme.textPrimary,
+                  child: Padding(
+                    // Align the body copy with the first line of the pill.
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text(
+                      item.value,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        height: 1.5,
+                        color: AppTheme.textPrimary,
+                      ),
                     ),
                   ),
                 ),
