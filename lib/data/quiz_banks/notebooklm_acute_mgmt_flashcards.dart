@@ -78,7 +78,7 @@ class NotebookLMAcuteMgmtFlashcards {
     Flashcard(front: 'For ICP management, the SIBICC algorithm recommends MAP challenges in which tier?', back: 'Tier 2', moduleId: 'acute-management'),
     Flashcard(front: 'Jugular bulb oxygen saturation (SjvO2) values below _____ suggest cerebral ischemia.', back: '50%', moduleId: 'acute-management'),
     Flashcard(front: 'Which sedation agent is preferred for its short half-life and rapid emergence, allowing for frequent neurological exams?', back: 'Propofol.', moduleId: 'acute-management'),
-    Flashcard(front: 'What is the normal range for intracranial pressure in a healthy adult?', back: '2-5 mmHg (up to 15 mmHg is acceptable).', moduleId: 'acute-management'),
+    Flashcard(front: 'What is the normal range for intracranial pressure in a healthy supine adult?', back: '7-15 mmHg (treatment threshold per BTF is >22 mmHg).', moduleId: 'acute-management'),
     Flashcard(front: 'True or False: Therapeutic hypothermia (32-35 degrees C) is a first-line treatment for ICP elevation.', back: 'False (it is a Tier 3/last resort intervention).', moduleId: 'acute-management'),
   ];
 }

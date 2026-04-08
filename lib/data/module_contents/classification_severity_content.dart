@@ -85,9 +85,9 @@ final TopicData classificationSeverityContent = TopicData(
           themeColor: const Color(0xFF3B82F6),
           backgroundColor: const Color(0xFFEFF6FF),
           points: [
-            'GFAP (Glial Fibrillary Acidic Protein): Astrocyte marker; cutoff <30 pg/mL; elevated within 1 hour of injury',
-            'UCH-L1 (Ubiquitin C-terminal Hydrolase L1): Neuronal marker; cutoff <360 pg/mL; peaks at 8 hours',
-            'GFAP + UCH-L1 combined: FDA-cleared (2018, Banyan BTI); AUC 0.94 for detecting intracranial lesions on CT; NPV 99.3%',
+            'GFAP (Glial Fibrillary Acidic Protein): Astrocyte marker; Banyan BTI cutoff 22 pg/mL; elevated within 1 hour of injury',
+            'UCH-L1 (Ubiquitin C-terminal Hydrolase L1): Neuronal marker; Banyan BTI cutoff 327 pg/mL; peaks at 8 hours',
+            'GFAP + UCH-L1 combined: FDA-cleared (2018, Banyan BTI) via ALERT-TBI study; sensitivity 97.6%, NPV 99.6% for detecting intracranial lesions on CT',
             'Projected 40% reduction in unnecessary CT scans when used as triage tool in GCS 13-15 patients',
             'MAP-2 (Microtubule-Associated Protein 2): Emerging dendritic injury marker; may improve specificity when combined with GFAP/UCH-L1',
           ],
@@ -238,7 +238,7 @@ final TopicData classificationSeverityContent = TopicData(
         ),
         PearlBlock(
           'Board Pearl: DRS vs GOS vs FIM',
-          'The DRS (range 0-29) is better than GOS for tracking rehabilitation progress because it captures the FULL spectrum from coma through community reintegration. Lower DRS = better outcome (opposite direction from GOS). The DRS has a ceiling effect for mildly impaired patients (many score 0-1). The FIM has a ceiling effect in TBI because it is heavily weighted toward motor function (13/18 items) and only has 5 cognitive items, failing to capture executive dysfunction, memory deficits, and behavioral impairments that are common after TBI.',
+          'The DRS (range 0-30, where 30 = death) is better than GOS for tracking rehabilitation progress because it captures the FULL spectrum from coma through community reintegration. Lower DRS = better outcome (opposite direction from GOS). The DRS has a ceiling effect for mildly impaired patients (many score 0-1). The FIM has a ceiling effect in TBI because it is heavily weighted toward motor function (13/18 items) and only has 5 cognitive items, failing to capture executive dysfunction, memory deficits, and behavioral impairments that are common after TBI.',
         ),
         HeaderBlock('DRS vs GOS vs FIM Comparison'),
         TableBlock(

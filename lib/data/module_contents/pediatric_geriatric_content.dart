@@ -229,7 +229,7 @@ final TopicData pediatricGeriatricContent = TopicData(
             'Most children recover within 2-4 weeks',
             'Section 504 Plans: for symptoms persisting > 4 weeks; provides legally mandated school accommodations under ADA',
             'Continuum of support: temporary accommodations --> nurse plans --> 504 Plans --> IEP/special education',
-            'SCAT6 Child Version: sport concussion assessment tool for ages 5-12 with child-appropriate symptom scales and parent reporting; best diagnostic discrimination within 72 hours',
+            'SCAT6 Child Version (Child-SCAT6): sport concussion assessment tool for ages 8-12 with child-appropriate symptom scales and parent reporting; best diagnostic discrimination within 72 hours',
             'Cervicovestibular rehabilitation recommended for dizziness/neck pain/headaches > 10 days post-concussion',
             'Active rehabilitation for persistent symptoms > 30 days',
           ],

@@ -294,7 +294,7 @@ final TopicData tbiFundamentalsContent = TopicData(
         ),
         PearlBlock(
           'ICP Threshold Change',
-          'BTF 4th Edition (2016) changed the ICP treatment threshold from 20 to 22 mmHg. "22 is the new 20." Normal ICP: 2-5 mmHg. ICP >40: neurological dysfunction. ICP >60: invariably fatal.',
+          'BTF 4th Edition (2016) changed the ICP treatment threshold from 20 to 22 mmHg. "22 is the new 20." Normal adult ICP: 5-15 mmHg (supine). ICP >20-22: treat. ICP >40: neurological dysfunction. ICP >60: invariably fatal.',
         ),
         PearlBlock(
           'CPP Targets',
@@ -319,7 +319,7 @@ final TopicData tbiFundamentalsContent = TopicData(
           rows: [
             ['ICP treatment threshold', '>22 mmHg (BTF 4th Ed)'],
             ['CPP target', '60-70 mmHg'],
-            ['Normal ICP', '2-5 mmHg (up to 15 acceptable)'],
+            ['Normal adult ICP', '5-15 mmHg (supine)'],
             ['Fatal ICP', '>60 mmHg'],
             ['Mannitol serum osm limit', '<320 mOsm/L'],
             ['Na correction rate limit', '≤10 mEq/L per 24 hrs'],

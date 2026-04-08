@@ -452,7 +452,7 @@ final TopicData neuroendocrineContent = TopicData(
           title: 'Neuroendocrine Numbers for Boards',
           columns: ['Parameter', 'Value'],
           rows: [
-            ['Hypopituitarism prevalence after TBI', '~27.5%'],
+            ['Hypopituitarism prevalence after TBI', '~27.5% (older estimate); ~33% (2024 meta-analysis)'],
             ['Screening timeline', '3 months and 12 months post-injury'],
             ['Most common hormonal deficit', 'GH (10-20%)'],
             ['Na correction rate limit', '<= 10 mEq/L per 24 hours'],
@@ -562,8 +562,8 @@ final TopicData neuroendocrineContent = TopicData(
           ],
         ),
         MnemonicBlock(
-          'Pituitary Axes: "Go Look For The Adenoma, Pal"',
-          'GH (growth hormone), LH/FSH (gonadotropins), FSH, TSH (thyroid), ACTH (adrenal), Prolactin — the anterior pituitary hormones affected by TBI. Remember to screen ALL axes. GH is most common deficit, ACTH is most dangerous to miss. Always replace cortisol BEFORE thyroid ("Cortisol Comes First").',
+          'Pituitary Axes: "Go Look For The Adenoma, Please"',
+          'GH (growth hormone), LH, FSH (gonadotropins), TSH (thyroid), ACTH (adrenal), Prolactin — the anterior pituitary hormones affected by TBI. Remember to screen ALL axes. GH is most common deficit, ACTH is most dangerous to miss. Always replace cortisol BEFORE thyroid ("Cortisol Comes First").',
         ),
         HeaderBlock('Emerging Diagnostic Advances'),
         BulletCardBlock(

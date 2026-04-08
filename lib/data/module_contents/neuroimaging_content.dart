@@ -129,8 +129,8 @@ final TopicData neuroimagingContent = TopicData(
           themeColor: const Color(0xFF059669),
           backgroundColor: const Color(0xFFF0FDF4),
           points: [
-            'Decision thresholds: GFAP > 30 pg/mL AND/OR UCH-L1 > 360 pg/mL = positive (CT recommended)',
-            'When BOTH are below threshold: 99.3% negative predictive value (CT may be unnecessary)',
+            'Banyan BTI decision thresholds (per FDA label and ALERT-TBI): GFAP > 22 pg/mL AND/OR UCH-L1 > 327 pg/mL = positive (CT recommended)',
+            'When BOTH are below threshold: 99.6% negative predictive value (CT may be unnecessary) per ALERT-TBI',
             'Can reduce unnecessary CT scans by up to 40% in mild TBI',
             'GFAP peaks at 20-24 hours post-injury; UCH-L1 peaks at 8-12 hours',
             'HIGH sensitivity (~96%) but LOW specificity (~40%) -- many false positives',
@@ -140,7 +140,7 @@ final TopicData neuroimagingContent = TopicData(
         ),
         PearlBlock(
           'Board Pearl: Blood Biomarkers in TBI',
-          'GFAP (astrocyte marker) and UCH-L1 (neuronal marker) are FDA-cleared for helping determine the need for CT in mild TBI. Their strength is in the NEGATIVE result: when both are below threshold, the NPV is 99.3%, allowing clinicians to safely avoid CT. Their weakness is LOW specificity (~40%), meaning many patients with positive biomarkers will have a negative CT. GFAP peaks later (20-24 hours) than UCH-L1 (8-12 hours).',
+          'GFAP (astrocyte marker) and UCH-L1 (neuronal marker) are FDA-cleared for helping determine the need for CT in mild TBI. Their strength is in the NEGATIVE result: when both are below threshold (GFAP <22 pg/mL AND UCH-L1 <327 pg/mL per Banyan BTI), the NPV is 99.6% per ALERT-TBI, allowing clinicians to safely avoid CT. Their weakness is LOW specificity (~40%), meaning many patients with positive biomarkers will have a negative CT. GFAP peaks later (20-24 hours) than UCH-L1 (8-12 hours).',
         ),
         HeaderBlock('Key MRI Sequences in TBI'),
         TableBlock(

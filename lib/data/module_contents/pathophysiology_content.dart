@@ -198,7 +198,7 @@ final TopicData pathophysiologyContent = TopicData(
           themeColor: const Color(0xFF059669),
           backgroundColor: const Color(0xFFECFDF5),
           points: [
-            'Normal ICP: 2-5 mmHg (up to 15 mmHg considered acceptable)',
+            'Normal adult ICP: 5-15 mmHg (supine); children lower (3-7 mmHg)',
             'The Monro-Kellie Doctrine: The skull is a rigid container with fixed volume -- an increase in any one component (brain ~80%, blood ~10%, CSF ~10%) must be compensated by a decrease in another',
             'Initial compensation: CSF is displaced into the spinal subarachnoid space and venous blood is shunted out of the skull',
             'Decompensation: Once compensatory mechanisms are exhausted, even small additional volume increases cause exponential ICP rises (the compliance curve)',

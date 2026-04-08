@@ -48,7 +48,7 @@ class _MedMatchingViewState extends State<MedMatchingView> {
         _MedPair('Bromocriptine', 'Executive function / initiation'),
       ],
       boardPearl:
-          'Amantadine is the only medication with Level I evidence (Giacino 2012 NEJM trial) '
+          'Amantadine is the only medication with Level B evidence (Giacino 2012 NEJM trial) '
           'for accelerating recovery in disorders of consciousness after TBI. '
           'Start 100 mg BID, titrate to 200 mg BID over 2 weeks.',
     ),

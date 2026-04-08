@@ -261,8 +261,8 @@ class NotebookLMFundamentalsFlashcards {
     ),
     Flashcard(
       front:
-          'What is the normal range for intracranial pressure (ICP)?',
-      back: '2-5 mmHg',
+          'What is the normal range for intracranial pressure (ICP) in a supine adult?',
+      back: '7-15 mmHg (upper limit of normal ~15 mmHg)',
       moduleId: 'tbi-fundamentals',
     ),
     Flashcard(

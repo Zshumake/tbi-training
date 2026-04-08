@@ -115,8 +115,8 @@ class CTCaseData {
           name: 'Right Frontal Contusion',
           description:
               'Mixed-density lesion in the right frontal lobe. '
-              'Contrecoup injury pattern with petechial hemorrhages '
-              'and perilesional edema.',
+              'Coup injury pattern (frontal impact) with petechial '
+              'hemorrhages and perilesional edema.',
           targetZone: Rect.fromLTWH(0.26, 0.12, 0.22, 0.22),
           color: Color(0xFF38BDF8),
           boardPearl:

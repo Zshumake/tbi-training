@@ -523,7 +523,7 @@ class TBIQuizBank {
         'Severe agitation',
       ],
       correctIndex: 2,
-      explanation: 'ABS scoring: 14 items scored 1-4, range 14-56. Below 21: normal. 22-28: mild agitation. 29-35: moderate agitation. 35-54: severe agitation. A score of 32 falls in the moderate range.',
+      explanation: 'ABS scoring: 14 items scored 1-4, range 14-56. ≤21: absent. 22-28: mild agitation. 29-35: moderate agitation. ≥36: severe agitation. A score of 32 falls in the moderate range.',
       moduleId: 'agitation-behavioral',
       difficulty: 'intermediate',
     ),

@@ -326,7 +326,7 @@ final TopicData agitationContent = TopicData(
             [
               'Combined PSH-AM',
               'CFS + DLT = diagnostic probability',
-              '< 8 = unlikely; 8-16 = possible; > 17 = probable PSH',
+              '< 8 = unlikely; 8-16 = possible; >= 17 = probable PSH',
             ],
           ],
         ),
@@ -431,7 +431,7 @@ final TopicData agitationContent = TopicData(
             ['ABS severe agitation', '> 35'],
             ['PSH diagnostic criteria', '4 of 6 features'],
             ['PSH incidence in severe TBI', '15-33%'],
-            ['PSH-AM probable threshold', '> 17'],
+            ['PSH-AM probable threshold', '>= 17'],
             ['PSH onset', 'Usually within first 2 weeks'],
             ['Best evidence for agitation Rx', 'Beta-blockers (Cochrane review)'],
             ['Amantadine agitation dose', '100 mg BID'],

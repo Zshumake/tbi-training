@@ -208,7 +208,7 @@ final TopicData pharmacologyContent = TopicData(
           points: [
             'Design: Multicenter, randomized, double-blind, placebo-controlled trial (n=184)',
             'Population: Patients in vegetative state (VS) or minimally conscious state (MCS), 4-16 weeks post-TBI, receiving inpatient rehabilitation',
-            'Intervention: Amantadine 100 mg BID for 2 weeks, then 200 mg BID for 2 weeks (4-week treatment), followed by 2-week washout',
+            'Intervention: Amantadine escalated dosing (100 mg BID weeks 1-2, 150 mg BID week 3, 200 mg BID week 4 based on response) for 4 weeks, followed by 2-week washout',
             'Primary outcome: Disability Rating Scale (DRS) slope of improvement during treatment',
             'Result: Amantadine group had significantly faster DRS improvement -- 0.24 points/week faster than placebo (P = .007)',
             'Washout finding: After discontinuation, improvement SLOWED in the amantadine group (0.30 points/week slower, P = .02), and groups converged by week 6',
